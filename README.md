@@ -1,5 +1,5 @@
 # NLDT-Architectuur
-Concrete pvolging van [nDTFL](https://geonovum.github.io/DTFL/Referentie%20Architectuur/)
+Concrete opvolging (concretisering) van [nDTFL](https://geonovum.github.io/DTFL/Referentie%20Architectuur/)
 
 ## Spelregels
 
