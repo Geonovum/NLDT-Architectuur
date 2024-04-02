@@ -1,4 +1,5 @@
 # NLDT-Architectuur
+Concrete pvolging van [nDTFL](https://geonovum.github.io/DTFL/Referentie%20Architectuur/)
 
 ## Spelregels
 
