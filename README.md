@@ -3,6 +3,8 @@ Concrete pvolging van [nDTFL](https://geonovum.github.io/DTFL/Referentie%20Archi
 
 ## Spelregels
 
+Waar houden we ons als team aan:
+
 1.	Minimaal redeneren vanuit de software, data/resources/waardecreatie staan centraal, FAIR
 2.	Het web (HTTP) is het operating system
 3.	Generieke architectuur, gedreven vanuit de use-cases
