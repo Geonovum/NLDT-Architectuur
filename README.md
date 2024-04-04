@@ -1,6 +1,9 @@
 # NLDT-Architectuur
+Concrete opvolging (concretisering) van [nDTFL](https://geonovum.github.io/DTFL/Referentie%20Architectuur/)
 
 ## Spelregels
+
+Waar houden we ons als team aan:
 
 1.	Minimaal redeneren vanuit de software, data/resources/waardecreatie staan centraal, FAIR
 2.	Het web (HTTP) is het operating system
