@@ -8,16 +8,16 @@ var documentConfig =
   specType: "hr",
   license: "cc-by-nd",
   latestVersion: [
-    "https://docs.geostandaarden.nl/geen/NLDT/"
+    "https://docs.geostandaarden.nl/NLDT-Architectuur/"
   ],
   publishDate: "2024-06-21",
   publishVersion: "0.1.0",
   thisVersion: [
-    "https://geonovum.github.io/geen-NLDT/"
+    "https://geonovum.github.io/NLDT-Architectuur/"
   ],
-  github: "https://github.com/geonovum/geen-NLDT/",
-  issueBase: "https://github.com/geonovum/geen-NLDT/issues/",
-  edDraftURI: "https://geonovum.github.io/geen-NLDT/",
+  github: "https://github.com/geonovum/NLDT-Architectuur/",
+  issueBase: "https://github.com/geonovum/NLDT-Architectuur/issues/",
+  edDraftURI: "https://geonovum.github.io/NLDT-Architectuur/",
   authors: [
     {
       name: "Frans de Waal",
