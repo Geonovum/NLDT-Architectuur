@@ -833,6 +833,9 @@ Een Digitale Tweeling biedt de mogelijkheid voor een anonieme beleving, maar dez
       <child xsi:type="archimate:DiagramObject" id="id-72b330071c104375b63597ea8aa68f01" textAlignment="1" archimateElement="id-ed6f82d963f84313bda9d3ca5616c7c7">
         <bounds x="552" y="516" width="205" height="97"/>
       </child>
+      <documentation>De Capabilities zoals hier gemodelleerd komen overeen met de Functiemap en definities van beleidscapabilities uit het rapport &quot;Beleidsprocessen en bouwblokken voor Digitale Tweelingen&quot;&#xD;
+&#xD;
+In de views in de map Capability-realisatie worden er diensten, functies, producten en randvoorwaarden uitgewerkt voor de verschillende capabilities.</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="Valuestream" id="id-be75a934212d41fcb17ec97483072ddb">
       <child xsi:type="archimate:DiagramObject" id="id-d24ddaefa32d4916aac349830901bf81" textAlignment="1" archimateElement="id-7ba8ed9a80c4497984127872ba0392d1">
@@ -932,4 +935,8 @@ Een Digitale Tweeling biedt de mogelijkheid voor een anonieme beleving, maar dez
       </child>
     </element>
   </folder>
+  <purpose>Dit is de archimate modellering van de NLDT architectuur.&#xD;
+&#xD;
+30-10-2024: eerste opzet. Model is nog niet gevalideerd en kan op elk moment wijzigen.&#xD;
+ </purpose>
 </archimate:model>

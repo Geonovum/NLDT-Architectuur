@@ -1,6 +1,8 @@
 # NLDT-Architectuur
 Concrete opvolging (concretisering) van [nDTFL](https://geonovum.github.io/DTFL/Referentie%20Architectuur/)
 
+Het respec document is te vinden op: [https://geonovum.github.io/NLDT-Architectuur/](https://geonovum.github.io/NLDT-Architectuur/)
+
 ## Spelregels
 
 Waar houden we ons als team aan:

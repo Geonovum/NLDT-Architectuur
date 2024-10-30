@@ -33,11 +33,21 @@ var documentConfig =
       name: "Bart De Lathouwer",
       company: "Geonovum",
       companyURL: "https://www.geonovum.nl/"
+    },
+    {
+      name: "Niels Hoffmann",
+      company: "Geonovum",
+      companyURL: "https://www.geonovum.nl/"
     }
   ],
   editors: [
     {
       name: "Bart De Lathouwer",
+      company: "Geonovum",
+      companyURL: "https://www.geonovum.nl/"
+    },
+    {
+      name: "Niels Hoffmann",
       company: "Geonovum",
       companyURL: "https://www.geonovum.nl/"
     }
