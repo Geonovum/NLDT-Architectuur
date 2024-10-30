@@ -42,6 +42,9 @@
 
                     <!-- Analysis -->
 
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
 				</ul>
 
 				<!-- Tab panes -->
@@ -87,6 +90,83 @@
 							</tbody>
 						</table>
 					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/id-1d1f4b424379482c8179c6274694feba.html" target="element"> &lt;Standaard Interface&gt; </a> </td>
+											    <td> <a href="../elements/id-1d1f4b424379482c8179c6274694feba.html" target="element" class="i18n-elementtype-ApplicationInterface">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-f953a3f1177f42b88bfc9d788ca8380f.html" target="element"> &lt;Applicatie functie&gt; </a> </td>
+											    <td> <a href="../elements/id-f953a3f1177f42b88bfc9d788ca8380f.html" target="element" class="i18n-elementtype-ApplicationFunction">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-5952a2e441104f218155d3dd0e6711cc.html" target="element"> &lt;Applicatie dienst&gt; </a> </td>
+											    <td> <a href="../elements/id-5952a2e441104f218155d3dd0e6711cc.html" target="element" class="i18n-elementtype-ApplicationService">
+											    </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/id-5bc59876d1684787a7fcb434eb63aa2f.html" target="element"> toegekend aan </a> </td>
+																		<td> <a href="../elements/id-5bc59876d1684787a7fcb434eb63aa2f.html" target="element" class="i18n-elementtype-AssignmentRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-1d1f4b424379482c8179c6274694feba.html" target="element"> &lt;Standaard Interface&gt; </a> </td>
+																		<td> <a href="../elements/id-5952a2e441104f218155d3dd0e6711cc.html" target="element"> &lt;Applicatie dienst&gt; </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-a158524c4c874a66ad9c5dc93636db05.html" target="element"> realiseert </a> </td>
+																		<td> <a href="../elements/id-a158524c4c874a66ad9c5dc93636db05.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-f953a3f1177f42b88bfc9d788ca8380f.html" target="element"> &lt;Applicatie functie&gt; </a> </td>
+																		<td> <a href="../elements/id-4cc65785f0d04ce5a325c7093b532bcc.html" target="element"> &lt;Functionele dienst&gt; </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-bbe22f52e980413da3328ff1ca09b81a.html" target="element"> realiseert </a> </td>
+																		<td> <a href="../elements/id-bbe22f52e980413da3328ff1ca09b81a.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-5952a2e441104f218155d3dd0e6711cc.html" target="element"> &lt;Applicatie dienst&gt; </a> </td>
+																		<td> <a href="../elements/id-8c026db103b8433eb893c4e9fb35a4f5.html" target="element"> &lt;DT capability&gt; </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-30346083fcae4832ba18344228b479e3.html" target="element"> bedient </a> </td>
+																		<td> <a href="../elements/id-30346083fcae4832ba18344228b479e3.html" target="element" class="i18n-elementtype-ServingRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-5952a2e441104f218155d3dd0e6711cc.html" target="element"> &lt;Applicatie dienst&gt; </a> </td>
+																		<td> <a href="../elements/id-f953a3f1177f42b88bfc9d788ca8380f.html" target="element"> &lt;Applicatie functie&gt; </a> </td>
+																	</tr>
+
+
+								</tbody>
+							</table>
+						</div>
 			  </div>
 			</div>
 		</div>
