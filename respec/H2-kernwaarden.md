@@ -45,6 +45,7 @@ zorgen dat ze de meeste waarde creëren voor de hele maatschappij. Transparantie
 duiding en uitleg te geven. Inzicht in de context en uitvoering van de digitale tweeling en het stelsel, uitleg
 over de gemaakte keuzes in het proces, duiding over de data, de modellen, visualisatie(tools) en tijdens
 besluitvorming.
+
 We schrijven: “zo open mogelijk” omdat het van belang kan zijn dat deelnemers aan het stelsel ook
 informatie delen die niet geschikt is voor een brede, open, verspreiding. Denk hierbij aan privacy- en
 veiligheidsbeperkingen. Het stelsel dient ook een vertrouwelijke, afgeschermde informatiedeling mogelijk te
@@ -192,3 +193,74 @@ is bij maatschappelijke opgaven een belangrijke belanghebbende en vehikel waarla
 betrokken kunnen worden.
 
 ## Effectief
+
+### Effectief bestuurd
+
+Alle onderdelen van een digital twin en het ecosysteem van digital twins hebben een duidelijk en transparant eigendom, 
+een heldere besturing, belegde verantwoordelijkheden en evt. vastgelegde regelgeving om het creëren, onderhouden en 
+verantwoord gebruik van relevante data, rekenmodellen en visualisatie(tools) te ondersteunen.
+
+__Verklaring:__ Duidelijk eigenaarschap en belegde verantwoordelijkheden maken effectief gegevensbeheer en 
+probleemoplossing mogelijk voor digital twins en binnen het ecosysteem van digital twins als geheel. 
+De overheid zou regelgeving kunnen gebruiken om het gewenste gedrag in een ecosysteem te stimuleren wanneer 
+dit niet mogelijk is door middel van de samenwerking tussen bedrijfsleven, overheid, onderwijs en onderzoek, 
+maatschappelijke organisaties en burgers.
+
+__Implicaties:__ Eigendom van data is een centraal element van dit principe en biedt verantwoordelijkheid 
+voor het samenstellen van geschikte kwaliteitsdata voor integratie in digital twins en het ecosysteem van digital twins. 
+Data eigenaren en providers moeten samenwerken met belanghebbenden om hoogwaardige datasets te identificeren voor digital twins. 
+Data eigenaren en providers moeten ook beschikken over de juiste vaardigheden en competenties, die nodig zijn om digital twins 
+mogelijk te maken. Digital twins kunnen worden bestuurd door het bedrijfsleven, de overheid, onderwijs en onderzoek, 
+maatschappelijke organisaties en/of burgers. Besturing moet ook voorzien in mechanismen voor het algehele beheer van 
+het ecosysteem van digital twins, waarbij eerlijke waarde en consistente naleving van standaarden worden gegarandeerd.
+
+### Federatief
+
+Eigenaren van (onderdelen van) digital twins moeten een gefedereerd model ondersteunen waar data, modellen, tools en gerelateerde, 
+ondersteunende diensten op een flexibele en responsieve manier kunnen worden verbonden en gedeeld.
+
+__Verklaring:__ Met een federatief model zullen het bedrijfsleven en alle niveaus van de overheid (nationaal, regionaal en lokaal) 
+het gezag behouden voor hun respectieve verantwoordelijkheden, hun functies en bijbehorende data, die deel uitmaken van de 
+nationale digital twin infrastructuur.
+
+__Implicaties:__ Het federatieve model vereist en stimuleert het bedrijfsleven en de overheid om de onderdelen van de digital 
+twin op consistente, interoperabele, platformonafhankelijke en platformonafhankelijke manieren te ontwikkelen en te beheren. 
+Met het federatieve model wordt schaalvergroting gestimuleerd en kunnen gebruikers in de gehele economie en maatschappij gebruik 
+maken van digital twins binnen en tussen toepassingsgebieden, sectoren en rechtsgebieden. Governance is een essentieel onderdeel 
+van dit principe. Het voorgestelde gefedereerde model vereist een niveau van consistent bestuur over verschillende sectoren heen, 
+maar ook tussen het bedrijfsleven en de overheid. Governance van het federatieve model moet met name ervoor zorgen, dat digital 
+twins voor de fysieke leefomgeving kunnen werken met verschillende soorten data(bronnen) binnen en tussen:
+
+- verschillende infrastructuur- en toepassingssectoren (bijv. mobiliteit, landbouw, energie, klimaat);
+- zowel de gebouwde als de natuurlijke omgeving;
+- verschillende ruimtelijke en temporele schalen;
+- verschillende modelleringsbenaderingen.
+
+### Met open standaarden
+
+We adopteren overeengekomen open standaarden voor data en digital twins, met cross-platform en platform-onafhankelijke 
+architectuur modellen om overall interoperabiliteit, compatibiliteit en functionaliteit te bieden
+
+__Verklaring:__ Open standaarden voor data en digital twins waarborgen vertrouwen door open en uniforme semantiek en uitwisseling, 
+voorkomen vendor lock-in, zijn kosten reducerend en zorgen ervoor dat digital twins en het digital twin ecosysteem optimale waarde leveren.
+
+__Implicaties:__ Gebruik van open standaarden zorgt ervoor dat digital twins en het digital twin ecosysteem leverancier-onafhankelijk zijn. 
+Het gebruik van open standaarden, zoals semantische data modellen en Application Programming Interfaces (APIs), waarborgt brede 
+toegankelijkheid en uniform gebruik van data en digital twins in economie en maatschappij. Dit principe sluit nauw aan bij de 
+gemeenschappelijke benadering van de Nederlandse overheid voor het toepassen van open standaarden, die nodig zijn een digital twin ecosysteem 
+te realiseren. Voor deze (semi-)publieke organisaties is het gebruik van open standaarden de norm. Het College Standaardisatie wijst open 
+standaarden aan waarvoor een 'comply-or-explain'-regime geldt, de Lijst Open Standaarden voor Pas Toe of Leg Uit.
+
+### Adaptief
+
+Digital twins voor de fysieke leefomgeving moeten zich continue kunnen aanpassen en ontwikkelen naarmate de fysieke leefomgeving verandert 
+en de wereld om ons heen evolueert als gevolg van veranderingen in de samenleving, de technologie, functionele vereisten, het informatiebeheer, 
+de data science, cyberveiligheid.
+
+__Verklaring:__ Continue aanpassing van digital twins zorgt ervoor, dat digital twins bruikbaar blijven en evolueren om te voldoen 
+aan de veranderende behoeften van eindgebruikers en op data-gebaseerde planning en besluitvorming mogelijk blijft voor zowel bedrijfsleven, 
+overheid, onderwijs- en kennisinstellingen, maatschappelijke organisaties en burgers.
+
+__Implicaties:__ Digital twins zullen zich blijven aanpassen en evolueren. Technische oplossingen voor digital twins, 
+met name platforms en software, zijn onpartijdig om de voortdurende aanpassing en evolutie van digital twins en het nationaal 
+ecosysteem van digital twins op de lange termijn mogelijk te maken.
