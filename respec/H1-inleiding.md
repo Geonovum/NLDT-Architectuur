@@ -16,6 +16,10 @@ Binnen de genoemde domeinen zijn vaak al uitgebreide databestanden en meetgegeve
 
 Deze referentie architectuur bevat daarom afspraken, principes en standaarden die relevant zijn voor digital twinning binnen het genoemde gebied. 
 
+In dit document volgen we de definitie zoals vermeld in de Kamerbrief van het Ministerie van Volkshuisvesting en Ruimtelijk Ordening:
+
+_Een digitale tweeling van de fysieke leefomgeving is een digitale representatie van de stedelijke en landelijke omgeving op basis van data, modellen en visualisaties. Deze kunnen worden gebruikt om verschillende aspecten van de fysieke leefomgeving te simuleren en analyseren._ [[VRO_2024]]
+
 ### Doelgroep
 
 Dit document is gericht op iedereen die betrokken is bij het ontwikkelen van vormen van digital twinning binnen het fysieke domein. Dit betreft uiteraard bedrijfs-, informatie-, data- en infrastructuur-architecten, maar ook model- en dataspecialisten, ontwikkelaars, user interface- en beveiligingsexperts en beheerders. Voor personen die iets verder van de techniek afstaan is het hoofdstuk over de kernwaarde in ieder geval van belang en mogelijk delen van de andere hoofdstukken ook. De opbouw van het document gaat van algemeen naar steeds specifieker.
