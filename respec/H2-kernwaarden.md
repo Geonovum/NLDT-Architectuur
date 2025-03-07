@@ -1,5 +1,16 @@
 # Kernwaarden
 
+De kernwaarden stellen een aantal randvoorwaarden aan het stelsel van Digitale Tweelingen. 
+Het gebruik van de term kernwaarde is geinspireerd op de NORA waar een kernwaarde als volgt wordt gepositioneerd: 
+
+<aside class='note'>
+"Kernwaarden vormen een verbindende functie tussen beleid en het in samenhang en ontwerpen en leveren van overheidsdiensten. 
+Kernwaarden helpen om uit te leggen vanuit welke maatschappelijke waarden de overheid haar diensten aanbiedt aan burgers en bedrijven. 
+Het contact tussen samenwerkende overheidsorganisaties en de samenleving staat hierbij centraal. ..."
+
+[Definitie Kernwaarde NORA](https://www.noraonline.nl/wiki/Kernwaarde_van_Dienstverlening_(Begrip))
+</aside>
+
 ![kernwaarden](./respec/media/kernwaarden.png)
 
 Afbeelding 1: kernwaarden
@@ -59,8 +70,9 @@ __Implicaties:__ Openheid is een belangrijk element om digitale tweelingen en ee
 tweelingen voor Nederland te realiseren en de waarde voor economie en maatschappij te maximaliseren.
 Een open, op samenwerking gerichte aanpak zal nodig zijn om te zorgen dat het ecosysteem actueel en
 relevant blijft voor een breed scala aan gebruikers, waardoor de kans op silo’s en inefficiëntie wordt
-verkleind. Openheid vereist ook dat digitale tweelingen vindbaar en toegankelijk zijn, zodat gebruikersrelevante data, rekenmodellen en visualisatietools kunnen vinden en gebruiken. Openheid gaat over het
-toegankelijk, herbruikbaar en uitwisselbaar maken van data, modellen, visualisatietools en technologieën.
+verkleind. Openheid vereist ook dat digitale tweelingen vindbaar en toegankelijk zijn, zodat gebruikersrelevante data, 
+rekenmodellen en visualisatietools kunnen vinden en gebruiken. Openheid gaat over het toegankelijk, 
+herbruikbaar en uitwisselbaar maken van data, modellen, visualisatietools en technologieën.
 Het gaat niet alleen om de technische toegankelijkheid, maar ook de toegankelijkheid voor de
 belanghebbenden: de gebruikers, burgers en andere primaire belanghebbenden. Leg uit en geef toegang
 tot de informatie, die belanghebbenden nodig hebben om mee te doen en bij te dragen. Een digitale tweeling
@@ -69,7 +81,7 @@ toegangsbeperkingen, dat gebaseerd is op afgesproken beheers mechanismen.
 
 ### Eerlijk, kwalitatief en inclusief
 
-De betrouwbaarheid van de digitale tweelingen, een stelsel van digitale tweelingen is afhankelijk van de
+De betrouwbaarheid van digitale tweelingen of een stelsel van digitale tweelingen is afhankelijk van de
 kwaliteit en inclusiviteit van de data, modellen en technologie. De primaire belanghebbenden moeten deze
 betrouwbaarheid kunnen beoordelen op aspecten als de relevantie, tijdigheid, nauwkeurigheid, samenhang
 en consistentie, interpreteerbaarheid en toegankelijkheid van de digitale tweelingen, in relatie tot het
@@ -107,8 +119,9 @@ en niet-discriminerend zijn.
 ### Robuust en veilig
 
 Een digitale tweeling en het stelsel van digitale tweelingen dient robuust en veilig te zijn. Dat betekent, dat
-data en rekenmodellen en de technische infrastructuur waarop digitale tweelingen draaien een hogebeschikbaarheid hebben en goed beveiligd zijn (met evt. toegangsbeperkingen) tegen ongewenst gebruik.
-Een digital twin mag daarbij alleen de gevoelige informatie (oftewel persoonlijke data) vrijgeven indien voor
+data en rekenmodellen en de technische infrastructuur waarop digitale tweelingen draaien een hoge beschikbaarheid 
+hebben en goed beveiligd zijn (met evt. toegangsbeperkingen) tegen ongewenst gebruik.
+Een digitale tweeling mag daarbij alleen de gevoelige informatie (oftewel persoonlijke data) vrijgeven indien voor
 die informatie uitdrukkelijk toestemming is verkregen van de betrokkenen en het vrijgeven ook wettelijk is
 toegestaan. Een digitale tweeling moet getoetst door onafhankelijke partijen, om blijvend de veiligheid en
 gegevensbescherming te kunnen waarborgen.
@@ -145,9 +158,9 @@ daarbij ook ‘no go areas’ voor de digital twin, ter bescherming van kwet
 
 Een onafhankelijke vertrouwde derde partij moet als toezichthouder de naleving van ethische en andere
 relevante afspraken controleren, opdat er verantwoord wordt omgegaan met de digital twin, het stelsel van
-digitale tweelingen en de onderliggende data. De digital twins en het stelsel moeten onder controle en
-toezicht zijn van mensen. Toezicht en controle moet plaatsvinden gedurende het ontwikkeltraject van de
-digitale tweeling.
+digitale tweelingen en de onderliggende data. De digitale tweelingen en het stelsel moeten onder controle en
+toezicht zijn van mensen. Toezicht en controle moet plaatsvinden gedurende het ontwikkeltraject en de gebruiksfase 
+van de digitale tweeling.
 
 __Verklaring:__ De verantwoordelijkheid voor ethiek moet niet bij één persoon, stafafdeling of commissie
 liggen. Dat haalt namelijk de verantwoordelijkheid bij anderen weg en uit de interne processen. Het is
@@ -196,12 +209,12 @@ betrokken kunnen worden.
 
 ### Effectief bestuurd
 
-Alle onderdelen van een digital twin en het ecosysteem van digital twins hebben een duidelijk en transparant eigendom, 
+Alle onderdelen van een digital twin en het stelsel van digitale tweelingen hebben een duidelijk en transparant eigendom, 
 een heldere besturing, belegde verantwoordelijkheden en evt. vastgelegde regelgeving om het creëren, onderhouden en 
 verantwoord gebruik van relevante data, rekenmodellen en visualisatie(tools) te ondersteunen.
 
 __Verklaring:__ Duidelijk eigenaarschap en belegde verantwoordelijkheden maken effectief gegevensbeheer en 
-probleemoplossing mogelijk voor digital twins en binnen het ecosysteem van digital twins als geheel. 
+probleemoplossing mogelijk voor een enkele digitale tweeling en binnen het stelsel als geheel. 
 De overheid zou regelgeving kunnen gebruiken om het gewenste gedrag in een ecosysteem te stimuleren wanneer 
 dit niet mogelijk is door middel van de samenwerking tussen bedrijfsleven, overheid, onderwijs en onderzoek, 
 maatschappelijke organisaties en burgers.
