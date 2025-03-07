@@ -67,5 +67,13 @@ var documentConfig =
       status:     "V0.9",
       date: "11 februari 2022"
   },
+  DMI_ecosysteem_volwassenheidsniveaus: {
+    title: "De type volwassenheidsniveaus zijn gebaseerd op een analyse over zes bronnen, te weten Geospatial World (2023), Digital Twin Consortium (2024a), Digital Urban Brabant (2023), International Data Group (2019), Stichting Toekomstbeeld der Techniek (2022) en TNO."
+  },
+  VRO_2024: {
+    title: "Aanbieding meerjarenvisie Zicht op Nederland: samen datagedreven werken aan de fysieke leefomgeving",
+    href: "https://www.rijksoverheid.nl/documenten/rapporten/2024/02/12/meerjarenvisie-zicht-op-nederland",
+    date: "12-02-2024"
+  }
   }
 }
