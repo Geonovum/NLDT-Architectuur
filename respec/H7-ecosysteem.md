@@ -6,3 +6,9 @@
 - evt andere ecosystemen uit onderzoek yvette/bart
 - EU Dataspaces/LDT
 - EDIC
+
+- FDS
+    - Interoperabiliteit
+    - Vertrouwen
+    - Datawaarde
+    - Governance

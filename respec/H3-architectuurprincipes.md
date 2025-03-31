@@ -15,6 +15,10 @@ __Rationale:__
 Het stelsel van Digitale tweelingen bestaat niet in isolatie. Het moet zich verhouden tot de omgeving en de ontwikkelingen
 die daar plaatsvinden. Te denken valt hierbij aan de Dataspace ontwikkelingen en de Europese Data- en AI Act.
 
+__Implicaties:__
+- [Hergebruik]()
+
+
 ## Domein georiënteerd, gedecentraliseerd stelsel
 
 __Beschrijving:__
@@ -25,6 +29,11 @@ Concrete invulling kan eventueel via een service provider gerealiseerd worden.
 __Rationale:__
 Bij een federatief stelsel is het beleggen van eigenaarschap en verantwoordelijkheid op de plaats waar die hoort onontbeerlijk. 
 Alleen als dit in het hele stelsel op een acceptabel niveau geregeld is kan het stelsel als geheel succesvol zijn.
+
+__Implicaties:__
+- [Hergebruik]()
+- [specifieke domein context beschrijven]()
+- [zorg voor vindbaarheid]()
 
 ## Data als product
 
@@ -43,6 +52,12 @@ Productdenken schept de voorwaarden voor het uitwisselen van diensten in het ste
 om op een uniforme wijze te redeneren over niet enkel datasets, maar ook modellen en analytische- of andere diensten.
 Dit schept de randvoorwaarden om binnen een stelsel samen te kunnen werken en afspraken met elkaar te kunnen maken.
 
+__Implicaties:__
+- [specifieke domein context beschrijven](./H4-implicaties.md#specifieke-domein-context-beschrijven)
+- [self descriptions](./respec/H4-implicaties.md#self-descriptions)
+- [lineage](./H4-implicaties.md#lineage)
+- [kwaliteitsraamwerk](./H4-implicaties.md#kwaliteitsraamwerk)
+
 ## Zelfservice data-infrastructuur
 
 __Beschrijving:__
@@ -54,8 +69,11 @@ Het stelsel is zodanig ingericht dat partijen die aan de aansluitvoorwaarden vol
 componenten deel kunnen nemen.
 
 __Rationale:__
-Een federatief stelsel moet de voorwaarden scheppen voor een gelijk speelveld. Er is geen afhankelijkheid van slechts
-een infrastructuur leverancier, maar partijen moeten mee kunnen doen op basis van open standaarden en aansluitvoorwaarden.
+Een federatief stelsel moet de voorwaarden scheppen voor een gelijk speelveld. Er is geen afhankelijkheid van slechts 
+één infrastructuur leverancier, maar partijen moeten mee kunnen doen op basis van open standaarden en aansluitvoorwaarden.
+
+__Implicaties:__
+ - [self descriptions](./respec/H4-implicaties.md#self-descriptions)
 
 ## Gefedereerde en geautomatiseerde governance
 
@@ -67,11 +85,16 @@ Hiermee kan schaalbaarheid en betrouwbaarheid van het stelsel gerealiseerd worde
 
 __Rationale:__
 Het huidige digitale ecosysteem is zodanig groot, complex en met elkaar verweven dat handmatige controle niet toereikend is.
-Het implementeren van Gefedereerde en geautomatiseerde governance vraagt een digitale mindset die nog niet vanzelfsprekend is.
+Het implementeren van gefedereerde en geautomatiseerde governance vraagt een digitale mindset die nog niet vanzelfsprekend is.
 
-## De architectuur van het digital twin stelsel is gebaseerd op service oriëntatie.
+__Implicaties:__
+- [keuzes maken in automatisering](./H4-implicaties.md#keuzes-maken-in-automatisering)
+
+## Gebaseerd op service oriëntatie
 
 __Beschrijving:__
+De architectuur van het digital twin stelsel is gebaseerd op service oriëntatie.
+
 Deelnemers aan het stelsel wisselen data en modellen uit via het beginsel van de service orientatie. 
 Dat wil zeggen: Een samenspel van (gestandaardiseerde) vragen en antwoorden via een verbindende infrastructuur. 
 In praktische zin wordt dit ingevuld met services of API’s.
@@ -81,16 +104,23 @@ Het ontkoppelen van de verschillende componenten in het stelsel lukt alleen als 
 goed beschreven open en interoperabele interfaces. Door goede gedefinieerde koppelvlakken ontstaat een ecosysteem waar
 verschillende partijen interoperabel met elkaar kunnen samenwerken.
 
+__Implicaties:__
+- [API Designrules](./H4-implicaties.md#api-designrules)
 
-## De architectuur van het digital twin stelsel is maximaal gebaseerd op de toepassing van open standaarden.
+## Open standaarden
 
 __Beschrijving:__
+De architectuur van het digital twin stelsel is maximaal gebaseerd op de toepassing van open standaarden.
+
 Het stelsel staat open voor deelname vanuit overheid en private sector. Federatieve componenten van het stelsel worden via 
 open standaarden vormgegeven. Daarnaast geldt een sterke aanbeveling voor deelnemende partijen om voor dataproducten eveneens 
 gebruik te maken van open standaarden, teneinde de interoperabiliteit van het stelsel te maximaliseren. 
 
 __Rationale:__
 Open standaarden maken een gelijk speelveld voor de verschillende deelnemende partijen mogelijk. 
+
+__Implicaties:__
+- [Hergebruik](./H4-implicaties.md#hergebruik)
 
 ## Data soevereiniteit is geborgd
 
@@ -104,18 +134,38 @@ __Rationale:__
 Om waardevolle oplossingen te realiseren zal niet altijd alleen maar open data gebruikt kunnen worden. Het stelsel 
 moet 'data delen onder voorwaarden' ondersteunen zodat het mogelijk wordt om een rijk pallet aan oplossingen aan te kunnen bieden.
 
+__Implicaties:__
+- [self descriptions](./respec/H4-implicaties.md#self-descriptions)
+
 ## Kwaliteit van data is gekend
 
 __Beschrijving:__
-Over de door deelnemers aan het stelsel aangeboden data (incl. in de vorm van modellen) kan te allen
-tijde verantwoording worden afgelegd over de herkomst en kwaliteit van data.
+Over de door deelnemers aan het stelsel aangeboden data (incl. in de vorm van modellen) kan te allen tijde verantwoording worden 
+afgelegd over de herkomst, betekenis en kwaliteit van data.  
 
 __Rationale:__
 Een stelsel op basis van deze architectuurprincipes leidt tot ketens van combineerbare data.
-Daarom is het essentieel dat afnemers van dataproducten nauwkeurige, op veldniveau, informatie krijgen
+Daarom is het essentieel dat afnemers van dataproducten nauwkeurige, op veldniveau, informatie krijgen 
 over zaken als de herkomst van data (data lineage of data provenance), tijdstip van verwerving van data,
 betrouwbaarheid van data, geldigheid van data, vertrouwelijkheid van data, gebruikscondities van data en
 semantische duiding van data.
 
+__Implicaties:__
+- [self descriptions](./respec/H4-implicaties.md#self-descriptions)
+- [lineage](./H4-implicaties.md#lineage)
+- [kwaliteitsraamwerk](./H4-implicaties.md#kwaliteitsraamwerk)
 
+## Het stelsel is betrouwbaar
 
+__Beschrijving:__
+Het stelsel is gericht op het optimaal en vertrouwd kunnen delen van data. Hiervoor is een raamwerk nodig dat vertrouwen creëert en waarborgt.
+
+__Rationale:__
+In het stelsel zijn de rollen van de deelnemers bekend om te zorgen dat 'data delen onder voorwaarden' plaats kan vinden.
+
+__Implicaties:__
+- [API Designrules](./H4-implicaties.md#api-designrules)
+- [keuzes maken in automatisering](./H4-implicaties.md#keuzes-maken-in-automatisering)
+- [self descriptions](./respec/H4-implicaties.md#self-descriptions)
+- [lineage](./H4-implicaties.md#lineage)
+- [kwaliteitsraamwerk](./H4-implicaties.md#kwaliteitsraamwerk)
