@@ -14,9 +14,9 @@ __Rationale:__
 
 
 __Implicatie bij:__
-- [Data als product](./H3-architectuurprincipes.md#data-als-product)
-- [Datasoevereiniteit is geborgd](./H3-architectuurprincipes.md#data-soevereiniteit-is-geborgd)
-- [Het stelsel is betrouwbaar](./H3-architectuurprincipes.md#het-stelsel-is-betrouwbaar)
+- [Data als product](#data-als-product)
+- [Datasoevereiniteit is geborgd](#data-soevereiniteit-is-geborgd)
+- [Het stelsel is betrouwbaar](#het-stelsel-is-betrouwbaar)
 - [Kwaliteit van data is gekend](./../respec/H3-architectuurprincipes.md#kwaliteit-van-data-is-gekend)
 - [Zelfservice data-infrastructuur](./../respec/H3-architectuurprincipes.md#zelfservice-data-infrastructuur)
 
@@ -30,8 +30,8 @@ __Rationale:__
 
 
 __Implicatie bij:__
-- [Data als product](./H3-architectuurprincipes.md#data-als-product)
-- [Het stelsel is betrouwbaar](./H3-architectuurprincipes.md#het-stelsel-is-betrouwbaar)
+- [Data als product](#data-als-product)
+- [Het stelsel is betrouwbaar](#het-stelsel-is-betrouwbaar)
 - [Kwaliteit van data is gekend](./../respec/H3-architectuurprincipes.md#kwaliteit-van-data-is-gekend)
 
 ## Kwaliteitsraamwerk
@@ -43,8 +43,8 @@ __Rationale:__
 
 
 __Implicatie bij:__
-- [Data als product](./H3-architectuurprincipes.md#data-als-product)
-- [Het stelsel is betrouwbaar](./H3-architectuurprincipes.md#het-stelsel-is-betrouwbaar)
+- [Data als product](#data-als-product)
+- [Het stelsel is betrouwbaar](#het-stelsel-is-betrouwbaar)
 - [Kwaliteit van data is gekend](./../respec/H3-architectuurprincipes.md#kwaliteit-van-data-is-gekend)
 
 ## Hergebruik
@@ -58,9 +58,9 @@ __Rationale:__
 
 
 __Implicatie bij:__
-- [Aansluiten op omliggende kaders](./H3-architectuurprincipes.md#aansluiten-op-omliggende-kaders)
-- [Domein georienteerd, gedecentraliseerd stelsel](./H3-architectuurprincipes.md#domein-georiënteerd-gedecentraliseerd-stelsel)
-- [Open standaarden](./H3-architectuurprincipes.md#open-standaarden)
+- [Aansluiten op omliggende kaders](#aansluiten-op-omliggende-kaders)
+- [Domein georienteerd, gedecentraliseerd stelsel](#domein-georiënteerd-gedecentraliseerd-stelsel)
+- [Open standaarden](#open-standaarden)
 
 ## specifieke domein context beschrijven
 
@@ -71,8 +71,8 @@ __Rationale:__
 
 
 __Implicatie bij:__
-- [Data als product](./H3-architectuurprincipes.md#data-als-product)
-- [Domein georienteerd, gedecentraliseerd stelsel](./H3-architectuurprincipes.md#domein-georiënteerd-gedecentraliseerd-stelsel)
+- [Data als product](#data-als-product)
+- [Domein georienteerd, gedecentraliseerd stelsel](#domein-georiënteerd-gedecentraliseerd-stelsel)
 
 ## zorg voor vindbaarheid
 
@@ -83,7 +83,7 @@ __Rationale:__
 
 
 __Implicatie bij:__
-- [Domein georienteerd, gedecentraliseerd stelsel](./H3-architectuurprincipes.md#domein-georiënteerd-gedecentraliseerd-stelsel)
+- [Domein georienteerd, gedecentraliseerd stelsel](#domein-georiënteerd-gedecentraliseerd-stelsel)
 
 
 ## keuzes maken in automatisering
@@ -96,8 +96,8 @@ __Rationale:__
 
 
 __Implicatie bij:__
-- [Gefedereerde en geautomatiseerde governance](./H3-architectuurprincipes.md#gefedereerde-en-geautomatiseerde-governance)
-- [Het stelsel is betrouwbaar](./H3-architectuurprincipes.md#het-stelsel-is-betrouwbaar)
+- [Gefedereerde en geautomatiseerde governance](#gefedereerde-en-geautomatiseerde-governance)
+- [Het stelsel is betrouwbaar](#het-stelsel-is-betrouwbaar)
 
 ## API Designrules
 
@@ -109,5 +109,5 @@ __Rationale:__
 
 
 __Implicatie bij:__
-- [Gebaseerd op service orientatie](./H3-architectuurprincipes.md#gebaseerd-op-service-oriëntatie)
-- [Het stelsel is betrouwbaar](./H3-architectuurprincipes.md#het-stelsel-is-betrouwbaar)
+- [Gebaseerd op service orientatie](#gebaseerd-op-service-oriëntatie)
+- [Het stelsel is betrouwbaar](#het-stelsel-is-betrouwbaar)

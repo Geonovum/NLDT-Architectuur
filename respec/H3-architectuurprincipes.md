@@ -16,7 +16,7 @@ Het stelsel van Digitale tweelingen bestaat niet in isolatie. Het moet zich verh
 die daar plaatsvinden. Te denken valt hierbij aan de Dataspace ontwikkelingen en de Europese Data- en AI Act.
 
 __Implicaties:__
-- [Hergebruik]()
+- [Hergebruik](#hergebruik)
 
 
 ## Domein georiënteerd, gedecentraliseerd stelsel
@@ -31,9 +31,9 @@ Bij een federatief stelsel is het beleggen van eigenaarschap en verantwoordelijk
 Alleen als dit in het hele stelsel op een acceptabel niveau geregeld is kan het stelsel als geheel succesvol zijn.
 
 __Implicaties:__
-- [Hergebruik]()
-- [specifieke domein context beschrijven]()
-- [zorg voor vindbaarheid]()
+- [Hergebruik](#hergebruik)
+- [specifieke domein context beschrijven](#specifieke-domein-context-beschrijven)
+- [zorg voor vindbaarheid](#zorg-voor-vindbaarheid)
 
 ## Data als product
 
@@ -53,10 +53,10 @@ om op een uniforme wijze te redeneren over niet enkel datasets, maar ook modelle
 Dit schept de randvoorwaarden om binnen een stelsel samen te kunnen werken en afspraken met elkaar te kunnen maken.
 
 __Implicaties:__
-- [specifieke domein context beschrijven](./H4-implicaties.md#specifieke-domein-context-beschrijven)
-- [self descriptions](./respec/H4-implicaties.md#self-descriptions)
-- [lineage](./H4-implicaties.md#lineage)
-- [kwaliteitsraamwerk](./H4-implicaties.md#kwaliteitsraamwerk)
+- [specifieke domein context beschrijven](#specifieke-domein-context-beschrijven)
+- [self descriptions](#self-descriptions)
+- [lineage](#lineage)
+- [kwaliteitsraamwerk](#kwaliteitsraamwerk)
 
 ## Zelfservice data-infrastructuur
 
@@ -73,7 +73,7 @@ Een federatief stelsel moet de voorwaarden scheppen voor een gelijk speelveld. E
 één infrastructuur leverancier, maar partijen moeten mee kunnen doen op basis van open standaarden en aansluitvoorwaarden.
 
 __Implicaties:__
- - [self descriptions](./respec/H4-implicaties.md#self-descriptions)
+ - [self descriptions](#self-descriptions)
 
 ## Gefedereerde en geautomatiseerde governance
 
@@ -88,7 +88,7 @@ Het huidige digitale ecosysteem is zodanig groot, complex en met elkaar verweven
 Het implementeren van gefedereerde en geautomatiseerde governance vraagt een digitale mindset die nog niet vanzelfsprekend is.
 
 __Implicaties:__
-- [keuzes maken in automatisering](./H4-implicaties.md#keuzes-maken-in-automatisering)
+- [keuzes maken in automatisering](#keuzes-maken-in-automatisering)
 
 ## Gebaseerd op service oriëntatie
 
@@ -105,7 +105,7 @@ goed beschreven open en interoperabele interfaces. Door goede gedefinieerde kopp
 verschillende partijen interoperabel met elkaar kunnen samenwerken.
 
 __Implicaties:__
-- [API Designrules](./H4-implicaties.md#api-designrules)
+- [API Designrules](#api-designrules)
 
 ## Open standaarden
 
@@ -120,7 +120,7 @@ __Rationale:__
 Open standaarden maken een gelijk speelveld voor de verschillende deelnemende partijen mogelijk. 
 
 __Implicaties:__
-- [Hergebruik](./H4-implicaties.md#hergebruik)
+- [Hergebruik](#hergebruik)
 
 ## Data soevereiniteit is geborgd
 
@@ -135,7 +135,7 @@ Om waardevolle oplossingen te realiseren zal niet altijd alleen maar open data g
 moet 'data delen onder voorwaarden' ondersteunen zodat het mogelijk wordt om een rijk pallet aan oplossingen aan te kunnen bieden.
 
 __Implicaties:__
-- [self descriptions](./respec/H4-implicaties.md#self-descriptions)
+- [self descriptions](#self-descriptions)
 
 ## Kwaliteit van data is gekend
 
@@ -151,9 +151,9 @@ betrouwbaarheid van data, geldigheid van data, vertrouwelijkheid van data, gebru
 semantische duiding van data.
 
 __Implicaties:__
-- [self descriptions](./respec/H4-implicaties.md#self-descriptions)
-- [lineage](./H4-implicaties.md#lineage)
-- [kwaliteitsraamwerk](./H4-implicaties.md#kwaliteitsraamwerk)
+- [self descriptions](#self-descriptions)
+- [lineage](#lineage)
+- [kwaliteitsraamwerk](#kwaliteitsraamwerk)
 
 ## Het stelsel is betrouwbaar
 
@@ -164,8 +164,8 @@ __Rationale:__
 In het stelsel zijn de rollen van de deelnemers bekend om te zorgen dat 'data delen onder voorwaarden' plaats kan vinden.
 
 __Implicaties:__
-- [API Designrules](./H4-implicaties.md#api-designrules)
-- [keuzes maken in automatisering](./H4-implicaties.md#keuzes-maken-in-automatisering)
-- [self descriptions](./respec/H4-implicaties.md#self-descriptions)
-- [lineage](./H4-implicaties.md#lineage)
-- [kwaliteitsraamwerk](./H4-implicaties.md#kwaliteitsraamwerk)
+- [API Designrules](#api-designrules)
+- [keuzes maken in automatisering](#keuzes-maken-in-automatisering)
+- [self descriptions](#self-descriptions)
+- [lineage](#lineage)
+- [kwaliteitsraamwerk](#kwaliteitsraamwerk)
