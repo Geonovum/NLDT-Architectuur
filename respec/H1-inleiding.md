@@ -31,8 +31,10 @@ De architectuur beschrijft een aantal kernwaarden waar een Digitale Tweeling voo
 
 Hoofdstuk 3 behandelt de Architectuurprincipes van de NLDT.
 
-Hoofdstuk 4 introduceert waardestromen en werkt een aantal Capabilities uit die vanuit een functioneel oogpunt beschrijven waar een Digitale Tweeling invulling aan moet geven. Deze Capabilities komen voort uit een eerdere publicatie _Beleidsprocessen en bouwblokken voor Digitale Tweelingen_ [[BBDT]]
+Hoofdstuk 4 behandelt de implicaties die volgen uit de architectuurprincipes.
 
-In hoofdstuk 5 worden deze Capabilities vervolgens verder in meer technische bouwblokken uitgewerkt, waarbij vooral naar standaarden en richtlijnen gekeken wordt. De referentie architectuur zal geen specifieke (software) oplossingen voorschrijven, maar zich richten op patronen die interoperabiliteit mogelijk maken.
+Hoofdstuk 5 introduceert waardestromen en werkt een aantal Capabilities uit die vanuit een functioneel oogpunt beschrijven waar een Digitale Tweeling invulling aan moet geven. Deze Capabilities komen voort uit een eerdere publicatie _Beleidsprocessen en bouwblokken voor Digitale Tweelingen_ [[BBDT]]
 
-Hoofdstuk 6 schetst vervolgens nog hoe deze architectuur zich verhoudt tot ontwikkelingen in het bredere speelveld.
+In hoofdstuk 6 worden deze Capabilities vervolgens verder in meer technische bouwblokken uitgewerkt, waarbij vooral naar standaarden en richtlijnen gekeken wordt. De referentie architectuur zal geen specifieke (software) oplossingen voorschrijven, maar zich richten op patronen die interoperabiliteit mogelijk maken.
+
+Hoofdstuk 7 schetst vervolgens nog hoe deze architectuur zich verhoudt tot ontwikkelingen in het bredere speelveld.
