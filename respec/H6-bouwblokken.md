@@ -1,5 +1,30 @@
 # Bouwblokken
 
+Het basispatroon van de NLDT referentiearchitectuur bestaat uit 4 bouwblokken:
+
+<img src="./respec/media/architectuur_driehoek.png" alt="Basis bouwblokken NLDT Architectuur" width="900">
+Basis bouwblokken NLDT Architectuur
+
+Deze bouwblokken worden vanuit een 'functionaliteitsperspectief' als losse bouwblokken onderscheiden. Dit betekent expliciet dus niet dat bijvoorbeeld Data en Rekenmodellen noodzakelijk fysiek gescheiden zijn. Logisch gezien beschouwen we het echter wel als losse componenten die op een interoperabele wijze met elkaar kunnen communiceren.
+
+## Fundament
+
+Het fundament bestaat uit de benodigde basis infrastructuur en catalogus functionaliteit.
+
+## Data
+
+Het Data bouwblok bevat die zaken die rondom data en datadiensten georganiseerd moet worden in een interoperable systeem.
+
+## Rekenmodellen
+
+Het Rekenmodellen bouwblok bevat de specifieke zaken die nodig zijn voor het beschikbaar maken van Rekenmodellen (of Algoritmen) in een federatief, gedistribueerd systeem. 
+
+## Visualisatie
+
+Het visualisatie bouwblok bevat de verschillende componenten om een Visualisatie te kunnen verzorgen. Dit kunnen 2D of 3D viewers zijn, maar ook Dasboards of andere visualisatie toepassingen. 
+
+--- 
+
 
 ###  Zelfservice data-infrastructuur componenten \<placeholder\>
 De genoemde componenten zorgen voor een ordentelijke afhandeling van het uitwisselen van
