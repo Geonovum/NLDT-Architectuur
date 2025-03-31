@@ -7,6 +7,7 @@ var documentConfig =
   specStatus: "wv",
   specType: "hr",
   license: "cc-by-nd",
+  maxTocLevel: 3,
   // latestVersion: [
   //   "https://docs.geostandaarden.nl/NLDT-Architectuur/"
   // ],
