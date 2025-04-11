@@ -32,7 +32,7 @@ tweelingen kunnen inzichten geven aan bedrijven, overheden, onderwijs en onderzo
 organisaties en burgers voor betere planning, ontwikkeling en gebruik van de fysieke leefomgeving, en
 tevens het beheer en onderhoud van bestaande objecten, processen en systemen verbeteren.
 
-__Implicaties:__ Het opstellen van een rechtvaardig doel vereist voornamelijk begrip. Begrijp en doorleef de
+__Toelichting:__ Het opstellen van een rechtvaardig doel vereist voornamelijk begrip. Begrijp en doorleef de
 herkomst, de context, de dynamiek en het perspectief van het doel, de vraag, het probleem. Samen met
 eindgebruikers en andere primaire belanghebbenden. Verken of de digital twin de beste weg is om het doel
 te bereiken. Zijn er nog andere manieren, alternatieve oplossingsrichtingen (onderzocht) waarlangs de vraag
@@ -66,7 +66,7 @@ __Verklaring:__ Een stelsel van digitale tweelingen zal profiteren van netwerkef
 organisaties het stelsel gebruiken, eraan bijdragen en het onderhouden, hoe waardevoller en bruikbaarder
 het wordt.
 
-__Implicaties:__ Openheid is een belangrijk element om digitale tweelingen en een ecosysteem van digitale
+__Toelichting:__ Openheid is een belangrijk element om digitale tweelingen en een ecosysteem van digitale
 tweelingen voor Nederland te realiseren en de waarde voor economie en maatschappij te maximaliseren.
 Een open, op samenwerking gerichte aanpak zal nodig zijn om te zorgen dat het ecosysteem actueel en
 relevant blijft voor een breed scala aan gebruikers, waardoor de kans op silo’s en inefficiëntie wordt
@@ -105,7 +105,7 @@ beeld dat losstaat van vooringenomenheid. Daarbij is het belangrijk om mee te ne
 die niet in de digital twin worden gerepresenteerd, geraakt kunnen worden door aannames van
 de digital twin of zijn gebruiker.  
 
-__Implicaties:__ Het stelsel van digitale tweelingen moet minimum kwaliteitsnormen voor data en
+__Toelichting:__ Het stelsel van digitale tweelingen moet minimum kwaliteitsnormen voor data en
 rekenmodellen hanteren. Dit is vooral belangrijk voor gevallen waarin de juiste kwaliteitsnorm moeilijk te
 bepalen zijn. Kwaliteitsniveaus moeten transparant, gedefinieerd, meetbaar en beheerd worden binnen het
 stelsel van digitale tweelingen. Bij de verzameling, analyse, interpretatie, visualisatie en geautomatiseerde
@@ -137,7 +137,7 @@ dienen de ontwikkelaars en gebruikers van de digital twin wel te reflecteren
 De combinatie van verschillende ongevoelige datasets kan er namelijk toe leiden dat gevoelige informatie
 over personen wordt onthuld. 
 
-__Implicaties:__ Beveiliging in digitale tweelingen kan op meerdere manieren technisch ingevuld worden en is
+__Toelichting:__ Beveiliging in digitale tweelingen kan op meerdere manieren technisch ingevuld worden en is
 een balanceer act tussen gebruiksgemak en geboden zekerheden. Maatregelen zijn mogelijk in de
 infrastructuur van de data uitwisseling, de gebruikte systemen, procesafspraken rondom digitale
 tweelingen en in de gebruikte data en rekenmodellen. Met behulp van het kader van de Baseline voor
@@ -169,7 +169,7 @@ digitale tweeling en het stelsel. Bijvoorbeeld bij de beoordeling van leveranc
 De ethische codes zijn daarbij een handvat, maar dienen wel iedere keer opnieuw en gedurende het hele
 proces met het team te worden doorleefd. 
 
-__Implicaties:__ Controle en toezicht moet komen vanuit de mensen: het team. Spreek elkaar aan op de morele
+__Toelichting:__ Controle en toezicht moet komen vanuit de mensen: het team. Spreek elkaar aan op de morele
 verantwoordelijkheid en naleving van de ethische waarden en afspraken. Vraag uitleg van externe
 partijen over hoe zij aan de ethische afspraken gaan voldoen. Een organisatie kan ook verantwoording
 afleggen over het gebruik van data en naleving van ethische standaarden in het jaarverslag.
@@ -199,7 +199,7 @@ belangrijkste belanghebbenden tot een reactie op wat er al staat. Dat is
 betrokkenheid. De kwaliteit van de ethiek hangt af van de kwaliteit van het gesprek met de juiste mensen,
 van het stellen en verdiepen van de goede vragen op het juiste moment. 
 
-__Implicaties:__ Stel de vraag: Wie zijn de primaire belanghebbenden? Wie is de omgeving? Wie zijn de
+__Toelichting:__ Stel de vraag: Wie zijn de primaire belanghebbenden? Wie is de omgeving? Wie zijn de
 betrokkenen? Er zijn verschillende soorten partijen die op verschillende manieren betrokken kunnen
 worden. Werk samen met en leer van (maatschappelijke) partijen die hetzelfde doel nastreven. De overheid
 is bij maatschappelijke opgaven een belangrijke belanghebbende en vehikel waarlangs burgers bereikt en
@@ -219,7 +219,7 @@ De overheid zou regelgeving kunnen gebruiken om het gewenste gedrag in een ecosy
 dit niet mogelijk is door middel van de samenwerking tussen bedrijfsleven, overheid, onderwijs en onderzoek, 
 maatschappelijke organisaties en burgers.
 
-__Implicaties:__ Eigendom van data is een centraal element van dit principe en biedt verantwoordelijkheid 
+__Toelichting:__ Eigendom van data is een centraal element van dit principe en biedt verantwoordelijkheid 
 voor het samenstellen van geschikte kwaliteitsdata voor integratie in digital twins en het ecosysteem van digital twins. 
 Data eigenaren en providers moeten samenwerken met belanghebbenden om hoogwaardige datasets te identificeren voor digital twins. 
 Data eigenaren en providers moeten ook beschikken over de juiste vaardigheden en competenties, die nodig zijn om digital twins 
@@ -236,7 +236,7 @@ __Verklaring:__ Met een federatief model zullen het bedrijfsleven en alle niveau
 het gezag behouden voor hun respectieve verantwoordelijkheden, hun functies en bijbehorende data, die deel uitmaken van de 
 nationale digital twin infrastructuur.
 
-__Implicaties:__ Het federatieve model vereist en stimuleert het bedrijfsleven en de overheid om de onderdelen van de digital 
+__Toelichting:__ Het federatieve model vereist en stimuleert het bedrijfsleven en de overheid om de onderdelen van de digital 
 twin op consistente, interoperabele, platformonafhankelijke en platformonafhankelijke manieren te ontwikkelen en te beheren. 
 Met het federatieve model wordt schaalvergroting gestimuleerd en kunnen gebruikers in de gehele economie en maatschappij gebruik 
 maken van digital twins binnen en tussen toepassingsgebieden, sectoren en rechtsgebieden. Governance is een essentieel onderdeel 
@@ -257,7 +257,7 @@ architectuur modellen om overall interoperabiliteit, compatibiliteit en function
 __Verklaring:__ Open standaarden voor data en digital twins waarborgen vertrouwen door open en uniforme semantiek en uitwisseling, 
 voorkomen vendor lock-in, zijn kosten reducerend en zorgen ervoor dat digital twins en het digital twin ecosysteem optimale waarde leveren.
 
-__Implicaties:__ Gebruik van open standaarden zorgt ervoor dat digital twins en het digital twin ecosysteem leverancier-onafhankelijk zijn. 
+__Toelichting:__ Gebruik van open standaarden zorgt ervoor dat digital twins en het digital twin ecosysteem leverancier-onafhankelijk zijn. 
 Het gebruik van open standaarden, zoals semantische data modellen en Application Programming Interfaces (APIs), waarborgt brede 
 toegankelijkheid en uniform gebruik van data en digital twins in economie en maatschappij. Dit principe sluit nauw aan bij de 
 gemeenschappelijke benadering van de Nederlandse overheid voor het toepassen van open standaarden, die nodig zijn een digital twin ecosysteem 
@@ -274,6 +274,6 @@ __Verklaring:__ Continue aanpassing van digital twins zorgt ervoor, dat digital 
 aan de veranderende behoeften van eindgebruikers en op data-gebaseerde planning en besluitvorming mogelijk blijft voor zowel bedrijfsleven, 
 overheid, onderwijs- en kennisinstellingen, maatschappelijke organisaties en burgers.
 
-__Implicaties:__ Digital twins zullen zich blijven aanpassen en evolueren. Technische oplossingen voor digital twins, 
+__Toelichting:__ Digital twins zullen zich blijven aanpassen en evolueren. Technische oplossingen voor digital twins, 
 met name platforms en software, zijn onpartijdig om de voortdurende aanpassing en evolutie van digital twins en het nationaal 
 ecosysteem van digital twins op de lange termijn mogelijk te maken.

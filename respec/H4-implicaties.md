@@ -3,6 +3,9 @@
 <aside class="note">
 NH: Dit is een eerste aanzet tot implicaties volgend uit de principes in Hoofdstuk 3.
 Deze lijst is nog niet gevalideerd of goed bevonden!
+
+In tegenstelling tot eerdere architectuurdocumenten van de NLDT waar principes en implicaties nog bij elkaar gepositioneerd waren, 
+volgt de huidige indeling het model van de NORA waar principes meerdere implicaties kunnen hebben en de implicaties het gevolg van verschillende principes kunnen zijn.
 </aside>
 
 ## Self descriptions

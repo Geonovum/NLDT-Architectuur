@@ -1,9 +1,13 @@
 # NLDT in relatie tot andere initiatieven
 
+<aside class="note">
+Dit hoofdstuk moet nog uitgewerkt worden.
 
-- Datafundament
+Te denken valt aan een uitleg van de relatie met de volgende initiatieven.
+</aside>
+
+- ZoN Datafundament
 - DSGO
-- evt andere ecosystemen uit onderzoek yvette/bart
 - EU Dataspaces/LDT
 - EDIC
 

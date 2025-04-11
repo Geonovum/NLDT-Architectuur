@@ -22,9 +22,10 @@ In dit hoofdstuk worden op hoofdlijnen de waardestromen en capabilities beschrev
 ## Metamodel
 
 <img src="./respec/media/NLDT_archimate_metamodel.png" alt="archimate metamodel" width="900">
-archimate metamodel voor de NLDT architectuur
 
-Bovenstaande afbeelding visualiseert het archimate metamodel voor de NLDT architectuur. Deze is opgebouwd uit [capabilities](https://nora-begrippen.wikixl.nl/index.php/Id-24a3c495-0b7c-737a-187e-f2da6a318eb5) en [waardestromen](https://nora-begrippen.wikixl.nl/index.php/Id-2462fbbe-503b-0805-a587-fa013f9814d7) om de dienstverlening te beschrijven. De capabilities worden vervolgens in patronen uitgewerkt op basis van elementen uit de bedrijfs- en applicatielaag van archimate. Hoofdstuk 4 behandelt de waardestromen en capabilities, Hoofdstuk 5 behandelt de patronen van bedrijfs- en applicatieobjecten. 
+archimate metamodel voor de NLDT architectuur. [online viewer](https://geonovum.github.io/NLDT-Architectuur/Archimate/html/index.html?view=id-68f0ee0b9d824121b8a04dc58af3d3ab)
+
+Bovenstaande afbeelding visualiseert het archimate metamodel voor de NLDT architectuur. Deze is opgebouwd uit motivational elements van archimate om de Kaders en richtlijnen uit te drukken. Verder is deze opgebouwd uit [capabilities](https://nora-begrippen.wikixl.nl/index.php/Id-24a3c495-0b7c-737a-187e-f2da6a318eb5) en [waardestromen](https://nora-begrippen.wikixl.nl/index.php/Id-2462fbbe-503b-0805-a587-fa013f9814d7) om de dienstverlening te beschrijven. De capabilities worden vervolgens in patronen uitgewerkt op basis van elementen uit de bedrijfs- en applicatielaag van archimate. Hoofdstuk 5 behandelt de waardestromen en capabilities, Hoofdstuk 6 behandelt de patronen van bedrijfs- en applicatieobjecten. 
 
 
 ## Waardestromen
@@ -42,8 +43,7 @@ Het inzetten van een Digitale Tweeling als instrument dient een bepaald doel. Di
 ## Capabilities
 
 Er bestaan internationaal diverse raamwerken die capabilities of onderdelen van digitale tweelingen beschrijven.
-Op basis van de ['Capabilities periodic table' van het Digital Twin Consortium](https://www.digitaltwinconsortium.org/initiatives/capabilities-periodic-table) hebben 
-we een versimpelde set van Capabilities gedefinieerd die we als basis voor de NLDT hanteren.
+Op basis van de ['Capabilities periodic table' van het Digital Twin Consortium](https://www.digitaltwinconsortium.org/initiatives/capabilities-periodic-table) is er een versimpelde set van Capabilities gedefinieerd die als basis voor de NLDT gehanteerd worden. [[BBDT]]
 
 <img src="./respec/media/capabilities.png" alt="DT Capabilities op basis van Digital Twin Consortium Periodic Table" width="900">
 
@@ -141,3 +141,4 @@ Identificatie maakt het ook mogelijk om systemen te personaliseren voor individu
 
 <img src="./respec/media/DT_Capabilities.png" alt="DT Capabilities" width="900">
 
+De online archimate view van de capabilities kan [hier](https://geonovum.github.io/NLDT-Architectuur/Archimate/html/index.html?view=id-eb1073502d06497cbfe4ed9ce6c3e98b) gevonden worden.

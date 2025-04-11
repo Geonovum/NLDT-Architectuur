@@ -25,6 +25,10 @@ Het visualisatie bouwblok bevat de verschillende componenten om een Visualisatie
 
 --- 
 
+<aside class="note">
+Onderstaand is een eerste aanzet voor de beschrijving van een bouwblok of patroon. 
+De bedoeling is om hier de komende periode aan verder te werken om dit hoofdstuk verder uit te breiden.
+</aside>
 
 ###  Zelfservice data-infrastructuur componenten \<placeholder\>
 De genoemde componenten zorgen voor een ordentelijke afhandeling van het uitwisselen van
