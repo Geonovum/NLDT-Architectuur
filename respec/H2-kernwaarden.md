@@ -15,6 +15,8 @@ Het contact tussen samenwerkende overheidsorganisaties en de samenleving staat h
 
 Afbeelding 1: kernwaarden
 
+De insteek van de kernwaarden en doelen in deze architectuur is gericht op het inzetten van Digitale Tweelingen in de Fysieke leefomgeving. We onderschrijven de kernwaarden en kwaliteitsdoelen van de NORA, maar richten ons hier specifiek op kernwaarden en doelen vanuit het NLDT perspectief. 
+
 ## Doel
 
 ### Doelgericht op algemeen welzijn
