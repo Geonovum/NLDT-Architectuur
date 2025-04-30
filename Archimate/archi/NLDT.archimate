@@ -132,7 +132,6 @@ Een Digitale Tweeling biedt de mogelijkheid voor een anonieme beleving, maar dez
       <documentation>De NLDT architectuur beschrijft de capabilities vanuit het oogpunt van een digitale tweeling. Wat moet een Digitale tweeling 'kunnen' om van waarde te zijn voor de organisaties die het instrument inzetten.&#xD;
 </documentation>
     </element>
-    <element xsi:type="archimate:ValueStream" name="Waardestroom" id="id-d3d713b460c54066a060eddd97765a52"/>
     <element xsi:type="archimate:ValueStream" name="&lt;Waardestroom>" id="id-d7f3189c03c84f6ab83df6a304b46b22">
       <documentation>Een use case wordt in dit referentiemodel als valuestream gevisualiseerd. Een Valuestream vertegenwoordigd waarde voor de organisatie met behulp van een aantal Capabilities die deze waarde bedienen.</documentation>
       <property key="Name (en)" value="&lt;Valuestream>"/>
@@ -142,6 +141,41 @@ Een Digitale Tweeling biedt de mogelijkheid voor een anonieme beleving, maar dez
       <documentation>Indicatoren vormen de linking pin van een beleidsstap naar de Digitale Tweeling om data  en model gedreven werken mogelijk te maken binnen het beleidsproces. </documentation>
     </element>
     <element xsi:type="archimate:Capability" name="Resultaten / Inzichten omzetten naar Beleid" id="id-338c83102ba74c3b9eab4cd703645e88"/>
+    <element xsi:type="archimate:ValueStream" name="Beleidsontwikkeling" id="id-d8cfe08acc9848e6a43450e795a9a2de">
+      <documentation>Dit omvat het proces van het formuleren van beleidsdoelstellingen, -principes en -instrumenten op&#xD;
+basis van analyse van relevante informatie en betrokkenheid van belanghebbenden. Het resulteert&#xD;
+in de vaststelling van strategische keuzes en richtlijnen voor het omgevingsbeleid.&#xD;
+Dit wordt vastgelegd in een omgevingsvisie (elk BG zijn eigen O-visie), dit beschrijft de gewenste&#xD;
+kwaliteit van de fysieke leefomgeving.&#xD;
+Programma: o.a. Het programma beschrijft de specifieke doelen en ambities die men wil bereiken&#xD;
+en bevat een overzicht van de maatregelen en acties die worden genomen om de gestelde doelen&#xD;
+en ambities te realiseren, monitoren en evalueren.</documentation>
+    </element>
+    <element xsi:type="archimate:ValueStream" name="Beleidsdoorwerking" id="id-df1f947fa2474d2f8bf61091da50c7c1">
+      <documentation>Hierbij wordt het ontwikkelde beleid door vertaald naar concrete regelgeving, plannen en&#xD;
+uitvoeringsinstrumenten. Dit kan onder meer bestaan uit het opstellen van omgevingsplannen die&#xD;
+de gewenste ruimtelijke ontwikkeling en bescherming bevorderen.</documentation>
+    </element>
+    <element xsi:type="archimate:ValueStream" name="Uitvoering" id="id-263b5e43bcb74f93a25871651d475404">
+      <documentation>In deze fase wordt het vastgestelde beleid geïmplementeerd door middel van operationele&#xD;
+maatregelen, projecten, vergunningverlening en handhaving. Dit omvat onder andere het toepassen&#xD;
+van vergunningsprocedures, monitoring van activiteiten en het waarborgen van naleving van&#xD;
+regelgeving.&#xD;
+Het programma bevat een systeem voor monitoring en evaluatie om de voortgang en effectiviteit&#xD;
+van de genomen maatregelen te meten. Op basis van deze monitoring en evaluatie kunnen&#xD;
+eventuele bijstellingen worden doorgevoerd.&#xD;
+Het beleid wordt vervolgens uitgevoerd door overheidsinstanties, gemeenten, provincies of andere&#xD;
+relevante partijen. Hierbij hoort ook handhaving om ervoor te zorgen dat regels worden nageleefd&#xD;
+en doelen worden behaald.</documentation>
+    </element>
+    <element xsi:type="archimate:ValueStream" name="Terugkoppeling" id="id-5d3b536953ae4464974ef74f9795b430">
+      <documentation>&quot;Dit betreft het proces van evaluatie en monitoring van de effecten en resultaten van het&#xD;
+uitgevoerde beleid. Op basis van verkregen inzichten en feedback van belanghebbenden worden&#xD;
+aanpassingen en verbeteringen doorgevoerd in het beleid en de uitvoeringspraktijk om de&#xD;
+doelmatigheid en doeltreffendheid te versterken. Periodiek wordt het beleid geëvalueerd aan de&#xD;
+hand van de indicatoren en andere relevante informatie. Op basis van deze evaluaties kan het&#xD;
+beleid worden bijgesteld om de effectiviteit te vergroten of om nieuwe uitdagingen aan te pakken.&quot;</documentation>
+    </element>
   </folder>
   <folder name="Business" id="id-f0d7c99784524151993a8ce387a52301" type="business">
     <element xsi:type="archimate:BusinessService" name="Inzichtelijke kaders" id="id-0228c7c58ca04777bd112e777647bd38"/>
@@ -360,12 +394,6 @@ Een Digitale Tweeling biedt de mogelijkheid voor een anonieme beleving, maar dez
     <element xsi:type="archimate:RealizationRelationship" id="id-326d6933fd3a4f9ba91fe485392d8357" source="id-1375f7524d9d48938c859d896036cfa1" target="id-d3426e10d98c45309d93a426ea395f24"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-9f44c5de384b40579049d6aea98d3920" source="id-bdfc7e9d346c4aecb7713f9eccc6732f" target="id-d3426e10d98c45309d93a426ea395f24"/>
     <element xsi:type="archimate:ServingRelationship" name="bedient" id="id-ec4c8cfbc03541fcab2693875225bca7" source="id-8c026db103b8433eb893c4e9fb35a4f5" target="id-d7f3189c03c84f6ab83df6a304b46b22"/>
-    <element xsi:type="archimate:ServingRelationship" id="id-7506576d22b54d6487019bced8db719f" source="id-7ba8ed9a80c4497984127872ba0392d1" target="id-d3d713b460c54066a060eddd97765a52"/>
-    <element xsi:type="archimate:ServingRelationship" id="id-5ce4594e53a346a98d2f812f6445b488" source="id-4e31b5a87c8347fab23e305c1c0ea9fc" target="id-d3d713b460c54066a060eddd97765a52"/>
-    <element xsi:type="archimate:ServingRelationship" id="id-d085b341496642598fc179b60a272eb7" source="id-0a5e52331f7b4fe8b0a0f8e7ea1847e5" target="id-d3d713b460c54066a060eddd97765a52"/>
-    <element xsi:type="archimate:ServingRelationship" id="id-c7184bc34fe24168b8e19543aa3ae445" source="id-3f0b7290958949778df676de5365cb1c" target="id-d3d713b460c54066a060eddd97765a52"/>
-    <element xsi:type="archimate:ServingRelationship" id="id-2ec07c96c3714b27a9c032bf15f3ca4f" source="id-63cb0815e1d94412bb18f9fc321f5be6" target="id-d3d713b460c54066a060eddd97765a52"/>
-    <element xsi:type="archimate:ServingRelationship" id="id-1e9a8dc5e6824ea88e5e2c46bc451eb5" source="id-ed6f82d963f84313bda9d3ca5616c7c7" target="id-d3d713b460c54066a060eddd97765a52"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-57f6df16c3d645618db13591409aae5f" source="id-b77d0667448443718bc4867e2a354818" target="id-66099678a23047588be535132d61f059"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-59beb2383f974a2f9c7a235089fdbdf5" source="id-53fdb8cad1db417f8ff24aaa38d27452" target="id-338c83102ba74c3b9eab4cd703645e88"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-c2750fffc350487c9cf409026a2fe3ac" source="id-cea6d927a2344d96a611938f16d986eb" target="id-bc644c7dc7404c19b4de1b65939bc847"/>
@@ -1425,7 +1453,7 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
             <bounds x="708" y="84" width="144" height="55"/>
           </child>
         </child>
-        <documentation>Bouwblokken zijn een </documentation>
+        <documentation>Bouwblokken zijn een groeperings- en ordeningsstructuur voor de Applicatielaag</documentation>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="Principes" id="id-ff1ce4ce7db3441d84d78e25cccf4291" viewpoint="motivation">
         <child xsi:type="archimate:DiagramObject" id="id-839999ecdcd34e9991ab69d746169e2d" archimateElement="id-98613393e5f6407bbfc7274e96000339">
@@ -1644,7 +1672,6 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <sourceConnection xsi:type="archimate:Connection" id="id-93e92f9cabf540ed871f57dc1ff4ac51" source="id-d24ddaefa32d4916aac349830901bf81" target="id-da9212e8a01b409aa1678c2381918e34" archimateRelationship="id-8053cac36b6d406296468f44f190f1d2"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-a50f9fd94aab415da6ce39a8bb5ee84b" source="id-d24ddaefa32d4916aac349830901bf81" target="id-ac7f1cc349984a4387aaace07298ae16" archimateRelationship="id-db1c87d47e3d4b38a39bd29323a39faa"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-e4bd9df5a5e1401bb49ee5851b546978" source="id-d24ddaefa32d4916aac349830901bf81" target="id-e0c7486ff0bc46b9b09aba4208743b34" archimateRelationship="id-faa7355f754b49c1a44d91ce06ff8cbe"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-9fa67fec9f11433e9c469f4e36d84f5a" source="id-d24ddaefa32d4916aac349830901bf81" target="id-8c91d1fd98424ceb870e3ef1ad9947e8" archimateRelationship="id-7506576d22b54d6487019bced8db719f"/>
           <child xsi:type="archimate:DiagramObject" id="id-e0c7486ff0bc46b9b09aba4208743b34" targetConnections="id-e4bd9df5a5e1401bb49ee5851b546978" archimateElement="id-d3426e10d98c45309d93a426ea395f24">
             <bounds x="60" y="240" width="169" height="73"/>
           </child>
@@ -1663,7 +1690,6 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <sourceConnection xsi:type="archimate:Connection" id="id-0ce8043c500b4b7eb8871afc3c8bd1b4" source="id-10839c82326b495c99801ab199329de0" target="id-8b531b6343184558b25b8256586eaa03" archimateRelationship="id-9dcff483b97e444d85a1f0490f2a3ca2"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-7e0acc30868a477bbfd15794aa9acc2a" source="id-10839c82326b495c99801ab199329de0" target="id-90fb655ebf20465e9f3d2556b3eea00f" archimateRelationship="id-b984a226051247bbab384e968e829a31"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-84b3a3cb7f0d4ab08a567deb99cf81f0" source="id-10839c82326b495c99801ab199329de0" target="id-b08f1b8e852d431880ba55c4629d7c7b" archimateRelationship="id-011bc2f2d5294dcfb44273a04038af63"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-398496698b864f1ab4dca04dd7c09104" source="id-10839c82326b495c99801ab199329de0" target="id-8c91d1fd98424ceb870e3ef1ad9947e8" archimateRelationship="id-5ce4594e53a346a98d2f812f6445b488"/>
           <child xsi:type="archimate:DiagramObject" id="id-b08f1b8e852d431880ba55c4629d7c7b" targetConnections="id-84b3a3cb7f0d4ab08a567deb99cf81f0" archimateElement="id-30cc4c814a2e4974b779098d4aa8a7c1">
             <bounds x="48" y="96" width="120" height="55"/>
           </child>
@@ -1681,7 +1707,6 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <sourceConnection xsi:type="archimate:Connection" id="id-35704c9b464c4b82b635088633f0f33c" source="id-38f09a16fc9a4d68aabec939d4de69ea" target="id-19a2d9ff0f054b76ad0013f27bbfbaa3" archimateRelationship="id-7400850537904088831dd4f1767b4448"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-28ba2412125941df88c934dd25856f04" source="id-38f09a16fc9a4d68aabec939d4de69ea" target="id-61d1d2444a334e16a7d79cddabf57714" archimateRelationship="id-199e5c4ebcc94958bbc4a0f67558e238"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-0f5da80d45044fe08dc648d8ff60ca2d" source="id-38f09a16fc9a4d68aabec939d4de69ea" target="id-07990c6581ea45e2940e67f1f506d922" archimateRelationship="id-2e1ca4f19ac6444bb4a8c8a2d719049b"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-199ba950488748c4b3df1394d9a17b97" source="id-38f09a16fc9a4d68aabec939d4de69ea" target="id-8c91d1fd98424ceb870e3ef1ad9947e8" archimateRelationship="id-d085b341496642598fc179b60a272eb7"/>
           <child xsi:type="archimate:DiagramObject" id="id-19a2d9ff0f054b76ad0013f27bbfbaa3" targetConnections="id-35704c9b464c4b82b635088633f0f33c" archimateElement="id-196b1abf65504170891e14cca3bad7fa">
             <bounds x="72" y="108" width="120" height="55"/>
           </child>
@@ -1702,7 +1727,6 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <bounds x="1310" y="331" width="217" height="481"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-7eee916cc4e445f0824ee594a021adde" source="id-cfbdea396c744d4eae9ca5bdf2e90fcc" target="id-3939c0835ad14c489466c9bbb6ca6577" archimateRelationship="id-3c4155c9fb3b4af987507c5dcff5ae54"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-2f33c240390146f8b3e4a3ad4df13fa4" source="id-cfbdea396c744d4eae9ca5bdf2e90fcc" target="id-54ef13c8a8724e36ba46f172cfd83eaa" archimateRelationship="id-671bc52b091e45fe89c57a3d8b31c4ce"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-c8f65d0686c7420a847e4392bdfb10ef" source="id-cfbdea396c744d4eae9ca5bdf2e90fcc" target="id-8c91d1fd98424ceb870e3ef1ad9947e8" archimateRelationship="id-c7184bc34fe24168b8e19543aa3ae445"/>
           <child xsi:type="archimate:DiagramObject" id="id-3939c0835ad14c489466c9bbb6ca6577" targetConnections="id-7eee916cc4e445f0824ee594a021adde" archimateElement="id-6e48efe4068644fd8a0ebf49c75342be">
             <bounds x="48" y="96" width="120" height="55"/>
           </child>
@@ -1714,9 +1738,6 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <bounds x="794" y="715" width="481" height="97"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-dd28721cf6714da9a334d5ceb90d4cfa" source="id-ab264f85953f43eb97104194476410bc" target="id-d1e25e978865416588e7466e9b90cae6" archimateRelationship="id-81bd60b2ff2d4337bbdf1889220d6bc2"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-4ba441e5faab473299661daae92c720d" source="id-ab264f85953f43eb97104194476410bc" target="id-1b239506331a4c95a7847807f5418726" archimateRelationship="id-46c33d4dc57843b194fd729754d61304"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-34e5d1f552a541b78cf9d57360936570" source="id-ab264f85953f43eb97104194476410bc" target="id-8c91d1fd98424ceb870e3ef1ad9947e8" archimateRelationship="id-2ec07c96c3714b27a9c032bf15f3ca4f">
-            <bendpoint startX="226" startY="-295" endX="408" endY="318"/>
-          </sourceConnection>
           <child xsi:type="archimate:DiagramObject" id="id-d1e25e978865416588e7466e9b90cae6" targetConnections="id-dd28721cf6714da9a334d5ceb90d4cfa" archimateElement="id-1fe89252ef5a482399069f4570b27e2e">
             <bounds x="84" y="24" width="120" height="55"/>
           </child>
@@ -1726,12 +1747,18 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-78e1e3b423ef427ab5f426b6cb8defec" textAlignment="1" archimateElement="id-ed6f82d963f84313bda9d3ca5616c7c7">
           <bounds x="566" y="715" width="205" height="97"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-fdd6206b71d94552a3acee68503834c3" source="id-78e1e3b423ef427ab5f426b6cb8defec" target="id-8c91d1fd98424ceb870e3ef1ad9947e8" archimateRelationship="id-1e9a8dc5e6824ea88e5e2c46bc451eb5">
-            <bendpoint startX="-80" startY="-283" endX="-264" endY="330"/>
-          </sourceConnection>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="id-8c91d1fd98424ceb870e3ef1ad9947e8" targetConnections="id-9fa67fec9f11433e9c469f4e36d84f5a id-398496698b864f1ab4dca04dd7c09104 id-199ba950488748c4b3df1394d9a17b97 id-c8f65d0686c7420a847e4392bdfb10ef id-34e5d1f552a541b78cf9d57360936570 id-fdd6206b71d94552a3acee68503834c3" archimateElement="id-d3d713b460c54066a060eddd97765a52" type="1">
-          <bounds x="204" y="72" width="1297" height="157"/>
+        <child xsi:type="archimate:DiagramObject" id="id-478fd34524e14cebaba792d7b8a3579c" archimateElement="id-d8cfe08acc9848e6a43450e795a9a2de" type="1">
+          <bounds x="120" y="132" width="408" height="121"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-13d48d5e190d4fe28249f24771024f0d" archimateElement="id-df1f947fa2474d2f8bf61091da50c7c1" type="1">
+          <bounds x="481" y="132" width="408" height="121"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-60e7e38ec1b74e37892ee357d53dd4f7" archimateElement="id-263b5e43bcb74f93a25871651d475404" type="1">
+          <bounds x="840" y="132" width="408" height="121"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c2536fddd9e24f1a8597318ba7960c40" archimateElement="id-5d3b536953ae4464974ef74f9795b430" type="1">
+          <bounds x="1200" y="132" width="408" height="121"/>
         </child>
       </element>
     </folder>
