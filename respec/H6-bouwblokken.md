@@ -5,7 +5,11 @@ Het basispatroon van de NLDT referentiearchitectuur bestaat uit 4 bouwblokken:
 <img src="./respec/media/architectuur_driehoek.png" alt="Basis bouwblokken NLDT Architectuur" width="900">
 Basis bouwblokken NLDT Architectuur
 
-Deze bouwblokken worden vanuit een 'functionaliteitsperspectief' als losse bouwblokken onderscheiden. Dit betekent expliciet dus niet dat bijvoorbeeld Data en Rekenmodellen noodzakelijk fysiek gescheiden zijn. Logisch gezien beschouwen we het echter wel als losse componenten die op een interoperabele wijze met elkaar kunnen communiceren.
+De bouwblokken zou je ook als groepering van Applicatiefuncties kunnen beschouwen. Deze indeling helpt om te onderstrepen dat ook vanuit een applicatie- of systeemperspectief een Digitale Tweeling opgebouwd is uit losse, samenwerkende componenten. De diensten van een rekenmodel moeten bijvoorbeeld afgenomen kunnen worden door verschillende visualisatie oplossingen. 
+
+Het moet mogelijk zijn om datadiensten met informatie van verschillende vraagstukken bij elkaar te brengen. Het anti-patroon wat nog te vaak voorkomt is dat er voor verschillende vraagstukken (opgaven als woningbouw of mobiliteit) losse niet interoperabele systemen ingezet worden waardoor de integrale analyse niet mogelijk is. Bijvoorbeeld een webviewer van leverancier A voor het ene onderzoek en een digitaal platform van leverancier B voor de andere opgave, waarbij deze systemen allebei hun eigen standaarden gebruiken. Door functies te scheiden en interoperabel te maken moet de integrale benadering wel mogelijk worden.
+
+Deze opdeling in functies betekent expliciet niet dat bijvoorbeeld Data en Rekenmodellen noodzakelijk fysiek gescheiden zijn. Logisch gezien beschouwen we het echter wel als losse componenten die op een interoperabele wijze met elkaar kunnen communiceren.
 
 ## Fundament
 
