@@ -75,6 +75,16 @@ var documentConfig =
     title: "Aanbieding meerjarenvisie Zicht op Nederland: samen datagedreven werken aan de fysieke leefomgeving",
     href: "https://www.rijksoverheid.nl/documenten/rapporten/2024/02/12/meerjarenvisie-zicht-op-nederland",
     date: "12-02-2024"
+  },
+  Gebora: {
+    title: "Wat is gebora",
+    href: "https://www.digigo.nu/wat-is-gebora/",
+    date: "30-04-2025"
+  },
+  FDS: {
+    title: "Scope van FDS",
+    href: "https://federatief.datastelsel.nl/kennisbank/scope-van-fds/",
+    date: "30-04-2025"
   }
   }
 }
