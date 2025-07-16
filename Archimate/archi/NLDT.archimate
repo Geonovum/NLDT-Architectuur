@@ -639,7 +639,7 @@ beleid worden bijgesteld om de effectiviteit te vergroten of om nieuwe uitdaging
       <property key="Name (en)" value="&lt;Goal>"/>
     </element>
     <element xsi:type="archimate:Driver" name="&lt;Kernwaarde>" id="id-371df13d04c240abbb13c5d7c5de6906">
-      <property key="Name (en)" value="&lt;Value>"/>
+      <property key="Name (en)" value="&lt;Core value>"/>
     </element>
     <element xsi:type="archimate:Requirement" name="&lt;Implicatie>" id="id-17720c32315c40c49893db294253385f">
       <property key="Name (en)" value="&lt;Implication>"/>
@@ -663,7 +663,7 @@ beleid worden bijgesteld om de effectiviteit te vergroten of om nieuwe uitdaging
       <property key="Name (en)" value="Focussed and for common good"/>
     </element>
     <element xsi:type="archimate:Goal" name="Actief open en transparant" id="id-0f4f4397ea774a0caf25d91550b88950">
-      <property key="Name (en)" value="openly and transparently"/>
+      <property key="Name (en)" value="Actively open and transparent"/>
     </element>
     <element xsi:type="archimate:Goal" name="Eerlijk, kwalitatief en inclusief" id="id-03c82225da1c473bb85993b233c3b5c2">
       <property key="Name (en)" value="Fair, high-quality and inclusive"/>
