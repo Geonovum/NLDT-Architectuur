@@ -2,31 +2,71 @@
 <archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="NLDT" id="id-f5874976759e43868e737f0e0b963f2c" version="5.0.0">
   <folder name="Strategy" id="id-acb3ede3d1d14b9abac7173479c53079" type="strategy">
     <element xsi:type="archimate:Capability" name="Ontsluiten" id="id-bc644c7dc7404c19b4de1b65939bc847">
-      <documentation>Niet technisch: &#xD;
+      <documentation>Nederlands:&#xD;
+&#xD;
+Niet technisch: &#xD;
 Om de fysieke leefomgeving in beeld te brengen worden gegevens in lagen op elkaar gelegd in een grafisch omgeving. De gegevens van de lagen komen uit uitlopende registers en stellen vaak beleidskeuzes of wettelijke normen voor en de schuifjes zijn de verschillende beleidsambities in relatie tot de normen voor bijvoorbeeld geluid of openbaar groen. De lagen kunnen aangestuurd worden met schuifjes, zodat belangen in balans kunnen gebracht worden en op een eerlijke manier in verhouding staan tot elkaar.&#xD;
 &#xD;
 Technisch:&#xD;
-Alle vormen van data kunnen samengebracht worden. De gegevens worden minimaal gekopieerd en zijn benaderbaar via het web (HTTP, API's).  </documentation>
+Alle vormen van data kunnen samengebracht worden. De gegevens worden minimaal gekopieerd en zijn benaderbaar via het web (HTTP, API's).  &#xD;
+&#xD;
+English:&#xD;
+&#xD;
+Non-technical description:&#xD;
+To visualize the physical living environment, data is layered together in a graphical environment. The data of the layers come from divergent registers and often suggest policy choices or legal standards and the sliders are the different policy ambitions in relation to the standards for, &#xD;
+for example, noise or public green. The layers can be controlled with sliders, so that interests can be balanced and in a fair way in proportion to each other.&#xD;
+&#xD;
+Technical description:&#xD;
+All forms of data can be brought together. The data is minimally copied and can be accessed via the web (HTTP, APIs). &#xD;
+</documentation>
       <property key="Name (en)" value="Access"/>
     </element>
     <element xsi:type="archimate:Capability" name="Bewerken" id="id-42b6cd0620c5430d93a7aef0eae32a05">
-      <documentation>Niet technisch: &#xD;
+      <documentation>Nederlands:&#xD;
+&#xD;
+Niet technisch: &#xD;
 Een Digitale Tweeling is interactief en dynamisch (gemeten gegevens uit de omgeving – inclusief de metingen gedaan door de burger, ook gekend als Citizen Science, zodat de burger betrokken is bij initiatieven). De gebruiker ervan zal er verder mee kunnen gaan dan simpelweg observeren van data en  modellen. De gebruiker zal gegevens kunnen gaan aanpassen.  &#xD;
 &#xD;
 Technisch:&#xD;
-Een Digitale Tweeling is niet enkel statisch, maar gaat data en gegevens bronnen aanpassen - al dan niet in de 3D omgeving: de locatie van objecten kunnen verzet worden, hun attributen aangepast. Ook de metadata van elementen kunnen aangepast worden (en gelogd). </documentation>
+Een Digitale Tweeling is niet enkel statisch, maar gaat data en gegevens bronnen aanpassen - al dan niet in de 3D omgeving: de locatie van objecten kunnen verzet worden, hun attributen aangepast. Ook de metadata van elementen kunnen aangepast worden (en gelogd). &#xD;
+&#xD;
+English: &#xD;
+&#xD;
+Non-technical description:&#xD;
+Digital Twin is interactive and dynamic (measured data from the environment – including measurements made by the citizen, also known as Citizen Science, so that the citizen is involved in initiatives). &#xD;
+The user will be able to go beyond simply observing data and models. The user will be able to modify the data. &#xD;
+&#xD;
+Technical description:&#xD;
+A Digital Twin is not only static, but will adjust data and data sources - whether or not in the 3D environment: the location of objects can be moved, their attributes adjusted. The metadata of elements can also be adjusted (and logged).&#xD;
+</documentation>
       <property key="Name (en)" value="Manage"/>
     </element>
     <element xsi:type="archimate:Capability" name="Zoeken/Vinden" id="id-d3426e10d98c45309d93a426ea395f24">
-      <documentation>Niet technisch: &#xD;
+      <documentation>Nederlands: &#xD;
+&#xD;
+Niet technisch: &#xD;
 In een Digitale Tweeling zijn verschillende soorten gegevens samengebracht en een zo nauwkeurig mogelijke afbeelding maken van de beleidskeuzes. Digitale Tweeling moeten de taal en beelden spreken die beleidsmedewerkers (h)erkennen – inclusief het normaliseren en standaardiseren van de gebruikte indicatoren. Een Digitale Tweeling biedt ook contextuele informatie die helpt gebruikers te begrijpen wat de gegevens vertegenwoordigen, waar ze vandaan komen, hoe ze zijn verzameld en hoe ze moeten worden geïnterpreteerd. Dit is vooral belangrijk omdat Digitale Tweelingen vaak complexe en diverse gegevensbronnen bevatten. Het is essentieel voor het succesvol gebruiken van Digitale Tweelingen in verschillende domeinen. &#xD;
 &#xD;
 Technisch:&#xD;
-Een Digitale Tweeling is een data integratie oefening (zie ook Integratie), waarvan men ervan uitgaat dat men weet waar (de URI) die data staat en dat we toegankelijk is. Meestal weet men dat niet. Als men het weet, dan is data als thuis: iemand zal het ooit elders gaan leggen – en moet je het opnieuw gaan zoeken. Net zo met data. Daarom is het zoeken naar data, gegevens (kunnen ook andere dingen zijn: rekenmodellen, begrippen, …) voor een Digitale Tweeling zo belangrijk. Het resultaat van het zoeken wordt beschreven in Metadata: het beschrijf de data – net zoals een etiket op een fles wijn of beschrijving van een boek in de bieb (ook daar staat waar je het boek kan vinden). </documentation>
+Een Digitale Tweeling is een data integratie oefening (zie ook Integratie), waarvan men ervan uitgaat dat men weet waar (de URI) die data staat en dat we toegankelijk is. Meestal weet men dat niet. Als men het weet, dan is data als thuis: iemand zal het ooit elders gaan leggen – en moet je het opnieuw gaan zoeken. Net zo met data. Daarom is het zoeken naar data, gegevens (kunnen ook andere dingen zijn: rekenmodellen, begrippen, …) voor een Digitale Tweeling zo belangrijk. Het resultaat van het zoeken wordt beschreven in Metadata: het beschrijf de data – net zoals een etiket op een fles wijn of beschrijving van een boek in de bieb (ook daar staat waar je het boek kan vinden). &#xD;
+&#xD;
+English: &#xD;
+&#xD;
+Non-technical description:&#xD;
+In a Digital Twin, different types of data are brought together and make the most accurate picture possible of the policy choices. Digital Twins need to speak the language and images that policymakers recognise – including normalising and standardising the indicators used. &#xD;
+A Digital Twin also provides contextual information that helps users understand what the data represents, where they come from, how they were collected, and how to interpret them. &#xD;
+This is especially important because Digital Twin often contain complex and diverse data sources. It is essential for the successful use of Digital Twin in various domains.&#xD;
+&#xD;
+Technical description:&#xD;
+A Digital Twin is a data integration exercise (see also Integration), which assumes that one knows where (the URI) that data is and that we are accessible. People usually don't know that. If one knows, then data is like home: Someday someone will put it elsewhere – and you'll have to look for it again. &#xD;
+Same with data. Therefore, searching for data, data (can also be other things: computational models, concepts, ...) so important for a Digital Twin. The result of the search is described in Metadata: describe the dates – just like a label on a bottle of wine or a description of a book in the library (also where you can find the book).&#xD;
+</documentation>
       <property key="Name (en)" value="Find and Bind"/>
     </element>
     <element xsi:type="archimate:Capability" name="Tijdreizen" id="id-561f54af37fd427890fe6434c67b0564">
-      <documentation>Niet technisch: &#xD;
+      <documentation>Nederlands: &#xD;
+&#xD;
+Niet technisch: &#xD;
 Het concept van tijdreizen in een digitale tweeling biedt de mogelijkheid om een situatie in de tijd te kunnen bestuderen.  &#xD;
 Dat betreft het teruggaan in de tijd om zo een weerspiegeling te geven van hoe iets was in het verleden. Digitale Tweelingen maken ook mogelijk om vooruit te kijken in de tijd.  &#xD;
 Hierdoor kun je er historische analyses mee uitvoeren, wat-als scenario's mee verkennen, toekomstige situaties verbeelden of voorspellen. &#xD;
@@ -35,113 +75,285 @@ Technisch:&#xD;
 Door gebruik te maken van een combinatie van (veel) historische gegevens (over een onderwerp), (bijna) real-time informatie en algoritmen (rekenmodules) kan een Digitale Tweeling in de tijd reizen: &#xD;
 de digitale tweeling kan middels het tijdsaspect in historische gegevens de tijd terugzetten naar een bepaald moment om zo een weerspiegeling te geven van hoe iets in de verleden was. &#xD;
 Ook reizen in de toekomst is mogelijk, door gebruik te maken van rekenmodules die kunnen extraheren en voorspellen (aan de hand van vooropgestelde rekenregels). &#xD;
-Het heden wordt voorgesteld door o.a. bijna real-time sensor informatie, bijgestaan door up-to-date administratieve gegevens. </documentation>
+Het heden wordt voorgesteld door o.a. bijna real-time sensor informatie, bijgestaan door up-to-date administratieve gegevens. &#xD;
+&#xD;
+English: &#xD;
+&#xD;
+Non-technical description:&#xD;
+The concept of time travel in a Digital Twin offers the opportunity to study a situation in time.&#xD;
+That involves going back in time to give a reflection of how something was in the past. Digital Twin also make it possible to look forward in time.&#xD;
+This allows you to perform historical analyses, explore whatlike scenarios, imagine or predict future situations.&#xD;
+&#xD;
+Technical description:&#xD;
+By using a combination of (a lot of) historical data (on a subject), (almost) real-time information and algorithms (calculation modules), a Digital Twin can travel in time: The Digital Twin can use the time aspect in historical data to set the time back to a certain moment in order to reflect how something was in the past. &#xD;
+Travelling in the future is also possible, by using calculation modules that can extract and predict (based on predetermined calculation rules). The present is represented by, among other things, almost real-time sensor information, assisted by up-to-date administrative data.&#xD;
+</documentation>
       <property key="Name (en)" value="Time travel"/>
     </element>
     <element xsi:type="archimate:Capability" name="Reproduceren" id="id-30cc4c814a2e4974b779098d4aa8a7c1">
-      <documentation>Niet technisch: &#xD;
+      <documentation>Nederlands:&#xD;
+&#xD;
+Niet technisch: &#xD;
 Elke beleidsbeslissing (op tijdstip) die genomen wordt aan de hand van een digitale tweeling moet reproduceerbaar zijn op een later tijdstip. Dus de toestand die de Digitale Tweeling op een bepaald moment heeft moet men terug kunnen oproepen, inclusief de waarde van de indicatoren waarop de beslissing werd genomen.    De reproduceerbaarheid van de omstandigheden waarin een beleidsbeslissing wordt genomen, middels een Digitale Tweeling, is erg belangrijk:&#xD;
 1. In een rechtstaat worden beslissing genomen gebaseerd op een juridisch kader en gekoppelde indicatoren en &#xD;
 2. De Digitale Tweeling werkelijk als een beleidsinstrument wordt gezien en dat deze te vertrouwen is en helpt in de efficiëntie.&#xD;
 &#xD;
 Technisch:&#xD;
-Elke beleidsbeslissing (op een tijdstip) die genomen wordt aan de (partiele) hand van een digitale tweeling moet reproduceerbaar zijn op een later tijdstip. Dus de toestand die de Digitale Tweeling op een bepaald moment moet men terug kunnen oproepen, inclusief de waarde van de indicatoren waarop de beslissing werd genomen. Dit fenomeen wordt ook wel ‘Contestability by Design’ genoemd (op elk moment kan een beslissing aangevochten worden, de Digitale Tweeling wordt dan terug in de tijd gezet). </documentation>
+Elke beleidsbeslissing (op een tijdstip) die genomen wordt aan de (partiele) hand van een digitale tweeling moet reproduceerbaar zijn op een later tijdstip. Dus de toestand die de Digitale Tweeling op een bepaald moment moet men terug kunnen oproepen, inclusief de waarde van de indicatoren waarop de beslissing werd genomen. Dit fenomeen wordt ook wel ‘Contestability by Design’ genoemd (op elk moment kan een beslissing aangevochten worden, de Digitale Tweeling wordt dan terug in de tijd gezet). &#xD;
+&#xD;
+English: &#xD;
+&#xD;
+Non-technical description:&#xD;
+Any policy decision (at the time) made on the basis of a Digital Twin must be reproducible at a later date. So, the state that the Digital Twin has at a certain moment must be able to recall, including the value of the indicators on which the decision was made. &#xD;
+The reproducibility of the circumstances in which a policy decision is made, through a Digital Twin, is very important: &#xD;
+1. In a rule of law, decisions are taken on the basis of a legal framework and linked indicators and &#xD;
+2. The Digital Twin is really seen as a policy tool and that it can be trusted and helps in efficiency.&#xD;
+&#xD;
+Technical description:&#xD;
+Any policy decision (at a time) made on the (partial) basis of a Digital Twin must be reproducible at a later date. So, the state of the Digital Twin at any given time must be able to be recalled, including the value of the indicators on which the decision was made. &#xD;
+This phenomenon is also called ‘Contestability by Design’ (a decision can be challenged at any time, the Digital Twin is then put back in time).&#xD;
+</documentation>
       <property key="Name (en)" value="Reproduction"/>
     </element>
     <element xsi:type="archimate:Capability" name="Meten / Aansturen" id="id-a45198a767714b4abc1e98e27b6d56e5">
-      <documentation>Niet technisch: &#xD;
+      <documentation>Nederlands:&#xD;
+&#xD;
+Niet technisch: &#xD;
 Sommige Digitale Tweelingen zijn in staat om (meet)gegevens in real-time te verwerken, te monitoren (te bezien of beleid ook het gewenste effect heeft in de beleidscyclus), en optioneel te reageren op veranderingen. Dit vereist rekenregels (algoritmen) die gegevens snel kunnen analyseren en actie kunnen ondernemen op basis van resultaten. Metingen worden bewaard, zodat in het deze kunnen gebruikt worden om een uitspraak te doen over een reeks uit het verleden om zo mogelijk trend in indicatoren kunnen gezien worden) &#xD;
 &#xD;
 Technisch:&#xD;
-Om een afbeelding te maken van de werkelijkheid in een Digitale Tweeling, moeten aspecten van de werkelijkheid gemeten worden; denk aan temperatuur, druk, status op een bepaald moment in de tijd. Die toestand op tijdstip wordt naar de Digitale Tweeling gestuurd, zodat de afbeelding kan getoond worden (in een 3D omgeving). De metingen worden bijgehouden, zodat ook een uitspraak kan gedaan worden over de toestand in het verleden (zie reproduceren). Andersom kan ook de status van een object gestuurd worden via actuatoren (bv het waterkraan openen vanop afstand). Ook het aansturen van de status wordt opgeslagen voor later gebruik. </documentation>
+Om een afbeelding te maken van de werkelijkheid in een Digitale Tweeling, moeten aspecten van de werkelijkheid gemeten worden; denk aan temperatuur, druk, status op een bepaald moment in de tijd. Die toestand op tijdstip wordt naar de Digitale Tweeling gestuurd, zodat de afbeelding kan getoond worden (in een 3D omgeving). De metingen worden bijgehouden, zodat ook een uitspraak kan gedaan worden over de toestand in het verleden (zie reproduceren). Andersom kan ook de status van een object gestuurd worden via actuatoren (bv het waterkraan openen vanop afstand). Ook het aansturen van de status wordt opgeslagen voor later gebruik. &#xD;
+&#xD;
+English: &#xD;
+&#xD;
+Non-technical description:&#xD;
+Some Digital Twins are able to process (measurement) data in real time, monitor (to see whether policy also has the desired effect in the policy cycle), and optionally respond to changes. This requires calculation rules (algorithms) that can quickly analyze data and act based on results. &#xD;
+Measurements are kept so that in it they can be used to make a statement about a series from the past so that, if possible, trend in indicators can be seen) &#xD;
+&#xD;
+Technical description:&#xD;
+To create an image of reality in a Digital Twin, aspects of reality must be measured; Think of temperature, pressure, status at some point in time. That state at the time is sent to the Digital Twin, so that the image can be shown (in a 3D environment). &#xD;
+The measurements are kept up to date, so that a statement can also be made about the situation in the past (see reproducing). Conversely, the status of an object can also be controlled via actuators (e.g. remotely opening the water tap). Controlling the status is also stored for later use.&#xD;
+</documentation>
       <property key="Name (en)" value="Sense &amp; Actuate"/>
     </element>
     <element xsi:type="archimate:Capability" name="Integreren" id="id-7d5918c343834e9a8eb6547b5b73b33d">
-      <documentation>Niet technisch: &#xD;
+      <documentation>Nederlands:&#xD;
+&#xD;
+Niet technisch: &#xD;
 Een Digitale Tweeling maakt het mogelijk om verschillende beleidsperspectieven te definiëren en zo een holistisch beeld te krijgen van beleidsgebied of beleidsproject.  &#xD;
 Deze combinatie helpt om een dieper inzicht te krijgen, betere beslissingen te nemen en waarde te genereren in diverse domeinen. Dit is een belangrijk instrument om alle lagen te integreren tot 1 situationeel beeld. &#xD;
 &#xD;
 Technisch:&#xD;
-Een Digitale Tweeling is vanuit een technisch oogpunt een data/gegevens/informatie integratie oefening: door verschillende gegevens samen te brengen (data lagen) en ze te combineren ontstaan nieuwe inzichten en dataproducten. Het combineren van (traditionele) data is geen triviale oefening modellen sterk kunnen verschillen. Data Transformatie functies (om data om te vormen) zijn daarom een belangrijk deel van de Integratie functie. Het integreren moet gevoelig zijn voor de beleidsprocessen (en niet omgekeerd) – processen uit de werkelijkheid vinden hun afbeelding in de Digitale Tweeling.</documentation>
+Een Digitale Tweeling is vanuit een technisch oogpunt een data/gegevens/informatie integratie oefening: door verschillende gegevens samen te brengen (data lagen) en ze te combineren ontstaan nieuwe inzichten en dataproducten. Het combineren van (traditionele) data is geen triviale oefening modellen sterk kunnen verschillen. Data Transformatie functies (om data om te vormen) zijn daarom een belangrijk deel van de Integratie functie. Het integreren moet gevoelig zijn voor de beleidsprocessen (en niet omgekeerd) – processen uit de werkelijkheid vinden hun afbeelding in de Digitale Tweeling.&#xD;
+&#xD;
+English:&#xD;
+&#xD;
+Non-technical description:&#xD;
+A Digital Twin makes it possible to define different policy perspectives and thus get a holistic view of policy area or policy project. &#xD;
+This combination helps to gain deeper insight, make better decisions and generate value in various domains. This is an important tool to integrate all layers into one situational image.&#xD;
+&#xD;
+Technical description:&#xD;
+From a technical point of view, a Digital Twin is a data/data/information integration exercise: By bringing together different data (data layers) and combining them, new insights and data products are created. &#xD;
+Combining (traditional) data is no trivial exercise models can differ greatly. Data Transformation functions (to transform data) are therefore an important part of the Integration function. &#xD;
+Integration must be sensitive to policy processes (and not the other way around) – reality processes are represented in the Digital Twin.&#xD;
+&#xD;
+</documentation>
       <property key="Name (en)" value="Integration"/>
     </element>
     <element xsi:type="archimate:Capability" name="Analyseren" id="id-196b1abf65504170891e14cca3bad7fa">
-      <documentation>Niet technisch: &#xD;
+      <documentation>Nederlands:&#xD;
+&#xD;
+Niet technisch: &#xD;
 Analyseren is het proces van het onderzoeken en interpreteren van de gegevens in de digitale tweeling. Dit omvat het toepassen van verschillende analysetechnieken, modellen en algoritmen om inzichten te verkrijgen over het gedrag, de prestaties, en de trends binnen de Digitale Tweeling. Het doel van het analyseren is om te zien of sturing het gewenste effect heeft en daar waar nodig kan aangepast worden voor meer of minder effecten. &#xD;
 &#xD;
 Technisch:&#xD;
-De Digitale Tweeling geeft inzicht over een aspect van de digitale tweeling, door 1 of meerdere vormen van informatie samen te brengen. Het resultaat van het inzicht kan zowel grafisch, tekstueel of anders worden weergegeven. Deze functie heeft veel weg van een Business Intelligence systeem, maar ook van een operations center van een veiligheidsregio waar informatie worden samengebracht voor analyse en weergave. </documentation>
+De Digitale Tweeling geeft inzicht over een aspect van de digitale tweeling, door 1 of meerdere vormen van informatie samen te brengen. Het resultaat van het inzicht kan zowel grafisch, tekstueel of anders worden weergegeven. Deze functie heeft veel weg van een Business Intelligence systeem, maar ook van een operations center van een veiligheidsregio waar informatie worden samengebracht voor analyse en weergave. &#xD;
+&#xD;
+English:&#xD;
+&#xD;
+Non-technical description:&#xD;
+Analyzing is the process of examining and interpreting the data in the Digital Twins. This includes applying different analysis techniques, models and algorithms to gain insights into the behavior, performance, and trends within the Digital Twin. &#xD;
+The purpose of the analysis is to see whether control has the desired effect and where necessary can be adjusted for more or less effects.&#xD;
+&#xD;
+Technical description:&#xD;
+The Digital Twin provides insight into an aspect of the Digital Twin, by bringing together one or more forms of information. The result of the insight can be displayed graphically, textually or otherwise. &#xD;
+This function is like a Business Intelligence system, but also to an operations center of a security region where information is brought together for analysis and display.&#xD;
+</documentation>
       <property key="Name (en)" value="Analytics"/>
     </element>
     <element xsi:type="archimate:Capability" name="Voorspellen" id="id-e290601ec1184687af4e02b7df5dde5c">
-      <documentation>Niet technisch: &#xD;
+      <documentation>Nederlands:&#xD;
+&#xD;
+Niet technisch: &#xD;
 Digitale tweeling maken het mogelijk om op toekomstige gebeurtenissen, trends of gedragingen te anticiperen op basis van de huidige en historische gegevens van het gesimuleerde object of systeem. Met behulp van geavanceerde analyses, modellen en algoritmen kan een digitale tweeling potentiële uitkomsten en scenario's simuleren, waardoor gebruikers proactief kunnen reageren op mogelijke veranderingen of uitdagingen. &#xD;
 &#xD;
 Technisch:&#xD;
-De mogelijkheid om een uitspraak te doen over de toekomstige staat van de afbeelding van de werkelijkheid, gebaseerd op historische gegevens (via statistiek en modellen). De parameters van de modellen kunnen zo aangepast worden, dat verschillende toekomstsituaties worden voorspeld. De toekomstige toestand kan gevisualiseerd worden in dezelfde interface waar de huidige en vorige toestand in weergegeven werd. Zie ook Tijdreizen. </documentation>
+De mogelijkheid om een uitspraak te doen over de toekomstige staat van de afbeelding van de werkelijkheid, gebaseerd op historische gegevens (via statistiek en modellen). De parameters van de modellen kunnen zo aangepast worden, dat verschillende toekomstsituaties worden voorspeld. De toekomstige toestand kan gevisualiseerd worden in dezelfde interface waar de huidige en vorige toestand in weergegeven werd. Zie ook Tijdreizen. &#xD;
+&#xD;
+English:&#xD;
+&#xD;
+Non-technical description:&#xD;
+Digital twins make it possible to anticipate future events, trends or behaviors based on the current and historical data of the simulated object or system. Using advanced analytics, models and algorithms, a Digital Twin can simulate potential outcomes and scenarios, allowing users to proactively respond to potential changes or challenges.&#xD;
+&#xD;
+Technical description:&#xD;
+The ability to make a statement about the future state of the representation of reality, based on historical data (through statistics and models). The parameters of the models can be adjusted in such a way that different future situations are predicted. &#xD;
+The future state can be visualized in the same interface where the current and previous state were displayed. See also time travel.&#xD;
+</documentation>
       <property key="Name (en)" value="Prediction"/>
     </element>
     <element xsi:type="archimate:Capability" name="Orkestratie" id="id-13069bd9ac984bed8b9e663b404834b8">
-      <documentation>Niet technisch: &#xD;
+      <documentation>Nederlands:&#xD;
+&#xD;
+Niet technisch: &#xD;
 Orkestratie zorgt ervoor dat de verschillende onderdelen of services binnen de Digitale Tweeling samenwerken om een bepaalde taak of workflow uit te voeren.  &#xD;
 &#xD;
 Technisch:&#xD;
-Taken die in de Digitale Tweeling worden uitgevoerd kunnen aan elkaar verbonden worden, als dan niet volgens een conditie. De uitvoer van het ene proces wordt input voor het volgende (al dan niet geparallelliseerd). Deze aaneenschakeling is niet statisch, maar eerder dynamisch, gebaseerd op de status van objecten of gebeurtenissen (zie ook meten en analyseren).</documentation>
+Taken die in de Digitale Tweeling worden uitgevoerd kunnen aan elkaar verbonden worden, als dan niet volgens een conditie. De uitvoer van het ene proces wordt input voor het volgende (al dan niet geparallelliseerd). Deze aaneenschakeling is niet statisch, maar eerder dynamisch, gebaseerd op de status van objecten of gebeurtenissen (zie ook meten en analyseren).&#xD;
+&#xD;
+English:&#xD;
+&#xD;
+Non-technical description:&#xD;
+Orchestration ensures that the various components or services within the Digital Twin work together to perform a particular task or workflow.&#xD;
+&#xD;
+Technical description:&#xD;
+Tasks performed in the Digital Twin can be connected to each other, if not according to a condition. The output of one process becomes input for the next (parallelized or not). &#xD;
+This sequence is not static, but rather dynamic, based on the status of objects or events (see also measuring and analyzing).&#xD;
+</documentation>
       <property key="Name (en)" value="Orchestration"/>
     </element>
     <element xsi:type="archimate:Capability" name="Simuleren" id="id-704bc5a1a6eb449bb077e2a3fcec0d0b">
-      <documentation>Niet technisch: &#xD;
+      <documentation>Nederlands:&#xD;
+&#xD;
+Niet technisch: &#xD;
 Een Digitale Tweeling maakt het mogelijk om verschillende soorten gegevens samen te brengen en te combineren tot een holistisch beeld vaneen systeem, proces of entiteit.  &#xD;
 Deze combinatie helpt om een dieper inzicht te krijgen, betere beslissingen te nemen en waarde te genereren in diverse domeinen. Dit is een belangrijk instrument voor data gedreven werken.  &#xD;
 Met simulatie kan ook gebruik gemaakt worden van AI om aan ‘opportunity finding’ te doen. De kanskaarten en wat-mag-waar kaarten geven gebieden aan met potentieel voor oplossingen bij conflicterende belangen in dat gebied!&#xD;
 &#xD;
 Technisch:&#xD;
-Simuleren is het op basis van een gekozen startsituaties en een model (dat de veranderingen op die startsituatie kan doorrekenen) laten zien wat er gebeurt wanneer één of meerdere parameters worden veranderd. Daarbij worden  diverse technieken toegepast, zoals tijdreizen door data en modeluitkomsten, stapsgewijze simulatie van datareeksen, simulatie, event-gedreven analyse en what-if analyse.</documentation>
+Simuleren is het op basis van een gekozen startsituaties en een model (dat de veranderingen op die startsituatie kan doorrekenen) laten zien wat er gebeurt wanneer één of meerdere parameters worden veranderd. Daarbij worden  diverse technieken toegepast, zoals tijdreizen door data en modeluitkomsten, stapsgewijze simulatie van datareeksen, simulatie, event-gedreven analyse en what-if analyse.&#xD;
+&#xD;
+English:&#xD;
+&#xD;
+Non-technical description:&#xD;
+A Digital Twin makes it possible to bring together different types of data and combine them into a holistic view of a system, process or entity. This combination helps to gain deeper insight, make better decisions and generate value in various domains. &#xD;
+This is an important tool for data-driven work. Simulation can also be used to make use of AI for ‘opportunity finding’. The probability cards and what-may-where cards indicate areas with potential for solutions to conflicting interests in that area!&#xD;
+&#xD;
+Technical description:&#xD;
+Simulation is based on a chosen starting situation and a model (which can calculate the changes on that starting situation) showing what happens when one or more parameters are changed. &#xD;
+Various techniques are applied, such as time travel through data and model results, step-by-step simulation of data series, simulation, event-driven analysis and what-if analysis.&#xD;
+</documentation>
       <property key="Name (en)" value="Simulation"/>
     </element>
     <element xsi:type="archimate:Capability" name="Rekenen" id="id-e1624ccfa04c4f1090978181f1b065d0">
-      <documentation>Niet technisch: &#xD;
+      <documentation>Nederlands:&#xD;
+&#xD;
+Niet technisch: &#xD;
 Digitale Tweelingen kunnen gebruik maken van rekenmodellen (bv hittestress, wateroverlast, geluidszones). Deze rekenmodellen kunnen gegevens analyseren met behulp van technieken en algoritmes. Zo worden patronen en trends zichtbaar. Deze rekenanalyses kunnen worden gebruikt om inzicht te krijgen in gedrag en voorspellingen te doen over toekomstige situaties.&#xD;
 De uitkomst van Rekenmodellen vertalen zich in indicatoren. Indicatoren zijn de schakel tussen de Digitale Tweeling en Beleid. Rekenen is dus een essentieel onderdeel van zowel beleid als van een Digitale Tweeling.&#xD;
 &#xD;
 Technisch:&#xD;
 Eén formule zegt meer dan 1000 prenten (Edsger Dijkstra). Het nabootsen van de werkelijkheid is rekenintensief – elk proces dat in de werkelijkheid ogenschijnlijk zonder al te veel moeite wordt doorlopen moet digitaal beschreven worden.  Vele processen gebeuren in parallel met elkaar en hebben ook invloed op elkaar. Het is net zo ‘onrustig’ in de digitale tweeling als in de werkelijkheid. Deze ‘onrust’ is belangrijk om mee te nemen als het over beleid met indicatoren gaat – Indicatoren beïnvloeden elkaar. &#xD;
 Rekenmodules worden geregistreerd in het algoritmeregister, zodat de iedereen kan lezen wat de module precies doet. &#xD;
+&#xD;
+English:&#xD;
+&#xD;
+Non-technical description:&#xD;
+Digital Twin can use calculation models (e.g. heat stress, flooding, noise zones). These calculation models can analyze data using techniques and algorithms. In this way patterns and trends become visible. &#xD;
+These calculation analyses can be used to gain insight into behaviour and make predictions about future situations. The results of Calculation Models translate into indicators. Indicators are the link between Digital Twins and Policy. &#xD;
+Computing is therefore an essential part of both policy and of a Digital Twin.&#xD;
+&#xD;
+Technical description:&#xD;
+One formula says more than 1000 prints (Edsger Dijkstra). The imitation of reality is computationally intensive – any process that appears to be going through in reality without too much effort must be described digitally. &#xD;
+Many processes happen in parallel with each other and also affect each other. It is just as ‘unrestful’ in the Digital Twins as it is in reality. This ‘unrest’ is important to take into account when it comes to policy with indicators – indicators influence each other. &#xD;
 </documentation>
       <property key="Name (en)" value="Calculation"/>
     </element>
     <element xsi:type="archimate:Capability" name="Visualiseren" id="id-6e48efe4068644fd8a0ebf49c75342be">
-      <documentation>Niet technisch: &#xD;
+      <documentation>Nederlands:&#xD;
+&#xD;
+Niet technisch: &#xD;
 De kracht van visualisatie in een digitale tweeling ligt in het vermogen om gegevens om te zetten in begrijpelijke, interactieve en bruikbare beelden die inzicht bieden, problemen detecteren, communicatie verbeteren en bijdragen aan betere besluitvorming en prestaties. &#xD;
 Visualisatie kan op veel manieren: 2D (plat bovenaanzicht), 3D (om beter complexe ruimtelijke data te visualiseren en te analyseren op een manier die traditionele 2D-kaarten niet kunnen) er kan ook gebruik gemaakt worden van brillen waarin beelden worden geprojecteerd die overlappen met de werkelijkheid. Beelden kunnen statisch (huidig beeld van een situatie) zijn of heel dynamisch (interactieve kaart waar je aan knoppen kan draaien om indicatoren kan wijzigen en de geassocieerde beleidseffecten meteen in beeld ziet), veel details bevatten en realistisch zijn of juist niet. De keuze van visualisaties hangt af van de aard van de gegevens en het doel van de digitale tweeling. Door verschillende visualisatietechnieken te combineren, kunnen gebruikers een vollediger beeld krijgen van een systeem, processen begrijpen, en betere beslissingen nemen. &#xD;
 &#xD;
 Technisch:&#xD;
-1 prentje zegt meer dan 1000 woorden. De digitale tweeling van de fysieke leefomgeving komt helemaal tot zijn recht als ie daadwerkelijk ook kan gevisualiseerd worden in 2D en 3D, met een Level-of-Detail die voldoet aan de vereisten.  De beelden kunnen statisch of dynamisch zijn, heel realistisch (qua kleuren en effecten) of net niet (valse kleuren). Ook kan het gebruik van AR/VR/xR meer inzicht en interactie bieden met de werkelijkheid, zonder dat we die kunnen aanschouwen. </documentation>
+1 prentje zegt meer dan 1000 woorden. De digitale tweeling van de fysieke leefomgeving komt helemaal tot zijn recht als ie daadwerkelijk ook kan gevisualiseerd worden in 2D en 3D, met een Level-of-Detail die voldoet aan de vereisten.  De beelden kunnen statisch of dynamisch zijn, heel realistisch (qua kleuren en effecten) of net niet (valse kleuren). Ook kan het gebruik van AR/VR/xR meer inzicht en interactie bieden met de werkelijkheid, zonder dat we die kunnen aanschouwen. &#xD;
+&#xD;
+English:&#xD;
+&#xD;
+Non-technical description:&#xD;
+The power of visualization in a Digital Twin lies in its ability to turn data into understandable, interactive, and actionable images that provide insight, detect problems, improve communication, and contribute to better decisionmaking and performance.&#xD;
+Visualization can be done in many ways: 2D (flat top view), 3D (to better visualize and analyze complex spatial data in a way that traditional 2D maps cannot) glasses can also be used in which images are projected that overlap with reality. &#xD;
+Images can be static (current image of a situation) or very dynamic (interactive map where you can turn buttons to change indicators and see the associated policy effects immediately in the picture), contain a lot of details and are realistic or not. &#xD;
+The choice of visualizations depends on the nature of the data and the purpose of the Digital Twins. By combining different visualization techniques, users can get a more complete picture of a system, understand processes, and make better decisions. &#xD;
+&#xD;
+Technical description:&#xD;
+1 picture says more than 1000 words. The Digital Twin of the physical environment comes into its own when it can be visualized in 2D and 3D, with a Level-of-Detail that meets the requirements. The images can be static or dynamic, very realistic (in terms of colors and effects) or just not (false colors). &#xD;
+The use of AR/VR/xR can also offer more insight and interaction with reality, without us being able to see it.&#xD;
+</documentation>
       <property key="Name (en)" value="Visualisation"/>
     </element>
     <element xsi:type="archimate:Capability" name="Beleven" id="id-572d0843850f4667af98d52c355fc516">
-      <documentation>Niet technisch: &#xD;
+      <documentation>Nederlands:&#xD;
+&#xD;
+Niet technisch: &#xD;
 Een grote kracht van een Digitale Tweeling is het belevingsaspect. Deze belevingen gaan verder dan het simpelweg observeren van data en modellen; ze stellen mensen in staat om virtueel te experimenteren, te leren en te begrijpen hoe iets eruitziet of functioneert. Dit wordt bereikt doordat gebruikers interactie hebben met een virtuele kopie. De interactie kan op verschillende manieren plaatsvinden. Gebruiksvriendelijkheid en intuïtieve interface die het voor gebruikers makkelijk maakt om te navigeren en de benodigde acties uit te voeren zijn ook van belang. &#xD;
 &#xD;
 Technisch:&#xD;
-Een Digitale Tweeling biedt een zekere vorm van beleving aan - een gebruikerservaring die uitnodigend&quot; is en wordt ervaren als &quot;efficiënt&quot;. Onder beleven valt ook een vorm van gamificatie, waarbij ‘user rewards’ een rol spelen. </documentation>
+Een Digitale Tweeling biedt een zekere vorm van beleving aan - een gebruikerservaring die uitnodigend&quot; is en wordt ervaren als &quot;efficiënt&quot;. Onder beleven valt ook een vorm van gamificatie, waarbij ‘user rewards’ een rol spelen. &#xD;
+&#xD;
+English:&#xD;
+&#xD;
+Non-technical description:&#xD;
+A great strength of a Digital Twin is the experience aspect. These experiences go beyond simply observing data and models; They enable people to virtually experiment, learn and understand how something looks or functions. This is achieved by users interacting with a virtual copy. &#xD;
+The interaction can take place in different ways. User-friendliness and intuitive interface that makes it easy for users to navigate and perform the necessary actions are also important.&#xD;
+&#xD;
+Technical description:&#xD;
+A Digital Twin offers a certain form of experience - a user experience that is inviting and perceived as &quot;efficient&quot;. Experience also includes a form of gamification, in which ‘user rewards’ play a role.&#xD;
+</documentation>
       <property key="Name (en)" value="(User) Experience"/>
     </element>
     <element xsi:type="archimate:Capability" name="Vertrouwen" id="id-1fe89252ef5a482399069f4570b27e2e">
-      <documentation>Niet technisch: &#xD;
+      <documentation>Nederlands:&#xD;
+&#xD;
+Niet technisch: &#xD;
 Een Digitale Tweeling staat (of valt) met de accurate weergave (volgens afspraken en regels) van de werkelijkheid. Alle data en informatie die de digitale tweeling voeden zijn getest tegen afgesproken kwaliteitseisen. Fouten zijn niet te vermijden en de gebruikersverwachtingen worden dito gezet. Vertrouwen wordt ook verkregen door formele afspraken en kaders. Zo moet de gebruiker zich bekend maken in het systeem (Identity &amp; Access Management), worden er vertrouwelijke gegevens uitgewisseld (data spaces), wordt er gelogged en worden API's beheerd (via gateway functionaliteit). &#xD;
 &#xD;
 Technisch:&#xD;
-Vertrouwen in de Digitale Tweeling is cruciaal. Een aantal (technische) sleutelaspecten dragen bij aan het vertrouwen in ICT-systemen: Beveiliging(protocollen), gegevensbescherming, transparantie in gegevensverwerking, betrouwbaarheid en beschikbaarheid van data en systeem, voldoen aan standaarden en wet- en regelgeving. Maar daarnaast speelt ook een gebruiksvriendelijke en intuïtieve interface die het voor gebruikers makkelijk maakt een rol bij vertrouwen in de digitale tweeling. </documentation>
+Vertrouwen in de Digitale Tweeling is cruciaal. Een aantal (technische) sleutelaspecten dragen bij aan het vertrouwen in ICT-systemen: Beveiliging(protocollen), gegevensbescherming, transparantie in gegevensverwerking, betrouwbaarheid en beschikbaarheid van data en systeem, voldoen aan standaarden en wet- en regelgeving. Maar daarnaast speelt ook een gebruiksvriendelijke en intuïtieve interface die het voor gebruikers makkelijk maakt een rol bij vertrouwen in de digitale tweeling. &#xD;
+&#xD;
+English:&#xD;
+&#xD;
+Non-technical description:&#xD;
+A Digital Twin stands (or falls) with the accurate representation (according to agreements and rules) of reality. All data and information that feed the Digital Twins have been tested against agreed quality requirements. &#xD;
+Errors cannot be avoided, and user expectations are set accordingly. Trust is also gained through formal agreements and frameworks. For example, the user must make himself known in the system (Identity &amp; Access Management), &#xD;
+confidential data is exchanged (data spaces), is logged in and APIs are managed (via gateway functionality).&#xD;
+&#xD;
+Technical description:&#xD;
+Confidence in Digital Twins is crucial. A number of (technical) key aspects contribute to trust in ICT systems: Security (protocols), data protection, transparency in data processing, reliability and availability of data and system, comply with standards and laws and regulations.&#xD;
+But in addition, a user-friendly and intuitive interface that makes it easy for users also plays a role in trusting the Digital Twin.&#xD;
+</documentation>
       <property key="Name (en)" value="Trust"/>
     </element>
     <element xsi:type="archimate:Capability" name="Identificeren" id="id-68bac60a011545b882d82df43c5f393e">
-      <documentation>Niet technisch: &#xD;
+      <documentation>Nederlands:&#xD;
+&#xD;
+Niet technisch: &#xD;
 Identificatie is een fundament van moderne softwaresystemen die zorgen voor het efficiënt en veilig functioneren binnen digitale infrastructuren. Het zijn ondersteunende componenten die kunnen zorgen voor toegangscontrole en toegangsrechten, zodat onbeveiligde toegang wordt voorkomen.  &#xD;
 Identificatie maakt het ook mogelijk om systemen te personaliseren voor individuele gebruikers of groepen, zodat de gebruikersinterface of op maat gemaakte inhoud aangeboden kan worden en dat voorkeuren en instellingen kunnen worden opgeslagen. &#xD;
 &#xD;
 Technisch:&#xD;
-Een Digitale Tweeling biedt de mogelijkheid voor een anonieme beleving, maar deze gaat erg beperkt. Om alle functies van een digitale tweeling te beleven moet de gebruiker zich aanbieden middels zijn digitale ‘credentials’. Alle gebruikers activiteiten worden gelogged voor latere analyse (wie heeft welke toestand of analyse gevraagd of actuatoren aangestuurd). Alle gebruikers activiteiten gebeuren minimaal volgende AVG richtlijnen en het ethisch kader. Alle toegangscontrole volgens de veiligheidsvoorschriften. </documentation>
+Een Digitale Tweeling biedt de mogelijkheid voor een anonieme beleving, maar deze gaat erg beperkt. Om alle functies van een digitale tweeling te beleven moet de gebruiker zich aanbieden middels zijn digitale ‘credentials’. Alle gebruikers activiteiten worden gelogged voor latere analyse (wie heeft welke toestand of analyse gevraagd of actuatoren aangestuurd). Alle gebruikers activiteiten gebeuren minimaal volgende AVG richtlijnen en het ethisch kader. Alle toegangscontrole volgens de veiligheidsvoorschriften. &#xD;
+&#xD;
+English:&#xD;
+&#xD;
+Non-technical description:&#xD;
+Identification is a foundation of modern software systems that ensure efficient and secure functioning within digital infrastructures. They are supporting components that can provide access control and access rights, preventing unsecured access.&#xD;
+Identification also makes it possible to personalize systems for individual users or groups, so that the user interface or customized content can be offered and that preferences and settings can be stored. &#xD;
+&#xD;
+Technical description:&#xD;
+A Digital Twin offers the possibility for an anonymous experience, but this is very limited. In order to experience all the functions of a Digital Twin, the user must present himself or herself through his or her digital credentials. &#xD;
+All user activities are logged for later analysis (who requested which state or analysis or controlled actuators). All user activities take place at least following GDPR guidelines and the ethical framework. All access control according to security regulations.&#xD;
+</documentation>
       <property key="Name (en)" value="Identification &amp; Authorization"/>
     </element>
     <element xsi:type="archimate:Capability" name="&lt;DT capability>" id="id-8c026db103b8433eb893c4e9fb35a4f5">
@@ -156,10 +368,23 @@ Een Digitale Tweeling biedt de mogelijkheid voor een anonieme beleving, maar dez
       <property key="Documentation (en)"/>
     </element>
     <element xsi:type="archimate:Capability" name="Beleid vertalen naar Indicatoren" id="id-66099678a23047588be535132d61f059">
-      <documentation>Indicatoren vormen de linking pin van een beleidsstap naar de Digitale Tweeling om data  en model gedreven werken mogelijk te maken binnen het beleidsproces. </documentation>
+      <documentation>Nederlands:&#xD;
+&#xD;
+Indicatoren vormen de linking pin van een beleidsstap naar de Digitale Tweeling om data  en model gedreven werken mogelijk te maken binnen het beleidsproces. &#xD;
+&#xD;
+English:&#xD;
+&#xD;
+Indicators form the linking pin of a policy step towards the Digital Twin to enable data and model-driven work within the policy process.</documentation>
       <property key="Name (en)" value="Translate business requirements to indicators"/>
     </element>
     <element xsi:type="archimate:Capability" name="Resultaten / Inzichten omzetten naar Beleid" id="id-338c83102ba74c3b9eab4cd703645e88">
+      <documentation>Nederlands:&#xD;
+&#xD;
+Inzichten uit een Digital Twin moeten worden vertaald naar de echte wereld door het implementeren van beleid of systemen die handelen op basis van de resultaten van een Digital Twin.&#xD;
+&#xD;
+English:&#xD;
+&#xD;
+Insights from a Digital Twin will need to be translated to the actual world by implementing policies or systems that act on the results of a Digital Twin.</documentation>
       <property key="Name (en)" value="Translate insights into policy"/>
     </element>
     <element xsi:type="archimate:ValueStream" name="Beleidsontwikkeling" id="id-d8cfe08acc9848e6a43450e795a9a2de">
@@ -1507,7 +1732,6 @@ beleid worden bijgesteld om de effectiviteit te vergroten of om nieuwe uitdaging
           <child xsi:type="archimate:DiagramObject" id="id-f2f947747a164182ab31b56445e3a45e" textAlignment="1" archimateElement="id-ed6f82d963f84313bda9d3ca5616c7c7">
             <bounds x="230" y="216" width="347" height="217"/>
           </child>
-          <documentation>NTB</documentation>
           <property key="Name (en)" value="Control"/>
         </element>
       </folder>
@@ -2490,8 +2714,6 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-e0f9ea3e535543639775ebec7aad8375" source="id-881dc01850c64e8a959588f94fed5705" target="id-896623e2248545d3b4b8f23a825a203c" archimateRelationship="id-e29a34671141483e9b3b988e4032babe"/>
           </child>
-          <documentation>Het beproeven van de architectuur geschiedt via Testbeds.&#xD;
-</documentation>
         </element>
         <element xsi:type="archimate:ArchimateDiagramModel" name="Testbed - 2 (en)" id="id-c7b3e65baa5e4d43aadfe766643d5ee5">
           <child xsi:type="archimate:DiagramObject" id="id-eb378aa75c314db790464b7b150cd190" targetConnections="id-5ad2fc811708474bab47a57a5ddc1cde id-7b4eb60a1dd243208118f0b2feda37d0 id-cb43b2d02ddf433582c11431ac49be0c id-3c67266750ee45f9807bfa4b9b7358f2 id-8e011b2b22974d21b52a3bd8d878ce17 id-fcd954cecc29442686b6612b4e7fa690 id-52cccdaed17648028bd08e3f89f59b80 id-def768c1460a409880d8f3aa03be4cca" archimateElement="id-6bd235d090194bec88275035dd36e1da">
@@ -2678,8 +2900,6 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
             <bounds x="637" y="1572" width="120" height="55"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
           </child>
-          <documentation>Het beproeven van de architectuur geschiedt via Testbeds.&#xD;
-</documentation>
         </element>
       </folder>
       <folder name="Capability-realisation" id="id-f4ec6d298aa24df4b36438b1e2cc4632">
@@ -2692,7 +2912,7 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <child xsi:type="archimate:DiagramModelReference" id="id-6f8aa98237354a5892d8a3e5103d58bd" model="id-decf311e5f5b4e169cf844aa5c909d0d">
             <bounds x="230" y="144" width="120" height="55"/>
           </child>
-          <documentation>NTB</documentation>
+          <documentation>TBD</documentation>
           <property key="Name (en)" value="Control"/>
         </element>
         <element xsi:type="archimate:ArchimateDiagramModel" name="Reliability (en)" id="id-186255dea5c44cab9eaa83004f07aa75" viewpoint="requirements_realization">
@@ -3318,9 +3538,7 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
           </child>
         </child>
-        <documentation>De Capabilities zoals hier gemodelleerd komen overeen met de Functiemap en definities van beleidscapabilities uit het rapport &quot;Beleidsprocessen en bouwblokken voor Digitale Tweelingen&quot;&#xD;
-&#xD;
-In de views in de map Capability-realisatie worden er diensten, functies, producten en randvoorwaarden uitgewerkt voor de verschillende capabilities.</documentation>
+        <documentation>The Capabilities in this viewpoint are consistent with the report 'Policy processes and building blocks for Digital Twins'</documentation>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="Buildingblocks (en)" id="id-44e908c3bef14235991ef2ae911a6a46" viewpoint="application_usage">
         <child xsi:type="archimate:DiagramObject" id="id-17da03cb8fc5441594c8b5931885e3f9" textAlignment="1" archimateElement="id-c3159c56e7974cb99d8cbac60bbea17b">
@@ -3578,7 +3796,7 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
             <sourceConnection xsi:type="archimate:Connection" id="id-48cfc39cff1540eba8306313bcecd733" source="id-43b9f873e2054c5b9cee1c0cc3b0e8e0" target="id-21950ed0678a4376ba31a591906d86e5" archimateRelationship="id-5550c7b955464cb18200e280afe167af"/>
           </child>
         </child>
-        <documentation>Bouwblokken zijn een groeperings- en ordeningsstructuur voor de Applicatielaag</documentation>
+        <documentation>Buildingblocks are a viewpoint from the Application perspective. The grouping is consistent with the main 'triangle' visualisation of the NLDT Architecture.</documentation>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="Valuestream (en)" id="id-d5ec9ea04e1c452ca6ede2373583649f" viewpoint="value_stream">
         <child xsi:type="archimate:DiagramObject" id="id-f3e98479ced440e59c2e79ee309486e8" textAlignment="1" archimateElement="id-7ba8ed9a80c4497984127872ba0392d1">
@@ -3946,8 +4164,11 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
       </element>
     </folder>
   </folder>
-  <purpose>Dit is de archimate modellering van de NLDT architectuur.&#xD;
+  <purpose>This is the archimate model of the NLDT architecture.&#xD;
+&#xD;
+This model is provided in Dutch and English. See the respective folders for the different languages, the views are the same for both languages.&#xD;
 &#xD;
 30-10-2024: eerste opzet. Model is nog niet gevalideerd en kan op elk moment wijzigen.&#xD;
- </purpose>
+6-6-2025: update of the model. completion of capabilities and building blocks&#xD;
+16-7-2025: translation to english</purpose>
 </archimate:model>
