@@ -1,5 +1,7 @@
 # Core Values
 
+@TODO: NORA -> Digital Decade 2030
+
 The core values set a number of preconditions for the system of Digital Twins. The use of the term core value is inspired by NORA, where a core value is positioned as follows: Definition Core Value NORA Image 1: core values The approach of the core values and goals in this architecture is focused on the application of Digital Twins in the Physical Living Environment. We endorse the core values and quality goals of NORA, but here we specifically focus on core values and goals from the NLDT perspective.
 
 ## Purpose
