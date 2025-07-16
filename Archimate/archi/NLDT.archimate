@@ -426,11 +426,6 @@ hand van de indicatoren en andere relevante informatie. Op basis van deze evalua
 beleid worden bijgesteld om de effectiviteit te vergroten of om nieuwe uitdagingen aan te pakken.&quot;</documentation>
       <property key="Name (en)" value="Feedback"/>
     </element>
-    <element xsi:type="archimate:ValueStream" name="&lt;Waardestroom> (copy)" id="id-7c196965eebf455fbd0a1bed0d8071c8">
-      <documentation>Een use case wordt in dit referentiemodel als valuestream gevisualiseerd. Een Valuestream vertegenwoordigd waarde voor de organisatie met behulp van een aantal Capabilities die deze waarde bedienen.</documentation>
-      <property key="Name (en)" value="&lt;Valuestream>"/>
-      <property key="Documentation (en)"/>
-    </element>
   </folder>
   <folder name="Business" id="id-f0d7c99784524151993a8ce387a52301" type="business">
     <element xsi:type="archimate:BusinessService" name="Inzichtelijke kaders" id="id-0228c7c58ca04777bd112e777647bd38">
@@ -671,7 +666,7 @@ beleid worden bijgesteld om de effectiviteit te vergroten of om nieuwe uitdaging
       <property key="Name (en)" value="openly and transparently"/>
     </element>
     <element xsi:type="archimate:Goal" name="Eerlijk, kwalitatief en inclusief" id="id-03c82225da1c473bb85993b233c3b5c2">
-      <property key="Name (en)" value="Fair and inclusive"/>
+      <property key="Name (en)" value="Fair, high-quality and inclusive"/>
     </element>
     <element xsi:type="archimate:Goal" name="Robuust en veilig" id="id-535704ef609243268df00eebe5d0fe4c">
       <property key="Name (en)" value="Robust and Secure"/>
@@ -797,10 +792,10 @@ beleid worden bijgesteld om de effectiviteit te vergroten of om nieuwe uitdaging
       <property key="Name (en)" value="User experience"/>
     </element>
     <element xsi:type="archimate:Grouping" name="Betrouwbaarheid" id="id-63cb0815e1d94412bb18f9fc321f5be6">
-      <property key="Name (en)" value="Reliability"/>
+      <property key="Name (en)" value="Identification and Trust"/>
     </element>
     <element xsi:type="archimate:Grouping" name="Beheer" id="id-ed6f82d963f84313bda9d3ca5616c7c7">
-      <property key="Name (en)" value="Control"/>
+      <property key="Name (en)" value="Management"/>
     </element>
     <element xsi:type="archimate:Grouping" name="Beleid naar DT" id="id-b77d0667448443718bc4867e2a354818">
       <property key="Name (en)" value="Business to DT"/>
@@ -2904,7 +2899,7 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
       </folder>
       <folder name="Capability-realisation" id="id-f4ec6d298aa24df4b36438b1e2cc4632">
         <property key="Language=en" value="not empty"/>
-        <element xsi:type="archimate:ArchimateDiagramModel" name="Control (en)" id="id-de38b7a74b384ec8aa5cfaa92d03b64b" viewpoint="requirements_realization">
+        <element xsi:type="archimate:ArchimateDiagramModel" name="Management (en)" id="id-de38b7a74b384ec8aa5cfaa92d03b64b" viewpoint="requirements_realization">
           <child xsi:type="archimate:DiagramObject" id="id-7745bccf47ff453bbdfd828dcc2e1947" textAlignment="1" archimateElement="id-ed6f82d963f84313bda9d3ca5616c7c7">
             <bounds x="230" y="216" width="347" height="217"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
@@ -2913,9 +2908,9 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
             <bounds x="230" y="144" width="120" height="55"/>
           </child>
           <documentation>TBD</documentation>
-          <property key="Name (en)" value="Control"/>
+          <property key="Name (en)" value="Management"/>
         </element>
-        <element xsi:type="archimate:ArchimateDiagramModel" name="Reliability (en)" id="id-186255dea5c44cab9eaa83004f07aa75" viewpoint="requirements_realization">
+        <element xsi:type="archimate:ArchimateDiagramModel" name="Identification and Trust (en)" id="id-186255dea5c44cab9eaa83004f07aa75" viewpoint="requirements_realization">
           <child xsi:type="archimate:DiagramObject" id="id-0b004d1e68824c08add5cbfe09663568" textAlignment="1" archimateElement="id-63cb0815e1d94412bb18f9fc321f5be6">
             <bounds x="168" y="125" width="301" height="236"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
@@ -2967,7 +2962,7 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <child xsi:type="archimate:DiagramModelReference" id="id-ca9fa542e02e4958b20ff83f7a7d0adb" model="id-decf311e5f5b4e169cf844aa5c909d0d">
             <bounds x="168" y="60" width="120" height="55"/>
           </child>
-          <property key="Name (en)" value="Reliability"/>
+          <property key="Name (en)" value="Identification and Trust"/>
         </element>
         <element xsi:type="archimate:ArchimateDiagramModel" name="Data services (en)" id="id-01be965ad4034e01922125c6c4e78f83" viewpoint="requirements_realization">
           <child xsi:type="archimate:DiagramObject" id="id-b4abba1bf35e44ff8ca701c9bd68a014" textAlignment="1" archimateElement="id-7ba8ed9a80c4497984127872ba0392d1">
@@ -3780,7 +3775,7 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
             </sourceConnection>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-21950ed0678a4376ba31a591906d86e5" targetConnections="id-ac36cab2c0bf47ad998d673b64420fce id-48cfc39cff1540eba8306313bcecd733 id-d8efcfb426264b79b479eb9bffc5316c" archimateElement="id-87148b00736c4825bc338dc04be81669">
-            <bounds x="108" y="300" width="120" height="55"/>
+            <bounds x="96" y="300" width="132" height="55"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-ad41a892539e4d80a595d87f1d438551" targetConnections="id-a863118584634f88a5d86de79a03965e" archimateElement="id-382a718a8b8b4aec8b2417e0e701aeae">
@@ -4164,9 +4159,11 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
       </element>
     </folder>
   </folder>
-  <purpose>This is the archimate model of the NLDT architecture.&#xD;
+  <purpose>This is the archimate model of the NLDT architecture. (Network of Local Digital Twins)&#xD;
 &#xD;
-This model is provided in Dutch and English. See the respective folders for the different languages, the views are the same for both languages.&#xD;
+https://geonovum.github.io/NLDT-Architectuur/&#xD;
+&#xD;
+This model is provided in Dutch and English. See the respective folders under Views for the different languages, the views are the same for both languages.&#xD;
 &#xD;
 30-10-2024: eerste opzet. Model is nog niet gevalideerd en kan op elk moment wijzigen.&#xD;
 6-6-2025: update of the model. completion of capabilities and building blocks&#xD;
