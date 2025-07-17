@@ -2,11 +2,18 @@
 
 @TODO: NORA -> Digital Decade 2030
 
-The core values set a number of preconditions for the system of Digital Twins. The use of the term core value is inspired by NORA, where a core value is positioned as follows: Definition Core Value NORA Image 1: core values The approach of the core values and goals in this architecture is focused on the application of Digital Twins in the Physical Living Environment. We endorse the core values and quality goals of NORA, but here we specifically focus on core values and goals from the NLDT perspective.
+EU's Digital Decade 2030 define a set of digital rights and principles.
+These core values set a number of preconditions for the system of Digital Twins to adhere to.
+
+<img src="./respec/media/digital_decade_core_values.png" alt="Digital Decade 2030 Core Values" width="900">
+
+Figure 1: Core values from Digital Decade 2030
+
+We endorse the core values and digital rights and principles of the EU Digital Decade and specifically focus on core values and goals from the NLDT perspective.
 
 ## Purpose
 
-### Purpose-driven for public welfare
+### Purpose-driven, for common good
 
 Digital twins and the digital twin system should improve objects, processes, and systems in the physical living environment. Digital twins are never the goal; they are means to achieve the goal. Responsible digital twins serve the public welfare and create value for Dutch society. They operate from a clear, singular, and above all justified purpose. 
 
@@ -44,7 +51,7 @@ __Elaboration:__ Security in digital twins can be technically implemented in mul
 
 ## People
 
-### Under human control and supervision
+### People at the centre, human in the loop
 
 An independent trusted third party must supervise compliance with ethical and other relevant agreements, so that the digital twin, the system of digital twins, and the underlying data are handled responsibly. The digital twins and the system must be under human control and supervision. Supervision and control must take place during the development process and the usage phase of the digital twin.
 
@@ -52,7 +59,7 @@ __Explanation:__ The responsibility for ethics should not rest with one person, 
 
 __Elaboration:__ Control and supervision must come from the people: the team. Address each other on moral responsibility and adherence to ethical values and agreements. Ask external parties for an explanation of how they will meet ethical agreements. An organization can also account for the use of data and adherence to ethical standards in its annual report.
 
-### Stakeholders intensively involved
+### Stakeholders actively involved
 
 For societal challenges, solidary involvement of primary stakeholders is a prerequisite for achieving open, fair, and inclusive image, judgment, and decision-making. And a prerequisite for achieving an open, fair, and inclusive system of digital twins. Even for commercial applications that do not serve a societal purpose, the involvement of primary stakeholders is essential. A sustainable trust relationship promotes the quality, the demand for, and the adoption of (data and information) products. By far the most important stakeholders are the people who share their personal data and everyone else who is affected by the application of the data and the digital twin. It is important to involve citizens and other primary stakeholders as early as the design phase of the digital twin. And also to give influence, say as ‘co-owner’. Give significant weight to the contributions of primary stakeholders.
 
@@ -68,7 +75,7 @@ All components of a digital twin and the system of digital twins have clear and 
 
 __Explanation:__ Clear ownership and assigned responsibilities enable effective data management and problem-solving for a single digital twin and within the system as a whole. The government could use regulations to stimulate desired behavior in an ecosystem when this is not possible through cooperation between business, government, education and research, civil society organizations, and citizens. Elaboration: Data ownership is a central element of this principle and provides accountability for compiling suitable quality data for integration into digital twins and the digital twin ecosystem. Data owners and providers must collaborate with stakeholders to identify high-quality datasets for digital twins. Data owners and providers must also possess the appropriate skills and competencies, that are necessary to enable digital twins. Digital twins can be governed by business, government, education and research, civil society organizations and/or citizens. Governance must also provide mechanisms for the overall management of the digital twin ecosystem, thereby ensuring fair value and consistent adherence to standards.
 
-### Federative
+### Federated
 
 Owners of (components of) digital twins must support a federated model where data, models, tools, and related, supporting services can be connected and shared in a flexible and responsive manner. 
 
@@ -81,7 +88,7 @@ __Elaboration:__ The federative model requires and encourages business and gover
 - different spatial and temporal scales;
 - different modeling approaches.
 
-### With open standards
+### Using open standards
 
 We adopt agreed-upon open standards for data and digital twins, with cross-platform and platform-independent architectural models to provide overall interoperability, compatibility, and functionality. 
 
