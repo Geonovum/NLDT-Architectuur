@@ -74,6 +74,7 @@ Een federatief stelsel moet de voorwaarden scheppen voor een gelijk speelveld. E
 
 __Implicaties:__
  - [self descriptions](#self-descriptions)
+ - [API Designrules](#api-designrules)
 
 ## Gefedereerde en geautomatiseerde governance
 

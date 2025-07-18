@@ -108,5 +108,6 @@ __Rationale:__
 Dit is essentieel om interoperabiliteit te garanderen (architectuurprincipe: open standaarden) en een betrouwbaar stelsel te creëren (architectuurprincipe: het stelsel is betrouwbaar) in een service georiënteerde architectuur (architectuurprincipe: gebaseerd op service oriëntatie). Het faciliteert een flexibele en responsieve manier van verbinden en delen van data, modellen en tools (kernwaarde: federatief) en ondersteunt de uitwisseling van dataproducten binnen de zelfservice data-infrastructuur.
 
 __Implicatie bij:__
+- [self descriptions](#self-descriptions)
 - [Gebaseerd op service orientatie](#gebaseerd-op-service-oriëntatie)
 - [Het stelsel is betrouwbaar](#het-stelsel-is-betrouwbaar)
