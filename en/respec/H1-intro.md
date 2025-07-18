@@ -18,7 +18,7 @@ This reference architecture therefore contains guidelines, principles, and stand
 
 In this document, we follow the definition of a Digital Twin as stated in the (Dutch) Parliamentary letter from the Ministry of Housing and Spatial Planning: 
 
-_A digital twin of the physical environment is a digital representation of the urban and rural environment based on data, models, and visualizations. These can be used to simulate and analyze various aspects of the physical environment._ [[VRO_2024]]
+_A digital twin of the physical environment is a digital representation of the urban and rural environment based on data, models, and visualisations. These can be used to simulate and analyse various aspects of the physical environment._ [[VRO_2024]]
 
 ### Target audience
 

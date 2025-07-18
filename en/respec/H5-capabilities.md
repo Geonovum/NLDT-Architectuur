@@ -2,7 +2,7 @@
 
 As described in the introduction, we follow this definition of a digital twin: 
 
-_A digital twin of the physical living environment is a digital representation of the urban and rural environment based on data, models, and visualizations. These can be used to simulate and analyze various aspects of the physical living environment._ [[VRO_2024]] 
+_A digital twin of the physical living environment is a digital representation of the urban and rural environment based on data, models, and visualisations. These can be used to simulate and analyse various aspects of the physical living environment._ [[VRO_2024]] 
 
 The application of a Digital Twin in the physical living environment can be very diverse. To provide some guidance on the different types of applications, we use the following type levels of automation:
 
@@ -24,7 +24,7 @@ Besides these automation levels, we also recognize the policy cycle, whereby in 
 
 Archimate metamodel for the NLDT architecture. [online viewer](https://geonovum.github.io/NLDT-Architectuur/Archimate/html/index.html?view=id-a08c59e3541043cba2f2f63e81f08c2f)
 
-The above image visualizes the Archimate metamodel for the NLDT architecture. This is built from motivational elements of Archimate to express frameworks and guidelines. Furthermore, it is built from capabilities and value streams to describe the service provision. The capabilities are then elaborated into patterns based on elements from the business and application layers of Archimate. Chapter 5 discusses the value streams and capabilities, Chapter 6 discusses the patterns of business and application objects.
+The above image visualises the Archimate metamodel for the NLDT architecture. This is built from motivational elements of Archimate to express frameworks and guidelines. Furthermore, it is built from capabilities and value streams to describe the service provision. The capabilities are then elaborated into patterns based on elements from the business and application layers of Archimate. Chapter 5 discusses the value streams and capabilities, Chapter 6 discusses the patterns of business and application objects.
 
 ## Value Streams
 
@@ -50,7 +50,7 @@ There are internationally diverse frameworks that describe capabilities or compo
 
 #### Access
 
-To visualize the physical living environment, data is layered on top of each other in a graphical environment. The data from the layers come from various registers and often represent policy choices or legal standards, and the sliders are the different policy ambitions in relation to the standards for, for example, noise or public green spaces. The layers can be controlled with sliders, so that interests can be balanced and fairly proportional to each other.
+To visualise the physical living environment, data is layered on top of each other in a graphical environment. The data from the layers come from various registers and often represent policy choices or legal standards, and the sliders are the different policy ambitions in relation to the standards for, for example, noise or public green spaces. The layers can be controlled with sliders, so that interests can be balanced and fairly proportional to each other.
 
 #### Manage
 
@@ -74,7 +74,7 @@ Every policy decision (at a specific time) that is made using a digital twin mus
 
 #### Sense & Actuate
 
-Some Digital Twins are capable of processing (measurement) data in real-time, monitoring (to see if policy also has the desired effect in the policy cycle), and optionally reacting to changes. This requires computational rules (algorithms) that can quickly analyze data and take action based on results. Measurements are stored, so that in the future they can be used to make a statement about a series from the past to possibly observe a trend in indicators.
+Some Digital Twins are capable of processing (measurement) data in real-time, monitoring (to see if policy also has the desired effect in the policy cycle), and optionally reacting to changes. This requires computational rules (algorithms) that can quickly analyse data and take action based on results. Measurements are stored, so that in the future they can be used to make a statement about a series from the past to possibly observe a trend in indicators.
 
 #### Integration
 
@@ -100,13 +100,13 @@ A Digital Twin makes it possible to bring together and combine different types o
 
 #### Calculation
 
-Digital Twins can use computational models (e.g., heat stress, waterlogging, noise zones). These computational models can analyze data using techniques and algorithms. This makes patterns and trends visible. These computational analyses can be used to gain insight into behavior and make predictions about future situations. The outcome of Computational Models translates into indicators. Indicators are the link between the Digital Twin and Policy. Calculating is therefore an essential part of both policy and a Digital Twin.
+Digital Twins can use computational models (e.g., heat stress, waterlogging, noise zones). These computational models can analyse data using techniques and algorithms. This makes patterns and trends visible. These computational analyses can be used to gain insight into behavior and make predictions about future situations. The outcome of Computational Models translates into indicators. Indicators are the link between the Digital Twin and Policy. Calculating is therefore an essential part of both policy and a Digital Twin.
 
 ### User experience
 
-#### Visualization
+#### Visualisation
 
-The power of visualization in a digital twin lies in its ability to transform data into understandable, interactive, and usable images that provide insight, detect problems, improve communication, and contribute to better decision-making and performance. Visualization can be done in many ways: 2D (flat top view), 3D (to better visualize and analyze complex spatial data in a way that traditional 2D maps cannot). Glasses that project images overlapping with reality can also be used. Images can be static (current view of a situation) or very dynamic (interactive map where you can turn knobs to change indicators and immediately see the associated policy effects), contain many details and be realistic or not. The choice of visualizations depends on the nature of the data and the purpose of the digital twin. By combining different visualization techniques, users can get a more complete picture of a system, understand processes, and make better decisions.
+The power of visualisation in a digital twin lies in its ability to transform data into understandable, interactive, and usable images that provide insight, detect problems, improve communication, and contribute to better decision-making and performance. Visualisation can be done in many ways: 2D (flat top view), 3D (to better visualise and analyse complex spatial data in a way that traditional 2D maps cannot). Glasses that project images overlapping with reality can also be used. Images can be static (current view of a situation) or very dynamic (interactive map where you can turn knobs to change indicators and immediately see the associated policy effects), contain many details and be realistic or not. The choice of visualisations depends on the nature of the data and the purpose of the digital twin. By combining different visualisation techniques, users can get a more complete picture of a system, understand processes, and make better decisions.
 
 #### (User) Experience
 
