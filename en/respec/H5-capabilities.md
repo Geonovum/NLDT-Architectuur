@@ -84,7 +84,7 @@ A Digital Twin makes it possible to define different policy perspectives and thu
 
 #### Analytics
 
-Analyzing is the process of examining and interpreting the data in the digital twin. This includes applying different analysis techniques, models, and algorithms to gain insights into the behavior, performance, and trends within the Digital Twin. The purpose of analyzing is to see if control has the desired effect and can be adjusted for more or less effects where needed.
+Analysing is the process of examining and interpreting the data in the digital twin. This includes applying different analysis techniques, models, and algorithms to gain insights into the behavior, performance, and trends within the Digital Twin. The purpose of analysing is to see if control has the desired effect and can be adjusted for more or less effects where needed.
 
 #### Prediction
 
