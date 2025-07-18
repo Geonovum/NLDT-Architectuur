@@ -20,9 +20,11 @@ Besides these automation levels, we also recognize the policy cycle, whereby in 
 
 ## Metamodel
 
-@TODO Archimate metamodel for the NLDT architecture. online viewer 
+<img src="./respec/media/NLDT-en_archimate_metamodel.png" alt="archimate metamodel" width="900">
 
-The above image visualizes the Archimate metamodel for the NLDT architecture. This is built from motivational elements of Archimate to express the Frameworks and guidelines. Furthermore, it is built from capabilities and value streams to describe the service provision. The capabilities are then elaborated into patterns based on elements from the business and application layers of Archimate. Chapter 5 discusses the value streams and capabilities, Chapter 6 discusses the patterns of business and application objects.
+Archimate metamodel for the NLDT architecture. [online viewer](https://geonovum.github.io/NLDT-Architectuur/Archimate/html/index.html?view=id-a08c59e3541043cba2f2f63e81f08c2f)
+
+The above image visualizes the Archimate metamodel for the NLDT architecture. This is built from motivational elements of Archimate to express frameworks and guidelines. Furthermore, it is built from capabilities and value streams to describe the service provision. The capabilities are then elaborated into patterns based on elements from the business and application layers of Archimate. Chapter 5 discusses the value streams and capabilities, Chapter 6 discusses the patterns of business and application objects.
 
 ## Value Streams
 
@@ -37,22 +39,24 @@ Converting results/insights into practice
 
 ## Capabilities
 
-There are internationally diverse frameworks that describe capabilities or components of digital twins. Based on the 'Capabilities periodic table' of the Digital Twin Consortium, a simplified set of Capabilities has been defined that serves as the basis for the NLDT [[BBDT]].
+There are internationally diverse frameworks that describe capabilities or components of digital twins. Based on the ['Capabilities periodic table' of the Digital Twin Consortium](https://www.digitaltwinconsortium.org/initiatives/capabilities-periodic-table), a simplified set of Capabilities has been defined that serves as the basis for the NLDT [[BBDT]].
 
-Digital Twin Capabilities Periodic Table
+<img src="./respec/media/capabilities-en.png" alt="DT Capabilities op basis van Digital Twin Consortium Periodic Table" width="900">
+
+[Digital Twin Capabilities Periodic Table](https://www.digitaltwinconsortium.org/initiatives/capabilities-periodic-table)
 
 
-### Data
+### Data services
 
-#### Unlock
+#### Access
 
 To visualize the physical living environment, data is layered on top of each other in a graphical environment. The data from the layers come from various registers and often represent policy choices or legal standards, and the sliders are the different policy ambitions in relation to the standards for, for example, noise or public green spaces. The layers can be controlled with sliders, so that interests can be balanced and fairly proportional to each other.
 
-#### Edit
+#### Manage
 
 A Digital Twin is interactive and dynamic (measured data from the environment – including measurements done by citizens, also known as Citizen Science, so that the citizen is involved in initiatives). The user of it will be able to do more than simply observe data and models. The user will be able to modify data.
 
-#### Search/Find
+#### Find and Bind
 
 In a Digital Twin, various types of data are brought together to create as accurate a representation as possible of the policy choices. Digital Twins must speak the language and use images that policy makers recognize – including normalizing and standardizing the indicators used. A Digital Twin also provides contextual information that helps users understand what the data represents, where it comes from, how it was collected and how it should be interpreted. This is especially important because Digital Twins often contain complex and diverse data sources. It is essential for the successful use of Digital Twins in various domains.
 
@@ -62,27 +66,27 @@ The concept of time travel in a digital twin offers the possibility to study a s
 
 ### Integration
 
-#### Reproduce
+#### Reproduction
 
 Every policy decision (at a specific time) that is made using a digital twin must be reproducible at a later time. So the state that the Digital Twin has at a certain moment must be recallable, including the value of the indicators on which the decision was made. The reproducibility of the circumstances in which a policy decision is made, by means of a Digital Twin, is very important:
 1. In a constitutional state, decisions are made based on a legal framework and linked indicators, and
 2. The Digital Twin is truly seen as a policy instrument and that it can be trusted and helps in efficiency.
 
-#### Measure/Control
+#### Sense & Actuate
 
 Some Digital Twins are capable of processing (measurement) data in real-time, monitoring (to see if policy also has the desired effect in the policy cycle), and optionally reacting to changes. This requires computational rules (algorithms) that can quickly analyze data and take action based on results. Measurements are stored, so that in the future they can be used to make a statement about a series from the past to possibly observe a trend in indicators.
 
-#### Integrate
+#### Integration
 
 A Digital Twin makes it possible to define different policy perspectives and thus gain a holistic view of a policy area or policy project. This combination helps to gain deeper insights, make better decisions, and generate value in various domains. This is an important instrument for integrating all layers into 1 situational picture.
 
-### Analysis
+### Intelligence
 
-#### Analyze
+#### Analytics
 
 Analyzing is the process of examining and interpreting the data in the digital twin. This includes applying different analysis techniques, models, and algorithms to gain insights into the behavior, performance, and trends within the Digital Twin. The purpose of analyzing is to see if control has the desired effect and can be adjusted for more or less effects where needed.
 
-#### Predict
+#### Prediction
 
 Digital twins make it possible to anticipate future events, trends, or behaviors based on current and historical data of the simulated object or system. Using advanced analyses, models, and algorithms, a digital twin can simulate potential outcomes and scenarios, allowing users to react proactively to possible changes or challenges.
 
@@ -90,21 +94,21 @@ Digital twins make it possible to anticipate future events, trends, or behaviors
 
 Orchestration ensures that the different components or services within the Digital Twin work together to perform a specific task or workflow.
 
-#### Simulate
+#### Simulation
 
 A Digital Twin makes it possible to bring together and combine different types of data into a holistic view of a system, process, or entity. This combination helps to gain deeper insights, make better decisions, and generate value in various domains. This is an important instrument for data-driven work. With simulation, AI can also be used for ‘opportunity finding’. The opportunity maps and what-can-go-where maps indicate areas with potential for solutions in case of conflicting interests in that area!
 
-#### Calculate
+#### Calculation
 
 Digital Twins can use computational models (e.g., heat stress, waterlogging, noise zones). These computational models can analyze data using techniques and algorithms. This makes patterns and trends visible. These computational analyses can be used to gain insight into behavior and make predictions about future situations. The outcome of Computational Models translates into indicators. Indicators are the link between the Digital Twin and Policy. Calculating is therefore an essential part of both policy and a Digital Twin.
 
-### Visualization
+### User experience
 
-#### Visualize
+#### Visualization
 
 The power of visualization in a digital twin lies in its ability to transform data into understandable, interactive, and usable images that provide insight, detect problems, improve communication, and contribute to better decision-making and performance. Visualization can be done in many ways: 2D (flat top view), 3D (to better visualize and analyze complex spatial data in a way that traditional 2D maps cannot). Glasses that project images overlapping with reality can also be used. Images can be static (current view of a situation) or very dynamic (interactive map where you can turn knobs to change indicators and immediately see the associated policy effects), contain many details and be realistic or not. The choice of visualizations depends on the nature of the data and the purpose of the digital twin. By combining different visualization techniques, users can get a more complete picture of a system, understand processes, and make better decisions.
 
-#### Experience
+#### (User) Experience
 
 A great strength of a Digital Twin is the experience aspect. These experiences go beyond simply observing data and models; they enable people to virtually experiment, learn, and understand how something looks or functions. This is achieved by users interacting with a virtual copy. The interaction can take place in different ways. User-friendliness and an intuitive interface that makes it easy for users to navigate and perform the necessary actions are also important.
 
@@ -114,11 +118,13 @@ A great strength of a Digital Twin is the experience aspect. These experiences g
 
 A Digital Twin stands (or falls) with the accurate representation (according to agreements and rules) of reality. All data and information that feed the digital twin are tested against agreed quality requirements. Errors are not to be avoided and user expectations are set accordingly. Trust is also obtained through formal agreements and frameworks. For example, the user must identify themselves in the system (Identity & Access Management), confidential data is exchanged (data spaces), logging is performed, and APIs are managed (via gateway functionality).
 
-#### Identify
+#### Identification & Authorization
 
 Identification is a foundation of modern software systems that ensure efficient and secure functioning within digital infrastructures. These are supporting components that can provide access control and access rights, thereby preventing unsecured access. Identification also makes it possible to personalize systems for individual users or groups, so that the user interface or tailored content can be offered and that preferences and settings can be stored.
 
---------------------------------------------------------------------------------
-@TODO The online Archimate view of the capabilities can be found here.
+---
 
---------------------------------------------------------------------------------
+
+<img src="./respec/media/DT_Capabilities-en.png" alt="DT Capabilities" width="900">
+
+The online Archimate view of the Capabilities can be found [here](https://geonovum.github.io/NLDT-Architectuur/Archimate/html/index.html?view=id-decf311e5f5b4e169cf844aa5c909d0d).

@@ -57,8 +57,8 @@ var documentConfig =
   localBiblio: {
         
     BBDT: {
-        title: "Beleidsprocessen en bouwblokken voor Digitale Tweelingen",
-        href: "https://www.geonovum.nl/uploads/documents/Eindrapport%20Advies%20Beleid%20en%20Digital%20Twins%20-%20provincie%20Utrecht%20v1.3d.pdf",
+        title: "Policy processes and building blocks for Digital Twins",
+        href: "https://www.geonovum.nl/uploads/documents/Eindrapport%20Advies%20Beleid%20en%20Digital%20Twins%20-%20provincie%20Utrecht%20v1.3d_EN.pdf",
         publisher: "Geonovum"
     },
     NDTFL: {

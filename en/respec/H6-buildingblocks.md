@@ -2,7 +2,8 @@
 
 The basic pattern of the NLDT reference architecture consists of 4 building blocks: 
 
-@TODO 
+<img src="./respec/media/architectuur_driehoek-en.png" alt="Basic Building Blocks of the NLDT Architecture" width="900">
+Basic Building Blocks of the NLDT Architecture
 
 The building blocks could also be considered as groupings of Application Functions. This classification helps to emphasize that a Digital Twin is also constructed from separate, collaborating components from an application or system perspective. For example, the services of a computational model must be able to be consumed by various visualization solutions. 
 
@@ -20,7 +21,7 @@ This leads to patterns that support both specific dataspace standards and generi
 
 The foundation consists of the necessary basic infrastructure and catalog functionality.
 
-@TODO
+<img src="./respec/media/buildingblock_foundation.png" alt="Building Block Foundation" width="900">
 
 #### Self-service data infrastructure components based on Dataspace protocols
 
@@ -37,18 +38,18 @@ The aforementioned components ensure an orderly handling of the exchange of data
 
 The Data building block contains those matters that need to be organized around data and data services in an interoperable system.
 
-@TODO
+<img src="./respec/media/buildingblock_data.png" alt="Building Block Data" width="900">
 
 ## Computational Models
 
 The Computational Models building block contains the specific matters that are necessary for making Computational Models (or Algorithms) available in a federative, distributed system.
 
-@TODO
+<img src="./respec/media/buildingblock_processing.png" alt="Building Block Computation Models" width="900">
 
 ## Visualization
 
 The Visualization building block contains the various components to provide a Visualization. These can be 2D or 3D viewers, but also Dashboards or other visualization applications.
 
-@TODO
+<img src="./respec/media/buildingblock_visualisation.png" alt="Building Block Visualisation" width="900">
 
 --------------------------------------------------------------------------------
