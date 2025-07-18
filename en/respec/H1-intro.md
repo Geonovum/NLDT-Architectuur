@@ -28,7 +28,7 @@ This document is aimed at everyone involved in developing forms of digital twinn
 
 The architecture describes a number of core values that a Digital Twin for the physical living environment should meet in chapter 2. 
 
-Chapter 3 discusses the Architecture Principles of the NLDT. 
+Chapter 3 discusses the Architecture Principles of the nLDT. 
 
 Chapter 4 discusses the implications that follow from the Architecture Principles. 
 

@@ -7,7 +7,7 @@ These core values define a number of preconditions for the network of Digital Tw
 
 Figure 1: Core values from Digital Decade 2030
 
-We endorse the core values and digital rights and principles of the EU Digital Decade and specifically focus on core values and goals from the NLDT perspective.
+We endorse the core values and digital rights and principles of the EU Digital Decade and specifically focus on core values and goals from the nLDT perspective.
 
 ## Purpose
 

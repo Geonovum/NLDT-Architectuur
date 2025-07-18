@@ -1,6 +1,6 @@
 var documentConfig =
 {
-  title: "NLDT",
+  title: "nLDT",
   subtitle: "Architecture",
   // shortName: "NLDT",
   // pubDomain: "geen",
@@ -67,10 +67,21 @@ var documentConfig =
       publisher: "Geonovum",
       status:     "V0.9",
       date: "11 februari 2022"
-  },
-  DMI_ecosysteem_volwassenheidsniveaus: {
-    title: "De type volwassenheidsniveaus zijn gebaseerd op een analyse over zes bronnen, te weten Geospatial World (2023), Digital Twin Consortium (2024a), Digital Urban Brabant (2023), International Data Group (2019), Stichting Toekomstbeeld der Techniek (2022) en TNO."
-  },
+    },
+    LDT: {
+          title: "Public report on the LDT toolbox detailed specifications requirements – D05.02",
+          href: "https://data.europa.eu/doi/10.2759/384198",
+          publisher: "European Commission",
+          },
+          DCTP: {
+            title: "Digital Twin Consortium. Digital Twin Capabilities Periodic Table. A Digital Twin Consortium User Guide 2022-03-28.",
+            href: "https://www.digitaltwinconsortium.org/wp-content/uploads/sites/3/2022/06/Digital-Twin-Capabilities-Periodic-Table-User-Guide.pdf"
+      },
+    DUET: {
+            title: "L. Raes et al., DUET: A Framework for Building Interoperable and Trusted Digital Twins of Smart Cities",
+            href: "https://ieeexplore.ieee.org/document/9362182",
+            publisher: "IEEE Internet Computing, vol. 26, no. 3, pp. 43-50, 1 May-June 2022"
+        },
   VRO_2024: {
     title: "Aanbieding meerjarenvisie Zicht op Nederland: samen datagedreven werken aan de fysieke leefomgeving",
     href: "https://www.rijksoverheid.nl/documenten/rapporten/2024/02/12/meerjarenvisie-zicht-op-nederland",

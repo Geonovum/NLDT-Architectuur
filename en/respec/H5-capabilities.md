@@ -14,17 +14,19 @@ The application of a Digital Twin in the physical living environment can be very
 | Prescriptive | Real-time data from integrated systems, situational awareness, recommendations. |
 | Autonomous | Continuous intelligence for decision-making, adaptive and generative AI, self-sustaining. |
 
-[[DMI_ecosystem_volwassenheidsniveaus]]
+Note: These levels of automation are used within the DMI ecosystem. 
 
-Besides these automation levels, we also recognize the policy cycle, whereby in the different phases a different type of application can be used. In this chapter, the value streams and capabilities are broadly described that can be used in different combinations, depending on the level of automation and phase in the policy cycle. The choice of which capabilities can be used for a specific application is not part of this reference architecture.
+Besides these automation levels, we also recognize the policy cycle, whereby in the different phases a different type of application can be used. (see [[BBDT]] for more information on this topic)
+
+In this chapter, the value streams and capabilities are broadly described that can be used in different combinations, depending on the level of automation and phase in the policy cycle. The choice of which capabilities can be used for a specific application is not part of this reference architecture.
 
 ## Metamodel
 
 <img src="./respec/media/NLDT-en_archimate_metamodel.png" alt="archimate metamodel" width="900">
 
-Archimate metamodel for the NLDT architecture. [online viewer](https://geonovum.github.io/NLDT-Architectuur/Archimate/html/index.html?view=id-a08c59e3541043cba2f2f63e81f08c2f)
+Archimate metamodel for the nLDT architecture. [online viewer](https://geonovum.github.io/NLDT-Architectuur/Archimate/html/index.html?view=id-a08c59e3541043cba2f2f63e81f08c2f)
 
-The above image visualises the Archimate metamodel for the NLDT architecture. This is built from motivational elements of Archimate to express frameworks and guidelines. Furthermore, it is built from capabilities and value streams to describe the service provision. The capabilities are then elaborated into patterns based on elements from the business and application layers of Archimate. Chapter 5 discusses the value streams and capabilities, Chapter 6 discusses the patterns of business and application objects.
+The above image visualises the Archimate metamodel for the nLDT architecture. This is built from motivational elements of Archimate to express frameworks and guidelines. Furthermore, it is built from capabilities and value streams to describe the service provision. The capabilities are then elaborated into patterns based on elements from the business and application layers of Archimate. Chapter 5 discusses the value streams and capabilities, Chapter 6 discusses the patterns of business and application objects.
 
 ## Value Streams
 
@@ -39,7 +41,7 @@ Converting results/insights into practice
 
 ## Capabilities
 
-There are internationally diverse frameworks that describe capabilities or components of digital twins. Based on the ['Capabilities periodic table' of the Digital Twin Consortium](https://www.digitaltwinconsortium.org/initiatives/capabilities-periodic-table), a simplified set of Capabilities has been defined that serves as the basis for the NLDT [[BBDT]].
+There are internationally diverse frameworks that describe capabilities or components of digital twins. Based on the ['Capabilities periodic table' of the Digital Twin Consortium](https://www.digitaltwinconsortium.org/initiatives/capabilities-periodic-table), a simplified set of Capabilities has been defined that serves as the basis for the nLDT [[BBDT]].
 
 <img src="./respec/media/capabilities-en.png" alt="DT Capabilities op basis van Digital Twin Consortium Periodic Table" width="900">
 
