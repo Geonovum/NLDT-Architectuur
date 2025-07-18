@@ -13,7 +13,7 @@ Alle vormen van data kunnen samengebracht worden. De gegevens worden minimaal ge
 English:&#xD;
 &#xD;
 Non-technical description:&#xD;
-To visualize the physical living environment, data is layered together in a graphical environment. The data of the layers come from divergent registers and often suggest policy choices or legal standards and the sliders are the different policy ambitions in relation to the standards for, &#xD;
+To visualise the physical living environment, data is layered together in a graphical environment. The data of the layers come from divergent registers and often suggest policy choices or legal standards and the sliders are the different policy ambitions in relation to the standards for, &#xD;
 for example, noise or public green. The layers can be controlled with sliders, so that interests can be balanced and in a fair way in proportion to each other.&#xD;
 &#xD;
 Technical description:&#xD;
@@ -127,7 +127,7 @@ Om een afbeelding te maken van de werkelijkheid in een Digitale Tweeling, moeten
 English: &#xD;
 &#xD;
 Non-technical description:&#xD;
-Some Digital Twins are able to process (measurement) data in real time, monitor (to see whether policy also has the desired effect in the policy cycle), and optionally respond to changes. This requires calculation rules (algorithms) that can quickly analyze data and act based on results. &#xD;
+Some Digital Twins are able to process (measurement) data in real time, monitor (to see whether policy also has the desired effect in the policy cycle), and optionally respond to changes. This requires calculation rules (algorithms) that can quickly analyse data and act based on results. &#xD;
 Measurements are kept so that in it they can be used to make a statement about a series from the past so that, if possible, trend in indicators can be seen) &#xD;
 &#xD;
 Technical description:&#xD;
@@ -197,7 +197,7 @@ Digital twins make it possible to anticipate future events, trends or behaviors 
 &#xD;
 Technical description:&#xD;
 The ability to make a statement about the future state of the representation of reality, based on historical data (through statistics and models). The parameters of the models can be adjusted in such a way that different future situations are predicted. &#xD;
-The future state can be visualized in the same interface where the current and previous state were displayed. See also time travel.&#xD;
+The future state can be visualised in the same interface where the current and previous state were displayed. See also time travel.&#xD;
 </documentation>
       <property key="Name (en)" value="Prediction"/>
     </element>
@@ -258,7 +258,7 @@ Rekenmodules worden geregistreerd in het algoritmeregister, zodat de iedereen ka
 English:&#xD;
 &#xD;
 Non-technical description:&#xD;
-Digital Twin can use calculation models (e.g. heat stress, flooding, noise zones). These calculation models can analyze data using techniques and algorithms. In this way patterns and trends become visible. &#xD;
+Digital Twin can use calculation models (e.g. heat stress, flooding, noise zones). These calculation models can analyse data using techniques and algorithms. In this way patterns and trends become visible. &#xD;
 These calculation analyses can be used to gain insight into behaviour and make predictions about future situations. The results of Calculation Models translate into indicators. Indicators are the link between Digital Twins and Policy. &#xD;
 Computing is therefore an essential part of both policy and of a Digital Twin.&#xD;
 &#xD;
@@ -281,13 +281,13 @@ Technisch:&#xD;
 English:&#xD;
 &#xD;
 Non-technical description:&#xD;
-The power of visualization in a Digital Twin lies in its ability to turn data into understandable, interactive, and actionable images that provide insight, detect problems, improve communication, and contribute to better decisionmaking and performance.&#xD;
-Visualization can be done in many ways: 2D (flat top view), 3D (to better visualize and analyze complex spatial data in a way that traditional 2D maps cannot) glasses can also be used in which images are projected that overlap with reality. &#xD;
+The power of visualisation in a Digital Twin lies in its ability to turn data into understandable, interactive, and actionable images that provide insight, detect problems, improve communication, and contribute to better decisionmaking and performance.&#xD;
+Visualisation can be done in many ways: 2D (flat top view), 3D (to better visualise and analyse complex spatial data in a way that traditional 2D maps cannot) glasses can also be used in which images are projected that overlap with reality. &#xD;
 Images can be static (current image of a situation) or very dynamic (interactive map where you can turn buttons to change indicators and see the associated policy effects immediately in the picture), contain a lot of details and are realistic or not. &#xD;
-The choice of visualizations depends on the nature of the data and the purpose of the Digital Twins. By combining different visualization techniques, users can get a more complete picture of a system, understand processes, and make better decisions. &#xD;
+The choice of visualisations depends on the nature of the data and the purpose of the Digital Twins. By combining different visualisation techniques, users can get a more complete picture of a system, understand processes, and make better decisions. &#xD;
 &#xD;
 Technical description:&#xD;
-1 picture says more than 1000 words. The Digital Twin of the physical environment comes into its own when it can be visualized in 2D and 3D, with a Level-of-Detail that meets the requirements. The images can be static or dynamic, very realistic (in terms of colors and effects) or just not (false colors). &#xD;
+1 picture says more than 1000 words. The Digital Twin of the physical environment comes into its own when it can be visualised in 2D and 3D, with a Level-of-Detail that meets the requirements. The images can be static or dynamic, very realistic (in terms of colors and effects) or just not (false colors). &#xD;
 The use of AR/VR/xR can also offer more insight and interaction with reality, without us being able to see it.&#xD;
 </documentation>
       <property key="Name (en)" value="Visualisation"/>
