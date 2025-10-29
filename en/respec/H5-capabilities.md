@@ -34,10 +34,7 @@ The deployment of a Digital Twin as an instrument serves a certain goal. This ca
 
 ### Use case to Indicators
 
-@TODO 
-\<placeholder\> Something about the translation of practical issues into their digital representation in a DT...
-Converting results/insights into practice
-\<placeholder\> Something about how insights from DTs can be translated into practice. Depends on the maturity level of the DT (descriptive, analytical, predictive).
+In the report 'Policy processes and building blocks for Digital Twins' [[BBDT]], it is described how Digital Twins connect the world of policy with the world of technology. Indicators act as the linking pin from policy to the Digital Twin to enable data- and model-driven work within the policy process. The Innovation Learning Cycle can be used to connect these worlds. In architectural terms, you can refer to this as Value Streams.
 
 ## Capabilities
 

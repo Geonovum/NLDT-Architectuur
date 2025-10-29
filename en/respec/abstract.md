@@ -1,7 +1,7 @@
 # Abstract
 
 <aside class="note">
-    This is an initial translation from the Dutch architecture document into English.
-    It is based on earlier work and is currently in development.
+    This is an initial version based on the Dutch reference architecture.
+    It focusses on the adoption of open OGC Standards. Further adoption of open standards for e.g. cloudtechnology is anticipated.
 </aside>
 

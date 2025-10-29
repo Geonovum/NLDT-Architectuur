@@ -2,10 +2,13 @@
 
 The nLDT reference architecture describes principles and patterns for the network of Local Digital Twins. There are many initiatives at regional, national, and European scales that try to do something similar. We do not see this reference architecture as the only truth, but we do try to offer a comprehensible structure and order that can stimulate convergence in initiatives.
 
-## ZoN Datafundament
+## Zicht op Nederland (ZoN) Doelarchitectuur Dataspace Fysieke Leefomgeving
 
-The target architecture for ZoN Datafundament is in progress (status Q2 2025). The target architecture ZoN Datafundament describes a Dataspace for the physical environment within the Netherlands. The nLDT reference architecture can primarily be seen as a consumer (and to a lesser extent, provider) of products and services described in the Target Architecture of ZoN Datafundament.
-Thus, there is a large overlap between these architectures which will be carefully aligned during development.
+The [target architecture for the ZoN Dataspace Physical Environment](https://geonovum.github.io/ZON-DA/) is under development. The ZoN Data Foundation target architecture describes a Dataspace for the Physical Environment. The nLDT reference architecture can primarily be seen as a consumer (and to a lesser extent, a provider) of products and services described in the ZoN Data Foundation Target Architecture.
+
+As a result, there is a significant overlap between these architectures, which is carefully aligned during development.
+
+This Dataspace architecture is aligned with the Federated Data System (FDS) as well as based on the European Dataspace standards.
 
 ## Gebora
 
