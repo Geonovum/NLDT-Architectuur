@@ -4,15 +4,15 @@ var documentConfig =
   subtitle: "Architectuur",
   // shortName: "NLDT",
   // pubDomain: "geen",
-  specStatus: "wv",
+  specStatus: "vv",
   specType: "hr",
-  license: "cc-by-nd",
+  license: "cc-by",
   maxTocLevel: 3,
   // latestVersion: [
   //   "https://docs.geostandaarden.nl/NLDT-Architectuur/"
   // ],
-  publishDate: "2024-06-21",
-  publishVersion: "0.1.0",
+  publishDate: "2025-10-29",
+  publishVersion: "0.8.0",
   thisVersion: [
     "https://geonovum.github.io/NLDT-Architectuur/"
   ],
