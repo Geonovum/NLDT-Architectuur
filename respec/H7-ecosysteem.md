@@ -1,10 +1,5 @@
 # NLDT in relatie tot andere initiatieven
 
-<aside class="note">
-Dit hoofdstuk moet nog verder uitgewerkt worden.
-
-</aside>
-
 
 De referentiearchitectuur NLDT beschrijft uitgangspunten en patronen voor het netwerk van Lokale Digitale Tweelingen.
 Er zijn veel initiatieven op regionale, nationale en europese schaal die iets soortgelijks proberen te doen.
@@ -12,9 +7,9 @@ Er zijn veel initiatieven op regionale, nationale en europese schaal die iets so
 We zien deze referentiearchitectuur niet als de enige waarheid, maar proberen wel een begrijpelijke structuur en ordening te bieden die convergentie in intiatieven kan stimuleren.
 
 
-## ZoN Datafundament
+## Zicht op Nederland (ZoN) Doelarchitectuur Dataspace Fysieke Leefomgeving
 
-De doelarchitectuur voor ZoN Datafundament is in wording (stand van zaken Q2 2025). De doelarchitectuur ZoN Datafundament beschrijft een Dataspace voor de Fysieke Leefomgeving. De NLDT referentiearchitectuur kan vooral als afnemer (en in mindere mate aanbieder) gezien worden van producten en diensten die in de Doelarchitectuur van ZoN Datafundament beschreven worden. 
+De [doelarchitectuur voor ZoN Dataspace Fysieke Leefomgeving](https://geonovum.github.io/ZON-DA/) is in wording. De doelarchitectuur ZoN Datafundament beschrijft een Dataspace voor de Fysieke Leefomgeving. De NLDT referentiearchitectuur kan vooral als afnemer (en in mindere mate aanbieder) gezien worden van producten en diensten die in de Doelarchitectuur van ZoN Datafundament beschreven worden. 
 
 Daarmee is er een groot raakvlak tussen deze architecturen wat gedurende de ontwikkeling zorgvuldig op elkaar afgestemd wordt. 
 
@@ -38,10 +33,6 @@ FDS ontwikkelt zich tot een afsprakenstelsel dat het datapotentieel van verschil
 Daarmee voorziet het FDS in een basis stelsel waar zowel ZoN Datafundament als de NLDT op voortbouwen.
 
 
----
+## EDIC
 
-- EU Dataspaces/LDT
-
-
-- EDIC
-
+Deze referentiearchitectuur is ontstaan vanuit een Nederlandse context. We zien dat Europese ontwikkelingen zoals [[DUET]] en [[LDT]] dezelfde patronen beschrijven. Daarmee zijn er ook kansen om deze architectuur ook in te brengen in de Europese ontwikkelingen. Hiervoor is een Engelse vertaling gemaakt van dit [document](https://geonovum.github.io/NLDT-Architectuur/en).

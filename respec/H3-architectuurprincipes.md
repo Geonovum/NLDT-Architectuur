@@ -1,10 +1,5 @@
 # Architectuurprincipes
 
-<aside class="note">
-NH: Dit is een eerste synthese van principes uit eerder werk.
-Een goed gesprek over welke Architectuurprincipes hier uiteindelijk komen te staan moet nog gevoerd worden!
-</aside>
-
 ## Aansluiten op omliggende kaders
 
 __Beschrijving:__

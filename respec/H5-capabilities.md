@@ -34,11 +34,11 @@ Het inzetten van een Digitale Tweeling als instrument dient een bepaald doel. Di
 
 ### Use case naar Indicatoren
 
-\<placeholder\> Iets over de vertaling van vraagstukken uit de praktijk naar de digitale representatie ervan in een DT...
+In het rapport 'Beleidsprocessen en bouwblokken voor Digitale Tweelingen' [[BBDT]] wordt beschreven hoe Digitale Tweelingen de beleidswereld en de techniekwereld met elkaar verbinden. Indicatoren vormen daarbij de linking pin van beleid naar de Digitale Tweeling om data en model gedreven werken mogelijk te maken binnen het beleidsproces. De [Innovatieleercyclus](https://www.geonovum.nl/themas/digital-twins/innovatieleercyclus) kan gebruikt worden om deze werelden met elkaar te verbinden. In architectuurtermen kun je dit aanduiden met Waardestromen.
 
 ### Resultaten/inzichten omzetten naar praktijk
 
-\<placeholder\> Iets over de wijze waarop inzichten uit DT's omgezet kunnen worden naar de praktijk. Hangt af van het maturiteitsniveau van de DT (beschrijven, analyserend, voorspellend)
+Hoe de resultaten of inzichten uit DT's omgezet kunnen worden naar de praktijk is vooralsnog buiten scope van deze architectuur. Dit hangt onder andere af van het maturiteitsniveau van de DT (beschrijven, analyserend, voorspellend).
 
 ## Capabilities
 

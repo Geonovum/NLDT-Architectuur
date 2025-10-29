@@ -85,6 +85,16 @@ var documentConfig =
     title: "Scope van FDS",
     href: "https://federatief.datastelsel.nl/kennisbank/scope-van-fds/",
     date: "30-04-2025"
-  }
+  },
+  LDT: {
+          title: "Public report on the LDT toolbox detailed specifications requirements – D05.02",
+          href: "https://data.europa.eu/doi/10.2759/384198",
+          publisher: "European Commission",
+          },
+  DUET: {
+            title: "L. Raes et al., DUET: A Framework for Building Interoperable and Trusted Digital Twins of Smart Cities",
+            href: "https://ieeexplore.ieee.org/document/9362182",
+            publisher: "IEEE Internet Computing, vol. 26, no. 3, pp. 43-50, 1 May-June 2022"
+        }
   }
 }
