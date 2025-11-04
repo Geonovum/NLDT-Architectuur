@@ -52,9 +52,9 @@ The Visualisation building block contains the various components to provide a Vi
 
 <img src="./respec/media/buildingblock_visualisation.png" alt="Building Block Visualisation" width="900">
 
-## AppStore
+## Appstore
 
-The services from the different building blocks can be shared and published in an App Store under specific conditions.
+The services from the different building blocks can be shared and published in an Appstore under specific conditions.
 
 To ensure quality and trustworthiness, modules discoverable in the App Store undergo an objective assessment according to European guidelines, supplemented by more national guidelines where necessary.
 Validation of these modules is made possible by clear assessment criteria in the areas of:
