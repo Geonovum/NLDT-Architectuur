@@ -59,6 +59,25 @@ Het visualisatie bouwblok bevat de verschillende componenten om een Visualisatie
 
 <img src="./respec/media/bouwblok_visualisatie.png" alt="Bouwblok visualisatie" width="900">
 
+## Appstore
+
+De diensten uit de verschillende bouwblokken kunnen onder bepaalde voorwaarden gedeeld en gepubliceerd worden in een Appstore.
+
+Om de kwaliteit en betrouwbaarheid te waarborgen, ondergaan modules die vindbaar zijn in de Appstore een objectieve toetsing volgens Europese richtlijnen,
+aangevuld met meer ntaionale richtlijnen indien nodig.
+Validatie van modules wordt mogelijk door duidelijke toetsingscriteria op het gebied van:
+
+- Technische compatibiliteit en betrouwbaarheid;
+- Transparantie en uitlegbaarheid van algoritmen en logica;
+- Juridische en ethische conformiteit;
+- Reproduceerbaarheid en herleidbaarheid van resultaten;
+- Beheeraspecten van toepassingen zoals lifecycle management en onderhoud;
+- Gebruikservaring en feedback.
+
+<img src="./respec/media/appstore.png" alt="appstore" width="900">
+
+
+
 --- 
 
 
