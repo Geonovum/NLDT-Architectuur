@@ -6,7 +6,7 @@ __Description:__
  The architecture of the digital twin system is based on and aligned with  architectural frameworks of the EU and national governments as well as de facto frameworks used within companies and organizations. 
  
 __Rationale:__
- The network of local digital twins does not exist in isolation. It must be aligned with other IT environments and the developments taking place in the broader context. This includes Data space developments and the European Data and AI Act. 
+ The network of local digital twins does not exist in isolation. It must be aligned with other IT environments and the developments taking place in the broader context. This includes Data space developments and the European Data and AI Act, as well as alignment [[eGovERA]] with interoperability of Digital Public Services in mind. 
  
 __Implications:__
 - [Reuse](#reuse)

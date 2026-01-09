@@ -28,6 +28,17 @@ Archimate metamodel for the nLDT architecture. [online viewer](https://geonovum.
 
 The above image visualises the Archimate metamodel for the nLDT architecture. This is built from motivational elements of Archimate to express frameworks and guidelines. Furthermore, it is built from capabilities and value streams to describe the service provision. The capabilities are then elaborated into patterns based on elements from the business and application layers of Archimate. Chapter 5 discusses the value streams and capabilities, Chapter 6 discusses the patterns of business and application objects.
 
+## nLDT - eGovERA Alignment
+
+<img src="./respec/media/nLDT-eGovERA-Alignment.png" alt="nLDT - eGovERA Alignment" width="900">
+
+High level overview of nLDT - eGovERA Alignment
+
+The different components of the nLDT reference architecture can be mapped to eGovERA building blocks. A general alignment is outlined in the above view. A more detailed mapping can be found in the archimate model.
+  - The motivation and guidelines of the nLDT are aligned with the Shared Legal Content
+  - The Organizational viewpoint is aligned with teh Shared Organisational Content
+  - The nLDT building blocks contain elements that realize the Shared Knowledgde Content, while all the building blocks align with the Shared Application Content
+
 ## Value Streams
 
 The deployment of a Digital Twin as an instrument serves a certain goal. This can be a scenario analysis, the substantiation of conducted policy, or the operational control of a system. There are countless possibilities. In all cases, a translation must be made from the intended goal to a model-based representation in the Digital Twin. This translation can be represented in a value stream that realizes a certain goal and thereby needs a number of capabilities.

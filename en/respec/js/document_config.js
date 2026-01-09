@@ -12,7 +12,7 @@ var documentConfig =
   //   "https://docs.geostandaarden.nl/NLDT-Architectuur/"
   // ],
   publishDate: "2025-10-29",
-  publishVersion: "0.8.0",
+  publishVersion: "0.8.1",
   thisVersion: [
     "https://geonovum.github.io/NLDT-Architectuur/en/"
   ],
@@ -96,6 +96,11 @@ var documentConfig =
     title: "Scope van FDS",
     href: "https://federatief.datastelsel.nl/kennisbank/scope-van-fds/",
     date: "30-04-2025"
+  },
+  eGovERA: {
+    title: "eGovERA Business Agnostic Reference Architecture 6.1.0",
+    href: "https://interoperable-europe.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/solution/egovera-business-agnostic-0/release/610",
+    date: "07-11-2024"
   }
-  }
+}
 }
