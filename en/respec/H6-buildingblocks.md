@@ -34,11 +34,28 @@ The various components ensure an robust handling of the exchange of data product
 
 See the International DataSpace Association (IDSA) documentation for more information on the Dataspace Connectors and Dataspace Protocols.
 
+#### eGovERA Alignment
+
+These eGovERA ABB's align with the nLDT building blocks in the Foundation category:
+- Knowledge Discovery
+- API Discovery and Catalogue
+- Metadata Management
+- Authentication
+- Audit
+- Observability
+- Monitoring
+
 ## Data
 
 The Data building block contains those matters that need to be organized around data and data services in an interoperable system.
 
 <img src="./respec/media/buildingblock_data.png" alt="Building Block Data" width="900">
+
+#### eGovERA Alignment
+
+These eGovERA ABB's align with the nLDT building blocks in the Data category:
+- Dataspace Connector
+- Data Management (and a number of related ABB's)
 
 ## Computational Models
 
@@ -46,11 +63,27 @@ The Computational Models building block contains the specific matters that are n
 
 <img src="./respec/media/buildingblock_processing.png" alt="Building Block Computation Models" width="900">
 
+#### eGovERA Alignment
+
+These eGovERA ABB's align with the nLDT building blocks in the Computational Models category:
+- Data Analytics
+- Orchestration
+- Artificial Intelligence
+
+
 ## Visualisation
 
 The Visualisation building block contains the various components to provide a Visualisation. These can be 2D or 3D viewers, but also Dashboards or other visualisation applications.
 
 <img src="./respec/media/buildingblock_visualisation.png" alt="Building Block Visualisation" width="900">
+
+#### eGovERA Alignment
+
+These eGovERA ABB's align with the nLDT building blocks in the Visualisation category:
+- Public Administration Single Window
+
+> Note:
+The mapping of the visualisation building block does not seem to be quite equivalent with the viewpoint from eGovERA.  
 
 ## Appstore
 

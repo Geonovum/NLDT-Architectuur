@@ -649,8 +649,610 @@ English:&#xD;
     <element xsi:type="archimate:ApplicationInterface" name="Data Access Libraries" id="id-a47b30a7dcf24a3f9e3945f78990246f">
       <property key="Name (en)" value="Data Access Libraries"/>
     </element>
-    <element xsi:type="archimate:ApplicationInterface" name="OGC API Features" id="id-731a49f732c8410eac271dfd0cf87faf"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Application Component" id="id-593211a79f6049a1bbd8fddbc13ed001"/>
+    <element xsi:type="archimate:ApplicationService" name="Dataspace Connector" id="id-368cc9f220934a29b5392dd34ecf27d2">
+      <documentation>Definition: Dataspace Connector ABB is an Application Service that enables the easy and trustworthy procedure to share data and work collaboratively with other research institutions.
+
+Source: IDSA
+
+Source reference: https://international-data-spaces-association.github.io/DataspaceConnector/
+
+Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): The Dataspace Connector from the International Data Spaces Association. https://international-data-spaces-association.github.io/DataspaceConnector/
+
+Interoperability Dimension: Behavioral IoP
+
+LOST view: TVA-Data Space Enablers [Motivation]
+
+Interoperability Saliency: The Dataspace Connector Application Service ABB is salient for technical interoperability because it provides the way or method, the procedure for different parties (public services, public organisations, etc) to exchange data in a collaborative method. 
+
+Identifier: http://data.europa.eu/dr8/DataspaceConnectorApplicationService
+
+ABB name: eira:DataspaceConnectorApplicationService
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2023-11-20
+
+Identifier: http://data.europa.eu/dr8/DataspaceConnectorApplicationService
+
+Interoperability Layer: TechnicalApplication
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/DataspaceConnectorApplicationService"/>
+      <property key="dct:type" value="eira:DataspaceConnectorApplicationService"/>
+      <property key="dct:modified" value="2023-11-20"/>
+      <property key="eira:synonym"/>
+      <property key="skos:definition" value="Dataspace Connector ABB is an Application Service that enables the easy and trustworthy procedure to share data and work collaboratively with other research institutions."/>
+      <property key="eira:definitionSource" value="IDSA"/>
+      <property key="eira:definitionSourceReference" value="https://international-data-spaces-association.github.io/DataspaceConnector/"/>
+      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): The Dataspace Connector from the International Data Spaces Association. https://international-data-spaces-association.github.io/DataspaceConnector/"/>
+      <property key="eira:iopSaliency" value="The Dataspace Connector Application Service ABB is salient for technical interoperability because it provides the way or method, the procedure for different parties (public services, public organisations, etc) to exchange data in a collaborative method. "/>
+      <property key="skos:note"/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:iopDimension" value="Behavioral IoP"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/DataspaceConnectorApplicationService"/>
+      <property key="eira:view" value="TVA-Data Space Enablers [Motivation]"/>
+      <property key="eira:view" value="TVA-Functional Architecture Principles"/>
+      <property key="eira:view" value="TVA-Dataspace Enablers"/>
+      <property key="eira:view" value="TVI-Management Infrastructure Enablers [Motivation]"/>
+      <property key="eira:view" value="TVI-Data Management and Knowledge Discovery Infrastructure Enablers [Motivation]"/>
+      <property key="eira:view" value="TVI-Trust Infrastructure Enablers [Motivation]"/>
+      <property key="eira:view" value="TVI-Application Integration Infrastructure Enablers [Motivation]"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Knowledge Discovery" id="id-537088722f7a40b1b5013b02326c9c2d">
+      <documentation>Definition: Knowledge Discovery ABB is an Application Service that enables a highly complex process where a lot of data manipulation tools with different characteristics have to be used together to reach the goal of previously unknown, potentially useful information extraction.
+
+Source: Inspired in EUROSTAT
+
+Source reference: https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Knowledge-intensive_services_(KIS)
+
+Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): CELLAR. Cellar metadata is stored in a knowledge graph, and more specifically in a triple store. A SPARQL interface is used to query the metadata. https://op.europa.eu/en/web/cellar/cellar-data/metadata/knowledge-graph
+
+Interoperability Dimension: Structural IoP
+
+LOST view: Technical view - application
+
+Interoperability Saliency: The Knowledge Discovery Application Service ABB is salient for technical interoperability because it performs a series of complex processes that incorporate multiple data channels, formats and characteristics that are processed to extract relevant information to be used by other digital public services. 
+
+Identifier: http://data.europa.eu/dr8/KnowledgeDiscoveryApplicationService
+
+ABB name: eira:KnowledgeDiscoveryApplicationService
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2024-01-28
+
+Identifier: http://data.europa.eu/dr8/KnowledgeDiscoveryApplicationService
+
+Interoperability Layer: TechnicalApplication
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/KnowledgeDiscoveryApplicationService"/>
+      <property key="dct:type" value="eira:KnowledgeDiscoveryApplicationService"/>
+      <property key="dct:modified" value="2024-01-28"/>
+      <property key="eira:synonym"/>
+      <property key="skos:definition" value="Knowledge Discovery ABB is an Application Service that enables a highly complex process where a lot of data manipulation tools with different characteristics have to be used together to reach the goal of previously unknown, potentially useful information extraction."/>
+      <property key="eira:definitionSource" value="Inspired in EUROSTAT"/>
+      <property key="eira:definitionSourceReference" value="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Knowledge-intensive_services_(KIS)"/>
+      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): CELLAR. Cellar metadata is stored in a knowledge graph, and more specifically in a triple store. A SPARQL interface is used to query the metadata. https://op.europa.eu/en/web/cellar/cellar-data/metadata/knowledge-graph"/>
+      <property key="eira:iopSaliency" value="The Knowledge Discovery Application Service ABB is salient for technical interoperability because it performs a series of complex processes that incorporate multiple data channels, formats and characteristics that are processed to extract relevant information to be used by other digital public services. "/>
+      <property key="skos:note"/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:iopDimension" value="Structural IoP"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/KnowledgeDiscoveryApplicationService"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="API Discovery and Catalogue" id="id-1099a5f7f4044af2a81907c12db78aef">
+      <documentation>Definition: API Discovery and Catalogue Service ABB is an Application Service that enables the discovery and/or maintenance of the API Catalogue ABB.
+
+Source: Inspired in Gartner 
+
+Source reference: https://www.gartner.com/en/information-technology/glossary/application-programming-interface
+
+Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): RapidAPI - RapidAPI is a collection of predefined APIs that are free to test, specifically updated for 2021. https://rapidapi.com/collection/list-of-free-apis
+
+Interoperability Dimension: Structural IoP
+
+LOST view: Technical view - application
+
+Viewpoint: Key Interoperability Enablers viewpoint
+
+Interoperability Saliency: API Discovery and Catalogue Application Service ABB is a key interoperability enabler (*) for structural and behavioural interoperability by enabling and maintaining API Catalogues for public administration services. This is a key aspect enabling interoperability as it contributes to the discovery of APIs through catalogues.
+
+Identifier: http://data.europa.eu/dr8/APIDiscoveryAndCatalogueApplicationService
+
+ABB name: eira:APIDiscoveryAndCatalogueApplicationService
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2024-01-28
+
+Identifier: http://data.europa.eu/dr8/APIDiscoveryAndCatalogueApplicationService
+
+Interoperability Layer: TechnicalApplication
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/APIDiscoveryAndCatalogueApplicationService"/>
+      <property key="dct:type" value="eira:APIDiscoveryAndCatalogueApplicationService"/>
+      <property key="dct:modified" value="2024-01-28"/>
+      <property key="eira:synonym"/>
+      <property key="skos:definition" value="API Discovery and Catalogue Service ABB is an Application Service that enables the discovery and/or maintenance of the API Catalogue ABB."/>
+      <property key="eira:definitionSource" value="Inspired in Gartner "/>
+      <property key="eira:definitionSourceReference" value="https://www.gartner.com/en/information-technology/glossary/application-programming-interface"/>
+      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): RapidAPI - RapidAPI is a collection of predefined APIs that are free to test, specifically updated for 2021. https://rapidapi.com/collection/list-of-free-apis"/>
+      <property key="eira:iopSaliency" value="API Discovery and Catalogue Application Service ABB is a key interoperability enabler (*) for structural and behavioural interoperability by enabling and maintaining API Catalogues for public administration services. This is a key aspect enabling interoperability as it contributes to the discovery of APIs through catalogues."/>
+      <property key="skos:note"/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:iopDimension" value="Structural IoP"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="eira:viewpoint" value="Key Interoperability Enablers viewpoint"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/APIDiscoveryAndCatalogueApplicationService"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Orchestration" id="id-cebeb19e4f9b43419a66a0a39b2c34df">
+      <documentation>Definition: Orchestration Service ABB is an Application Service that enables the definition of the sequence and conditions in which one service invokes other services to realize some useful function.
+
+Source: W3C 
+
+Source reference: https://www.w3.org/TR/ws-arch/
+
+Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Apache ODE - Apache ODE (Orchestration Director Engine) software executes business processes written following the WS-BPEL standard. It talks to web services, sending and receiving messages, handling data manipulation and error recovery as described by your process definition. It supports both long and short living process executions to orchestrate all the services that are part of your application. http://ode.apache.org/
+
+Interoperability Dimension: Structural IoP
+
+LOST view: Technical view - application
+
+Interoperability Saliency: The Orchestration Service ABB  is salient for technical interoperability because it provides the functionality of &quot;automated&quot; business processes coordination. The EIF's Conceptual model for integrated EU public services foresees the concept a Coordination for Integrated Service Delivery. The Model comprises an &quot;integrated service delivery&quot; is based on a &quot;coordination function&quot;, which is related to SOA principles such as choreography and orchestration, to manage internal business processes in order to remove complexity for the end-user, as stated in the EIF: &quot;The coordination function ensures that needs are identified and appropriate services are invoked and orchestrated to provide a European public service. This function should select the appropriate sources and services and integrate them. Coordination can be automated or manual.&quot;
+
+Identifier: http://data.europa.eu/dr8/OrchestrationApplicationService
+
+ABB name: eira:OrchestrationApplicationService
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2024-01-28
+
+Identifier: http://data.europa.eu/dr8/OrchestrationApplicationService
+
+Interoperability Layer: TechnicalApplication
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/OrchestrationApplicationService"/>
+      <property key="dct:type" value="eira:OrchestrationApplicationService"/>
+      <property key="dct:modified" value="2024-01-28"/>
+      <property key="eira:synonym"/>
+      <property key="skos:definition" value="Orchestration Service ABB is an Application Service that enables the definition of the sequence and conditions in which one service invokes other services to realize some useful function."/>
+      <property key="eira:definitionSource" value="W3C "/>
+      <property key="eira:definitionSourceReference" value="https://www.w3.org/TR/ws-arch/"/>
+      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Apache ODE - Apache ODE (Orchestration Director Engine) software executes business processes written following the WS-BPEL standard. It talks to web services, sending and receiving messages, handling data manipulation and error recovery as described by your process definition. It supports both long and short living process executions to orchestrate all the services that are part of your application. http://ode.apache.org/"/>
+      <property key="eira:iopSaliency" value="The Orchestration Service ABB  is salient for technical interoperability because it provides the functionality of &quot;automated&quot; business processes coordination. The EIF's Conceptual model for integrated EU public services foresees the concept a Coordination for Integrated Service Delivery. The Model comprises an &quot;integrated service delivery&quot; is based on a &quot;coordination function&quot;, which is related to SOA principles such as choreography and orchestration, to manage internal business processes in order to remove complexity for the end-user, as stated in the EIF: &quot;The coordination function ensures that needs are identified and appropriate services are invoked and orchestrated to provide a European public service. This function should select the appropriate sources and services and integrate them. Coordination can be automated or manual.&quot;"/>
+      <property key="skos:note"/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:iopDimension" value="Structural IoP"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/OrchestrationApplicationService"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Audit" id="id-66e7252c07f14944b5d581d4486c4578">
+      <documentation>Definition: Audit ABB is an Application Service that enables the implementation of comprehensive procedural services capable of receiving inputs from different building blocks to ensure their correct behaviour, security or compliance with standards, regulations and best practices.
+
+Source: Inspired in SIMPL
+
+Source reference: https://digital-strategy.ec.europa.eu/en/news/simpl-cloud-edge-federations-and-data-spaces-made-simple
+
+Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): OpenIAM audit service - OpenIAM Auditing Service ensures that detailed information about events and activities associated with identities or resources are logged into a centralized repository and be tracked. It offers the following features: • Sign-on, Sign-off, • User: create, update, delete or disable accounts, • Role: create, update, delete or disable accounts, • Resource: create, update, delete or disable accounts, • Password changes, resets, challenge response questions changes, • Synchronization events, • Reconciliation events. Several reporting templates are provided for a BIRT report writer for use in an Eclipse designer. Organizations can also generate their own reports in BIRT with SQL. https://www.openiam.com/products/identity-manager/features/audit-compliance/
+
+Interoperability Dimension: Structural IoP
+
+LOST view: Technical view - application
+
+Viewpoint: Interoperability Security viewpoint
+
+Interoperability Saliency: The Audit Service ABB  is salient for technical interoperability because it defines the elements of an information system which need to be traced, for example to assure traceability of user actions as stated in the EIF: &quot;Public administrations should ensure that a 'data access and authorisation plan’ which determines who has access to what data and under what conditions, to ensure privacy. Unauthorised access and security breaches should be monitored and appropriate actions should be taken to prevent any recurrence of breaches&quot;
+
+Identifier: http://data.europa.eu/dr8/AuditApplicationService
+
+ABB name: eira:AuditApplicationService
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2024-01-28
+
+Identifier: http://data.europa.eu/dr8/AuditApplicationService
+
+Interoperability Layer: TechnicalApplication
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/AuditApplicationService"/>
+      <property key="dct:type" value="eira:AuditApplicationService"/>
+      <property key="dct:modified" value="2024-01-28"/>
+      <property key="eira:synonym"/>
+      <property key="skos:definition" value="Audit ABB is an Application Service that enables the implementation of comprehensive procedural services capable of receiving inputs from different building blocks to ensure their correct behaviour, security or compliance with standards, regulations and best practices."/>
+      <property key="eira:definitionSource" value="Inspired in SIMPL"/>
+      <property key="eira:definitionSourceReference" value="https://digital-strategy.ec.europa.eu/en/news/simpl-cloud-edge-federations-and-data-spaces-made-simple"/>
+      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): OpenIAM audit service - OpenIAM Auditing Service ensures that detailed information about events and activities associated with identities or resources are logged into a centralized repository and be tracked. It offers the following features: • Sign-on, Sign-off, • User: create, update, delete or disable accounts, • Role: create, update, delete or disable accounts, • Resource: create, update, delete or disable accounts, • Password changes, resets, challenge response questions changes, • Synchronization events, • Reconciliation events. Several reporting templates are provided for a BIRT report writer for use in an Eclipse designer. Organizations can also generate their own reports in BIRT with SQL. https://www.openiam.com/products/identity-manager/features/audit-compliance/"/>
+      <property key="eira:iopSaliency" value="The Audit Service ABB  is salient for technical interoperability because it defines the elements of an information system which need to be traced, for example to assure traceability of user actions as stated in the EIF: &quot;Public administrations should ensure that a 'data access and authorisation plan’ which determines who has access to what data and under what conditions, to ensure privacy. Unauthorised access and security breaches should be monitored and appropriate actions should be taken to prevent any recurrence of breaches&quot;"/>
+      <property key="skos:note"/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:iopDimension" value="Structural IoP"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="eira:viewpoint" value="Interoperability Security viewpoint"/>
+      <property key="eira:viewpoint" value="REST API viewpoint"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/AuditApplicationService"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Authentication" id="id-04e901eb66f84dd691be4b2c07ffb295">
+      <documentation>Definition: Authentication ABB is an Application Service that enables the functionality of grating users to access the platforms or the services.
+
+Source: eIDAS - REGULATION (EU) No 910/2014 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 23 July 2014 on electronic identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93/EC.
+
+Source reference: http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2014.257.01.0073.01.ENG
+
+Additional information: ‘Electronic identification’ means the process of using person identification data in electronic form uniquely representing either a natural or legal person, or a natural person representing a legal person; ‘Authentication’ means an electronic process that enables the electronic identification of a natural or legal person, or the origin and integrity of data in electronic form to be confirmed;
+
+Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): EU Login - EU Login is the European Commission's user authentication service. It allows authorised users to access a wide range of Commission web services. EU Login is the entry gate to sign in to different European Commission services and/or other systems. EU Login verifies your identity and allows recovering your personal settings, history and access rights in a secure way. You can sign in using social media accounts or the EU Login account. EU Login supports a variety of verification methods: •	Password; •	ECAS Mobile App PIN code; • ECAS Mobile App QR code; • On mobile authentication; • Mobile phone + SMS; • Token and Token CRAM. https://webgate.ec.europa.eu/cas/about.html
+
+Interoperability Dimension: Structural IoP
+
+LOST view: Technical view - application
+
+Viewpoint: Interoperability Security viewpoint
+
+Interoperability Saliency: The Authentication Service ABB is salient for technical interoperability because it provides the functionalities of user authentication.
+
+Identifier: http://data.europa.eu/dr8/AuthenticationApplicationService
+
+ABB name: eira:AuthenticationApplicationService
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2024-01-28
+
+Identifier: http://data.europa.eu/dr8/AuthenticationApplicationService
+
+Interoperability Layer: TechnicalApplication
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/AuthenticationApplicationService"/>
+      <property key="dct:type" value="eira:AuthenticationApplicationService"/>
+      <property key="dct:modified" value="2024-01-28"/>
+      <property key="eira:synonym"/>
+      <property key="skos:definition" value="Authentication ABB is an Application Service that enables the functionality of grating users to access the platforms or the services."/>
+      <property key="eira:definitionSource" value="eIDAS - REGULATION (EU) No 910/2014 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 23 July 2014 on electronic identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93/EC."/>
+      <property key="eira:definitionSourceReference" value="http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2014.257.01.0073.01.ENG"/>
+      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): EU Login - EU Login is the European Commission's user authentication service. It allows authorised users to access a wide range of Commission web services. EU Login is the entry gate to sign in to different European Commission services and/or other systems. EU Login verifies your identity and allows recovering your personal settings, history and access rights in a secure way. You can sign in using social media accounts or the EU Login account. EU Login supports a variety of verification methods: •&#x9;Password; •&#x9;ECAS Mobile App PIN code; • ECAS Mobile App QR code; • On mobile authentication; • Mobile phone + SMS; • Token and Token CRAM. https://webgate.ec.europa.eu/cas/about.html"/>
+      <property key="eira:iopSaliency" value="The Authentication Service ABB is salient for technical interoperability because it provides the functionalities of user authentication."/>
+      <property key="skos:note" value="‘Electronic identification’ means the process of using person identification data in electronic form uniquely representing either a natural or legal person, or a natural person representing a legal person; ‘Authentication’ means an electronic process that enables the electronic identification of a natural or legal person, or the origin and integrity of data in electronic form to be confirmed;"/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:iopDimension" value="Structural IoP"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="eira:viewpoint" value="Interoperability Security viewpoint"/>
+      <property key="eira:viewpoint" value="REST API viewpoint"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/AuthenticationApplicationService"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Data Analytics" id="id-4fc0c5dab360468c9faed315b0837087">
+      <documentation>Definition: Data Analytics ABB is an Application Service that enables the use of procedures to analyze data and extract insights that can be used to improve business decision-making, optimize business processes, and drive innovation
+
+Source: Inspired in Data Act
+
+Source reference: https://digital-strategy.ec.europa.eu/en/policies/data-act
+
+Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Microsoft Power BI - Power BI is a business analytics service by Microsoft. It aims to provide interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards. It is part of the Microsoft Power Platform.(https://powerbi.microsoft.com/it-it/what-is-power-bi/)
+
+Interoperability Dimension: Structural IoP
+
+LOST view: Technical view - application
+
+Interoperability Saliency: The Data Analytics Service ABB  is salient for technical interoperability because it enables the automated processing and analysis of different data source.
+
+Identifier: http://data.europa.eu/dr8/DataAnalyticsApplicationService
+
+ABB name: eira:DataAnalyticsApplicationService
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2024-01-28
+
+Identifier: http://data.europa.eu/dr8/DataAnalyticsApplicationService
+
+Interoperability Layer: TechnicalApplication
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/DataAnalyticsApplicationService"/>
+      <property key="dct:type" value="eira:DataAnalyticsApplicationService"/>
+      <property key="dct:modified" value="2024-01-28"/>
+      <property key="eira:synonym"/>
+      <property key="skos:definition" value="Data Analytics ABB is an Application Service that enables the use of procedures to analyze data and extract insights that can be used to improve business decision-making, optimize business processes, and drive innovation"/>
+      <property key="eira:definitionSource" value="Inspired in Data Act"/>
+      <property key="eira:definitionSourceReference" value="https://digital-strategy.ec.europa.eu/en/policies/data-act"/>
+      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Microsoft Power BI - Power BI is a business analytics service by Microsoft. It aims to provide interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards. It is part of the Microsoft Power Platform.(https://powerbi.microsoft.com/it-it/what-is-power-bi/)"/>
+      <property key="eira:iopSaliency" value="The Data Analytics Service ABB  is salient for technical interoperability because it enables the automated processing and analysis of different data source."/>
+      <property key="skos:note"/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:iopDimension" value="Structural IoP"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/DataAnalyticsApplicationService"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Observability" id="id-5c69ef95c41b4f8c98d2f756e1dc1d14">
+      <documentation>Definition: Observability is a concept in IT that refers to the ability to gain insights into the internal state and behavior of a system by analyzing its external outputs. It involves collecting and analyzing various metrics, logs, traces, and other data points to understand the system's performance, health, and potential issues.
+
+Source: Observability in Distributed Systems
+
+Source reference: https://www.oreilly.com/library/view/observability-in-distributed/9781492033431/
+
+Additional information: Observability goes beyond traditional monitoring by providing a holistic view of a system's internal workings. It focuses on capturing and analyzing data that can help in troubleshooting, debugging, and optimizing the system's performance. By collecting and correlating data from different sources, such as application logs, infrastructure metrics, and distributed traces, observability enables IT teams to gain deep insights into the system's behavior and identify patterns or anomalies that may impact its performance or reliability. It helps in understanding the cause and effect relationships within the system, making it easier to diagnose and resolve issues.
+
+Example: An example of observability in practice is the monitoring of a cloud-based application. By collecting metrics on response times, error rates, and resource utilization, along with analyzing logs and distributed traces, IT teams can gain a comprehensive understanding of the application's performance. They can identify bottlenecks, pinpoint the root cause of issues, and make informed decisions to optimize the application's architecture or infrastructure. Observability enables proactive monitoring and troubleshooting, leading to improved system reliability and better user experiences.
+
+LOST view: TVA-Observability and Monitoring Enablers [Motivation]
+
+Identifier: http://data.europa.eu/dr8/egovera/ObservabilityApplicationService
+
+ABB name: egovera:ObservabilityApplicationService
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2023-11-20
+
+Identifier: http://data.europa.eu/dr8/egovera/ObservabilityApplicationService
+
+Name: Observability Application Service
+
+Interoperability Layer: TechnicalApplication
+
+Specialises: http://data.europa.eu/dr8/DigitalSolutionApplicationService
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/egovera/ObservabilityApplicationService"/>
+      <property key="dct:modified" value="2023-11-20"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/egovera/ObservabilityApplicationService"/>
+      <property key="dct:title" value="Observability Application Service"/>
+      <property key="dct:type" value="egovera:ObservabilityApplicationService"/>
+      <property key="skos:definition" value="Observability is a concept in IT that refers to the ability to gain insights into the internal state and behavior of a system by analyzing its external outputs. It involves collecting and analyzing various metrics, logs, traces, and other data points to understand the system's performance, health, and potential issues."/>
+      <property key="eira:definitionSource" value="Observability in Distributed Systems"/>
+      <property key="eira:definitionSourceReference" value="https://www.oreilly.com/library/view/observability-in-distributed/9781492033431/"/>
+      <property key="skos:example" value="An example of observability in practice is the monitoring of a cloud-based application. By collecting metrics on response times, error rates, and resource utilization, along with analyzing logs and distributed traces, IT teams can gain a comprehensive understanding of the application's performance. They can identify bottlenecks, pinpoint the root cause of issues, and make informed decisions to optimize the application's architecture or infrastructure. Observability enables proactive monitoring and troubleshooting, leading to improved system reliability and better user experiences."/>
+      <property key="skos:note" value="Observability goes beyond traditional monitoring by providing a holistic view of a system's internal workings. It focuses on capturing and analyzing data that can help in troubleshooting, debugging, and optimizing the system's performance. By collecting and correlating data from different sources, such as application logs, infrastructure metrics, and distributed traces, observability enables IT teams to gain deep insights into the system's behavior and identify patterns or anomalies that may impact its performance or reliability. It helps in understanding the cause and effect relationships within the system, making it easier to diagnose and resolve issues."/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:view" value="TVA-Observability and Monitoring Enablers [Motivation]"/>
+      <property key="eira:view" value="TVA-Dataspace Enablers"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+      <property key="skos:broader" value="http://data.europa.eu/dr8/DigitalSolutionApplicationService"/>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Monitoring" id="id-159f2ba1307f4dc4a721aebf3300a6e6">
+      <documentation>Definition: Monitoring in IT refers to the process of observing and tracking the performance, availability, and health of various systems, networks, applications, and services. It involves collecting data, analyzing it in real-time, and generating alerts or reports to ensure that everything is functioning optimally. Monitoring helps identify issues, troubleshoot problems, and make informed decisions to improve the overall performance and reliability of IT infrastructure.
+
+Source: Techopedia
+
+Source reference: https://www.techopedia.com/definition/24560/monitoring
+
+Additional information: Monitoring is a critical aspect of IT management as it allows organizations to proactively identify and address potential issues before they escalate. It involves the use of specialized tools and technologies to continuously collect and analyze data from various sources such as servers, databases, network devices, and applications. This data is then used to generate real-time alerts, performance reports, and visualizations that provide insights into the health and performance of the IT environment. Monitoring can encompass various aspects, including system availability, resource utilization, network traffic, security events, application performance, and user experience.
+
+Example: An example of monitoring in practice is the monitoring of a web server. By continuously monitoring metrics such as CPU usage, memory utilization, network traffic, and response times, IT administrators can identify potential bottlenecks or performance issues. They can set up alerts to be notified if any of these metrics exceed predefined thresholds. Monitoring can also help track website availability and response times from different geographical locations, ensuring a positive user experience. Additionally, monitoring can provide valuable insights into user behavior, allowing organizations to optimize their websites or applications based on usage patterns and trends.
+
+LOST view: TVA-Observability and Monitoring Enablers [Motivation]
+
+Identifier: http://data.europa.eu/dr8/egovera/MonitoringApplicationService
+
+ABB name: egovera:MonitoringApplicationService
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2023-11-20
+
+Identifier: http://data.europa.eu/dr8/egovera/MonitoringApplicationService
+
+Name: Monitoring Application Service
+
+Interoperability Layer: TechnicalApplication
+
+Specialises: http://data.europa.eu/dr8/DigitalSolutionApplicationService
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/egovera/MonitoringApplicationService"/>
+      <property key="dct:modified" value="2023-11-20"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/egovera/MonitoringApplicationService"/>
+      <property key="dct:title" value="Monitoring Application Service"/>
+      <property key="dct:type" value="egovera:MonitoringApplicationService"/>
+      <property key="skos:definition" value="Monitoring in IT refers to the process of observing and tracking the performance, availability, and health of various systems, networks, applications, and services. It involves collecting data, analyzing it in real-time, and generating alerts or reports to ensure that everything is functioning optimally. Monitoring helps identify issues, troubleshoot problems, and make informed decisions to improve the overall performance and reliability of IT infrastructure."/>
+      <property key="eira:definitionSource" value="Techopedia"/>
+      <property key="eira:definitionSourceReference" value="https://www.techopedia.com/definition/24560/monitoring"/>
+      <property key="skos:example" value="An example of monitoring in practice is the monitoring of a web server. By continuously monitoring metrics such as CPU usage, memory utilization, network traffic, and response times, IT administrators can identify potential bottlenecks or performance issues. They can set up alerts to be notified if any of these metrics exceed predefined thresholds. Monitoring can also help track website availability and response times from different geographical locations, ensuring a positive user experience. Additionally, monitoring can provide valuable insights into user behavior, allowing organizations to optimize their websites or applications based on usage patterns and trends."/>
+      <property key="skos:note" value="Monitoring is a critical aspect of IT management as it allows organizations to proactively identify and address potential issues before they escalate. It involves the use of specialized tools and technologies to continuously collect and analyze data from various sources such as servers, databases, network devices, and applications. This data is then used to generate real-time alerts, performance reports, and visualizations that provide insights into the health and performance of the IT environment. Monitoring can encompass various aspects, including system availability, resource utilization, network traffic, security events, application performance, and user experience."/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:view" value="TVA-Observability and Monitoring Enablers [Motivation]"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+      <property key="skos:broader" value="http://data.europa.eu/dr8/DigitalSolutionApplicationService"/>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Data Management" id="id-0419639b05a54811b9bc6de4eacab670">
+      <documentation>Definition: Data Management ABB is an Application Service that enables the implementation of procedures to manage data effectively. These procedures include the collection, storage, organisation, maintenance, and usage of data resources, reliability and accessibility
+
+Source: Inspired in the Data Act
+
+Source reference: https://digital-strategy.ec.europa.eu/en/policies/data-act
+
+Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Oracle Data Exchange - The Data Exchange Service provides several access points to the Event Repository, allowing the user to perform queries on these events: - The Query Subscription Administration Console configures the Data Exchange Service to create queries and periodically deliver query results to designated receivers (HTTP, JMS, and AS2). The Console can also test queries before subscribing, displaying user-readable events in XML format; - A SOAP Web service allows programmatic queries. This SOAP service is based on the technically complete, but not formally ratified as of October 2006, EPCglobal EPC Information Services (EPCIS) Version 1.0 Specification.EPCglobal EPCIS 1.0 Working Draft. https://docs.oracle.com/cd/E13197_01/rfid/enterprise_server/docs20/epcis/data-exchange.html
+
+Interoperability Dimension: Structural IoP
+
+LOST view: Technical view - application
+
+Viewpoint: Interoperability Privacy viewpoint
+
+Interoperability Saliency: The Data Management Service ABB  is salient for technical interoperability because it provides and shares the functionality for the share of data: &quot;Legislation requires that decisions and data are stored and can be accessed for a specified time. This means that records and information in electronic form held by public administrations for the purpose of documenting procedures and decisions must be preserved and be converted, where necessary, to new media when old media become obsolete. The goal is to ensure that records and other forms of information keep their legibility, reliability and integrity and can be accessed as long as needed subject to security and privacy provisions.&quot;
+
+Identifier: http://data.europa.eu/dr8/DataManagementApplicationService
+
+ABB name: eira:DataManagementApplicationService
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2024-01-28
+
+Identifier: http://data.europa.eu/dr8/DataManagementApplicationService
+
+Interoperability Layer: TechnicalApplication
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/DataManagementApplicationService"/>
+      <property key="dct:type" value="eira:DataManagementApplicationService"/>
+      <property key="dct:modified" value="2024-01-28"/>
+      <property key="eira:synonym"/>
+      <property key="skos:definition" value="Data Management ABB is an Application Service that enables the implementation of procedures to manage data effectively. These procedures include the collection, storage, organisation, maintenance, and usage of data resources, reliability and accessibility"/>
+      <property key="eira:definitionSource" value="Inspired in the Data Act"/>
+      <property key="eira:definitionSourceReference" value="https://digital-strategy.ec.europa.eu/en/policies/data-act"/>
+      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Oracle Data Exchange - The Data Exchange Service provides several access points to the Event Repository, allowing the user to perform queries on these events: - The Query Subscription Administration Console configures the Data Exchange Service to create queries and periodically deliver query results to designated receivers (HTTP, JMS, and AS2). The Console can also test queries before subscribing, displaying user-readable events in XML format; - A SOAP Web service allows programmatic queries. This SOAP service is based on the technically complete, but not formally ratified as of October 2006, EPCglobal EPC Information Services (EPCIS) Version 1.0 Specification.EPCglobal EPCIS 1.0 Working Draft. https://docs.oracle.com/cd/E13197_01/rfid/enterprise_server/docs20/epcis/data-exchange.html"/>
+      <property key="eira:iopSaliency" value="The Data Management Service ABB  is salient for technical interoperability because it provides and shares the functionality for the share of data: &quot;Legislation requires that decisions and data are stored and can be accessed for a specified time. This means that records and information in electronic form held by public administrations for the purpose of documenting procedures and decisions must be preserved and be converted, where necessary, to new media when old media become obsolete. The goal is to ensure that records and other forms of information keep their legibility, reliability and integrity and can be accessed as long as needed subject to security and privacy provisions.&quot;"/>
+      <property key="skos:note"/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:iopDimension" value="Structural IoP"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="eira:viewpoint" value="Interoperability Privacy viewpoint"/>
+      <property key="eira:viewpoint" value="REST API viewpoint"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/DataManagementApplicationService"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Metadata Management" id="id-f05ab64b279d48b2b7a111ffcd5646ad">
+      <documentation>Definition: Metadata Management ABB is an Application Service that enables functionalities for the i) creation, ii) storage, iii) categorisation and iv) retrieval of metadata.
+
+Source: DAMA 
+
+Source reference: http://www.dama.org/
+
+Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Eurostat SDMX repository: The Euro SDMX Registry is Eurostat’s implementation of an SDMX registry to facilitate the exchange of statistical data and metadata by serving as a metadata repository. It stores the SDMX artefacts needed for the parties to access and interpret the content of the exchanged statistical data and metadata sets. http://ec.europa.eu/eurostat/web/sdmx-infospace/sdmx-it-tools/sdmx-registry
+
+Interoperability Dimension: Structural IoP
+
+LOST view: Technical view - application
+
+Viewpoint: Interoperability Privacy viewpoint
+
+Interoperability Saliency: The Metadata management Service ABB  is salient for interoperability  because it provides and shares the functionalities to manage metadata. EIF recommends to prioritise it: &quot;Put in place an information management strategy at the highest possible level to avoid fragmentation and duplication. Management of metadata, master data and reference data should be prioritised&quot;.
+
+Identifier: http://data.europa.eu/dr8/MetadataManagementApplicationService
+
+ABB name: eira:MetadataManagementApplicationService
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2024-01-28
+
+Identifier: http://data.europa.eu/dr8/MetadataManagementApplicationService
+
+Interoperability Layer: TechnicalApplication
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/MetadataManagementApplicationService"/>
+      <property key="dct:type" value="eira:MetadataManagementApplicationService"/>
+      <property key="dct:modified" value="2024-01-28"/>
+      <property key="eira:synonym"/>
+      <property key="skos:definition" value="Metadata Management ABB is an Application Service that enables functionalities for the i) creation, ii) storage, iii) categorisation and iv) retrieval of metadata."/>
+      <property key="eira:definitionSource" value="DAMA "/>
+      <property key="eira:definitionSourceReference" value="http://www.dama.org/"/>
+      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Eurostat SDMX repository: The Euro SDMX Registry is Eurostat’s implementation of an SDMX registry to facilitate the exchange of statistical data and metadata by serving as a metadata repository. It stores the SDMX artefacts needed for the parties to access and interpret the content of the exchanged statistical data and metadata sets. http://ec.europa.eu/eurostat/web/sdmx-infospace/sdmx-it-tools/sdmx-registry"/>
+      <property key="eira:iopSaliency" value="The Metadata management Service ABB  is salient for interoperability  because it provides and shares the functionalities to manage metadata. EIF recommends to prioritise it: &quot;Put in place an information management strategy at the highest possible level to avoid fragmentation and duplication. Management of metadata, master data and reference data should be prioritised&quot;."/>
+      <property key="skos:note"/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:iopDimension" value="Structural IoP"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="eira:viewpoint" value="Interoperability Privacy viewpoint"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/MetadataManagementApplicationService"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Public Administration Single Window" id="id-c4e332353b1c478888a22b33edfd8322">
+      <documentation>Definition: Public Administration Single Window Service ABB is an Application that enables the processes to submit information and documents with a single entry point to fulfil all regulatory requirements.
+
+Source: United Nations
+
+Source reference: https://tfig.unece.org/contents/single-window-concept.htm
+
+Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Mi Carpeta Ciudadana Carpeta Ciudadana is a personal online space that facilitates your relationship with public administrations. https://carpetaciudadana.gob.es/carpeta/clave.htm
+
+Interoperability Dimension: Behavioral IoP
+
+LOST view: Technical view - application
+
+Interoperability Saliency: The Public Administration Single Window Application Service ABB is salient for technical interoperability because it acts as a single entry point for the provision and exchange of data between stakeholders and public organisations. This can improve not only the user experience but interoperability due to the standardised methods for data sharing.
+
+Identifier: http://data.europa.eu/dr8/PublicAdministrationSingleWindowApplicationService
+
+ABB name: eira:PublicAdministrationSingleWindowApplicationService
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2024-01-28
+
+Identifier: http://data.europa.eu/dr8/PublicAdministrationSingleWindowApplicationService
+
+Interoperability Layer: TechnicalApplication
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/PublicAdministrationSingleWindowApplicationService"/>
+      <property key="dct:type" value="eira:PublicAdministrationSingleWindowApplicationService"/>
+      <property key="dct:modified" value="2024-01-28"/>
+      <property key="eira:synonym"/>
+      <property key="skos:definition" value="Public Administration Single Window Service ABB is an Application that enables the processes to submit information and documents with a single entry point to fulfil all regulatory requirements."/>
+      <property key="eira:definitionSource" value="United Nations"/>
+      <property key="eira:definitionSourceReference" value="https://tfig.unece.org/contents/single-window-concept.htm"/>
+      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Mi Carpeta Ciudadana Carpeta Ciudadana is a personal online space that facilitates your relationship with public administrations. https://carpetaciudadana.gob.es/carpeta/clave.htm"/>
+      <property key="eira:iopSaliency" value="The Public Administration Single Window Application Service ABB is salient for technical interoperability because it acts as a single entry point for the provision and exchange of data between stakeholders and public organisations. This can improve not only the user experience but interoperability due to the standardised methods for data sharing."/>
+      <property key="skos:note"/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:iopDimension" value="Behavioral IoP"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/PublicAdministrationSingleWindowApplicationService"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Artificial Intelligence" id="id-06a4d539fe904977ade6e151d09c2640">
+      <documentation>Definition: Artificial Intelligence ABB is an Application Service that enables the procedures to display intelligent behaviour by analysing their environment and taking actions with some degree of autonomy to achieve specific objectives.
+
+Source: European Comision
+
+Source reference: https://digital-strategy.ec.europa.eu/en/library/definition-artificial-intelligence-main-capabilities-and-scientific-disciplines
+
+Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): PyTorch is a machine learning framework based on the Torch library, used for applications such as computer vision and natural language processing, originally developed by Meta AI and now part of the Linux Foundation umbrella. It is free and open-source software released under the modified BSD license. Although the Python interface is more polished and the primary focus of development, PyTorch also has a C++ interface. https://pytorch.org/
+
+Interoperability Dimension: Structural IoP
+
+LOST view: Technical view - application
+
+Interoperability Saliency: The Artificial Intelligence Application Service ABB is salient for technical interoperability because it refers to applications services that are able to analyse data, analysing the environment to take some automated actions for reaching objectives. Those services can enable digital public services to interact between them, exchanging data, and promoting interoperability of services. 
+
+Identifier: http://data.europa.eu/dr8/ArtificialIntelligenceApplicationService
+
+ABB name: eira:ArtificialIntelligenceApplicationService
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2024-01-28
+
+Identifier: http://data.europa.eu/dr8/ArtificialIntelligenceApplicationService
+
+Interoperability Layer: TechnicalApplication
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/ArtificialIntelligenceApplicationService"/>
+      <property key="dct:type" value="eira:ArtificialIntelligenceApplicationService"/>
+      <property key="dct:modified" value="2024-01-28"/>
+      <property key="eira:synonym"/>
+      <property key="skos:definition" value="Artificial Intelligence ABB is an Application Service that enables the procedures to display intelligent behaviour by analysing their environment and taking actions with some degree of autonomy to achieve specific objectives."/>
+      <property key="eira:definitionSource" value="European Comision"/>
+      <property key="eira:definitionSourceReference" value="https://digital-strategy.ec.europa.eu/en/library/definition-artificial-intelligence-main-capabilities-and-scientific-disciplines"/>
+      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): PyTorch is a machine learning framework based on the Torch library, used for applications such as computer vision and natural language processing, originally developed by Meta AI and now part of the Linux Foundation umbrella. It is free and open-source software released under the modified BSD license. Although the Python interface is more polished and the primary focus of development, PyTorch also has a C++ interface. https://pytorch.org/"/>
+      <property key="eira:iopSaliency" value="The Artificial Intelligence Application Service ABB is salient for technical interoperability because it refers to applications services that are able to analyse data, analysing the environment to take some automated actions for reaching objectives. Those services can enable digital public services to interact between them, exchanging data, and promoting interoperability of services. "/>
+      <property key="skos:note"/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:iopDimension" value="Structural IoP"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/ArtificialIntelligenceApplicationService"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+    </element>
   </folder>
   <folder name="Technology &amp; Physical" id="id-4157e8358b9a4c89981afd5affc09410" type="technology"/>
   <folder name="Motivation" id="id-1ac5fcddfb8e444387e02e06e5d114a6" type="motivation">
@@ -1148,6 +1750,95 @@ EIF Layer: TechnicalInfrastructure
     <element xsi:type="archimate:Grouping" name="Capabilities en Valuestreams" id="id-62d708676a814f578546d73574a438ea">
       <property key="Name (en)" value="Capabilities and Valuestreams"/>
     </element>
+    <element xsi:type="archimate:Grouping" name="User Experience Management Enablers" id="id-e18d1f9014604b279d02cdbaf046b260">
+      <documentation>Definition: User Experience Management Enablers ABB is a Grouping that refers to components and services that track, measure, analyze and improve any interaction people have with the organization
+
+Source: Inpired in referece business and cloud provider compabies
+
+Source reference: https://www.vmware.com/topics/glossary/content/experience-management.html
+
+Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Mi Carpeta Ciudadana Carpeta Ciudadana is a personal online space that facilitates your relationship with public administrations. https://carpetaciudadana.gob.es/carpeta/clave.htm
+
+Interoperability Dimension: Behavioral IoP
+
+LOST view: Technical view - application
+
+Interoperability Saliency: The User Experience Management Enablers Grouping ABB is salient for technical interoperability because it comprises services and components that allow different parties involved in the use and delivery o public services, to exchange and provide data or information.
+
+Identifier: http://data.europa.eu/dr8/UserExperienceManagementEnablersGrouping
+
+ABB name: eira:UserExperienceManagementEnablersGrouping
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2024-01-28
+
+Identifier: http://data.europa.eu/dr8/UserExperienceManagementEnablersGrouping
+
+Interoperability Layer: TechnicalApplication
+
+</documentation>
+      <property key="dct:type" value="eira:UserExperienceManagementEnablersGrouping"/>
+      <property key="dct:modified" value="2024-01-28"/>
+      <property key="eira:synonym"/>
+      <property key="skos:definition" value="User Experience Management Enablers ABB is a Grouping that refers to components and services that track, measure, analyze and improve any interaction people have with the organization"/>
+      <property key="eira:definitionSource" value="Inpired in referece business and cloud provider compabies"/>
+      <property key="eira:definitionSourceReference" value="https://www.vmware.com/topics/glossary/content/experience-management.html"/>
+      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Mi Carpeta Ciudadana Carpeta Ciudadana is a personal online space that facilitates your relationship with public administrations. https://carpetaciudadana.gob.es/carpeta/clave.htm"/>
+      <property key="eira:iopSaliency" value="The User Experience Management Enablers Grouping ABB is salient for technical interoperability because it comprises services and components that allow different parties involved in the use and delivery o public services, to exchange and provide data or information."/>
+      <property key="skos:note"/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/UserExperienceManagementEnablersGrouping"/>
+      <property key="eira:iopDimension" value="Behavioral IoP"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/UserExperienceManagementEnablersGrouping"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+    </element>
+    <element xsi:type="archimate:Grouping" name="Analytics Enablers" id="id-afd622b18fb54a5b88df2c8eb9ba6766">
+      <documentation>Definition: Data Analytics Enablers ABB is a Grouping that refers to components and services that serve any current or future Digital Service Infrastructure (DSI) requiring data analysis capabilities.
+
+Source: Inspired in Data Act
+
+Source reference: https://digital-strategy.ec.europa.eu/en/policies/data-act
+
+Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Microsoft Power BI - Power BI is a business analytics service by Microsoft. It aims to provide interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards. It is part of the Microsoft Power Platform.(https://powerbi.microsoft.com/it-it/what-is-power-bi/)
+
+Interoperability Dimension: Structural IoP
+
+LOST view: Technical view - application
+
+Interoperability Saliency: The Analytics Enablers Grouping ABB is salient for technical Interoperability because it comprises tools and services that serve to digital service infrastructure of current or future digital services. 
+
+Identifier: http://data.europa.eu/dr8/AnalyticsEnablersGrouping
+
+ABB name: eira:AnalyticsEnablersGrouping
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2024-01-28
+
+Identifier: http://data.europa.eu/dr8/AnalyticsEnablersGrouping
+
+Interoperability Layer: TechnicalApplication
+
+</documentation>
+      <property key="dct:type" value="eira:AnalyticsEnablersGrouping"/>
+      <property key="dct:modified" value="2024-01-28"/>
+      <property key="eira:synonym"/>
+      <property key="skos:definition" value="Data Analytics Enablers ABB is a Grouping that refers to components and services that serve any current or future Digital Service Infrastructure (DSI) requiring data analysis capabilities."/>
+      <property key="eira:definitionSource" value="Inspired in Data Act"/>
+      <property key="eira:definitionSourceReference" value="https://digital-strategy.ec.europa.eu/en/policies/data-act"/>
+      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Microsoft Power BI - Power BI is a business analytics service by Microsoft. It aims to provide interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards. It is part of the Microsoft Power Platform.(https://powerbi.microsoft.com/it-it/what-is-power-bi/)"/>
+      <property key="eira:iopSaliency" value="The Analytics Enablers Grouping ABB is salient for technical Interoperability because it comprises tools and services that serve to digital service infrastructure of current or future digital services. "/>
+      <property key="skos:note"/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/AnalyticsEnablersGrouping"/>
+      <property key="eira:iopDimension" value="Structural IoP"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/AnalyticsEnablersGrouping"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+    </element>
+    <element xsi:type="archimate:Grouping" name="eGovERA Alignment" id="id-2021b349eab343c0a349351493f4692c"/>
   </folder>
   <folder name="Relations" id="id-3b44ef95b8cf4868950be37772d13294" type="relations">
     <element xsi:type="archimate:AggregationRelationship" id="id-faa7355f754b49c1a44d91ce06ff8cbe" source="id-7ba8ed9a80c4497984127872ba0392d1" target="id-d3426e10d98c45309d93a426ea395f24"/>
@@ -1365,7 +2056,6 @@ EIF Layer: TechnicalInfrastructure
     <element xsi:type="archimate:AssignmentRelationship" id="id-fc8309523bc44821987f715176956c44" source="id-556fad1609e74a798a2f33e2692c1985" target="id-bdfc7e9d346c4aecb7713f9eccc6732f"/>
     <element xsi:type="archimate:AssignmentRelationship" id="id-688ab3ed767c4b8ab2606208f76652b5" source="id-339c3c9570a348708e6970b7e281b41f" target="id-bdfc7e9d346c4aecb7713f9eccc6732f"/>
     <element xsi:type="archimate:AssignmentRelationship" id="id-f3d2401482674e0283a3f8429d248a08" source="id-339c3c9570a348708e6970b7e281b41f" target="id-87148b00736c4825bc338dc04be81669"/>
-    <element xsi:type="archimate:AssignmentRelationship" id="id-02d5b61601294ad7b86d8ef7308c2e2a" source="id-731a49f732c8410eac271dfd0cf87faf" target="id-e2bd7cccba194743b7d277f4f297983a"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-2f9012cab0c64311aaf8aa57c489af5b" source="id-bdfc7e9d346c4aecb7713f9eccc6732f" target="id-5682b83e825d46f7872f4f3bc5805bd2"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-c7c9d703c31c450f9be38b626341633e" source="id-c85e74a17b034a2dabfb07bb003a9684" target="id-5682b83e825d46f7872f4f3bc5805bd2"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-f057595a9e2a4cab84a8ada9b494f3e7" source="id-a5159c9a4f0446bbb72f4a982718369b" target="id-5682b83e825d46f7872f4f3bc5805bd2"/>
@@ -1404,6 +2094,19 @@ EIF Layer: TechnicalInfrastructure
     <element xsi:type="archimate:RealizationRelationship" id="id-93f65747b20a4976a337a586a8685bd8" source="id-63f28320bc544f0692efb91de2db1b4a" target="id-51653c7ff0384da58dcefe1e049c359a"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-5a03b05c40a74aee85ca46374bd72c86" source="id-84a6df5bd34747778961c608a2767def" target="id-0773a4244e1441dfb1fdf94ef86317c8"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-ed21ba1925c9448d937ef8abc3903690" source="id-973eb31993c34586ad4b568f191bfcc4" target="id-62d708676a814f578546d73574a438ea"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-052a17b48538421589c81226c7565586" source="id-2021b349eab343c0a349351493f4692c" target="id-159f2ba1307f4dc4a721aebf3300a6e6"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-fecd5ee3f4eb4490ae7f782fccd7c39e" source="id-2021b349eab343c0a349351493f4692c" target="id-5c69ef95c41b4f8c98d2f756e1dc1d14"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-cc2e00887e15447f887170e88de4584b" source="id-2021b349eab343c0a349351493f4692c" target="id-66e7252c07f14944b5d581d4486c4578"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-c3d9a376e6564f80928e7cef42d3e653" source="id-2021b349eab343c0a349351493f4692c" target="id-04e901eb66f84dd691be4b2c07ffb295"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-8462426f958342b1b92284486d768a5a" source="id-2021b349eab343c0a349351493f4692c" target="id-f05ab64b279d48b2b7a111ffcd5646ad"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-f9a9a44bb5954d8d9dca72fdd19d1122" source="id-2021b349eab343c0a349351493f4692c" target="id-1099a5f7f4044af2a81907c12db78aef"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-d86429a0aa6d452394637128cf16da61" source="id-2021b349eab343c0a349351493f4692c" target="id-537088722f7a40b1b5013b02326c9c2d"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-d93e645c7dc64ddf936fb15d3d0ded64" source="id-2021b349eab343c0a349351493f4692c" target="id-cebeb19e4f9b43419a66a0a39b2c34df"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-1072348eea864552a827dba1c684a670" source="id-2021b349eab343c0a349351493f4692c" target="id-4fc0c5dab360468c9faed315b0837087"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-91e5cc286faf4a998b536699340a5253" source="id-2021b349eab343c0a349351493f4692c" target="id-c4e332353b1c478888a22b33edfd8322"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ead414b7c82149d7884c63c1fc022bf5" source="id-2021b349eab343c0a349351493f4692c" target="id-0419639b05a54811b9bc6de4eacab670"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-97de8ac2fe3245cca4d4714587e91660" source="id-2021b349eab343c0a349351493f4692c" target="id-368cc9f220934a29b5392dd34ecf27d2"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-52fdb8bc234b44c8b715042d42fbfb9c" source="id-2021b349eab343c0a349351493f4692c" target="id-06a4d539fe904977ade6e151d09c2640"/>
   </folder>
   <folder name="Views" id="id-621ace97431a484c846b778dbd8bdfca" type="diagrams">
     <folder name="Nederlands" id="id-8b753552ee7d455b89e0b101d6fc8688">
@@ -3526,6 +4229,65 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
         <documentation>The Capabilities in this viewpoint are consistent with the report 'Policy processes and building blocks for Digital Twins'</documentation>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="Buildingblocks (en)" id="id-44e908c3bef14235991ef2ae911a6a46" viewpoint="application_usage">
+        <child xsi:type="archimate:DiagramObject" id="id-e5612ffaa0ee47eb872367a13e6f6ae3" textAlignment="1" archimateElement="id-2021b349eab343c0a349351493f4692c">
+          <bounds x="-216" y="96" width="360" height="1656"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-53c960992dc04668966610155202b8f1" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-90dfd369dedf4077b581536356eaa60b" archimateRelationship="id-052a17b48538421589c81226c7565586"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-098c5e11005440159fcd454e118e0562" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-a2487744776846829e2487a8d3124b08" archimateRelationship="id-fecd5ee3f4eb4490ae7f782fccd7c39e"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d7c7da990cc942939b41785aece348ab" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-c48d0afe102a421da84fa22d07e0c82f" archimateRelationship="id-cc2e00887e15447f887170e88de4584b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e14922b68b5e420487ad41a551317e5b" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-d58e97b3b6e24576944b82d968ac1691" archimateRelationship="id-c3d9a376e6564f80928e7cef42d3e653"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-99d28a7650054d27a950d747b5dde3df" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-5f799b3f3abb4f848db10b77dc23e592" archimateRelationship="id-8462426f958342b1b92284486d768a5a"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ad89de5f4ebc474bb932ace8817fc9ae" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-92ecd674e5724be9a5490884148f9a00" archimateRelationship="id-f9a9a44bb5954d8d9dca72fdd19d1122"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b7af055276e34cf6ac1de3e212bf4874" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-391bbeff3d2b4a0ba1bc48a9b9854935" archimateRelationship="id-d86429a0aa6d452394637128cf16da61"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c8fc0c5e9ad044aebfbb9b9c175e2760" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-57167b426aab4dafb48b63f7b3d3dfe8" archimateRelationship="id-d93e645c7dc64ddf936fb15d3d0ded64"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ece48c4cd6444c129b0d8791037c961f" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-0c5c4efc802349e6b02b5bc92c85ebae" archimateRelationship="id-1072348eea864552a827dba1c684a670"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e48b7ac849184168bc77810e9267fe70" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-0f342af4ed5e457abcc15c5729281487" archimateRelationship="id-91e5cc286faf4a998b536699340a5253"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-09824e60254d400ab9e15fe252b846c1" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-5e358e9d30184765a639303bf2caa61c" archimateRelationship="id-ead414b7c82149d7884c63c1fc022bf5"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d505622d6a5641f8a547158f012169a3" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-d4bbfdb202b64a418f26ebdc20d5b15a" archimateRelationship="id-97de8ac2fe3245cca4d4714587e91660"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-f6366fbe031b4ddd8d2ff1c3e8bbdccb" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-7f907188f0654e5b90044107624f7e1c" archimateRelationship="id-52fdb8bc234b44c8b715042d42fbfb9c"/>
+          <child xsi:type="archimate:DiagramObject" id="id-90dfd369dedf4077b581536356eaa60b" targetConnections="id-53c960992dc04668966610155202b8f1" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" textPosition="1" archimateElement="id-159f2ba1307f4dc4a721aebf3300a6e6">
+            <bounds x="12" y="1548" width="156" height="83"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-a2487744776846829e2487a8d3124b08" targetConnections="id-098c5e11005440159fcd454e118e0562" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" fillColor="#b5ffff" textPosition="1" archimateElement="id-5c69ef95c41b4f8c98d2f756e1dc1d14">
+            <bounds x="12" y="1449" width="156" height="83"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-c48d0afe102a421da84fa22d07e0c82f" targetConnections="id-d7c7da990cc942939b41785aece348ab" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" fillColor="#b5ffff" textPosition="1" archimateElement="id-66e7252c07f14944b5d581d4486c4578">
+            <bounds x="180" y="1452" width="156" height="83"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d58e97b3b6e24576944b82d968ac1691" targetConnections="id-e14922b68b5e420487ad41a551317e5b" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" fillColor="#b5ffff" textPosition="1" archimateElement="id-04e901eb66f84dd691be4b2c07ffb295">
+            <bounds x="180" y="1548" width="156" height="83"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-5f799b3f3abb4f848db10b77dc23e592" targetConnections="id-99d28a7650054d27a950d747b5dde3df" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" fillColor="#b5ffff" textPosition="1" archimateElement="id-f05ab64b279d48b2b7a111ffcd5646ad">
+            <bounds x="12" y="1356" width="156" height="83"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-92ecd674e5724be9a5490884148f9a00" targetConnections="id-ad89de5f4ebc474bb932ace8817fc9ae" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" fillColor="#b5ffff" textPosition="1" archimateElement="id-1099a5f7f4044af2a81907c12db78aef">
+            <bounds x="180" y="1356" width="156" height="83"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-391bbeff3d2b4a0ba1bc48a9b9854935" targetConnections="id-b7af055276e34cf6ac1de3e212bf4874" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" fillColor="#b5ffff" textPosition="1" archimateElement="id-537088722f7a40b1b5013b02326c9c2d">
+            <bounds x="180" y="1260" width="156" height="83"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-57167b426aab4dafb48b63f7b3d3dfe8" targetConnections="id-c8fc0c5e9ad044aebfbb9b9c175e2760" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" fillColor="#b5ffff" textPosition="1" archimateElement="id-cebeb19e4f9b43419a66a0a39b2c34df">
+            <bounds x="180" y="1032" width="156" height="83"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-0c5c4efc802349e6b02b5bc92c85ebae" targetConnections="id-ece48c4cd6444c129b0d8791037c961f" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" fillColor="#b5ffff" textPosition="1" archimateElement="id-4fc0c5dab360468c9faed315b0837087">
+            <bounds x="180" y="924" width="156" height="83"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-0f342af4ed5e457abcc15c5729281487" targetConnections="id-e48b7ac849184168bc77810e9267fe70" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" textPosition="1" archimateElement="id-c4e332353b1c478888a22b33edfd8322">
+            <bounds x="144" y="540" width="156" height="83"/>
+          </child>
+          <child xsi:type="archimate:Note" id="id-bdc0719332994c3baebf411619211df9" textAlignment="1">
+            <bounds x="192" y="636" width="132" height="61"/>
+            <content>not sure about the best mapping</content>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-5e358e9d30184765a639303bf2caa61c" targetConnections="id-09824e60254d400ab9e15fe252b846c1" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" fillColor="#b5ffff" textPosition="1" archimateElement="id-0419639b05a54811b9bc6de4eacab670">
+            <bounds x="167" y="162" width="156" height="83"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d4bbfdb202b64a418f26ebdc20d5b15a" targetConnections="id-d505622d6a5641f8a547158f012169a3" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" textPosition="1" archimateElement="id-368cc9f220934a29b5392dd34ecf27d2">
+            <bounds x="167" y="60" width="156" height="83"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-7f907188f0654e5b90044107624f7e1c" targetConnections="id-f6366fbe031b4ddd8d2ff1c3e8bbdccb" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" textPosition="1" archimateElement="id-06a4d539fe904977ade6e151d09c2640">
+            <bounds x="180" y="1128" width="156" height="83"/>
+          </child>
+        </child>
         <child xsi:type="archimate:DiagramObject" id="id-17da03cb8fc5441594c8b5931885e3f9" textAlignment="1" archimateElement="id-c3159c56e7974cb99d8cbac60bbea17b">
           <bounds x="1248" y="180" width="433" height="1489"/>
           <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
