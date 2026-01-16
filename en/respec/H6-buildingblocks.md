@@ -36,7 +36,6 @@ See the International DataSpace Association (IDSA) documentation for more inform
 
 #### eGovERA Alignment
 
-These eGovERA ABB's align with the nLDT building blocks in the Foundation category:
 - Knowledge Discovery
 - API Discovery and Catalogue
 - Metadata Management
@@ -53,7 +52,6 @@ The Data building block contains those matters that need to be organized around 
 
 #### eGovERA Alignment
 
-These eGovERA ABB's align with the nLDT building blocks in the Data category:
 - Dataspace Connector
 - Data Management (and a number of related ABB's)
 
@@ -65,7 +63,6 @@ The Computational Models building block contains the specific matters that are n
 
 #### eGovERA Alignment
 
-These eGovERA ABB's align with the nLDT building blocks in the Computational Models category:
 - Data Analytics
 - Orchestration
 - Artificial Intelligence
@@ -79,11 +76,8 @@ The Visualisation building block contains the various components to provide a Vi
 
 #### eGovERA Alignment
 
-These eGovERA ABB's align with the nLDT building blocks in the Visualisation category:
-- Public Administration Single Window
-
-> Note:
-The mapping of the visualisation building block does not seem to be quite equivalent with the viewpoint from eGovERA.  
+- Business Intelligence
+- Human Interface
 
 ## Appstore
 
@@ -101,6 +95,8 @@ Validation of these modules is made possible by clear assessment criteria in the
 
 <img src="./respec/media/appstore-en.png" alt="appstore" width="900">
 
+#### eGovERA Alignment
 
+The realisation of a specific set of nLDT Application services can result in a recipe that is available in an Appstore. This recipe can be considered to be aligned with an eGovERA Solution Building Block, adhering to specific Interoperability Specifications ensuring reusability and conformance to the Appstore criteria.
 
 --------------------------------------------------------------------------------

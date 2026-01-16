@@ -543,6 +543,57 @@ English:&#xD;
     </element>
     <element xsi:type="archimate:Contract" name="Technische compatibiliteit" id="id-361f105fce574ea7a76d5b4671d18c0b"/>
     <element xsi:type="archimate:Contract" name="Betrouwbaarheid" id="id-285515c3b56e4ec6a2fe7ff82a011a91"/>
+    <element xsi:type="archimate:Contract" name="Interoperability Specification" id="id-d84f59ccb0f7463db59aab9bbeba2893">
+      <documentation>Definition: Interoperability Specification ABB is a Contract with most detail possible level of granularity on an EIRA SBB, formulated as an agreed normative statement in design terms on a legal, organisational, semantic, or technical attribute of an European Public Service. It can refer to existing standards or specifications
+
+Source: ISA2
+
+Source reference: https://joinup.ec.europa.eu/taxonomy/term/http_e_f_fdata_ceuropa_ceu_fdr8_fInteroperabilitySpecification#:~:text=DESCRIPTION%3A%20An%20Interoperability%20Specification%20is%20a%20document%20of,It%20can%20refer%20to%20existing%20standards%20or%20specifications
+
+Interoperability Dimension: Structural IoP
+
+LOST view: Legal view
+
+Viewpoint: EIRA Ontology viewpoint
+
+Interoperability Saliency: The interoperability specification ABB is salient for legal interoperability because it establishes the normative statements for ensuring interoperability in public services. This ABB is salient for organizational interoperability by establishing the business principles to exchange data between public services. The Interoperability specification ABB is salient for semantic interoperability too in terms of identifying technical standards for the exchange of information between public services. And finally, the ABB is salient for technical interoperability due to it determines the technical requirements to implement the interoperability between public services.
+
+Identifier: http://data.europa.eu/dr8/InteroperabilitySpecificationContract
+
+ABB name: eira:InteroperabilitySpecificationContract
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2024-01-28
+
+Identifier: http://data.europa.eu/dr8/InteroperabilitySpecificationContract
+
+Interoperability Layer: N/A
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/InteroperabilitySpecificationContract"/>
+      <property key="dct:type" value="eira:InteroperabilitySpecificationContract"/>
+      <property key="dct:modified" value="2024-01-28"/>
+      <property key="eira:synonym"/>
+      <property key="skos:definition" value="Interoperability Specification ABB is a Contract with most detail possible level of granularity on an EIRA SBB, formulated as an agreed normative statement in design terms on a legal, organisational, semantic, or technical attribute of an European Public Service. It can refer to existing standards or specifications"/>
+      <property key="eira:definitionSource" value="ISA2"/>
+      <property key="eira:definitionSourceReference" value="https://joinup.ec.europa.eu/taxonomy/term/http_e_f_fdata_ceuropa_ceu_fdr8_fInteroperabilitySpecification#:~:text=DESCRIPTION%3A%20An%20Interoperability%20Specification%20is%20a%20document%20of,It%20can%20refer%20to%20existing%20standards%20or%20specifications"/>
+      <property key="skos:example"/>
+      <property key="eira:iopSaliency" value="The interoperability specification ABB is salient for legal interoperability because it establishes the normative statements for ensuring interoperability in public services. This ABB is salient for organizational interoperability by establishing the business principles to exchange data between public services. The Interoperability specification ABB is salient for semantic interoperability too in terms of identifying technical standards for the exchange of information between public services. And finally, the ABB is salient for technical interoperability due to it determines the technical requirements to implement the interoperability between public services."/>
+      <property key="skos:note"/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:iopDimension" value="Structural IoP"/>
+      <property key="eira:iopDimension" value="Behavioral IoP"/>
+      <property key="eira:iopDimension" value="Governance IoP"/>
+      <property key="eira:view" value="Legal view"/>
+      <property key="eira:view" value="Organisational view"/>
+      <property key="eira:view" value="Semantic view"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="eira:view" value="Technical view - infrastructure"/>
+      <property key="eira:viewpoint" value="EIRA Ontology viewpoint"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/InteroperabilitySpecificationContract"/>
+      <property key="eira:eifLayer" value="N/A"/>
+    </element>
   </folder>
   <folder name="Application" id="id-d2bf081fe5f74ab5a769e461408c3d90" type="application">
     <element xsi:type="archimate:ApplicationService" name="Visualisatie service" id="id-e2bd7cccba194743b7d277f4f297983a">
@@ -1165,50 +1216,6 @@ Interoperability Layer: TechnicalApplication
       <property key="dct:identifier" value="http://data.europa.eu/dr8/MetadataManagementApplicationService"/>
       <property key="eira:eifLayer" value="TechnicalApplication"/>
     </element>
-    <element xsi:type="archimate:ApplicationService" name="Public Administration Single Window" id="id-c4e332353b1c478888a22b33edfd8322">
-      <documentation>Definition: Public Administration Single Window Service ABB is an Application that enables the processes to submit information and documents with a single entry point to fulfil all regulatory requirements.
-
-Source: United Nations
-
-Source reference: https://tfig.unece.org/contents/single-window-concept.htm
-
-Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Mi Carpeta Ciudadana Carpeta Ciudadana is a personal online space that facilitates your relationship with public administrations. https://carpetaciudadana.gob.es/carpeta/clave.htm
-
-Interoperability Dimension: Behavioral IoP
-
-LOST view: Technical view - application
-
-Interoperability Saliency: The Public Administration Single Window Application Service ABB is salient for technical interoperability because it acts as a single entry point for the provision and exchange of data between stakeholders and public organisations. This can improve not only the user experience but interoperability due to the standardised methods for data sharing.
-
-Identifier: http://data.europa.eu/dr8/PublicAdministrationSingleWindowApplicationService
-
-ABB name: eira:PublicAdministrationSingleWindowApplicationService
-
-EIRA concept: eira:ArchitectureBuildingBlock
-
-Last modification: 2024-01-28
-
-Identifier: http://data.europa.eu/dr8/PublicAdministrationSingleWindowApplicationService
-
-Interoperability Layer: TechnicalApplication
-
-</documentation>
-      <property key="eira:PURI" value="http://data.europa.eu/dr8/PublicAdministrationSingleWindowApplicationService"/>
-      <property key="dct:type" value="eira:PublicAdministrationSingleWindowApplicationService"/>
-      <property key="dct:modified" value="2024-01-28"/>
-      <property key="eira:synonym"/>
-      <property key="skos:definition" value="Public Administration Single Window Service ABB is an Application that enables the processes to submit information and documents with a single entry point to fulfil all regulatory requirements."/>
-      <property key="eira:definitionSource" value="United Nations"/>
-      <property key="eira:definitionSourceReference" value="https://tfig.unece.org/contents/single-window-concept.htm"/>
-      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Mi Carpeta Ciudadana Carpeta Ciudadana is a personal online space that facilitates your relationship with public administrations. https://carpetaciudadana.gob.es/carpeta/clave.htm"/>
-      <property key="eira:iopSaliency" value="The Public Administration Single Window Application Service ABB is salient for technical interoperability because it acts as a single entry point for the provision and exchange of data between stakeholders and public organisations. This can improve not only the user experience but interoperability due to the standardised methods for data sharing."/>
-      <property key="skos:note"/>
-      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
-      <property key="eira:iopDimension" value="Behavioral IoP"/>
-      <property key="eira:view" value="Technical view - application"/>
-      <property key="dct:identifier" value="http://data.europa.eu/dr8/PublicAdministrationSingleWindowApplicationService"/>
-      <property key="eira:eifLayer" value="TechnicalApplication"/>
-    </element>
     <element xsi:type="archimate:ApplicationService" name="Artificial Intelligence" id="id-06a4d539fe904977ade6e151d09c2640">
       <documentation>Definition: Artificial Intelligence ABB is an Application Service that enables the procedures to display intelligent behaviour by analysing their environment and taking actions with some degree of autonomy to achieve specific objectives.
 
@@ -1253,8 +1260,218 @@ Interoperability Layer: TechnicalApplication
       <property key="dct:identifier" value="http://data.europa.eu/dr8/ArtificialIntelligenceApplicationService"/>
       <property key="eira:eifLayer" value="TechnicalApplication"/>
     </element>
+    <element xsi:type="archimate:ApplicationInterface" name="Human Interface" id="id-4c3e42e07a4c4c03b7e9b7a776259bc0">
+      <documentation>Definition: Human Interface ABB is an Application Interface that enables the exchange of data between stakeholders (individuals, public administration or legal entities) and a service. This ABB is a key interoperability enabler (*) for assessing compatible interfaces.
+
+Source: EIA Action 
+
+Source reference: https://ec.europa.eu/isa2/eif_en
+
+Synonym: User interface, UI, Graphical User Interface, GUI
+
+Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): GrapesJS - GrapesJS is an open-source, multi-purpose, Web Builder Framework which combines different tools and features with the goal to help you (or users of your application) to build HTML templates without any knowledge of coding. It's a perfect solution to replace the common WYSIWYG editors, which are good for content editing but inappropriate for creating HTML structures. You can see it in action with the official demos, but using its API you're able to build your own editors. https://grapesjs.com/
+
+Interoperability Dimension: Behavioral IoP
+
+LOST view: Technical view - application
+
+Viewpoint: Interoperability Security viewpoint
+
+Interoperability Saliency: The Human Interface ABB is a key interoperability enabler because it supports to achieve technical behavioral interoperability by enabling the exchange of data, information, and knowledge between digital public services and individuals.
+
+Identifier: http://data.europa.eu/dr8/HumanInterfaceApplicationInterface
+
+ABB name: eira:HumanInterfaceApplicationInterface
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2024-01-28
+
+Identifier: http://data.europa.eu/dr8/HumanInterfaceApplicationInterface
+
+Interoperability Layer: TechnicalApplication
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/HumanInterfaceApplicationInterface"/>
+      <property key="dct:type" value="eira:HumanInterfaceApplicationInterface"/>
+      <property key="dct:modified" value="2024-01-28"/>
+      <property key="eira:synonym" value="User interface, UI, Graphical User Interface, GUI"/>
+      <property key="skos:definition" value="Human Interface ABB is an Application Interface that enables the exchange of data between stakeholders (individuals, public administration or legal entities) and a service. This ABB is a key interoperability enabler (*) for assessing compatible interfaces."/>
+      <property key="eira:definitionSource" value="EIA Action "/>
+      <property key="eira:definitionSourceReference" value="https://ec.europa.eu/isa2/eif_en"/>
+      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): GrapesJS - GrapesJS is an open-source, multi-purpose, Web Builder Framework which combines different tools and features with the goal to help you (or users of your application) to build HTML templates without any knowledge of coding. It's a perfect solution to replace the common WYSIWYG editors, which are good for content editing but inappropriate for creating HTML structures. You can see it in action with the official demos, but using its API you're able to build your own editors. https://grapesjs.com/"/>
+      <property key="eira:iopSaliency" value="The Human Interface ABB is a key interoperability enabler because it supports to achieve technical behavioral interoperability by enabling the exchange of data, information, and knowledge between digital public services and individuals."/>
+      <property key="skos:note"/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:iopDimension" value="Behavioral IoP"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="eira:viewpoint" value="Interoperability Security viewpoint"/>
+      <property key="eira:viewpoint" value="Highlevel viewpoint"/>
+      <property key="eira:view" value="EIRA Ontology view"/>
+      <property key="eira:viewpoint" value="Interoperable European Solution viewpoint"/>
+      <property key="eira:viewpoint" value="REST API viewpoint"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/HumanInterfaceApplicationInterface"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Business Intelligence" id="id-ded906077f81493992f288bf89047348">
+      <documentation>Definition: Business Intelligence (BI) is a technology-driven process for analyzing data and presenting actionable information to help executives, managers and other corporate end users make informed business decisions.
+
+Source: TechTarget
+
+Source reference: https://searchbusinessanalytics.techtarget.com/definition/business-intelligence-BI
+
+Additional information: Business Intelligence encompasses a wide variety of tools, applications and methodologies that enable organizations to collect data from internal systems and external sources, prepare it for analysis, develop and run queries against the data, and create reports, dashboards and data visualizations to make the analytical results available to corporate decision-makers. BI can include data mining, online analytical processing, querying and reporting. Companies use BI to improve decision making, cut costs and identify new business opportunities. BI is more than just corporate reporting and more than a set of tools to coax data out of enterprise systems.
+
+Example: A retail company could use BI to track customer buying habits and use that data to develop new marketing strategies. This could involve analyzing the demographics and purchasing habits of customers to identify trends, manage inventory and increase sales.
+
+A healthcare organization could use BI to track patient satisfaction levels, efficiency of care, and then implement changes for improvement based on these metrics.
+
+A financial institution could use BI to detect fraudulent credit card transactions and monitor customer data to assess risk and manage customer relationships more effectively.
+
+LOST view: TVA-Analytics Enablers [Motivation]
+
+Identifier: http://data.europa.eu/dr8/egovera/BusinessIntelligenceApplicationService
+
+ABB name: egovera:BusinessIntelligenceApplicationService
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2023-11-20
+
+Identifier: http://data.europa.eu/dr8/egovera/BusinessIntelligenceApplicationService
+
+Name: Business Intelligence Application Service
+
+Interoperability Layer: TechnicalApplication
+
+Specialises: http://data.europa.eu/dr8/DigitalSolutionApplicationService
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/egovera/BusinessIntelligenceApplicationService"/>
+      <property key="dct:modified" value="2023-11-20"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/egovera/BusinessIntelligenceApplicationService"/>
+      <property key="dct:title" value="Business Intelligence Application Service"/>
+      <property key="dct:type" value="egovera:BusinessIntelligenceApplicationService"/>
+      <property key="skos:definition" value="Business Intelligence (BI) is a technology-driven process for analyzing data and presenting actionable information to help executives, managers and other corporate end users make informed business decisions."/>
+      <property key="eira:definitionSource" value="TechTarget"/>
+      <property key="eira:definitionSourceReference" value="https://searchbusinessanalytics.techtarget.com/definition/business-intelligence-BI"/>
+      <property key="skos:example" value="A retail company could use BI to track customer buying habits and use that data to develop new marketing strategies. This could involve analyzing the demographics and purchasing habits of customers to identify trends, manage inventory and increase sales.&#xA;&#xA;A healthcare organization could use BI to track patient satisfaction levels, efficiency of care, and then implement changes for improvement based on these metrics.&#xA;&#xA;A financial institution could use BI to detect fraudulent credit card transactions and monitor customer data to assess risk and manage customer relationships more effectively."/>
+      <property key="skos:note" value="Business Intelligence encompasses a wide variety of tools, applications and methodologies that enable organizations to collect data from internal systems and external sources, prepare it for analysis, develop and run queries against the data, and create reports, dashboards and data visualizations to make the analytical results available to corporate decision-makers. BI can include data mining, online analytical processing, querying and reporting. Companies use BI to improve decision making, cut costs and identify new business opportunities. BI is more than just corporate reporting and more than a set of tools to coax data out of enterprise systems."/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:view" value="TVA-Analytics Enablers [Motivation]"/>
+      <property key="eira:view" value="TVA-Functional Architecture Principles"/>
+      <property key="eira:view" value="TVI-Analytics Infrastructure Enablers [Motivation]"/>
+      <property key="eira:view" value="TVI-Computing Infrastructure Enablers [Motivation]"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+      <property key="skos:broader" value="http://data.europa.eu/dr8/DigitalSolutionApplicationService"/>
+    </element>
+    <element xsi:type="archimate:ApplicationInterface" name="Machine to Machine Interface" id="id-30bad2d9fa2b4358ab7b5084d7a9c027">
+      <documentation>Definition: Machine to Machine Interface ABB is an Application Interface that enables the exchange of data between a service and other services. This ABB is a key interoperability enabler (*) for assessing compatible interfaces.
+
+Source: EIA Action  (*)DECISION (EU) 2015/2240 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 25 November 2015 establishing a programme on interoperability solutions and common frameworks for European public administrations, businesses and citizens (ISA2 programme) as a means for modernising the public sector.
+
+Source reference: https://ec.europa.eu/isa2/eif_en
+
+Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): XMLGate TRACES Businesses (XTB) - Webservices enabling the management of organisations and cities registered in TRACES. https://circabc.europa.eu/sd/a/dc77e52b-dfba-4dcc-aa39-6a54748db01d/XmlGate%20TRACES%20Businesses%20Manual.doc.
+
+Interoperability Dimension: Behavioral IoP
+
+LOST view: Technical view - application
+
+Viewpoint: Interoperability Security viewpoint
+
+Interoperability Saliency: The Machine to Machine Interface ABB is a key interoperability enabler because it supports to achieve technical behavioral interoperability by enabling the exchange of data, information, and knowledge between digital public services as stated in the EIF recommendation n°5: &quot;&quot;Ensure internal visibility and provide external interfaces for European public services&quot; and recommendation n°9:&quot;Ensure data portability, namely that data is easily transferable between systems and applications supporting the implementation and evolution of European public services without unjustified restrictions, if legally possible.&quot;
+
+Identifier: http://data.europa.eu/dr8/MachineToMachineInterfaceApplicationInterface
+
+ABB name: eira:MachineToMachineInterfaceApplicationInterface
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2024-01-28
+
+Identifier: http://data.europa.eu/dr8/MachineToMachineInterfaceApplicationInterface
+
+Interoperability Layer: TechnicalApplication
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/MachineToMachineInterfaceApplicationInterface"/>
+      <property key="dct:type" value="eira:MachineToMachineInterfaceApplicationInterface"/>
+      <property key="dct:modified" value="2024-01-28"/>
+      <property key="eira:synonym"/>
+      <property key="skos:definition" value="Machine to Machine Interface ABB is an Application Interface that enables the exchange of data between a service and other services. This ABB is a key interoperability enabler (*) for assessing compatible interfaces."/>
+      <property key="eira:definitionSource" value="EIA Action  (*)DECISION (EU) 2015/2240 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 25 November 2015 establishing a programme on interoperability solutions and common frameworks for European public administrations, businesses and citizens (ISA2 programme) as a means for modernising the public sector."/>
+      <property key="eira:definitionSourceReference" value="https://ec.europa.eu/isa2/eif_en"/>
+      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): XMLGate TRACES Businesses (XTB) - Webservices enabling the management of organisations and cities registered in TRACES. https://circabc.europa.eu/sd/a/dc77e52b-dfba-4dcc-aa39-6a54748db01d/XmlGate%20TRACES%20Businesses%20Manual.doc."/>
+      <property key="eira:iopSaliency" value="The Machine to Machine Interface ABB is a key interoperability enabler because it supports to achieve technical behavioral interoperability by enabling the exchange of data, information, and knowledge between digital public services as stated in the EIF recommendation n°5: &quot;&quot;Ensure internal visibility and provide external interfaces for European public services&quot; and recommendation n°9:&quot;Ensure data portability, namely that data is easily transferable between systems and applications supporting the implementation and evolution of European public services without unjustified restrictions, if legally possible.&quot;"/>
+      <property key="skos:note"/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:iopDimension" value="Behavioral IoP"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="eira:viewpoint" value="Interoperability Security viewpoint"/>
+      <property key="eira:viewpoint" value="Highlevel viewpoint"/>
+      <property key="eira:view" value="EIRA Ontology"/>
+      <property key="eira:viewpoint" value="Interoperable European Solution viewpoint"/>
+      <property key="eira:viewpoint" value="REST API viewpoint"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/MachineToMachineInterfaceApplicationInterface"/>
+      <property key="eira:eifLayer" value="TechnicalApplication"/>
+    </element>
   </folder>
-  <folder name="Technology &amp; Physical" id="id-4157e8358b9a4c89981afd5affc09410" type="technology"/>
+  <folder name="Technology &amp; Physical" id="id-4157e8358b9a4c89981afd5affc09410" type="technology">
+    <element xsi:type="archimate:Artifact" name="Solution Building Block" id="id-0620fa1493b74cd594840e7ecf10a0f4">
+      <documentation>Definition: Solution Building Block ABB is an Artifact that enables the implementation of one or more EIRA Architecture Building Blocks of a European Public Service.
+
+Source: ISA2
+
+Source reference: https://ec.europa.eu/isa2/sites/default/files/e-government_core_vocabularies_handbook.pdf
+
+Additional information: Solution Builsing Block ABB is formulated as an agreed normative statement in design terms on a legal, organisational, semantic, or technical attribute of an European Public Service. On the technical view, a Solution Building Block is a specific software component that it might be either procured or developed of a To-Be Interoperable European Solution or that it is integrated in an As-Is Interoperable European Solution
+
+Interoperability Dimension: Structural IoP
+
+LOST view: Legal view
+
+Viewpoint: EIRA Ontology viewpoint
+
+Interoperability Saliency: The Solution Building Block ABB is salient for the technical interoperability due to establishing the technical aspects related to the definition of architecture and public service architectural principles to support public administration in the service delivery.
+
+Identifier: http://data.europa.eu/dr8/SolutionBuildingBlockArtifact
+
+ABB name: eira:SolutionBuildingBlockArtifact
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2024-01-28
+
+Identifier: http://data.europa.eu/dr8/SolutionBuildingBlockArtifact
+
+Interoperability Layer: N/A
+
+</documentation>
+      <property key="eira:PURI" value="http://data.europa.eu/dr8/SolutionBuildingBlockArtifact"/>
+      <property key="dct:type" value="eira:SolutionBuildingBlockArtifact"/>
+      <property key="dct:modified" value="2024-01-28"/>
+      <property key="eira:synonym"/>
+      <property key="skos:definition" value="Solution Building Block ABB is an Artifact that enables the implementation of one or more EIRA Architecture Building Blocks of a European Public Service."/>
+      <property key="eira:definitionSource" value="ISA2"/>
+      <property key="eira:definitionSourceReference" value="https://ec.europa.eu/isa2/sites/default/files/e-government_core_vocabularies_handbook.pdf"/>
+      <property key="skos:example"/>
+      <property key="eira:iopSaliency" value="The Solution Building Block ABB is salient for the technical interoperability due to establishing the technical aspects related to the definition of architecture and public service architectural principles to support public administration in the service delivery."/>
+      <property key="skos:note" value="Solution Builsing Block ABB is formulated as an agreed normative statement in design terms on a legal, organisational, semantic, or technical attribute of an European Public Service. On the technical view, a Solution Building Block is a specific software component that it might be either procured or developed of a To-Be Interoperable European Solution or that it is integrated in an As-Is Interoperable European Solution"/>
+      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
+      <property key="eira:iopDimension" value="Structural IoP"/>
+      <property key="eira:iopDimension" value="Behavioral IoP"/>
+      <property key="eira:view" value="Legal view"/>
+      <property key="eira:view" value="Organisational view"/>
+      <property key="eira:view" value="Semantic view"/>
+      <property key="eira:view" value="Technical view - application"/>
+      <property key="eira:view" value="Technical view - infrastructure"/>
+      <property key="eira:viewpoint" value="EIRA Ontology viewpoint"/>
+      <property key="dct:identifier" value="http://data.europa.eu/dr8/SolutionBuildingBlockArtifact"/>
+      <property key="eira:eifLayer" value="N/A"/>
+    </element>
+  </folder>
   <folder name="Motivation" id="id-1ac5fcddfb8e444387e02e06e5d114a6" type="motivation">
     <element xsi:type="archimate:Principle" name="&lt;Architectuurprincipe>" id="id-9dba36bbe0834b2cad3fd90bfc0637ae">
       <property key="Name (en)" value="&lt;Principle>"/>
@@ -2103,10 +2320,34 @@ Interoperability Layer: TechnicalApplication
     <element xsi:type="archimate:CompositionRelationship" id="id-d86429a0aa6d452394637128cf16da61" source="id-2021b349eab343c0a349351493f4692c" target="id-537088722f7a40b1b5013b02326c9c2d"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-d93e645c7dc64ddf936fb15d3d0ded64" source="id-2021b349eab343c0a349351493f4692c" target="id-cebeb19e4f9b43419a66a0a39b2c34df"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-1072348eea864552a827dba1c684a670" source="id-2021b349eab343c0a349351493f4692c" target="id-4fc0c5dab360468c9faed315b0837087"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-91e5cc286faf4a998b536699340a5253" source="id-2021b349eab343c0a349351493f4692c" target="id-c4e332353b1c478888a22b33edfd8322"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-ead414b7c82149d7884c63c1fc022bf5" source="id-2021b349eab343c0a349351493f4692c" target="id-0419639b05a54811b9bc6de4eacab670"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-97de8ac2fe3245cca4d4714587e91660" source="id-2021b349eab343c0a349351493f4692c" target="id-368cc9f220934a29b5392dd34ecf27d2"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-52fdb8bc234b44c8b715042d42fbfb9c" source="id-2021b349eab343c0a349351493f4692c" target="id-06a4d539fe904977ade6e151d09c2640"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-6d91ff1f011a4844a495f3fe2b6f42f0" source="id-2021b349eab343c0a349351493f4692c" target="id-4c3e42e07a4c4c03b7e9b7a776259bc0"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-3da49868cf6d40ec8c57e55362420bfe" source="id-2021b349eab343c0a349351493f4692c" target="id-ded906077f81493992f288bf89047348"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ee5550bc71fc47e689a50c6b02dd2ee2" source="id-2021b349eab343c0a349351493f4692c" target="id-30bad2d9fa2b4358ab7b5084d7a9c027"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-abc012d1e0bb4dc5b882eb4f1527eafb" source="id-10b93dd1a81d46dfa35c27df6ceaa6a5" target="id-30bad2d9fa2b4358ab7b5084d7a9c027"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-b335e4b401b4410ca2815b2ad1709fc0" source="id-b7a3517a9f8d44008fd2b7872dca93b4" target="id-0419639b05a54811b9bc6de4eacab670"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-176d0e280e8f46a19c4e99f305ba6999" source="id-368cc9f220934a29b5392dd34ecf27d2" target="id-10b93dd1a81d46dfa35c27df6ceaa6a5"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-5fc2fb309d8e44d19a91cd7f492a1bf1" source="id-e2bd7cccba194743b7d277f4f297983a" target="id-4c3e42e07a4c4c03b7e9b7a776259bc0"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-2c32340e4d3e4e93bcb972aefa2f65fa" source="id-e2bd7cccba194743b7d277f4f297983a" target="id-ded906077f81493992f288bf89047348"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-1472246749184e758f9be22a02ead66e" source="id-a5159c9a4f0446bbb72f4a982718369b" target="id-4fc0c5dab360468c9faed315b0837087"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-0a374b25b2504e629677e38dc762fb25" source="id-c85e74a17b034a2dabfb07bb003a9684" target="id-cebeb19e4f9b43419a66a0a39b2c34df"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-01a858be9d714e07a0f53d572008c3b8" source="id-a5159c9a4f0446bbb72f4a982718369b" target="id-06a4d539fe904977ade6e151d09c2640"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-bf2aca95282743c39d9e7c44c4f3559e" source="id-aa2f4a269bc24565ac0335716045d463" target="id-8f1c85c777334a5d8ea8836b45ddf592"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-e55df69ff8064d1e8f25b5f4f43d6e31" source="id-f05ab64b279d48b2b7a111ffcd5646ad" target="id-382a718a8b8b4aec8b2417e0e701aeae"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-8c7f9ae98bfa4ec5a965c36e3669c457" source="id-bdfc7e9d346c4aecb7713f9eccc6732f" target="id-537088722f7a40b1b5013b02326c9c2d"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-ab03f607164f4a8d8c50c5cf1ce338ad" source="id-bdfc7e9d346c4aecb7713f9eccc6732f" target="id-1099a5f7f4044af2a81907c12db78aef"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-7f7635712bb8415e87c95b44bad1df76" source="id-87148b00736c4825bc338dc04be81669" target="id-04e901eb66f84dd691be4b2c07ffb295"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-3b562e02eaed48e68c65f8162b0f7fce" source="id-87148b00736c4825bc338dc04be81669" target="id-66e7252c07f14944b5d581d4486c4578">
+      <documentation>The nLDT views Auditing specifically in light of authentication and security</documentation>
+    </element>
+    <element xsi:type="archimate:AssociationRelationship" id="id-4d90370d96f149d1a18c6edce14e614c" source="id-8f1c85c777334a5d8ea8836b45ddf592" target="id-5c69ef95c41b4f8c98d2f756e1dc1d14"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-e7960c517d92413a9d40f62ad813f819" source="id-8f1c85c777334a5d8ea8836b45ddf592" target="id-159f2ba1307f4dc4a721aebf3300a6e6"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-823ca3a5911c4495bf1bab7db876d6a7" source="id-0620fa1493b74cd594840e7ecf10a0f4" target="id-d84f59ccb0f7463db59aab9bbeba2893"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-381adbb3a7204a9195fcd8fc4e0b36f1" source="id-5682b83e825d46f7872f4f3bc5805bd2" target="id-0620fa1493b74cd594840e7ecf10a0f4"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-7e7ffc404cfa4d49a38eb4b79ed4675f" source="id-2021b349eab343c0a349351493f4692c" target="id-0620fa1493b74cd594840e7ecf10a0f4"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-24328c2635ce4059bc23c4303047fb56" source="id-2021b349eab343c0a349351493f4692c" target="id-d84f59ccb0f7463db59aab9bbeba2893"/>
   </folder>
   <folder name="Views" id="id-621ace97431a484c846b778dbd8bdfca" type="diagrams">
     <folder name="Nederlands" id="id-8b753552ee7d455b89e0b101d6fc8688">
@@ -4229,8 +4470,9 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
         <documentation>The Capabilities in this viewpoint are consistent with the report 'Policy processes and building blocks for Digital Twins'</documentation>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="Buildingblocks (en)" id="id-44e908c3bef14235991ef2ae911a6a46" viewpoint="application_usage">
-        <child xsi:type="archimate:DiagramObject" id="id-e5612ffaa0ee47eb872367a13e6f6ae3" textAlignment="1" archimateElement="id-2021b349eab343c0a349351493f4692c">
+        <child xsi:type="archimate:DiagramObject" id="id-e5612ffaa0ee47eb872367a13e6f6ae3" textAlignment="1" fillColor="#c0c0c0" archimateElement="id-2021b349eab343c0a349351493f4692c">
           <bounds x="-216" y="96" width="360" height="1656"/>
+          <feature name="gradient" value="1"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-53c960992dc04668966610155202b8f1" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-90dfd369dedf4077b581536356eaa60b" archimateRelationship="id-052a17b48538421589c81226c7565586"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-098c5e11005440159fcd454e118e0562" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-a2487744776846829e2487a8d3124b08" archimateRelationship="id-fecd5ee3f4eb4490ae7f782fccd7c39e"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-d7c7da990cc942939b41785aece348ab" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-c48d0afe102a421da84fa22d07e0c82f" archimateRelationship="id-cc2e00887e15447f887170e88de4584b"/>
@@ -4240,52 +4482,61 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <sourceConnection xsi:type="archimate:Connection" id="id-b7af055276e34cf6ac1de3e212bf4874" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-391bbeff3d2b4a0ba1bc48a9b9854935" archimateRelationship="id-d86429a0aa6d452394637128cf16da61"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-c8fc0c5e9ad044aebfbb9b9c175e2760" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-57167b426aab4dafb48b63f7b3d3dfe8" archimateRelationship="id-d93e645c7dc64ddf936fb15d3d0ded64"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-ece48c4cd6444c129b0d8791037c961f" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-0c5c4efc802349e6b02b5bc92c85ebae" archimateRelationship="id-1072348eea864552a827dba1c684a670"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-e48b7ac849184168bc77810e9267fe70" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-0f342af4ed5e457abcc15c5729281487" archimateRelationship="id-91e5cc286faf4a998b536699340a5253"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-09824e60254d400ab9e15fe252b846c1" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-5e358e9d30184765a639303bf2caa61c" archimateRelationship="id-ead414b7c82149d7884c63c1fc022bf5"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-d505622d6a5641f8a547158f012169a3" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-d4bbfdb202b64a418f26ebdc20d5b15a" archimateRelationship="id-97de8ac2fe3245cca4d4714587e91660"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-f6366fbe031b4ddd8d2ff1c3e8bbdccb" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-7f907188f0654e5b90044107624f7e1c" archimateRelationship="id-52fdb8bc234b44c8b715042d42fbfb9c"/>
-          <child xsi:type="archimate:DiagramObject" id="id-90dfd369dedf4077b581536356eaa60b" targetConnections="id-53c960992dc04668966610155202b8f1" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" textPosition="1" archimateElement="id-159f2ba1307f4dc4a721aebf3300a6e6">
-            <bounds x="12" y="1548" width="156" height="83"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5598ed32165749ffbb3a29d2dc60730e" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-db7b0dff51ab4b6a8a77368b05a15b30" archimateRelationship="id-6d91ff1f011a4844a495f3fe2b6f42f0"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-4106d172727444a39d1f4120b5a612e0" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-dfe45c8e29ee402391f9551a28ebd68a" archimateRelationship="id-3da49868cf6d40ec8c57e55362420bfe"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-194b6209f1104e89b35b1d642ba88a77" source="id-e5612ffaa0ee47eb872367a13e6f6ae3" target="id-45599d1344c441b280fa361c27608221" archimateRelationship="id-ee5550bc71fc47e689a50c6b02dd2ee2"/>
+          <child xsi:type="archimate:DiagramObject" id="id-90dfd369dedf4077b581536356eaa60b" targetConnections="id-53c960992dc04668966610155202b8f1 id-a2138992fd284f218b123e5f12d0ed94" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" textPosition="1" archimateElement="id-159f2ba1307f4dc4a721aebf3300a6e6">
+            <bounds x="180" y="1450" width="156" height="83"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="id-a2487744776846829e2487a8d3124b08" targetConnections="id-098c5e11005440159fcd454e118e0562" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" fillColor="#b5ffff" textPosition="1" archimateElement="id-5c69ef95c41b4f8c98d2f756e1dc1d14">
-            <bounds x="12" y="1449" width="156" height="83"/>
+          <child xsi:type="archimate:DiagramObject" id="id-a2487744776846829e2487a8d3124b08" targetConnections="id-098c5e11005440159fcd454e118e0562 id-473e03459a7e4152925ec9482b084c8e" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" fillColor="#b5ffff" textPosition="1" archimateElement="id-5c69ef95c41b4f8c98d2f756e1dc1d14">
+            <bounds x="12" y="1450" width="156" height="83"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="id-c48d0afe102a421da84fa22d07e0c82f" targetConnections="id-d7c7da990cc942939b41785aece348ab" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" fillColor="#b5ffff" textPosition="1" archimateElement="id-66e7252c07f14944b5d581d4486c4578">
-            <bounds x="180" y="1452" width="156" height="83"/>
+          <child xsi:type="archimate:DiagramObject" id="id-c48d0afe102a421da84fa22d07e0c82f" targetConnections="id-d7c7da990cc942939b41785aece348ab id-e6714f445ee946509deeaa2a2e841013" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" fillColor="#b5ffff" textPosition="1" archimateElement="id-66e7252c07f14944b5d581d4486c4578">
+            <bounds x="12" y="1560" width="156" height="83"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="id-d58e97b3b6e24576944b82d968ac1691" targetConnections="id-e14922b68b5e420487ad41a551317e5b" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" fillColor="#b5ffff" textPosition="1" archimateElement="id-04e901eb66f84dd691be4b2c07ffb295">
-            <bounds x="180" y="1548" width="156" height="83"/>
+          <child xsi:type="archimate:DiagramObject" id="id-d58e97b3b6e24576944b82d968ac1691" targetConnections="id-e14922b68b5e420487ad41a551317e5b id-105d8916346647a0a9314068036f051a" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" fillColor="#b5ffff" textPosition="1" archimateElement="id-04e901eb66f84dd691be4b2c07ffb295">
+            <bounds x="180" y="1560" width="156" height="83"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-5f799b3f3abb4f848db10b77dc23e592" targetConnections="id-99d28a7650054d27a950d747b5dde3df" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" fillColor="#b5ffff" textPosition="1" archimateElement="id-f05ab64b279d48b2b7a111ffcd5646ad">
-            <bounds x="12" y="1356" width="156" height="83"/>
-          </child>
-          <child xsi:type="archimate:DiagramObject" id="id-92ecd674e5724be9a5490884148f9a00" targetConnections="id-ad89de5f4ebc474bb932ace8817fc9ae" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" fillColor="#b5ffff" textPosition="1" archimateElement="id-1099a5f7f4044af2a81907c12db78aef">
             <bounds x="180" y="1356" width="156" height="83"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-3b515eaad3e542d48c9b839543fee51e" source="id-5f799b3f3abb4f848db10b77dc23e592" target="id-ad41a892539e4d80a595d87f1d438551" archimateRelationship="id-e55df69ff8064d1e8f25b5f4f43d6e31"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="id-391bbeff3d2b4a0ba1bc48a9b9854935" targetConnections="id-b7af055276e34cf6ac1de3e212bf4874" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" fillColor="#b5ffff" textPosition="1" archimateElement="id-537088722f7a40b1b5013b02326c9c2d">
-            <bounds x="180" y="1260" width="156" height="83"/>
+          <child xsi:type="archimate:DiagramObject" id="id-92ecd674e5724be9a5490884148f9a00" targetConnections="id-ad89de5f4ebc474bb932ace8817fc9ae id-4dcbbc99184f44f7ae03365f5c56727a" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" fillColor="#b5ffff" textPosition="1" archimateElement="id-1099a5f7f4044af2a81907c12db78aef">
+            <bounds x="12" y="1286" width="156" height="83"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="id-57167b426aab4dafb48b63f7b3d3dfe8" targetConnections="id-c8fc0c5e9ad044aebfbb9b9c175e2760" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" fillColor="#b5ffff" textPosition="1" archimateElement="id-cebeb19e4f9b43419a66a0a39b2c34df">
-            <bounds x="180" y="1032" width="156" height="83"/>
+          <child xsi:type="archimate:DiagramObject" id="id-57167b426aab4dafb48b63f7b3d3dfe8" targetConnections="id-c8fc0c5e9ad044aebfbb9b9c175e2760 id-16898f76d3754a19865c098a42c5ca5d" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" fillColor="#b5ffff" textPosition="1" archimateElement="id-cebeb19e4f9b43419a66a0a39b2c34df">
+            <bounds x="180" y="1116" width="156" height="83"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="id-0c5c4efc802349e6b02b5bc92c85ebae" targetConnections="id-ece48c4cd6444c129b0d8791037c961f" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" fillColor="#b5ffff" textPosition="1" archimateElement="id-4fc0c5dab360468c9faed315b0837087">
+          <child xsi:type="archimate:DiagramObject" id="id-0c5c4efc802349e6b02b5bc92c85ebae" targetConnections="id-ece48c4cd6444c129b0d8791037c961f id-55560a18d8c946d29568f17135a76e3f" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" fillColor="#b5ffff" textPosition="1" archimateElement="id-4fc0c5dab360468c9faed315b0837087">
             <bounds x="180" y="924" width="156" height="83"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="id-0f342af4ed5e457abcc15c5729281487" targetConnections="id-e48b7ac849184168bc77810e9267fe70" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" textPosition="1" archimateElement="id-c4e332353b1c478888a22b33edfd8322">
-            <bounds x="144" y="540" width="156" height="83"/>
-          </child>
-          <child xsi:type="archimate:Note" id="id-bdc0719332994c3baebf411619211df9" textAlignment="1">
-            <bounds x="192" y="636" width="132" height="61"/>
-            <content>not sure about the best mapping</content>
-          </child>
-          <child xsi:type="archimate:DiagramObject" id="id-5e358e9d30184765a639303bf2caa61c" targetConnections="id-09824e60254d400ab9e15fe252b846c1" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" fillColor="#b5ffff" textPosition="1" archimateElement="id-0419639b05a54811b9bc6de4eacab670">
-            <bounds x="167" y="162" width="156" height="83"/>
+          <child xsi:type="archimate:DiagramObject" id="id-5e358e9d30184765a639303bf2caa61c" targetConnections="id-09824e60254d400ab9e15fe252b846c1 id-680b89e3b1a7464d9eec2e496128619e" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" fillColor="#b5ffff" textPosition="1" archimateElement="id-0419639b05a54811b9bc6de4eacab670">
+            <bounds x="167" y="264" width="156" height="83"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-d4bbfdb202b64a418f26ebdc20d5b15a" targetConnections="id-d505622d6a5641f8a547158f012169a3" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" textPosition="1" archimateElement="id-368cc9f220934a29b5392dd34ecf27d2">
             <bounds x="167" y="60" width="156" height="83"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-b20d702cc6fe464d80cc56e735be5d28" source="id-d4bbfdb202b64a418f26ebdc20d5b15a" target="id-ad5129b9d03a498fb5453147b1586487" archimateRelationship="id-176d0e280e8f46a19c4e99f305ba6999">
+              <bendpoint startX="104" startY="8" endX="-324" endY="-62"/>
+              <bendpoint startX="104" startY="80" endX="-324" endY="10"/>
+            </sourceConnection>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="id-7f907188f0654e5b90044107624f7e1c" targetConnections="id-f6366fbe031b4ddd8d2ff1c3e8bbdccb" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" textPosition="1" archimateElement="id-06a4d539fe904977ade6e151d09c2640">
-            <bounds x="180" y="1128" width="156" height="83"/>
+          <child xsi:type="archimate:DiagramObject" id="id-7f907188f0654e5b90044107624f7e1c" targetConnections="id-f6366fbe031b4ddd8d2ff1c3e8bbdccb id-7f7eab73a0cb497a80422461c74c053c" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" textPosition="1" archimateElement="id-06a4d539fe904977ade6e151d09c2640">
+            <bounds x="180" y="1020" width="156" height="83"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-db7b0dff51ab4b6a8a77368b05a15b30" targetConnections="id-5598ed32165749ffbb3a29d2dc60730e id-7fa2840bc64742409c337651d90cd1ed" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" fillColor="#b5ffff" textPosition="1" archimateElement="id-4c3e42e07a4c4c03b7e9b7a776259bc0">
+            <bounds x="167" y="504" width="156" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-dfe45c8e29ee402391f9551a28ebd68a" targetConnections="id-4106d172727444a39d1f4120b5a612e0 id-baa9da2859d14df0b0467b5fab8e1791" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" fillColor="#b5ffff" textPosition="1" archimateElement="id-ded906077f81493992f288bf89047348">
+            <bounds x="167" y="612" width="156" height="83"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-45599d1344c441b280fa361c27608221" targetConnections="id-194b6209f1104e89b35b1d642ba88a77 id-c5e738dde21c47668d17211b23e6ead0" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" fillColor="#b5ffff" textPosition="1" archimateElement="id-30bad2d9fa2b4358ab7b5084d7a9c027">
+            <bounds x="167" y="168" width="156" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-391bbeff3d2b4a0ba1bc48a9b9854935" targetConnections="id-b7af055276e34cf6ac1de3e212bf4874 id-b3ebb7fe02c440f082589d1170da6631" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" fillColor="#b5ffff" textPosition="1" archimateElement="id-537088722f7a40b1b5013b02326c9c2d">
+            <bounds x="180" y="1260" width="156" height="83"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-17da03cb8fc5441594c8b5931885e3f9" textAlignment="1" archimateElement="id-c3159c56e7974cb99d8cbac60bbea17b">
@@ -4350,10 +4601,13 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <sourceConnection xsi:type="archimate:Connection" id="id-accc74fd25e74c0caa73fb5505f04ad0" source="id-eee01dbfda2047609d48b601d720c3ce" target="id-1b84f6921b0a4418aa14dc8ca1d8b4de" archimateRelationship="id-dbd1cbcbc5cd4cab90b252f36020ae4d"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-46222793b02e4ae29ff68c7d555383e6" source="id-eee01dbfda2047609d48b601d720c3ce" target="id-e039374c6aa54950a0608926abc88170" archimateRelationship="id-39d4f4e1975748f6b506faa4db761672"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-8083a95f260f4e87aba1de2b2dd550fe" source="id-eee01dbfda2047609d48b601d720c3ce" target="id-48062e600c5a4661b9cd4da80d0117e9" archimateRelationship="id-710edee4a2894ef19f3f70e8d1bf8991"/>
-          <child xsi:type="archimate:DiagramObject" id="id-ad5129b9d03a498fb5453147b1586487" targetConnections="id-8c84ae57705b45d4b87fff137bc1f7f6 id-e6cddbba11a54b4e9af6382eb11ded31 id-a07b1dd9fcf84e9da08739308015f4ba id-2d2574af59b54ac3b4a1e003de02894f id-cd49bae881264130aabc74f06f3d3b40" archimateElement="id-10b93dd1a81d46dfa35c27df6ceaa6a5">
+          <child xsi:type="archimate:DiagramObject" id="id-ad5129b9d03a498fb5453147b1586487" targetConnections="id-8c84ae57705b45d4b87fff137bc1f7f6 id-e6cddbba11a54b4e9af6382eb11ded31 id-a07b1dd9fcf84e9da08739308015f4ba id-2d2574af59b54ac3b4a1e003de02894f id-cd49bae881264130aabc74f06f3d3b40 id-b20d702cc6fe464d80cc56e735be5d28" archimateElement="id-10b93dd1a81d46dfa35c27df6ceaa6a5">
             <bounds x="240" y="144" width="120" height="55"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-b8d1ca631e7444caac6e44752f53c1bf" source="id-ad5129b9d03a498fb5453147b1586487" target="id-1b84f6921b0a4418aa14dc8ca1d8b4de" archimateRelationship="id-cf79f0cbb03b441fbe573841a55e2b03"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-c5e738dde21c47668d17211b23e6ead0" source="id-ad5129b9d03a498fb5453147b1586487" target="id-45599d1344c441b280fa361c27608221" archimateRelationship="id-abc012d1e0bb4dc5b882eb4f1527eafb">
+              <bendpoint startX="-24" startY="58" endX="404" endY="12"/>
+            </sourceConnection>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-d9d6c5dc188244eea5b449a4ec9c8d53" targetConnections="id-cebfae40f8264e2987e65ec6a0bcd195" archimateElement="id-a23a57c270e14345ad251e169cad9200">
             <bounds x="816" y="96" width="120" height="55"/>
@@ -4386,6 +4640,9 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
             <sourceConnection xsi:type="archimate:Connection" id="id-b03ed31dbebe45a1bbcaf1b5a6627edc" source="id-d962efd17adf48f2977f55c2ac331f11" target="id-8b69bfe79d224a2ea28037372d3c6f1d" archimateRelationship="id-e936b18115a84920b24ba7647d4b6f41">
               <bendpoint startX="108" startY="21" endX="228" endY="-867"/>
               <bendpoint startX="108" startY="885" endX="228" endY="-3"/>
+            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="id-680b89e3b1a7464d9eec2e496128619e" source="id-d962efd17adf48f2977f55c2ac331f11" target="id-5e358e9d30184765a639303bf2caa61c" archimateRelationship="id-b335e4b401b4410ca2815b2ad1709fc0">
+              <bendpoint startX="-36" startY="58" endX="716" endY="-28"/>
             </sourceConnection>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-1b84f6921b0a4418aa14dc8ca1d8b4de" targetConnections="id-accc74fd25e74c0caa73fb5505f04ad0 id-b8d1ca631e7444caac6e44752f53c1bf id-e86eb305ee374620827ae407c0297dab" archimateElement="id-b0efb3fe45fe44ab8c5ed23ffe42c483">
@@ -4421,6 +4678,14 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <child xsi:type="archimate:DiagramObject" id="id-bff8e7f016754fac8e0e0c5fea179239" targetConnections="id-61d92816e2e440f59273f4296eaa4ffd id-8f27a7cff7f9483e955624761b185293 id-9e44cc0cb53f4d3889710c2d256cb4f0 id-d169ffa138d44e9984e4250f684e1dea id-ae4eb77ea45c48c594014eee32a80da8" archimateElement="id-e2bd7cccba194743b7d277f4f297983a">
             <bounds x="72" y="132" width="120" height="55"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-7fa2840bc64742409c337651d90cd1ed" source="id-bff8e7f016754fac8e0e0c5fea179239" target="id-db7b0dff51ab4b6a8a77368b05a15b30" archimateRelationship="id-5fc2fb309d8e44d19a91cd7f492a1bf1">
+              <bendpoint startX="-168" startY="-2" endX="92" endY="31"/>
+              <bendpoint startX="-168" startY="-38" endX="92" endY="-5"/>
+            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="id-baa9da2859d14df0b0467b5fab8e1791" source="id-bff8e7f016754fac8e0e0c5fea179239" target="id-dfe45c8e29ee402391f9551a28ebd68a" archimateRelationship="id-2c32340e4d3e4e93bcb972aefa2f65fa">
+              <bendpoint startX="-168" startY="10" endX="92" endY="-64"/>
+              <bendpoint startX="-168" startY="70" endX="92" endY="-4"/>
+            </sourceConnection>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-b44d639aff1d46d0a4c298a71ecbba56" targetConnections="id-c0fe5d55c04d4fb0a270d808cfd35873" archimateElement="id-e7ec96d1daf649c29dfe545adb02d31a">
             <bounds x="360" y="186" width="120" height="55"/>
@@ -4456,6 +4721,13 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <child xsi:type="archimate:DiagramObject" id="id-28ac863962b0471ebe38407b576fca3f" targetConnections="id-2cf39dfa317e4c66b7232fa4cb8f46fb id-9750f05e85694ab0b0fb568db373386e id-1d5f4fea0b2e4ed4aeb80b0808116b67" archimateElement="id-a5159c9a4f0446bbb72f4a982718369b">
             <bounds x="168" y="84" width="120" height="55"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-55560a18d8c946d29568f17135a76e3f" source="id-28ac863962b0471ebe38407b576fca3f" target="id-0c5c4efc802349e6b02b5bc92c85ebae" archimateRelationship="id-1472246749184e758f9be22a02ead66e">
+              <bendpoint startX="-156" startY="-2" endX="187" endY="-16"/>
+            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="id-7f7eab73a0cb497a80422461c74c053c" source="id-28ac863962b0471ebe38407b576fca3f" target="id-7f907188f0654e5b90044107624f7e1c" archimateRelationship="id-01a858be9d714e07a0f53d572008c3b8">
+              <bendpoint startX="-252" startY="10" endX="91" endY="-100"/>
+              <bendpoint startX="-252" startY="94" endX="91" endY="-16"/>
+            </sourceConnection>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-c6bc0bc051ff433f9328a072ee97f037" targetConnections="id-56e6c17f12924720bca43063404f911b id-240eedb62ce24f45863019e7faf2c11c" archimateElement="id-668d02cebd3540b7b0a4cc9133d29bb1">
             <bounds x="792" y="84" width="143" height="55"/>
@@ -4465,6 +4737,7 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <child xsi:type="archimate:DiagramObject" id="id-61c675040fbd4aedba8ffdec96818cc2" targetConnections="id-6b8736e4d8fa4f6e89c7d6000c2aec97" archimateElement="id-c85e74a17b034a2dabfb07bb003a9684">
             <bounds x="168" y="246" width="120" height="55"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-16898f76d3754a19865c098a42c5ca5d" source="id-61c675040fbd4aedba8ffdec96818cc2" target="id-57167b426aab4dafb48b63f7b3d3dfe8" archimateRelationship="id-0a374b25b2504e629677e38dc762fb25"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-8b69bfe79d224a2ea28037372d3c6f1d" targetConnections="id-fb09ef90257b427f8989e9289d7f5136 id-b03ed31dbebe45a1bbcaf1b5a6627edc" archimateElement="id-cb465b147a2644b0960bd563231f8bc9">
             <bounds x="444" y="192" width="120" height="55"/>
@@ -4500,23 +4773,42 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-a7d7fae66fe54e48b582b1e64645439b" source="id-712d0edecd914c9b9dd1fae88d89c496" target="id-da8f95b3e07a4c778219d427d541cad4" archimateRelationship="id-c02082b1665e4d729560a8f703517755"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="id-ef3b626e77524be88e26e57440b8bb8f" targetConnections="id-d67718feae4e4a5684aa7f40b2c920d1" archimateElement="id-8f1c85c777334a5d8ea8836b45ddf592">
+          <child xsi:type="archimate:DiagramObject" id="id-ef3b626e77524be88e26e57440b8bb8f" targetConnections="id-d67718feae4e4a5684aa7f40b2c920d1 id-349285636e1a49e294afbe92fc8a711a" archimateElement="id-8f1c85c777334a5d8ea8836b45ddf592">
             <bounds x="108" y="192" width="120" height="55"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-473e03459a7e4152925ec9482b084c8e" source="id-ef3b626e77524be88e26e57440b8bb8f" target="id-a2487744776846829e2487a8d3124b08" archimateRelationship="id-4d90370d96f149d1a18c6edce14e614c">
+              <bendpoint startX="-36" startY="46" endX="415" endY="46"/>
+              <bendpoint startX="-444" startY="46" endX="7" endY="46"/>
+            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="id-a2138992fd284f218b123e5f12d0ed94" source="id-ef3b626e77524be88e26e57440b8bb8f" target="id-90dfd369dedf4077b581536356eaa60b" archimateRelationship="id-e7960c517d92413a9d40f62ad813f819">
+              <bendpoint startX="-180" startY="-2" endX="103" endY="-2"/>
+            </sourceConnection>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-da8f95b3e07a4c778219d427d541cad4" targetConnections="id-a7d7fae66fe54e48b582b1e64645439b id-dd12b289ff804248940236f479dd78a2 id-3551c07aee034a838ea1a68f32a82fab id-0e02b64bfe9c4adaad1cc1655ce4a83a id-0cc27cdcc40f4e42b2cd266604b14d62" archimateElement="id-bdfc7e9d346c4aecb7713f9eccc6732f">
             <bounds x="108" y="48" width="120" height="55"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-b3ebb7fe02c440f082589d1170da6631" source="id-da8f95b3e07a4c778219d427d541cad4" target="id-391bbeff3d2b4a0ba1bc48a9b9854935" archimateRelationship="id-8c7f9ae98bfa4ec5a965c36e3669c457"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-4dcbbc99184f44f7ae03365f5c56727a" source="id-da8f95b3e07a4c778219d427d541cad4" target="id-92ecd674e5724be9a5490884148f9a00" archimateRelationship="id-ab03f607164f4a8d8c50c5cf1ce338ad">
+              <bendpoint startX="-216" startY="-2" endX="235" endY="32"/>
+            </sourceConnection>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-89223a9367774130bfc75ba5fc583074" targetConnections="id-073dbba09e374ebea46ebebfdbee98f6" archimateElement="id-aa2f4a269bc24565ac0335716045d463">
             <bounds x="828" y="192" width="133" height="55"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-349285636e1a49e294afbe92fc8a711a" source="id-89223a9367774130bfc75ba5fc583074" target="id-ef3b626e77524be88e26e57440b8bb8f" archimateRelationship="id-bf2aca95282743c39d9e7c44c4f3559e"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-21950ed0678a4376ba31a591906d86e5" targetConnections="id-ac36cab2c0bf47ad998d673b64420fce id-48cfc39cff1540eba8306313bcecd733 id-d8efcfb426264b79b479eb9bffc5316c" archimateElement="id-87148b00736c4825bc338dc04be81669">
             <bounds x="96" y="300" width="132" height="55"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-105d8916346647a0a9314068036f051a" source="id-21950ed0678a4376ba31a591906d86e5" target="id-d58e97b3b6e24576944b82d968ac1691" archimateRelationship="id-7f7635712bb8415e87c95b44bad1df76">
+              <bendpoint startX="-137" startY="-2" endX="139" endY="-4"/>
+            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="id-e6714f445ee946509deeaa2a2e841013" source="id-21950ed0678a4376ba31a591906d86e5" target="id-c48d0afe102a421da84fa22d07e0c82f" archimateRelationship="id-3b562e02eaed48e68c65f8162b0f7fce">
+              <bendpoint startX="-53" startY="-50" endX="391" endY="-52"/>
+              <bendpoint startX="-413" startY="-50" endX="31" endY="-52"/>
+            </sourceConnection>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="id-ad41a892539e4d80a595d87f1d438551" targetConnections="id-a863118584634f88a5d86de79a03965e" archimateElement="id-382a718a8b8b4aec8b2417e0e701aeae">
+          <child xsi:type="archimate:DiagramObject" id="id-ad41a892539e4d80a595d87f1d438551" targetConnections="id-a863118584634f88a5d86de79a03965e id-3b515eaad3e542d48c9b839543fee51e" archimateElement="id-382a718a8b8b4aec8b2417e0e701aeae">
             <bounds x="420" y="108" width="120" height="55"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-3551c07aee034a838ea1a68f32a82fab" source="id-ad41a892539e4d80a595d87f1d438551" target="id-da8f95b3e07a4c778219d427d541cad4" archimateRelationship="id-1393388868064211ba6e6e6b5ac0f5ab">
@@ -4896,9 +5188,23 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
         </child>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="Appstore viewpoint (en)" id="id-7aa862bcf1404ebfa5cc8a14f2024233">
+        <child xsi:type="archimate:DiagramObject" id="id-426634e4c52744d8aa94dea4e2ab7084" textAlignment="1" fillColor="#c0c0c0" archimateElement="id-2021b349eab343c0a349351493f4692c">
+          <bounds x="-180" y="12" width="229" height="325"/>
+          <feature name="gradient" value="1"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-db50c5c7d7e747cdb893e0fb81248f45" source="id-426634e4c52744d8aa94dea4e2ab7084" target="id-4f25b197f2984566af209ba293509a84" archimateRelationship="id-7e7ffc404cfa4d49a38eb4b79ed4675f"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e90db3eeb760408fa026788b8870ff38" source="id-426634e4c52744d8aa94dea4e2ab7084" target="id-4a6aef798d7e401eac7e67d926b3378f" archimateRelationship="id-24328c2635ce4059bc23c4303047fb56"/>
+          <child xsi:type="archimate:DiagramObject" id="id-4f25b197f2984566af209ba293509a84" targetConnections="id-3e9e0979e02648b2a450b3352678e0d3 id-db50c5c7d7e747cdb893e0fb81248f45" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" textPosition="1" archimateElement="id-0620fa1493b74cd594840e7ecf10a0f4">
+            <bounds x="24" y="48" width="185" height="72"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-a9ed258ca871423ea82849901ef324a2" source="id-4f25b197f2984566af209ba293509a84" target="id-4a6aef798d7e401eac7e67d926b3378f" archimateRelationship="id-823ca3a5911c4495bf1bab7db876d6a7"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-4a6aef798d7e401eac7e67d926b3378f" targetConnections="id-a9ed258ca871423ea82849901ef324a2 id-e90db3eeb760408fa026788b8870ff38" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" textPosition="1" archimateElement="id-d84f59ccb0f7463db59aab9bbeba2893" type="1">
+            <bounds x="24" y="204" width="185" height="72"/>
+          </child>
+        </child>
         <child xsi:type="archimate:DiagramObject" id="id-3327002dd1a54c6fbf8f382018c50eaa" targetConnections="id-46eb36fda81e4ae78a577d1d84def9d0 id-a72597c23e204ae6b2f5502cf7914063 id-292c7032025a41b4b3da2d1206eb0d5a id-0e1eddd96ce344e7a9ccbc15f47dd442 id-838d5b66e99e4d228a1cb763239a509d id-6f0dd8f14da4400ab3c832077efcc5ed" archimateElement="id-5682b83e825d46f7872f4f3bc5805bd2">
           <bounds x="84" y="60" width="120" height="55"/>
           <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3e9e0979e02648b2a450b3352678e0d3" source="id-3327002dd1a54c6fbf8f382018c50eaa" target="id-4f25b197f2984566af209ba293509a84" archimateRelationship="id-381adbb3a7204a9195fcd8fc4e0b36f1"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-17cf6adb8cc44374be0553d5b5a945fe" archimateElement="id-bdfc7e9d346c4aecb7713f9eccc6732f">
           <bounds x="300" y="504" width="120" height="55"/>
