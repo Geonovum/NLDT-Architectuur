@@ -541,8 +541,6 @@ English:&#xD;
 - User experience and feedback.</documentation>
       <property key="Name (en)" value="Assesment Criteria"/>
     </element>
-    <element xsi:type="archimate:Contract" name="Technische compatibiliteit" id="id-361f105fce574ea7a76d5b4671d18c0b"/>
-    <element xsi:type="archimate:Contract" name="Betrouwbaarheid" id="id-285515c3b56e4ec6a2fe7ff82a011a91"/>
     <element xsi:type="archimate:Contract" name="Interoperability Specification" id="id-d84f59ccb0f7463db59aab9bbeba2893">
       <documentation>Definition: Interoperability Specification ABB is a Contract with most detail possible level of granularity on an EIRA SBB, formulated as an agreed normative statement in design terms on a legal, organisational, semantic, or technical attribute of an European Public Service. It can refer to existing standards or specifications
 
@@ -1586,38 +1584,6 @@ Interoperability Layer: N/A
     </element>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-f6412942e5ce450a80675ed7b89fd603" type="implementation_migration">
-    <element xsi:type="archimate:Plateau" name="Testbed1 Q4 2024" id="id-0fef9cad8a3b4c23abdae66094a71054">
-      <documentation>Eerste Testbed waarvan de resultaten op 4 nov 2024 op de Smart City World Expo gepresenteerd zijn.&#xD;
-</documentation>
-      <property key="Name (en)" value="Testbed 1 Q4 2024"/>
-    </element>
-    <element xsi:type="archimate:Plateau" name="Testbed2 - 2025" id="id-6bd235d090194bec88275035dd36e1da">
-      <property key="Name (en)" value="Testbed2 - 2025"/>
-    </element>
-    <element xsi:type="archimate:WorkPackage" name="5.1 - Catalogues with Interoperable API" id="id-0d28dedbdcd14604886e4721655819f5">
-      <property key="Name (en)" value="5.1 - Catalogues with Interoperable API"/>
-    </element>
-    <element xsi:type="archimate:WorkPackage" name="5.2 - Data sharing under conditions" id="id-9138affae31e45ffb90f85d302f0c9f0">
-      <property key="Name (en)" value="5.2 - Data sharing under conditions"/>
-    </element>
-    <element xsi:type="archimate:WorkPackage" name="6.1 -  Find and Bind" id="id-80e9e864eda84d129c71be6af2cc1c8b">
-      <property key="Name (en)" value="6.1 -  Find and Bind"/>
-    </element>
-    <element xsi:type="archimate:WorkPackage" name="6.2 - Export &amp; import scenes " id="id-67261397e9804f4885d76c19e9830d57">
-      <property key="Name (en)" value="6.2 - Export &amp; import scenes "/>
-    </element>
-    <element xsi:type="archimate:WorkPackage" name="7.1 - BIM (Design information) for Digital Twins" id="id-1f11d8efd68941dab0ac74fbc35d91e2">
-      <property key="Name (en)" value="7.1 - BIM (Design information) for Digital Twins"/>
-    </element>
-    <element xsi:type="archimate:WorkPackage" name="8.1 - Making calculation modules interoperable" id="id-d63e93635822445a82cb3c1c5a5e8638">
-      <property key="Name (en)" value="8.1 - Making calculation modules interoperable"/>
-    </element>
-    <element xsi:type="archimate:WorkPackage" name="8.2 - Model orchestration, status quo" id="id-8e6bcca2de034dfc9257b5d1d3d51eb9">
-      <property key="Name (en)" value="8.2 - Model orchestration, status quo"/>
-    </element>
-    <element xsi:type="archimate:WorkPackage" name="LDV Objecten" id="id-d8b70fc3240b429bbee332818f5c5e9e">
-      <property key="Name (en)" value="LDV Objects"/>
-    </element>
     <element xsi:type="archimate:WorkPackage" name="8.1 - Making calculation modules interoperable" id="id-2ca4d5ba11d1434a9907622b8b85aea8">
       <documentation>See: https://geonovum.github.io/DTaaS-Testbed2/archimate/index.html?view=id-00e94b953f2b4bf1adb922e3b4f37054</documentation>
       <property key="Name (en)" value="8.1 - Making calculation modules interoperable"/>
@@ -1967,94 +1933,6 @@ EIF Layer: TechnicalInfrastructure
     <element xsi:type="archimate:Grouping" name="Capabilities en Valuestreams" id="id-62d708676a814f578546d73574a438ea">
       <property key="Name (en)" value="Capabilities and Valuestreams"/>
     </element>
-    <element xsi:type="archimate:Grouping" name="User Experience Management Enablers" id="id-e18d1f9014604b279d02cdbaf046b260">
-      <documentation>Definition: User Experience Management Enablers ABB is a Grouping that refers to components and services that track, measure, analyze and improve any interaction people have with the organization
-
-Source: Inpired in referece business and cloud provider compabies
-
-Source reference: https://www.vmware.com/topics/glossary/content/experience-management.html
-
-Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Mi Carpeta Ciudadana Carpeta Ciudadana is a personal online space that facilitates your relationship with public administrations. https://carpetaciudadana.gob.es/carpeta/clave.htm
-
-Interoperability Dimension: Behavioral IoP
-
-LOST view: Technical view - application
-
-Interoperability Saliency: The User Experience Management Enablers Grouping ABB is salient for technical interoperability because it comprises services and components that allow different parties involved in the use and delivery o public services, to exchange and provide data or information.
-
-Identifier: http://data.europa.eu/dr8/UserExperienceManagementEnablersGrouping
-
-ABB name: eira:UserExperienceManagementEnablersGrouping
-
-EIRA concept: eira:ArchitectureBuildingBlock
-
-Last modification: 2024-01-28
-
-Identifier: http://data.europa.eu/dr8/UserExperienceManagementEnablersGrouping
-
-Interoperability Layer: TechnicalApplication
-
-</documentation>
-      <property key="dct:type" value="eira:UserExperienceManagementEnablersGrouping"/>
-      <property key="dct:modified" value="2024-01-28"/>
-      <property key="eira:synonym"/>
-      <property key="skos:definition" value="User Experience Management Enablers ABB is a Grouping that refers to components and services that track, measure, analyze and improve any interaction people have with the organization"/>
-      <property key="eira:definitionSource" value="Inpired in referece business and cloud provider compabies"/>
-      <property key="eira:definitionSourceReference" value="https://www.vmware.com/topics/glossary/content/experience-management.html"/>
-      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Mi Carpeta Ciudadana Carpeta Ciudadana is a personal online space that facilitates your relationship with public administrations. https://carpetaciudadana.gob.es/carpeta/clave.htm"/>
-      <property key="eira:iopSaliency" value="The User Experience Management Enablers Grouping ABB is salient for technical interoperability because it comprises services and components that allow different parties involved in the use and delivery o public services, to exchange and provide data or information."/>
-      <property key="skos:note"/>
-      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
-      <property key="eira:PURI" value="http://data.europa.eu/dr8/UserExperienceManagementEnablersGrouping"/>
-      <property key="eira:iopDimension" value="Behavioral IoP"/>
-      <property key="eira:view" value="Technical view - application"/>
-      <property key="dct:identifier" value="http://data.europa.eu/dr8/UserExperienceManagementEnablersGrouping"/>
-      <property key="eira:eifLayer" value="TechnicalApplication"/>
-    </element>
-    <element xsi:type="archimate:Grouping" name="Analytics Enablers" id="id-afd622b18fb54a5b88df2c8eb9ba6766">
-      <documentation>Definition: Data Analytics Enablers ABB is a Grouping that refers to components and services that serve any current or future Digital Service Infrastructure (DSI) requiring data analysis capabilities.
-
-Source: Inspired in Data Act
-
-Source reference: https://digital-strategy.ec.europa.eu/en/policies/data-act
-
-Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Microsoft Power BI - Power BI is a business analytics service by Microsoft. It aims to provide interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards. It is part of the Microsoft Power Platform.(https://powerbi.microsoft.com/it-it/what-is-power-bi/)
-
-Interoperability Dimension: Structural IoP
-
-LOST view: Technical view - application
-
-Interoperability Saliency: The Analytics Enablers Grouping ABB is salient for technical Interoperability because it comprises tools and services that serve to digital service infrastructure of current or future digital services. 
-
-Identifier: http://data.europa.eu/dr8/AnalyticsEnablersGrouping
-
-ABB name: eira:AnalyticsEnablersGrouping
-
-EIRA concept: eira:ArchitectureBuildingBlock
-
-Last modification: 2024-01-28
-
-Identifier: http://data.europa.eu/dr8/AnalyticsEnablersGrouping
-
-Interoperability Layer: TechnicalApplication
-
-</documentation>
-      <property key="dct:type" value="eira:AnalyticsEnablersGrouping"/>
-      <property key="dct:modified" value="2024-01-28"/>
-      <property key="eira:synonym"/>
-      <property key="skos:definition" value="Data Analytics Enablers ABB is a Grouping that refers to components and services that serve any current or future Digital Service Infrastructure (DSI) requiring data analysis capabilities."/>
-      <property key="eira:definitionSource" value="Inspired in Data Act"/>
-      <property key="eira:definitionSourceReference" value="https://digital-strategy.ec.europa.eu/en/policies/data-act"/>
-      <property key="skos:example" value="The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Microsoft Power BI - Power BI is a business analytics service by Microsoft. It aims to provide interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards. It is part of the Microsoft Power Platform.(https://powerbi.microsoft.com/it-it/what-is-power-bi/)"/>
-      <property key="eira:iopSaliency" value="The Analytics Enablers Grouping ABB is salient for technical Interoperability because it comprises tools and services that serve to digital service infrastructure of current or future digital services. "/>
-      <property key="skos:note"/>
-      <property key="eira:concept" value="eira:ArchitectureBuildingBlock"/>
-      <property key="eira:PURI" value="http://data.europa.eu/dr8/AnalyticsEnablersGrouping"/>
-      <property key="eira:iopDimension" value="Structural IoP"/>
-      <property key="eira:view" value="Technical view - application"/>
-      <property key="dct:identifier" value="http://data.europa.eu/dr8/AnalyticsEnablersGrouping"/>
-      <property key="eira:eifLayer" value="TechnicalApplication"/>
-    </element>
     <element xsi:type="archimate:Grouping" name="eGovERA Alignment" id="id-2021b349eab343c0a349351493f4692c"/>
   </folder>
   <folder name="Relations" id="id-3b44ef95b8cf4868950be37772d13294" type="relations">
@@ -2280,10 +2158,6 @@ Interoperability Layer: TechnicalApplication
     <element xsi:type="archimate:RealizationRelationship" id="id-e997c118bdef4813a420a1e375845a4f" source="id-b0efb3fe45fe44ab8c5ed23ffe42c483" target="id-5682b83e825d46f7872f4f3bc5805bd2"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-e8edb4a779f740d29c4fb8ca7cf5661e" source="id-caac0cce95b64ed185bc466f3fbdb6ea" target="id-faac90d3cb654bd3b6364bbd19e8aec6"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-3fa29858bb6a4025a5bbee53593ec106" source="id-caac0cce95b64ed185bc466f3fbdb6ea" target="id-5682b83e825d46f7872f4f3bc5805bd2"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-3775bb5d3b234df4b829b6cfce9f6007" source="id-973eb31993c34586ad4b568f191bfcc4" target="id-84a6df5bd34747778961c608a2767def"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-aa779e3a27d641e0ac95a0157263c2f5" source="id-973eb31993c34586ad4b568f191bfcc4" target="id-542f9e42dfc44a32adcb685de55ffef6"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-0020d8c3c54a486ca04ffbddb4dcb35d" source="id-973eb31993c34586ad4b568f191bfcc4" target="id-d7e4abfa6d994d9bb47d605b27dbe8e1"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-12f4bc0fbeb44ed5b7cb812483eb8c17" source="id-973eb31993c34586ad4b568f191bfcc4" target="id-e9411894489c40548d92a6f73b7d1f9b"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-0610f4243799479ebd21c87dc958350f" source="id-63f28320bc544f0692efb91de2db1b4a" target="id-84a6df5bd34747778961c608a2767def"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-e6935254a0664cac812436e7d17bef6c" source="id-63f28320bc544f0692efb91de2db1b4a" target="id-e9411894489c40548d92a6f73b7d1f9b"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-6d91982ed8b24a49ab09590bcb959686" source="id-63f28320bc544f0692efb91de2db1b4a" target="id-542f9e42dfc44a32adcb685de55ffef6"/>
@@ -5261,5 +5135,6 @@ This model is provided in Dutch and English. See the respective folders under Vi
 &#xD;
 30-10-2024: eerste opzet. Model is nog niet gevalideerd en kan op elk moment wijzigen.&#xD;
 6-6-2025: update of the model. completion of capabilities and building blocks&#xD;
-16-7-2025: translation to english</purpose>
+16-7-2025: translation to english&#xD;
+16-1-2025: Alignment with eGovERA in English version</purpose>
 </archimate:model>
