@@ -14,11 +14,11 @@ var documentConfig =
   publishDate: "2026-02-10",
   publishVersion: "0.8.1",
   thisVersion: [
-    "https://geonovum.github.io/nldt-architectuur/"
+    "https://geonovum.github.io/NLDT-Architectuur/"
   ],
-  github: "https://github.com/geonovum/nldt-architectuur/",
-  issueBase: "https://github.com/geonovum/nldt-architectuur/issues/",
-  edDraftURI: "https://geonovum.github.io/nldt-architectuur/",
+  github: "https://github.com/geonovum/NLDT-Architectuur/",
+  issueBase: "https://github.com/geonovum/NLDT-Architectuur/issues/",
+  edDraftURI: "https://geonovum.github.io/NLDT-Architectuur/",
   authors: [
     {
       name: "Bart De Lathouwer",
