@@ -59,6 +59,10 @@ Op basis van de ['Capabilities periodic table' van het Digital Twin Consortium](
 
 <img src="./respec/media/capabilities.png" alt="DT Capabilities op basis van Digital Twin Consortium Periodic Table" width="900">
 
+<aside class="note">
+    Het plaatje moet nog geactualiseerd worden. De 4 nieuwe capabilities missen nog.
+</aside>
+
 [Digital Twin Capabilities Periodic Table](https://www.digitaltwinconsortium.org/initiatives/capabilities-periodic-table)
 
 
@@ -66,91 +70,172 @@ Op basis van de ['Capabilities periodic table' van het Digital Twin Consortium](
 
 #### Ontsluiten
 
-Om de fysieke leefomgeving in beeld te brengen worden gegevens in lagen op elkaar gelegd in een grafisch omgeving. De gegevens van de lagen komen uit uitlopende registers en stellen vaak beleidskeuzes of wettelijke normen voor en de schuifjes zijn de verschillende beleidsambities in relatie tot de normen voor bijvoorbeeld geluid of openbaar groen. De lagen kunnen aangestuurd worden met schuifjes, zodat belangen in balans kunnen gebracht worden en op een eerlijke manier in verhouding staan tot elkaar.
+> Het gecontroleerd beschikbaar stellen van data en rekenmodellen voor andere systemen en toepassingen via gestandaardiseerde koppelingen.
+
+De functie ontsluiten   zorgt ervoor dat data en rekenmodellen in de digitale tweeling beschikbaar zijn voor gebruik door andere systemen, toepassingen en gebruikers. Dit gebeurt via duidelijke en gestandaardiseerde digitale koppelingen, de API’s. Hierdoor kunnen data en modelresultaten veilig en gecontroleerd worden opgevraagd en hergebruikt.
+Door data en rekenmodellen te ontsluiten, hoeven informatie en berekeningen niet telkens opnieuw te worden gemaakt. In plaats daarvan worden ze bij de bron beheerd en actueel gehouden, terwijl verschillende toepassingen er gebruik van kunnen maken. Dit bevordert samenwerking, consistentie en efficiënt gebruik van informatie.
 
 #### Bewerken
 
-Een Digitale Tweeling is interactief en dynamisch (gemeten gegevens uit de omgeving – inclusief de metingen gedaan door de burger, ook gekend als Citizen Science, zodat de burger betrokken is bij initiatieven). De gebruiker ervan zal er verder mee kunnen gaan dan simpelweg observeren van data en  modellen. De gebruiker zal gegevens kunnen gaan aanpassen.  
+> Het actief aanpassen, toevoegen of verwijderen van objecten, eigenschappen en ontwerpen binnen de digitale tweeling.
+
+De functie bewerken maakt het mogelijk om actief veranderingen aan te brengen aan de data in de digitale tweeling. Gebruikers kunnen niet alleen data bewerken, maar ook objecten en nieuwe elementen aanpassen of toevoegen. Dit kan bijvoorbeeld gaan om het verplaatsen van objecten, het wijzigen van eigenschappen of het aanpassen van instellingen binnen de digitale omgeving. Daarnaast kunnen ontwerpen, zoals 2D- of 3D-modellen en (parametrische) ontwerpen, in de digitale tweeling worden ingepast. Zo kan worden verkend hoe nieuwe plannen of ingrepen passen binnen een bestaande situatie. Alle bewerkingen worden vastgelegd, zodat zichtbaar blijft wat is aangepast, wanneer dat is gebeurd en door wie. Bewerken ondersteunt daarmee het verkennen, uitwerken en het berekenen van effecten van ontwerpen in een digitale tweeling, voordat veranderingen in de echte wereld worden doorgevoerd. 
 
 #### Zoeken/Vinden
 
-In een Digitale Tweeling zijn verschillende soorten gegevens samengebracht en een zo nauwkeurig mogelijke afbeelding maken van de beleidskeuzes. Digitale Tweeling moeten de taal en beelden spreken die beleidsmedewerkers (h)erkennen – inclusief het normaliseren en standaardiseren van de gebruikte indicatoren. Een Digitale Tweeling biedt ook contextuele informatie die helpt gebruikers te begrijpen wat de gegevens vertegenwoordigen, waar ze vandaan komen, hoe ze zijn verzameld en hoe ze moeten worden geïnterpreteerd. Dit is vooral belangrijk omdat Digitale Tweelingen vaak complexe en diverse gegevensbronnen bevatten. Het is essentieel voor het succesvol gebruiken van Digitale Tweelingen in verschillende domeinen. 
+> Het gericht kunnen ontdekken, filteren en opvragen van relevante data, rekenmodellen en visualisaties binnen de digitale tweeling.
+
+De functie zoeken/vinden zorgt ervoor dat gebruikers snel en eenvoudig de juiste data, rekenmodellen en visualisaties binnen de digitale tweeling kunnen vinden. Omdat een digitale tweeling vaak bestaat uit veel verschillende datasets, rekenmodellen en visualisaties, is het belangrijk dat de digitale tweeling goed doorzoekbaar is.
 
 
 #### Tijdreizen
 
-Het concept van tijdreizen in een digitale tweeling biedt de mogelijkheid om een situatie in de tijd te kunnen bestuderen.  
-Dat betreft het teruggaan in de tijd om zo een weerspiegeling te geven van hoe iets was in het verleden. Digitale Tweelingen maken ook mogelijk om vooruit te kijken in de tijd.  
-Hierdoor kun je er historische analyses mee uitvoeren, wat-als scenario's mee verkennen, toekomstige situaties verbeelden of voorspellen. 
+> Tijdreizen maakt het mogelijk om situaties uit het verleden en vastgelegde toekomstige scenario’s terug te kijken, vooruit te bekijken en met elkaar te vergelijken. 
+
+De functie tijdreizen in een digitale tweeling maakt het mogelijk om een situatie te bekijken zoals die op een bepaald moment in de tijd was, is of wordt weergegeven. Dit betekent dat je kunt teruggaan naar het verleden om te zien hoe een situatie er toen uitzag, welke data beschikbaar waren en welke keuzes zijn gemaakt.
+Tijdreizen helpt gebruikers om situaties in hun context te begrijpen, verschillen tussen momenten in de tijd te zien en inzicht te krijgen in hoe een situatie zich ontwikkelt. Het ondersteunt historische analyses, zonder daarbij zelf nieuwe voorspellingen te doen. Tijdreizen geeft bestaande of vastgelegde toestanden in de tijd weer, terwijl simuleren nieuwe varianten doorrekent op basis van gekozen aannames en voorspellen gericht is op toekomstige situaties.
+
+#### Beschrijven
+
+> Het vastleggen van betekenis, herkomst, actualiteit en gebruik van data en modellen, zodat ze correct begrepen en toegepast kunnen worden.
+
+De functie beschrijven  zorgt ervoor dat data en rekenmodellen in de digitale tweeling duidelijk en begrijpelijk zijn. Door data te voorzien van beschrijvingen (metadata) wordt vastgelegd wat de data betekenen, waar ze vandaan komen, hoe actueel ze zijn en hoe ze gebruikt mogen worden. Dit maakt het makkelijker om data te vinden, correct te interpreteren en betrouwbaar toe te passen, zowel voor mensen als voor systemen. Dit helpt ook het correct gebruiken en voorkomt misinterpretatie.
 
 ### Integratie
 
 #### Reproduceren
 
-Elke beleidsbeslissing (op tijdstip) die genomen wordt aan de hand van een digitale tweeling moet reproduceerbaar zijn op een later tijdstip. Dus de toestand die de Digitale Tweeling op een bepaald moment heeft moet men terug kunnen oproepen, inclusief de waarde van de indicatoren waarop de beslissing werd genomen.    De reproduceerbaarheid van de omstandigheden waarin een beleidsbeslissing wordt genomen, middels een Digitale Tweeling, is erg belangrijk:
-1. In een rechtstaat worden beslissing genomen gebaseerd op een juridisch kader en gekoppelde indicatoren en 
-2. De Digitale Tweeling werkelijk als een beleidsinstrument wordt gezien en dat deze te vertrouwen is en helpt in de efficiëntie.
+> Het exact opnieuw kunnen oproepen van eerdere toestanden van de digitale tweeling, inclusief data, resultaten en de bijbehorende modelinstellingen.
+
+De functie reproduceren maakt het mogelijk om een eerdere situatie in de digitale tweeling opnieuw op te roepen, precies zoals die op een bepaald moment was. Dit betekent dat niet alleen de data zelf, maar ook de bijbehorende indicatoren, en instellingen voor rekenmodellen en context beschikbaar blijven voor later gebruik.
+Reproduceren maakt het mogelijk om een specifieke toestand van de digitale tweeling exact opnieuw op te roepen, inclusief de bijbehorende data, instellingen, rekenregels en modelconfiguraties zoals die op dat moment golden. 
+Reproduceren is essentieel wanneer moet kunnen worden aangetoond waarom een bepaalde uitkomst of beslissing tot stand is gekomen en onder welke omstandigheden dat gebeurde. 
+Door situaties reproduceerbaar te maken, wordt de digitale tweeling betrouwbaar en uitlegbaar: analyses en beslissingen kunnen worden nagegaan, besproken en, indien nodig, opnieuw uitgevoerd op basis van dezelfde uitgangspunten.
+
+Tijdreizen ondersteunt inzicht, analyse en context, maar legt zelf geen nieuwe toestanden vast en garandeert geen volledige herhaalbaarheid van een specifieke besluitcontext. Reproduceren is essentieel wanneer moet kunnen worden aangetoond waarom een bepaalde uitkomst of beslissing tot stand is gekomen en onder welke omstandigheden dat gebeurde.
 
 #### Meten/Aansturen
 
-Sommige Digitale Tweelingen zijn in staat om (meet)gegevens in real-time te verwerken, te monitoren (te bezien of beleid ook het gewenste effect heeft in de beleidscyclus), en optioneel te reageren op veranderingen. Dit vereist rekenregels (algoritmen) die gegevens snel kunnen analyseren en actie kunnen ondernemen op basis van resultaten. Metingen worden bewaard, zodat in het deze kunnen gebruikt worden om een uitspraak te doen over een reeks uit het verleden om zo mogelijk trend in indicatoren kunnen gezien worden) 
+> Het verbinden van de digitale tweeling met de echte wereld door het ontvangen van metingen en het (optioneel) aansturen van systemen of objecten.
+
+De functie meten en aansturen maakt het mogelijk om informatie uit de echte wereld te gebruiken in de digitale tweeling én om vanuit de digitale tweeling acties uit te voeren in de werkelijkheid. Gegevens zoals temperatuur, beweging of status worden gemeten en op vaste of realtime momenten doorgegeven aan de digitale tweeling, zodat deze een actueel beeld van de situatie kan tonen. De gemeten meetdata worden opgeslagen, waardoor veranderingen in de tijd zichtbaar blijven en eerdere toestanden kunnen worden teruggehaald. Dit maakt het mogelijk om ontwikkelingen te volgen en de werking van systemen te begrijpen.
+Naast meten kan een digitale tweeling ook worden gebruikt om onderdelen in de echte wereld aan te sturen. Via digitale signalen kunnen instellingen of statussen worden aangepast, bijvoorbeeld door een apparaat in of uit te schakelen zoals een brug of sluis. Zowel metingen als aansturingsacties worden vastgelegd, zodat altijd zichtbaar is wat er is gemeten en welke acties zijn uitgevoerd. 
 
 #### Integreren
 
-Een Digitale Tweeling maakt het mogelijk om verschillende beleidsperspectieven te definiëren en zo een holistisch beeld te krijgen van beleidsgebied of beleidsproject.  
-Deze combinatie helpt om een dieper inzicht te krijgen, betere beslissingen te nemen en waarde te genereren in diverse domeinen. Dit is een belangrijk instrument om alle lagen te integreren tot 1 situationeel beeld. 
+> Het samenbrengen van data uit verschillende bronnen, systemen en domeinen tot één samenhangend en herkenbaar beeld van de werkelijkheid.
+
+De functie integreren zorgt ervoor dat data uit verschillende bronnen samenkomt  in één samenhangend geheel binnen de digitale tweeling. Data uit uiteenlopende systemen, domeinen en perspectieven worden met elkaar verbonden en op elkaar afgestemd, zodat ze samen één duidelijk en herkenbaar beeld vormen van een gebied, project of situatie.
+Om data te kunnen integreren is altijd een koppelpunt nodig. Dit koppelpunt zorgt ervoor dat data over hetzelfde object, gebied of onderwerp aan elkaar kunnen worden verbonden. Zo kan een locatie als koppelpunt dienen, maar ook een gedeelde administratieve sleutel, zoals een gemeentecode, of een geometrisch of geografisch referentiepunt. Door gebruik te maken van zulke koppelingen kan data uit verschillende bronnen worden geïntegreerd en samengebracht. 
+Door deze data te combineren ontstaat een compleet en actueel overzicht, waarin verbanden zichtbaar worden die in losse data niet te zien zijn. Dit gezamenlijke beeld vormt de basis voor verdere analyse, afweging en besluitvorming, en maakt het mogelijk om vanuit verschillende invalshoeken naar dezelfde werkelijkheid te kijken. 
 
 ### Analyse
 
 #### Analyseren
 
-Analyseren is het proces van het onderzoeken en interpreteren van de gegevens in de digitale tweeling. Dit omvat het toepassen van verschillende analysetechnieken, modellen en algoritmen om inzichten te verkrijgen over het gedrag, de prestaties, en de trends binnen de Digitale Tweeling. Het doel van het analyseren is om te zien of sturing het gewenste effect heeft en daar waar nodig kan aangepast worden voor meer of minder effecten. 
+> Het duiden en interpreteren van data en resultaten door patronen, trends en afwijkingen te herkennen en te verklaren.
+
+De functie analyseren helpt om betekenis te geven aan de gegevens en resultaten die in de digitale tweeling beschikbaar zijn. Waar rekenen cijfers en indicatoren oplevert, richt analyseren zich op het begrijpen van wat deze uitkomsten betekenen voor een situatie, een proces of een ontwikkeling in de tijd.  
+Door informatie te combineren en te bekijken vanuit verschillende invalshoeken, kunnen  patronen, trends en opvallende veranderingen worden  ontdekt. Analyseren maakt het mogelijk om te beoordelen of een situatie zich ontwikkelt zoals verwacht en waar mogelijke aandachtspunten of knelpunten ontstaan.
+De resultaten van analyses kunnen op verschillende manieren worden gepresenteerd, bijvoorbeeld in grafieken, kaarten, dashboards of tekstuele samenvattingen. Zo ondersteunt analyseren het verkrijgen van inzicht en vormt het een belangrijke basis voor verdere afweging en besluitvorming binnen de digitale tweeling. 
 
 #### Voorspellen
 
-Digitale tweeling maken het mogelijk om op toekomstige gebeurtenissen, trends of gedragingen te anticiperen op basis van de huidige en historische gegevens van het gesimuleerde object of systeem. Met behulp van geavanceerde analyses, modellen en algoritmen kan een digitale tweeling potentiële uitkomsten en scenario's simuleren, waardoor gebruikers proactief kunnen reageren op mogelijke veranderingen of uitdagingen. 
+> Het inschatten van waarschijnlijke toekomstige ontwikkelingen op basis van historische en actuele data en rekenmodellen.
+
+De functie voorspellen maakt het mogelijk om een onderbouwde uitspraak te doen over hoe een situatie zich waarschijnlijk zal ontwikkelen in de toekomst. Een digitale tweeling gebruikt hiervoor actuele en historische gegevens in combinatie met modellen en rekenregels om mogelijke toekomstige toestanden te berekenen.
+Voorspellen verschilt van simuleren doordat het gericht is op het inschatten van waarschijnlijke uitkomsten, in plaats van het verkennen van vrije wat-als-varianten. Het verschilt ook van tijdreizen, dat bestaande of vastgelegde scenario’s in de tijd weergeeft , terwijl voorspellen juist nieuwe toekomstige waarden berekent.
+De resultaten van voorspellingen kunnen worden getoond in dezelfde omgeving als het huidige en eerdere beeld van de werkelijkheid, zodat gebruikers ontwikkelingen in de tijd kunnen volgen en beter voorbereid zijn op mogelijke veranderingen .
+
 
 #### Orkestratie
 
-Orkestratie zorgt ervoor dat de verschillende onderdelen of services binnen de Digitale Tweeling samenwerken om een bepaalde taak of workflow uit te voeren.  
+> Het coördineren van de samenhang en volgorde waarin functies (zoals meten, rekenen, analyseren en visualiseren) worden uitgevoerd.
+
+De functie orkestreren zorgt ervoor dat de verschillende bouwstenen van de digitale tweeling op het juiste moment en in de juiste volgorde samenwerken. Orkestreren bepaalt welke functie wanneer wordt gebruikt en hoe de uitkomsten van de ene functie worden doorgegeven aan de volgende. Bijvoorbeeld: eerst worden data opgehaald, daarna berekeningen uitgevoerd, vervolgens analyses gemaakt en tenslotte resultaten getoond of vastgelegd. Deze stappen kunnen automatisch achter elkaar plaatsvinden, tegelijk worden uitgevoerd of alleen worden gestart wanneer aan bepaalde voorwaarden is voldaan.
+Orkestreren voert zelf geen berekeningen, voorspellingen of simulaties uit, maar regelt het proces eromheen. Het zorgt ervoor dat tijdreizen, simuleren en voorspellen gecontroleerd en samenhangend kunnen worden ingezet binnen één digitale tweeling.  
 
 #### Simuleren
 
-Een Digitale Tweeling maakt het mogelijk om verschillende soorten gegevens samen te brengen en te combineren tot een holistisch beeld vaneen systeem, proces of entiteit.  
-Deze combinatie helpt om een dieper inzicht te krijgen, betere beslissingen te nemen en waarde te genereren in diverse domeinen. Dit is een belangrijk instrument voor data gedreven werken.  
-Met simulatie kan ook gebruik gemaakt worden van AI om aan ‘opportunity finding’ te doen. De kanskaarten en wat-mag-waar kaarten geven gebieden aan met potentieel voor oplossingen bij conflicterende belangen in dat gebied!
+> Simuleren verkent mogelijke wat-gebeurt-er-als situaties door parameters te wijzigen en de effecten daarvan door te rekenen. 
+
+De functie simuleren maakt het mogelijk om in de digitale tweeling te onderzoeken wat er kan gebeuren als bepaalde keuzes of omstandigheden veranderen. Gebruikers kunnen een beginsituatie kiezen en één of meerdere parameters aanpassen, waarna het model laat zien welke effecten dit kan hebben op het systeem, proces of gebied.
+Simuleren verschilt van voorspellen doordat het niet gaat om wat het meest waarschijnlijk is, maar om het verkennen van verschillende wat-als-situaties. Het verschilt ook van tijdreizen, dat bestaande of vastgelegde toestanden in de tijd weergeeft, terwijl simuleren nieuwe varianten doorrekent op basis van gekozen aannames.  
+Door verschillende simulaties te vergelijken, kunnen kansen, risico’s en mogelijke oplossingen inzichtelijk worden gemaakt. Simuleren ondersteunt daarmee het verkennen van opties en het voorbereiden van afwegingen, zonder dat er al een definitieve uitspraak over de toekomst wordt gedaan
 
 #### Rekenen
 
-Digitale Tweelingen kunnen gebruik maken van rekenmodellen (bv hittestress, wateroverlast, geluidszones). Deze rekenmodellen kunnen gegevens analyseren met behulp van technieken en algoritmes. Zo worden patronen en trends zichtbaar. Deze rekenanalyses kunnen worden gebruikt om inzicht te krijgen in gedrag en voorspellingen te doen over toekomstige situaties.
-De uitkomst van Rekenmodellen vertalen zich in indicatoren. Indicatoren zijn de schakel tussen de Digitale Tweeling en Beleid. Rekenen is dus een essentieel onderdeel van zowel beleid als van een Digitale Tweeling.
+> Het toepassen van rekenregels en modellen op data om resultaten te genereren die inzicht geven in processen, effecten en samenhangen.
+
+De functie rekenen maakt het mogelijk om data in de digitale tweeling te verwerken met behulp van rekenmodellen. Met behulp van data geven rekenmodellen inzicht in de effecten van processen en verschijnselen, zoals hittestress, wateroverlast en geluidsbelasting. Door berekeningen uit te voeren worden effecten zichtbaar en kunnen verbanden en patronen in de data worden ontdekt. Rekenmodellen zetten (ruwe) data om in indicatoren, die inzicht geven in de toestand of het gedrag van een systeem. Deze indicatoren vormen een belangrijke basis voor verdere analyse en beleidsmatige afwegingen binnen de digitale tweeling. 
+Omdat veel processen elkaar beïnvloeden en tegelijk plaatsvinden, is rekenen een essentieel onderdeel van het nabootsen van de werkelijkheid. De gebruikte rekenmodellen zijn vastgelegd en transparant beschreven, zodat duidelijk is welke aannames worden gebruikt en hoe de berekeningen tot stand komen.
+
+#### Besluiten
+
+> Besluiten omvat het zorgvuldig afwegen van effecten en belangen en het vervolgens vastleggen van een keuze op basis van de inzichten die de digitale tweeling biedt.
+
+De functie besluiten omvat het zorgvuldig afwegen van verschillende belangen, doelen en effecten en het vervolgens vastleggen    van een keuze op basis van inzichten uit de digitale tweeling. Door gevolgen van opties zichtbaar te maken, wordt duidelijk wat de impact is op bijvoorbeeld leefbaarheid, kosten, veiligheid of duurzaamheid, en ontstaat ruimte voor een goed onderbouwd gesprek over wat belangrijk is.
+Het besluit bestaat uit het kiezen van een richting of optie, inclusief het moment waarop en de context waarin die keuze is genomen. Door besluiten te koppelen aan de onderliggende data en inzichten blijft inzichtelijk waarom een besluit is genomen en kan dit later worden uitgelegd, herzien of verantwoord.
 
 ### Visualisatie
 
 #### Visualiseren
 
-De kracht van visualisatie in een digitale tweeling ligt in het vermogen om gegevens om te zetten in begrijpelijke, interactieve en bruikbare beelden die inzicht bieden, problemen detecteren, communicatie verbeteren en bijdragen aan betere besluitvorming en prestaties. 
-Visualisatie kan op veel manieren: 2D (plat bovenaanzicht), 3D (om beter complexe ruimtelijke data te visualiseren en te analyseren op een manier die traditionele 2D-kaarten niet kunnen) er kan ook gebruik gemaakt worden van brillen waarin beelden worden geprojecteerd die overlappen met de werkelijkheid. Beelden kunnen statisch (huidig beeld van een situatie) zijn of heel dynamisch (interactieve kaart waar je aan knoppen kan draaien om indicatoren kan wijzigen en de geassocieerde beleidseffecten meteen in beeld ziet), veel details bevatten en realistisch zijn of juist niet. De keuze van visualisaties hangt af van de aard van de gegevens en het doel van de digitale tweeling. Door verschillende visualisatietechnieken te combineren, kunnen gebruikers een vollediger beeld krijgen van een systeem, processen begrijpen, en betere beslissingen nemen. 
+> Het inzichtelijk maken van data en resultaten via kaarten, grafieken, dashboards of 2D/3D-beelden, zodat informatie snel begrepen wordt.
+
+De functie visualiseren helpt gebruikers om gegevens in de digitale tweeling sneller te interpreteren  , herkennen en begrijpen door ze zichtbaar te maken in overzichtelijke beelden. In plaats van te zoeken in lijsten of tabellen, kunnen gebruikers data ontdekken door te kijken naar kaarten, grafieken of andere visuele weergaven.
+Visualisaties maken het mogelijk om grote hoeveelheden gegevens te ordenen en te filteren, bijvoorbeeld door in te zoomen op een gebied, een periode te kiezen of specifieke thema’s aan of uit te zetten. Zo wordt direct duidelijk waar bepaalde informatie zich bevindt en welke gegevens bij elkaar horen.
+Door data visueel te presenteren in 2D, 3D of interactieve omgevingen met een Level-of-Detail die voldoet aan de vereisten, ondersteunt de functie visualiseren helpt het gebruikers om relevante informatie snel te kunnen interpreteren en in de juiste context te plaatsen. Eén prentje zegt meer dan 1000 woorden. De beelden kunnen statisch of dynamisch zijn, heel realistisch (qua kleuren en effecten) of net niet (valse kleuren). Ook kan het gebruik van AR/VR/xR meer inzicht en interactie bieden met de werkelijkheid, zonder dat we die kunnen aanschouwen. 
 
 #### Beleven
 
-Een grote kracht van een Digitale Tweeling is het belevingsaspect. Deze belevingen gaan verder dan het simpelweg observeren van data en modellen; ze stellen mensen in staat om virtueel te experimenteren, te leren en te begrijpen hoe iets eruitziet of functioneert. Dit wordt bereikt doordat gebruikers interactie hebben met een virtuele kopie. De interactie kan op verschillende manieren plaatsvinden. Gebruiksvriendelijkheid en intuïtieve interface die het voor gebruikers makkelijk maakt om te navigeren en de benodigde acties uit te voeren zijn ook van belang. 
+> Beleven biedt gebruikers een interactieve en intuïtieve ervaring waarmee zij de digitale tweeling actief kunnen verkennen en begrijpen. 
+
+De functie beleven gaat over hoe gebruikers de digitale tweeling ervaren en ermee omgaan. Het belevingsaspect maakt het mogelijk om niet alleen informatie te bekijken, maar om actief te verkennen, te experimenteren en te leren binnen een digitale omgeving. Gebruikers kunnen zich verplaatsen in een situatie en ervaren hoe een systeem, gebied of proces functioneert.
+Beleven gaat verder dan visualisatie. Waar visualisatie informatie zichtbaar maakt, draait beleven om interactie, betrokkenheid en gebruiksgemak. Dit kan op verschillende manieren worden vormgegeven. Zo kan met XR (Extended Reality) een omgeving volledig virtueel worden beleefd, bijvoorbeeld door rond te lopen in een toekomstige wijk. Met AR (Augmented Reality) kunnen digitale elementen worden toegevoegd aan de echte wereld, zoals het projecteren van een nieuw gebouw of een geluidszone in de bestaande omgeving.
+Ook gamificatie kan bijdragen aan de beleving, bijvoorbeeld door gebruikers opdrachten te laten uitvoeren, scenario’s te verkennen of feedback te krijgen in de vorm van scores, voortgang of beloningen. Dit maakt het gebruik van de digitale tweeling laagdrempelig en stimuleert actieve deelname.
+
+#### Verklaren
+
+> Verklaren geeft inzicht in de betekenis van resultaten uit de digitale tweeling, door uitkomsten, patronen en aannames begrijpelijk en in hun context toe te lichten. 
+
+De functie verklaren ondersteunt gebruikers bij het begrijpen van wat uitkomsten betekenen, waarom bepaalde patronen of effecten zichtbaar zijn en welke aannames daarbij een rol spelen. Interpreteren is met name van belang omdat de gebruikersgroep van een digitale tweeling divers is en niet iedere gebruiker rekenresultaten of analyses zelfstandig kan duiden. Technisch raakt deze functie aan ‘explainability’ van rekenmodellen, het gebruik van metadata en semantiek, en aan AI-modellen met ondersteunde samenvattingen en uitleg aanpassen aan de rol, kennis en context van de gebruikers.
 
 ### Betrouwbaarheid
 
 #### Vertrouwen
 
-Een Digitale Tweeling staat (of valt) met de accurate weergave (volgens afspraken en regels) van de werkelijkheid. Alle data en informatie die de digitale tweeling voeden zijn getest tegen afgesproken kwaliteitseisen. Fouten zijn niet te vermijden en de gebruikersverwachtingen worden dito gezet. Vertrouwen wordt ook verkregen door formele afspraken en kaders. Zo moet de gebruiker zich bekend maken in het systeem (Identity & Access Management), worden er vertrouwelijke gegevens uitgewisseld (data spaces), wordt er gelogged en worden API's beheerd (via gateway functionaliteit). 
+> Vertrouwen zorgt ervoor dat data in de digitale tweeling veilig, betrouwbaar en volgens duidelijke afspraken kan worden gedeeld. 
+
+De functie vertrouwen zorgt ervoor dat data binnen de digitale tweeling op een veilige, betrouwbare en verantwoorde manier kunnen worden gedeeld. Gebruikers moeten erop kunnen vertrouwen dat de informatie klopt, zorgvuldig wordt beheerd en alleen toegankelijk is voor wie daar recht op heeft.
+Dit vertrouwen ontstaat doordat duidelijke afspraken zijn gemaakt over de kwaliteit, herkomst en het gebruik van data. Door gebruikers te identificeren en toegangsrechten toe te passen, kan worden bepaald wie welke gegevens mag inzien of gebruiken. Zo wordt voorkomen dat gevoelige informatie onbedoeld wordt gedeeld.
+Daarnaast draagt transparantie bij aan vertrouwen. Het is inzichtelijk hoe data worden verwerkt, waar ze vandaan komen en hoe ze worden beveiligd. Door te voldoen aan geldende regels en standaarden, en door zorgvuldig om te gaan met privacy en beveiliging, ontstaat een digitale tweeling waarin data veilig kan worden gedeeld en gebruikt.
+Validatie op basis van juridische-, ethische- of technische kaders geeft ook invulling aan vertrouwen.
 
 #### Identificeren
 
-Identificatie is een fundament van moderne softwaresystemen die zorgen voor het efficiënt en veilig functioneren binnen digitale infrastructuren. Het zijn ondersteunende componenten die kunnen zorgen voor toegangscontrole en toegangsrechten, zodat onbeveiligde toegang wordt voorkomen.  
-Identificatie maakt het ook mogelijk om systemen te personaliseren voor individuele gebruikers of groepen, zodat de gebruikersinterface of op maat gemaakte inhoud aangeboden kan worden en dat voorkeuren en instellingen kunnen worden opgeslagen. 
+> Identificeren stelt vast wie de gebruiker is, zodat toegang, rechten en verantwoordelijkheden veilig kunnen worden geregeld. 
 
+De functie identificeren zorgt ervoor dat gebruikers van een digitale tweeling zich kenbaar maken voordat zij bepaalde functies kunnen gebruiken. Door vast te stellen wie iemand is, kan worden bepaald welke data en rekenmodellen en functies voor die gebruiker beschikbaar zijn. Dit helpt om de digitale tweeling veilig en verantwoord te gebruiken.
+In sommige gevallen is een beperkte, anonieme verkenning mogelijk. Voor het uitvoeren van uitgebreidere handelingen, zoals analyseren, bewerken of aansturen, is identificatie noodzakelijk. Dit maakt het mogelijk om gebruikersrechten toe te kennen en activiteiten te herleiden naar een gebruiker of rol.
+Identificeren draagt bij aan vertrouwen in de digitale tweeling. Door gebruikersactiviteiten zorgvuldig vast te leggen en te beschermen volgens geldende privacy- en veiligheidsregels, ontstaat een betrouwbare en transparante omgeving waarin mensen veilig met de digitale tweeling kunnen werken. 
+
+### Beheer
+
+#### Bewaken
+
+> Bewaken geeft inzicht in of de digitale tweeling als systeem goed werkt, door te volgen of data, rekenmodellen en visualisaties correct en tijdig samenwerken. 
+
+De functie bewaken zorgt ervoor dat het digitale tweeling als geheel systeem goed blijft functioneren. Het geeft inzicht in of data, rekenmodellen en visualisaties correct en tijdig met elkaar samenwerken. Zo wordt zichtbaar of de digitale tweeling doet wat ervan wordt verwacht.
+Bewaken of ‘observability’ maakt het mogelijk om te zien of datastromen goed verlopen, bijvoorbeeld tussen meten, rekenen en visualiseren. Wanneer onderdelen niet goed werken, data ontbreken of resultaten onverwacht zijn, kan dit tijdig worden gesignaleerd. Dit helpt om verstoringen te voorkomen en de betrouwbaarheid van de digitale tweeling te bewaken.
 
 ---
 
 
 <img src="./respec/media/DT_Capabilities.png" alt="DT Capabilities" width="900">
+
+<aside class="note">
+    Het plaatje moet nog geactualiseerd worden. De 4 nieuwe capabilities missen nog.
+</aside>
 
 De online ArchiMate view van de capabilities kan [hier](https://geonovum.github.io/nldt-architectuur/Archimate/html/index.html?view=id-eb1073502d06497cbfe4ed9ce6c3e98b) gevonden worden.

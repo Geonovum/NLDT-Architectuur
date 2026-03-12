@@ -12,7 +12,7 @@ var documentConfig =
   //   "https://docs.geostandaarden.nl/nldt-architectuur/"
   // ],
   publishDate: "2026-02-10",
-  publishVersion: "0.8.1",
+  publishVersion: "0.8.2",
   thisVersion: [
     "https://geonovum.github.io/NLDT-Architectuur/"
   ],

@@ -15,3 +15,7 @@ __0.8.0__
 __0.8.1__
 
 - Toevoegen mapping op eGovERA
+
+__0.8.2__
+
+- 4 nieuwe capabilities geintroduceerd en alle capability beschrijvingen geactualiseerd
