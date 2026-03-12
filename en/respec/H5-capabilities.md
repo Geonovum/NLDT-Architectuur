@@ -55,6 +55,10 @@ There are internationally diverse frameworks that describe capabilities or compo
 
 <img src="./respec/media/capabilities-en.png" alt="DT Capabilities op basis van Digital Twin Consortium Periodic Table" width="900">
 
+<aside class="note">
+    The image still needs to be updated with the 4 new capabilities.
+</aside>
+
 [Digital Twin Capabilities Periodic Table](https://www.digitaltwinconsortium.org/initiatives/capabilities-periodic-table)
 
 
@@ -62,81 +66,144 @@ There are internationally diverse frameworks that describe capabilities or compo
 
 #### Access
 
-To visualise the physical living environment, data is layered on top of each other in a graphical environment. The data from the layers come from various registers and often represent policy choices or legal standards, and the sliders are the different policy ambitions in relation to the standards for, for example, noise or public green spaces. The layers can be controlled with sliders, so that interests can be balanced and fairly proportional to each other.
+> The controlled accessibility of data and computational models to other systems and applications via standardized interfaces.
+
+The access function ensures that data and computational models in the digital twin are available for use by other systems, applications, and users. This occurs via clear and standardized digital connections, the APIs. This allows data and model results to be requested and reused safely and in a controlled manner. By providing access to data and models, information and calculations do not have to be recreated every time. Instead, they are managed and kept up-to-date at the source, while various applications can utilize them. This promotes collaboration, consistency, and efficient use of information.
 
 #### Manage
 
-A Digital Twin is interactive and dynamic (measured data from the environment – including measurements done by citizens, also known as Citizen Science, so that the citizen is involved in initiatives). The user of it will be able to do more than simply observe data and models. The user will be able to modify data.
+> Actively adjusting, adding, or removing objects, properties, and designs within the digital twin.
+
+The manage function makes it possible to actively make changes to the data in the digital twin. Users can not only edit data but also modify or add objects and new elements. This could include moving objects, changing properties, or adjusting settings within the digital environment. Additionally, designs such as 2D or 3D models and (parametric) designs can be integrated into the digital twin. This allows for the exploration of how new plans or interventions fit within an existing situation. All modifications are recorded so that it remains visible what was adjusted, when it happened, and by whom. Managing thus supports the exploration, elaboration, and calculation of the effects of designs in a digital twin before changes are implemented in the real world.
 
 #### Find and Bind
 
-In a Digital Twin, various types of data are brought together to create as accurate a representation as possible of the policy choices. Digital Twins must speak the language and use images that policy makers recognize – including normalizing and standardizing the indicators used. A Digital Twin also provides contextual information that helps users understand what the data represents, where it comes from, how it was collected and how it should be interpreted. This is especially important because Digital Twins often contain complex and diverse data sources. It is essential for the successful use of Digital Twins in various domains.
+> Being able to purposefully discover, filter, and retrieve relevant data, computational models, and visualisations within the digital twin.
+
+The find and bind function ensures that users can quickly and easily find the right data, computational models, and visualisations within the digital twin. Because a digital twin often consists of many different datasets, models, and visualisations, it is important that the digital twin is easily searchable.
 
 #### Time travel
 
-The concept of time travel in a digital twin offers the possibility to study a situation in time. This concerns going back in time to give a reflection of how something was in the past. Digital Twins also make it possible to look ahead in time. This allows you to perform historical analyses, explore what-if scenarios, imagine or predict future situations.
+> Time travel makes it possible to look back at past situations and look forward to recorded future scenarios and compare them with each other.
+
+The time travel function in a digital twin makes it possible to view a situation as it was, is, or will be represented at a specific point in time. This means you can go back to the past to see what a situation looked like, what data was available, and what choices were made. Time travel helps users understand situations in their context, see differences over time, and gain insight into how a situation is developing. It supports historical analyses without making new predictions itself. Time travel displays existing or recorded states in time, while simulation calculates new variants based on chosen assumptions and prediction is aimed at future situations.
+
+#### Describe
+
+> Describing the meaning, origin, timeliness, and use of data and models so they can be correctly understood and applied.
+
+The describe function ensures that data and computational models in the digital twin are clear and understandable. By providing data with descriptions (metadata), it is recorded what the data means, where it comes from, how current it is, and how it may be used. This makes it easier to find, correctly interpret, and reliably apply data, for both people and systems. This also helps ensure correct usage and prevents misinterpretation.
 
 ### Integration
 
 #### Reproduction
 
-Every policy decision (at a specific time) that is made using a digital twin must be reproducible at a later time. So the state that the Digital Twin has at a certain moment must be recallable, including the value of the indicators on which the decision was made. The reproducibility of the circumstances in which a policy decision is made, by means of a Digital Twin, is very important:
-1. In a constitutional state, decisions are made based on a legal framework and linked indicators, and
-2. The Digital Twin is truly seen as a policy instrument and that it can be trusted and helps in efficiency.
+> Being able to exactly recall previous states of the digital twin, including data, results, and the associated model settings.
+
+The reproduction function makes it possible to recall a previous situation in the digital twin exactly as it was at a certain moment. This means that not only the data itself, but also the associated indicators, computational model settings, and context remain available for later use. Reproduction is essential when it must be demonstrated why a certain outcome or decision was reached and under what circumstances. By making situations reproducible, the digital twin becomes reliable and explainable: analyses and decisions can be verified, discussed, and, if necessary, re-executed based on the same starting points.
+
+Time travel supports insight and context but does not guarantee full repeatability of a specific decision context. Reproduction is essential for accountability.
 
 #### Sense & Actuate
 
-Some Digital Twins are capable of processing (measurement) data in real-time, monitoring (to see if policy also has the desired effect in the policy cycle), and optionally reacting to changes. This requires computational rules (algorithms) that can quickly analyse data and take action based on results. Measurements are stored, so that in the future they can be used to make a statement about a series from the past to possibly observe a trend in indicators.
+> Connecting the digital twin to the real world by receiving measurements and (optionally) controlling systems or objects.
+
+The sense & actuate function makes it possible to use information from the real world in the digital twin AND to perform actions in reality from the digital twin. Data such as temperature, movement, or status are measured and passed to the digital twin at fixed intervals or in real-time, so it can show an up-to-date image of the situation. Measured data is stored, making changes over time visible.
+In addition to measuring, a digital twin can also be used to control parts of the real world. Via digital signals, settings or statuses can be adjusted, such as switching a device on or off (e.g., a bridge or lock). Both measurements and control actions are recorded.
 
 #### Integration
 
-A Digital Twin makes it possible to define different policy perspectives and thus gain a holistic view of a policy area or policy project. This combination helps to gain deeper insights, make better decisions, and generate value in various domains. This is an important instrument for integrating all layers into 1 situational picture.
+> Bringing together data from different sources, systems, and domains into one coherent and recognizable image of reality.
+
+The integration function ensures that data from various sources comes together as a coherent whole. Data from diverse systems and perspectives are linked and aligned so they form one clear image of an area or project. To integrate data, a coupling point (link) is always required, such as a location, a shared administrative key (e.g., a municipality code), or a geographic reference point. Combining this data reveals relationships that are not visible in isolated datasets, forming the basis for further analysis and decision-making.
 
 ### Intelligence
 
 #### Analytics
 
-Analysing is the process of examining and interpreting the data in the digital twin. This includes applying different analysis techniques, models, and algorithms to gain insights into the behavior, performance, and trends within the Digital Twin. The purpose of analysing is to see if control has the desired effect and can be adjusted for more or less effects where needed.
+> Interpreting data and results by recognizing and explaining patterns, trends, and deviations.
+
+The analytics function helps give meaning to the data available in the digital twin. While calculation provides figures, analysis focuses on understanding what those outcomes mean for a situation or process. By viewing information from different angles, trends and bottlenecks can be discovered. Results can be presented in graphs, dashboards, or summaries to support decision-making.
 
 #### Prediction
 
-Digital twins make it possible to anticipate future events, trends, or behaviors based on current and historical data of the simulated object or system. Using advanced analyses, models, and algorithms, a digital twin can simulate potential outcomes and scenarios, allowing users to react proactively to possible changes or challenges.
+> Estimating likely future developments based on historical and current data and computational models.
+
+The prediction function makes it possible to make an informed statement about how a situation will likely develop. It uses current and historical data combined with models to calculate probable future states. This differs from simulation (which explores what-if variants) and time travel (which shows recorded scenarios).
 
 #### Orchestration
 
-Orchestration ensures that the different components or services within the Digital Twin work together to perform a specific task or workflow.
+> Coordinating the coherence and sequence in which functions (such as sensing, calculating, analysing, and visualising) are executed.
+
+Orchestration ensures that the different building blocks of the digital twin work together in the right order. It manages the process—for example, retrieving data, then calculating, then analysing, and finally visualising—without performing the calculations itself.
 
 #### Simulation
 
-A Digital Twin makes it possible to bring together and combine different types of data into a holistic view of a system, process, or entity. This combination helps to gain deeper insights, make better decisions, and generate value in various domains. This is an important instrument for data-driven work. With simulation, AI can also be used for ‘opportunity finding’. The opportunity maps and what-can-go-where maps indicate areas with potential for solutions in case of conflicting interests in that area!
+> Simulation explores possible "what-happens-if" situations by changing parameters and calculating the effects.
+
+Simulation allows users to investigate the impact of changing certain choices or circumstances. Users can adjust parameters to see effects on a system or area. Unlike prediction, it is not about what is most likely, but about exploring various options and risks to prepare for decision-making.
 
 #### Calculation
 
-Digital Twins can use computational models (e.g., heat stress, waterlogging, noise zones). These computational models can analyse data using techniques and algorithms. This makes patterns and trends visible. These computational analyses can be used to gain insight into behavior and make predictions about future situations. The outcome of Computational Models translates into indicators. Indicators are the link between the Digital Twin and Policy. Calculating is therefore an essential part of both policy and a Digital Twin.
+> Applying calculation rules and models to data to generate results that provide insight into processes and effects.
+
+The calculation function uses models to provide insight into phenomena like heat stress or waterlogging. It converts raw data into indicators, which are essential for policy-based assessments. These models are transparent and documented so that the underlying assumptions are clear.
+
+#### Decide
+
+> Carefully weighing effects and interests and subsequently recording a choice based on the insights provided by the digital twin.
+
+This involves weighing different interests and impacts (e.g., livability vs. cost) and recording a choice. By linking decisions to the underlying data, it remains clear why a choice was made, allowing for later accountability or revision.
 
 ### User experience
 
 #### Visualisation
 
-The power of visualisation in a digital twin lies in its ability to transform data into understandable, interactive, and usable images that provide insight, detect problems, improve communication, and contribute to better decision-making and performance. Visualisation can be done in many ways: 2D (flat top view), 3D (to better visualise and analyse complex spatial data in a way that traditional 2D maps cannot). Glasses that project images overlapping with reality can also be used. Images can be static (current view of a situation) or very dynamic (interactive map where you can turn knobs to change indicators and immediately see the associated policy effects), contain many details and be realistic or not. The choice of visualisations depends on the nature of the data and the purpose of the digital twin. By combining different visualisation techniques, users can get a more complete picture of a system, understand processes, and make better decisions.
+> Making data and results insightful via maps, graphs, dashboards, or 2D/3D images so information is quickly understood.
+
+Visualisation helps users interpret data faster by using overview images instead of tables. It allows for filtering, zooming, and thematic layering. Whether using realistic 3D environments or interactive 2D maps, it places information in the correct context.
 
 #### (User) Experience
 
-A great strength of a Digital Twin is the experience aspect. These experiences go beyond simply observing data and models; they enable people to virtually experiment, learn, and understand how something looks or functions. This is achieved by users interacting with a virtual copy. The interaction can take place in different ways. User-friendliness and an intuitive interface that makes it easy for users to navigate and perform the necessary actions are also important.
+> Offering users an interactive and intuitive experience to actively explore and understand the digital twin.
+
+Experience is about how users interact with and learn from the digital twin. It goes beyond observation to include active experimentation. This can involve XR (Extended Reality) for walking through a virtual neighborhood, AR (Augmented Reality) for projecting new buildings into the real world, or gamification to stimulate participation.
+
+#### Explainability
+
+> Providing insight into the meaning of results by explaining outcomes, patterns, and assumptions in context.
+
+The explain function helps a diverse group of users understand why certain results appear. It touches on "explainable AI," metadata usage, and tailoring summaries to the specific role and knowledge level of the user.
 
 ### Reliability
 
 #### Trust
 
-A Digital Twin stands (or falls) with the accurate representation (according to agreements and rules) of reality. All data and information that feed the digital twin are tested against agreed quality requirements. Errors are not to be avoided and user expectations are set accordingly. Trust is also obtained through formal agreements and frameworks. For example, the user must identify themselves in the system (Identity & Access Management), confidential data is exchanged (data spaces), logging is performed, and APIs are managed (via gateway functionality).
+> Ensuring that data in the digital twin is shared safely, reliably, and according to clear agreements.
+
+Trust is built on data quality, clear usage agreements, and transparency. Users must be certain that information is accurate and only accessible to authorized parties. It involves compliance with legal and ethical frameworks and technical validation.
 
 #### Identification & Authorization
 
-Identification is a foundation of modern software systems that ensure efficient and secure functioning within digital infrastructures. These are supporting components that can provide access control and access rights, thereby preventing unsecured access. Identification also makes it possible to personalize systems for individual users or groups, so that the user interface or tailored content can be offered and that preferences and settings can be stored.
+> Establishing who the user is so that access, rights, and responsibilities can be managed securely.
+
+Identification ensures users identify themselves before using certain functions. While anonymous exploration might be possible, actions like "editing" or "actuating" require identification to assign rights and log activities, contributing to overall security and trust.
+
+### Management
+
+#### Observability
+
+> Providing insight into whether the digital twin is functioning correctly as a system by tracking data flows and model performance.
+
+Monitoring (or observability) ensures the system as a whole keeps working. it tracks whether data flows between sensing, calculating, and visualising are functioning correctly, allowing for timely intervention if data is missing or results are unexpected.
 
 ---
 
 
 <img src="./respec/media/DT_Capabilities-en.png" alt="DT Capabilities" width="900">
+
+<aside class="note">
+    The image still needs to be updated with the 4 new capabilities.
+</aside>
 
 The online Archimate view of the Capabilities can be found [here](https://geonovum.github.io/nldt-architectuur/Archimate/html/index.html?view=id-decf311e5f5b4e169cf844aa5c909d0d).

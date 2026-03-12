@@ -16,3 +16,7 @@ __0.8.0__
 __0.8.1__
 
 - Alignment with eGovERA
+
+__0.8.2__
+
+- update of capabilities with 4 new capabilities and updated descriptions.
