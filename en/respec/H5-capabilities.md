@@ -151,9 +151,9 @@ The calculation function uses models to provide insight into phenomena like heat
 
 #### Decide
 
-> Carefully weighing effects and interests and subsequently recording a choice based on the insights provided by the digital twin.
+> Decision support involves the careful weighing of effects and interests and subsequently recording a choice based on the insights provided by the digital twin.
 
-This involves weighing different interests and impacts (e.g., livability vs. cost) and recording a choice. By linking decisions to the underlying data, it remains clear why a choice was made, allowing for later accountability or revision.
+The Decide function encompasses the careful weighing of various interests, goals, and effects, and then recording a choice based on insights from the digital twin. By making the consequences of options visible, it becomes clear what the impact is on factors such as livability, costs, safety, or sustainability, creating space for a well-founded dialogue about what is important. The decision consists of choosing a direction or option, including the moment and context in which that choice was made. By linking decisions to the underlying data and insights, it remains transparent why a decision was taken, allowing it to be explained, revised, or accounted for later.
 
 ### User experience
 
@@ -161,41 +161,41 @@ This involves weighing different interests and impacts (e.g., livability vs. cos
 
 > Making data and results insightful via maps, graphs, dashboards, or 2D/3D images so information is quickly understood.
 
-Visualisation helps users interpret data faster by using overview images instead of tables. It allows for filtering, zooming, and thematic layering. Whether using realistic 3D environments or interactive 2D maps, it places information in the correct context.
+The Visualisation function helps users interpret, recognize, and understand data in the digital twin more quickly by making it visible through clear imagery. Instead of searching through lists or tables, users can discover data by looking at maps, graphs, or other visual representations. Visualisations make it possible to organize and filter large amounts of data—for example, by zooming in on an area, choosing a time period, or toggling specific themes on or off. This immediately clarifies where certain information is located and which data belongs together. By presenting data visually in 2D, 3D, or interactive environments with a Level-of-Detail that meets requirements, the function helps users place relevant information in the right context. Images can be static or dynamic, highly realistic (in terms of colors and effects), or symbolic (using false colors). Furthermore, the use of AR/VR/XR can offer more insight and interaction with reality.
 
 #### (User) Experience
 
 > Offering users an interactive and intuitive experience to actively explore and understand the digital twin.
 
-Experience is about how users interact with and learn from the digital twin. It goes beyond observation to include active experimentation. This can involve XR (Extended Reality) for walking through a virtual neighborhood, AR (Augmented Reality) for projecting new buildings into the real world, or gamification to stimulate participation.
+The Experience function is about how users experience and interact with the digital twin. The experience aspect makes it possible not just to view information, but to actively explore, experiment, and learn within a digital environment. Users can immerse themselves in a situation and experience how a system, area, or process functions. Experience goes further than visualisation; while visualisation makes information visible, experience revolves around interaction, engagement, and ease of use. This can be shaped in various ways: with XR (Extended Reality), an environment can be fully experienced virtually, such as walking through a future neighborhood. With AR (Augmented Reality), digital elements can be added to the real world, such as projecting a new building or a noise zone into the existing environment. Gamification can also contribute by allowing users to complete tasks or explore scenarios, receiving feedback in the form of scores or rewards.
 
 #### Explainability
 
-> Providing insight into the meaning of results by explaining outcomes, patterns, and assumptions in context.
+> Explainability provides insight into the meaning of results from the digital twin by clarifying outcomes, patterns, and assumptions understandably and within their context.
 
-The explain function helps a diverse group of users understand why certain results appear. It touches on "explainable AI," metadata usage, and tailoring summaries to the specific role and knowledge level of the user.
+The Explainability function supports users in understanding what outcomes mean, why certain patterns or effects are visible, and which assumptions play a role. Interpretation is particularly important because the user group of a digital twin is diverse, and not every user can independently interpret calculation results or analyses. Technically, this function relates to the 'explainability' of calculation models, the use of metadata and semantics, and AI models that provide summaries and explanations tailored to the user's role, knowledge, and context.
 
 ### Reliability
 
 #### Trust
 
-> Ensuring that data in the digital twin is shared safely, reliably, and according to clear agreements.
+> Trust ensures that data in the digital twin can be shared safely, reliably, and according to clear agreements.
 
-Trust is built on data quality, clear usage agreements, and transparency. Users must be certain that information is accurate and only accessible to authorized parties. It involves compliance with legal and ethical frameworks and technical validation.
+The trust function ensures that data within the digital twin can be shared in a safe, reliable, and responsible manner. Users must be able to trust that the information is correct, managed carefully, and only accessible to those with the right to see it. This trust arises because clear agreements have been made regarding the quality, origin, and use of data. By identifying users and applying access rights, it can be determined who is allowed to view or use specific data. Additionally, transparency contributes to trust; it is clear how data is processed and secured. Validation based on legal, ethical, or technical frameworks also gives substance to trust.
 
 #### Identification & Authorization
 
-> Establishing who the user is so that access, rights, and responsibilities can be managed securely.
+> Identification establishes who the user is, so that access, rights, and responsibilities can be arranged safely.
 
-Identification ensures users identify themselves before using certain functions. While anonymous exploration might be possible, actions like "editing" or "actuating" require identification to assign rights and log activities, contributing to overall security and trust.
+The Identification function ensures that users of a digital twin make themselves known before using certain functions. By establishing who someone is, it can be determined which data, models, and functions are available to that user. In some cases, limited anonymous exploration is possible, but for more extensive actions—such as analysing, editing, or actuating—identification is necessary. This makes it possible to assign user rights and trace activities back to a user or role. This function protects users according to privacy and security rules, creating a reliable and transparent environment.
 
 ### Management
 
 #### Observability
 
-> Providing insight into whether the digital twin is functioning correctly as a system by tracking data flows and model performance.
+> Observability provides insight into whether the digital twin is functioning properly as a system by tracking whether data, models, and visualisations cooperate correctly and timely.
 
-Monitoring (or observability) ensures the system as a whole keeps working. it tracks whether data flows between sensing, calculating, and visualising are functioning correctly, allowing for timely intervention if data is missing or results are unexpected.
+The Observability function ensures that the digital twin as a whole system continues to function properly. It provides insight into whether data, calculation models, and visualisations are working together correctly and on time. Monitoring or 'observability' makes it possible to see if data flows are running smoothly—for example, between measuring, calculating, and visualising. When components malfunction, data is missing, or results are unexpected, this can be signaled in time to prevent disruptions and safeguard reliability.
 
 ---
 
