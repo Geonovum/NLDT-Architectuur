@@ -23,7 +23,7 @@ In dit hoofdstuk worden op hoofdlijnen de waardestromen en capabilities beschrev
 
 <img src="./respec/media/NLDT_archimate_metamodel.png" alt="ArchiMate metamodel" width="900">
 
-ArchiMate metamodel voor de NLDT architectuur. [online viewer](https://geonovum.github.io/nldt-architectuur/Archimate/html/index.html?view=id-68f0ee0b9d824121b8a04dc58af3d3ab)
+ArchiMate metamodel voor de NLDT architectuur. [online viewer](https://geonovum.github.io/NLDT-Architectuur/Archimate/html/index.html?view=id-68f0ee0b9d824121b8a04dc58af3d3ab)
 
 Bovenstaande afbeelding visualiseert het ArchiMate metamodel voor de NLDT architectuur. Deze is opgebouwd uit motivational elements van ArchiMate om de Kaders en richtlijnen uit te drukken. Verder is deze opgebouwd uit [capabilities](https://nora-begrippen.wikixl.nl/index.php/Id-24a3c495-0b7c-737a-187e-f2da6a318eb5) en [waardestromen](https://nora-begrippen.wikixl.nl/index.php/Id-2462fbbe-503b-0805-a587-fa013f9814d7) om de dienstverlening te beschrijven. De capabilities worden vervolgens in patronen uitgewerkt op basis van elementen uit de bedrijfs- en applicatielaag van ArchiMate. Hoofdstuk 5 behandelt de waardestromen en capabilities, Hoofdstuk 6 behandelt de patronen van bedrijfs- en applicatieobjecten. 
 

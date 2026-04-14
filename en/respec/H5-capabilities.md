@@ -24,7 +24,7 @@ In this chapter, the value streams and capabilities are broadly described that c
 
 <img src="./respec/media/NLDT-en_archimate_metamodel.png" alt="archimate metamodel" width="900">
 
-Archimate metamodel for the nLDT architecture. [online viewer](https://geonovum.github.io/nldt-architectuur/Archimate/html/index.html?view=id-a08c59e3541043cba2f2f63e81f08c2f)
+Archimate metamodel for the nLDT architecture. [online viewer](https://geonovum.github.io/NLDT-Architectuur/Archimate/html/index.html?view=id-a08c59e3541043cba2f2f63e81f08c2f)
 
 The above image visualises the Archimate metamodel for the nLDT architecture. This is built from motivational elements of Archimate to express frameworks and guidelines. Furthermore, it is built from capabilities and value streams to describe the service provision. The capabilities are then elaborated into patterns based on elements from the business and application layers of Archimate. Chapter 5 discusses the value streams and capabilities, Chapter 6 discusses the patterns of business and application objects.
 
