@@ -17,6 +17,8 @@ The developments of Digital Twins and Dataspaces are closely linked. On the one 
 
 This leads to patterns that support both specific dataspace standards and generic standards.
 
+<img src="./respec/media/cde-ldt-en.png" alt="ldt as a building block on top of a common data environment" width="700">
+
 ## Foundation
 
 The foundation consists of the necessary basic infrastructure and catalog functionality.

@@ -18,6 +18,8 @@ Aan de ene kant zijn Digitale Tweelingen afnemers van diensten van Dataspaces, a
 
 Dit leidt tot patronen die zowel specifieke dataspace standaarden ondersteunen, als generieke standaarden.
 
+<img src="./respec/media/cde-ldt.png" alt="ldt als bouwsteen op een dataomgeving" width="700">
+
 ## Fundament
 
 Het fundament bestaat uit de benodigde basis infrastructuur en catalogus functionaliteit.

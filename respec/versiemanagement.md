@@ -19,3 +19,7 @@ __0.8.1__
 __0.8.2__
 
 - 4 nieuwe capabilities geintroduceerd en alle capability beschrijvingen geactualiseerd
+
+__0.8.3__
+
+- toevoeging van de relatie dataomgeving - LDT

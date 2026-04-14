@@ -20,3 +20,7 @@ __0.8.1__
 __0.8.2__
 
 - update of capabilities with 4 new capabilities and updated descriptions.
+
+__0.8.3__
+
+- addition of the CDE - LDT relation.
