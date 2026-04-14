@@ -340,7 +340,6 @@ hand van de indicatoren en andere relevante informatie. Op basis van deze evalua
 beleid worden bijgesteld om de effectiviteit te vergroten of om nieuwe uitdagingen aan te pakken.&quot;</documentation>
       <property key="Name (en)" value="Feedback"/>
     </element>
-    <element xsi:type="archimate:Capability" name="Capability" id="id-92bad93c60d948cd8f9e1822eba0c37e"/>
     <element xsi:type="archimate:Capability" name="Beschrijven" id="id-cc83a47650bf4d029e1a24a22b8eb91f">
       <documentation>Nederlands: &#xD;
 &#xD;
@@ -564,6 +563,15 @@ Interoperability Layer: N/A
       <property key="eira:viewpoint" value="EIRA Ontology viewpoint"/>
       <property key="dct:identifier" value="http://data.europa.eu/dr8/InteroperabilitySpecificationContract"/>
       <property key="eira:eifLayer" value="N/A"/>
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Data inwinnen" id="id-a813a9b077f64e179527736ba1169d61">
+      <property key="Name (en)" value="Data sourcing"/>
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Data delen" id="id-c1fc4d8ab16e4035aa905d3da02435a3">
+      <property key="Name (en)" value="Data sharing"/>
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Data analyseren &amp; visualiseren" id="id-62589d9971a74935aef20fa5e9ab6eb1">
+      <property key="Name (en)" value="Data Analysis &amp; Visualisation"/>
     </element>
   </folder>
   <folder name="Application" id="id-d2bf081fe5f74ab5a769e461408c3d90" type="application">
@@ -1388,6 +1396,10 @@ Interoperability Layer: TechnicalApplication
       <property key="dct:identifier" value="http://data.europa.eu/dr8/MachineToMachineInterfaceApplicationInterface"/>
       <property key="eira:eifLayer" value="TechnicalApplication"/>
     </element>
+    <element xsi:type="archimate:DataObject" name="&lt;Data Object>" id="id-9fc45c9d6c834eb895dc162d87769aa5"/>
+    <element xsi:type="archimate:ApplicationFunction" name="&lt;Applicatie Functie>" id="id-3085d193602043b080327c2e2eea7206">
+      <property key="Name (en)" value="&lt;Application Function>"/>
+    </element>
   </folder>
   <folder name="Technology &amp; Physical" id="id-4157e8358b9a4c89981afd5affc09410" type="technology">
     <element xsi:type="archimate:Artifact" name="Solution Building Block" id="id-0620fa1493b74cd594840e7ecf10a0f4">
@@ -1441,6 +1453,15 @@ Interoperability Layer: N/A
       <property key="eira:viewpoint" value="EIRA Ontology viewpoint"/>
       <property key="dct:identifier" value="http://data.europa.eu/dr8/SolutionBuildingBlockArtifact"/>
       <property key="eira:eifLayer" value="N/A"/>
+    </element>
+    <element xsi:type="archimate:Node" name="&lt;Technologie component>" id="id-5bb1efca3bdc498b85b1a5f4024b8943">
+      <property key="Name (en)" value="&lt;Technology component>"/>
+    </element>
+    <element xsi:type="archimate:Node" name="Data omgeving" id="id-b070ecaed969424e9f303ab87bdc58c0">
+      <property key="Name (en)" value="Common Data Environment"/>
+    </element>
+    <element xsi:type="archimate:Node" name="LDT" id="id-177604842df44fdd88d1fb2e8cc7e280">
+      <property key="Name (en)" value="LDT"/>
     </element>
   </folder>
   <folder name="Motivation" id="id-1ac5fcddfb8e444387e02e06e5d114a6" type="motivation">
@@ -2199,6 +2220,24 @@ EIF Layer: TechnicalInfrastructure
     <element xsi:type="archimate:AggregationRelationship" id="id-d5dd4a5ea9c34c449c3e51d2e2eefe06" source="id-0a5e52331f7b4fe8b0a0f8e7ea1847e5" target="id-99f5fc4371004026b9294a42b38c0628"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-a51f5d9126184f0fa768bb965ebe73c2" source="id-ed6f82d963f84313bda9d3ca5616c7c7" target="id-3ddbe30b78fa4bc5b17e471be098e502"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-e35f5821153a47909c5fe0fd8ffff56a" source="id-3f0b7290958949778df676de5365cb1c" target="id-f657c48e28e24ab192aa3729a368a314"/>
+    <element xsi:type="archimate:AccessRelationship" name="leest / schrijft" id="id-d64836d3295e433d82b172ad5cec8e90" source="id-3085d193602043b080327c2e2eea7206" target="id-9fc45c9d6c834eb895dc162d87769aa5" accessType="3">
+      <property key="Name (en)" value="read / write"/>
+    </element>
+    <element xsi:type="archimate:AssignmentRelationship" name="toegekend aan" id="id-187e6cec7d6b4b9db95558a865593446" source="id-7c58a9e10bde4f0c8682ca5c8d1f7ab6" target="id-3085d193602043b080327c2e2eea7206">
+      <property key="Name (en)" value="assigned to"/>
+    </element>
+    <element xsi:type="archimate:RealizationRelationship" name="realiseert" id="id-953c2716989b43a68f870e94bca76f50" source="id-5bb1efca3bdc498b85b1a5f4024b8943" target="id-5952a2e441104f218155d3dd0e6711cc">
+      <property key="Name (en)" value="realizes"/>
+    </element>
+    <element xsi:type="archimate:RealizationRelationship" id="id-e0c6d543fcfa48b3a89b12ac762e5539" source="id-b070ecaed969424e9f303ab87bdc58c0" target="id-b0efb3fe45fe44ab8c5ed23ffe42c483"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-2f99d5b3212b4f8d950b00d1e8e8c647" source="id-b070ecaed969424e9f303ab87bdc58c0" target="id-87148b00736c4825bc338dc04be81669"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-397794075ce247918b8cb87c1517c724" source="id-177604842df44fdd88d1fb2e8cc7e280" target="id-e2bd7cccba194743b7d277f4f297983a"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-2247072cd1244535aa0be4a82038b8a0" source="id-177604842df44fdd88d1fb2e8cc7e280" target="id-a5159c9a4f0446bbb72f4a982718369b"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-4ec56efe44144c7b8ae92c52e8c88da5" source="id-b070ecaed969424e9f303ab87bdc58c0" target="id-8f1c85c777334a5d8ea8836b45ddf592"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-7ccdaffdbd5d43b0843e1ac1b36aa749" source="id-b070ecaed969424e9f303ab87bdc58c0" target="id-bdfc7e9d346c4aecb7713f9eccc6732f"/>
+    <element xsi:type="archimate:AggregationRelationship" name="aggregeert" id="id-cd5cb415016e4e719af74ad14ede073e" source="id-7f0a337ac3a9446caefb7d37eb10dcf7" target="id-9fc45c9d6c834eb895dc162d87769aa5">
+      <property key="Name (en)" value="aggregates"/>
+    </element>
   </folder>
   <folder name="Views" id="id-621ace97431a484c846b778dbd8bdfca" type="diagrams">
     <folder name="Nederlands" id="id-8b753552ee7d455b89e0b101d6fc8688">
@@ -2634,6 +2673,10 @@ EIF Layer: TechnicalInfrastructure
                   <bendpoint startX="108" startY="45" endX="108" endY="45"/>
                   <bendpoint startX="108" startY="9" endX="108" endY="9"/>
                 </sourceConnection>
+                <sourceConnection xsi:type="archimate:Connection" id="id-e3e530a30c4c412fb247226fdbf32ac5" textPosition="0" source="id-61d3355d0312400c80b1213f53f148d0" target="id-9191314d0d464840b8b8442bcb456da5" archimateRelationship="id-187e6cec7d6b4b9db95558a865593446">
+                  <bendpoint startX="168" startY="-15" endX="-115" endY="-117"/>
+                  <bendpoint startX="168" startY="93" endX="-115" endY="-9"/>
+                </sourceConnection>
               </child>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-68531072179a4dbbb02cc557c1a501bf" targetConnections="id-a70ecf0ba6ae4fefa18fc86bf1ffa2d5" archimateElement="id-1d1f4b424379482c8179c6274694feba">
@@ -2642,7 +2685,7 @@ EIF Layer: TechnicalInfrastructure
                 <bendpoint startX="-276" startY="9" endX="30" endY="45"/>
               </sourceConnection>
             </child>
-            <child xsi:type="archimate:DiagramObject" id="id-8b31681bc9c24e0aa5a3a39e7243e45a" targetConnections="id-ddc19ed64a024bb2990b897d1bdc8673 id-50f5d112403e4c9aabec5c4393e28a83 id-bbfcf227528a4b7a81365b35f11710cf id-d2e82555b1fb42059809836dbc13ea96" archimateElement="id-5952a2e441104f218155d3dd0e6711cc">
+            <child xsi:type="archimate:DiagramObject" id="id-8b31681bc9c24e0aa5a3a39e7243e45a" targetConnections="id-ddc19ed64a024bb2990b897d1bdc8673 id-50f5d112403e4c9aabec5c4393e28a83 id-bbfcf227528a4b7a81365b35f11710cf id-d2e82555b1fb42059809836dbc13ea96 id-d98a569352e24679b526e0d824869678" archimateElement="id-5952a2e441104f218155d3dd0e6711cc">
               <bounds x="120" y="72" width="157" height="55"/>
               <sourceConnection xsi:type="archimate:Connection" id="id-d8515d5dbf6848f5bfd7ae22f4fdbbc9" textPosition="0" source="id-8b31681bc9c24e0aa5a3a39e7243e45a" target="id-343d472940394e1180e37fa6458c8844" archimateRelationship="id-bbe22f52e980413da3328ff1ca09b81a">
                 <bendpoint startX="-54" startY="-219" endX="-66" endY="237"/>
@@ -2650,6 +2693,13 @@ EIF Layer: TechnicalInfrastructure
               <sourceConnection xsi:type="archimate:Connection" id="id-7df8ba1ba1e6464b8d24c13b1b75fc67" textPosition="2" source="id-8b31681bc9c24e0aa5a3a39e7243e45a" target="id-a778522b16cd47f6932eb2fd2b2536b2" archimateRelationship="id-afe589ff89f74d40a9a84e39e73f74c9">
                 <bendpoint startX="6" startY="-111" endX="-42" endY="105"/>
               </sourceConnection>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-ea30205ac75641b5ae012ff77c39e09b" targetConnections="id-1a942c4b9f4b47a498c0c4204ea4fb9f id-2e4f12dea52b437ebc6c2b4d86e69154" archimateElement="id-9fc45c9d6c834eb895dc162d87769aa5">
+              <bounds x="744" y="36" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-9191314d0d464840b8b8442bcb456da5" targetConnections="id-e3e530a30c4c412fb247226fdbf32ac5" archimateElement="id-3085d193602043b080327c2e2eea7206">
+              <bounds x="732" y="138" width="158" height="55"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-1a942c4b9f4b47a498c0c4204ea4fb9f" source="id-9191314d0d464840b8b8442bcb456da5" target="id-ea30205ac75641b5ae012ff77c39e09b" archimateRelationship="id-d64836d3295e433d82b172ad5cec8e90"/>
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-e1012f50a69042b9a976987e6ec40653" textAlignment="1" archimateElement="id-ee179498acd14ba290ecf914e5c0411f">
@@ -2717,6 +2767,16 @@ EIF Layer: TechnicalInfrastructure
             <sourceConnection xsi:type="archimate:Connection" id="id-ddc19ed64a024bb2990b897d1bdc8673" textPosition="0" source="id-06b0873f3d0e4e2cb955f34977b7f8b6" target="id-8b31681bc9c24e0aa5a3a39e7243e45a" archimateRelationship="id-7531f1126c96476988ee43327802db76">
               <bendpoint startX="-36" startY="105" endX="246" endY="-111"/>
               <bendpoint startX="-240" startY="105" endX="42" endY="-111"/>
+            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="id-2e4f12dea52b437ebc6c2b4d86e69154" source="id-06b0873f3d0e4e2cb955f34977b7f8b6" target="id-ea30205ac75641b5ae012ff77c39e09b" archimateRelationship="id-cd5cb415016e4e719af74ad14ede073e">
+              <bendpoint startX="48" startY="69" endX="-276" endY="-111"/>
+              <bendpoint startX="324" startY="69" endY="-111"/>
+            </sourceConnection>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-a2b7ea9cf21841829803b9d60bfad2dc" archimateElement="id-5bb1efca3bdc498b85b1a5f4024b8943">
+            <bounds x="780" y="804" width="193" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-d98a569352e24679b526e0d824869678" textPosition="0" source="id-a2b7ea9cf21841829803b9d60bfad2dc" target="id-8b31681bc9c24e0aa5a3a39e7243e45a" archimateRelationship="id-953c2716989b43a68f870e94bca76f50">
+              <bendpoint startX="-432" startY="-3" endX="-6" endY="177"/>
             </sourceConnection>
           </child>
           <documentation>Het metamodel beschrijft de gebruikte archimate patronen in de nLDT architectuur.</documentation>
@@ -3091,12 +3151,12 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
               <bendpoint startX="-312" startY="3" endX="12" endY="57"/>
             </sourceConnection>
             <sourceConnection xsi:type="archimate:Connection" id="id-38f26a471d2a44a2a7bb3bf4f1fcad45" source="id-07e5387b6bb34402944bf209a97be861" target="id-d5250e61439a400f9330361805446d4f" archimateRelationship="id-55c90ddaffd145629a2b08d5f7691dce"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-55ccc88cee5545d48e40e35a78c06334" source="id-07e5387b6bb34402944bf209a97be861" target="id-82f5726bd809472daf904bcfdc0c222c" archimateRelationship="id-e936b18115a84920b24ba7647d4b6f41">
-              <bendpoint startX="108" startY="21" endX="228" endY="-867"/>
-              <bendpoint startX="108" startY="885" endX="228" endY="-3"/>
-            </sourceConnection>
             <sourceConnection xsi:type="archimate:Connection" id="id-59cf185315cb4feabd137767480cc890" source="id-07e5387b6bb34402944bf209a97be861" target="id-889cb7b2de9148928d87bafb02d99a4c" archimateRelationship="id-b335e4b401b4410ca2815b2ad1709fc0">
               <bendpoint startX="-36" startY="57" endX="715" endY="-18"/>
+            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="id-55ccc88cee5545d48e40e35a78c06334" source="id-07e5387b6bb34402944bf209a97be861" target="id-82f5726bd809472daf904bcfdc0c222c" archimateRelationship="id-e936b18115a84920b24ba7647d4b6f41">
+              <bendpoint startX="108" startY="21" endX="228" endY="-867"/>
+              <bendpoint startX="108" startY="837" endX="228" endY="9"/>
             </sourceConnection>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-a3072ca41d9f410fbad3bd53158064e1" targetConnections="id-388697fbea9d426d92332d7c0acb2c93 id-8ac4d8064013400db847b3656ded4fc8 id-c4d86472d27e456290c1350af4fb211b" archimateElement="id-b0efb3fe45fe44ab8c5ed23ffe42c483">
@@ -3193,7 +3253,7 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
               <bendpoint startX="168" startY="-14" endX="12" endY="322"/>
             </sourceConnection>
             <sourceConnection xsi:type="archimate:Connection" id="id-890f8cd5aec74b1abc9d27b9ea726b9f" source="id-82f5726bd809472daf904bcfdc0c222c" target="id-07e5387b6bb34402944bf209a97be861" archimateRelationship="id-166edf276ffe4af0a18303187802d1c9">
-              <bendpoint startX="240" startY="9" endX="120" endY="897"/>
+              <bendpoint startX="240" startY="21" endX="120" endY="849"/>
               <bendpoint startX="240" startY="-879" endX="120" endY="9"/>
             </sourceConnection>
           </child>
@@ -3539,17 +3599,21 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <sourceConnection xsi:type="archimate:Connection" id="id-93e92f9cabf540ed871f57dc1ff4ac51" source="id-d24ddaefa32d4916aac349830901bf81" target="id-da9212e8a01b409aa1678c2381918e34" archimateRelationship="id-8053cac36b6d406296468f44f190f1d2"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-a50f9fd94aab415da6ce39a8bb5ee84b" source="id-d24ddaefa32d4916aac349830901bf81" target="id-ac7f1cc349984a4387aaace07298ae16" archimateRelationship="id-db1c87d47e3d4b38a39bd29323a39faa"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-e4bd9df5a5e1401bb49ee5851b546978" source="id-d24ddaefa32d4916aac349830901bf81" target="id-e0c7486ff0bc46b9b09aba4208743b34" archimateRelationship="id-faa7355f754b49c1a44d91ce06ff8cbe"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-fd412f965b34459abbf99bf4ed79ccb1" source="id-d24ddaefa32d4916aac349830901bf81" target="id-1e0dcb37529b4847a8bfbd841665da20" archimateRelationship="id-daf818248e874e6284e95a3a856ccaa4"/>
           <child xsi:type="archimate:DiagramObject" id="id-e0c7486ff0bc46b9b09aba4208743b34" targetConnections="id-e4bd9df5a5e1401bb49ee5851b546978" archimateElement="id-d3426e10d98c45309d93a426ea395f24">
-            <bounds x="60" y="240" width="169" height="73"/>
+            <bounds x="60" y="216" width="169" height="61"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-85a12f75f8a346d4aea9b19bcf75f423" targetConnections="id-49595eaea77445b9a1369a6225253fbc" archimateElement="id-42b6cd0620c5430d93a7aef0eae32a05">
-            <bounds x="60" y="144" width="169" height="73"/>
+            <bounds x="60" y="132" width="169" height="61"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-da9212e8a01b409aa1678c2381918e34" targetConnections="id-93e92f9cabf540ed871f57dc1ff4ac51" archimateElement="id-561f54af37fd427890fe6434c67b0564">
-            <bounds x="60" y="336" width="169" height="73"/>
+            <bounds x="60" y="300" width="169" height="61"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-ac7f1cc349984a4387aaace07298ae16" targetConnections="id-a50f9fd94aab415da6ce39a8bb5ee84b" archimateElement="id-bc644c7dc7404c19b4de1b65939bc847">
-            <bounds x="60" y="36" width="169" height="73"/>
+            <bounds x="60" y="48" width="169" height="61"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-1e0dcb37529b4847a8bfbd841665da20" targetConnections="id-fd412f965b34459abbf99bf4ed79ccb1" archimateElement="id-cc83a47650bf4d029e1a24a22b8eb91f">
+            <bounds x="60" y="384" width="169" height="55"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-10839c82326b495c99801ab199329de0" textAlignment="1" archimateElement="id-4e31b5a87c8347fab23e305c1c0ea9fc">
@@ -3574,6 +3638,7 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <sourceConnection xsi:type="archimate:Connection" id="id-35704c9b464c4b82b635088633f0f33c" source="id-38f09a16fc9a4d68aabec939d4de69ea" target="id-19a2d9ff0f054b76ad0013f27bbfbaa3" archimateRelationship="id-7400850537904088831dd4f1767b4448"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-28ba2412125941df88c934dd25856f04" source="id-38f09a16fc9a4d68aabec939d4de69ea" target="id-61d1d2444a334e16a7d79cddabf57714" archimateRelationship="id-199e5c4ebcc94958bbc4a0f67558e238"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-0f5da80d45044fe08dc648d8ff60ca2d" source="id-38f09a16fc9a4d68aabec939d4de69ea" target="id-07990c6581ea45e2940e67f1f506d922" archimateRelationship="id-2e1ca4f19ac6444bb4a8c8a2d719049b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-55e8c253795440e3aac51fc2e324263d" source="id-38f09a16fc9a4d68aabec939d4de69ea" target="id-05e7a085a0454190b4537f92ad0526ff" archimateRelationship="id-d5dd4a5ea9c34c449c3e51d2e2eefe06"/>
           <child xsi:type="archimate:DiagramObject" id="id-19a2d9ff0f054b76ad0013f27bbfbaa3" targetConnections="id-35704c9b464c4b82b635088633f0f33c" archimateElement="id-196b1abf65504170891e14cca3bad7fa">
             <bounds x="72" y="108" width="120" height="55"/>
           </child>
@@ -3589,16 +3654,23 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <child xsi:type="archimate:DiagramObject" id="id-85bec8f536a94080bbc0ea5845a2e048" targetConnections="id-26dd9f035f3a4271b73e50746250092e" archimateElement="id-e1624ccfa04c4f1090978181f1b065d0">
             <bounds x="72" y="252" width="120" height="55"/>
           </child>
+          <child xsi:type="archimate:DiagramObject" id="id-05e7a085a0454190b4537f92ad0526ff" targetConnections="id-55e8c253795440e3aac51fc2e324263d" archimateElement="id-99f5fc4371004026b9294a42b38c0628">
+            <bounds x="216" y="252" width="120" height="55"/>
+          </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-cfbdea396c744d4eae9ca5bdf2e90fcc" textAlignment="1" archimateElement="id-3f0b7290958949778df676de5365cb1c">
           <bounds x="1310" y="331" width="217" height="481"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-7eee916cc4e445f0824ee594a021adde" source="id-cfbdea396c744d4eae9ca5bdf2e90fcc" target="id-3939c0835ad14c489466c9bbb6ca6577" archimateRelationship="id-3c4155c9fb3b4af987507c5dcff5ae54"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-2f33c240390146f8b3e4a3ad4df13fa4" source="id-cfbdea396c744d4eae9ca5bdf2e90fcc" target="id-54ef13c8a8724e36ba46f172cfd83eaa" archimateRelationship="id-671bc52b091e45fe89c57a3d8b31c4ce"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d3a0bac81ddd40e7994bed256ec4ae65" source="id-cfbdea396c744d4eae9ca5bdf2e90fcc" target="id-53324ba6baf94f01848a4e673e15a109" archimateRelationship="id-e35f5821153a47909c5fe0fd8ffff56a"/>
           <child xsi:type="archimate:DiagramObject" id="id-3939c0835ad14c489466c9bbb6ca6577" targetConnections="id-7eee916cc4e445f0824ee594a021adde" archimateElement="id-6e48efe4068644fd8a0ebf49c75342be">
             <bounds x="48" y="96" width="120" height="55"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-54ef13c8a8724e36ba46f172cfd83eaa" targetConnections="id-2f33c240390146f8b3e4a3ad4df13fa4" archimateElement="id-572d0843850f4667af98d52c355fc516">
             <bounds x="48" y="180" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-53324ba6baf94f01848a4e673e15a109" targetConnections="id-d3a0bac81ddd40e7994bed256ec4ae65" archimateElement="id-f657c48e28e24ab192aa3729a368a314">
+            <bounds x="48" y="396" width="120" height="55"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-ab264f85953f43eb97104194476410bc" textAlignment="1" archimateElement="id-63cb0815e1d94412bb18f9fc321f5be6">
@@ -3614,6 +3686,10 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-78e1e3b423ef427ab5f426b6cb8defec" textAlignment="1" archimateElement="id-ed6f82d963f84313bda9d3ca5616c7c7">
           <bounds x="566" y="715" width="205" height="97"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c8f04dea0b064f7eb52174edfc78995f" source="id-78e1e3b423ef427ab5f426b6cb8defec" target="id-8bacc388ab4e4cbc9a9a0e62c559b618" archimateRelationship="id-a51f5d9126184f0fa768bb965ebe73c2"/>
+          <child xsi:type="archimate:DiagramObject" id="id-8bacc388ab4e4cbc9a9a0e62c559b618" targetConnections="id-c8f04dea0b064f7eb52174edfc78995f" archimateElement="id-3ddbe30b78fa4bc5b17e471be098e502">
+            <bounds x="48" y="24" width="120" height="55"/>
+          </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-478fd34524e14cebaba792d7b8a3579c" archimateElement="id-d8cfe08acc9848e6a43450e795a9a2de" type="1">
           <bounds x="120" y="132" width="408" height="121"/>
@@ -3686,13 +3762,73 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
         </child>
         <documentation>De AppStore realiseert 'recepten' waarmee herbruikbare applicatiediensten gedeeld kunnen worden met verschillende organisaties</documentation>
       </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Ecosysteem" id="id-6926c633fed044c7a978426f8a2477c2">
+        <child xsi:type="archimate:DiagramObject" id="id-82a12a91309244eda0984e8ebc783934" archimateElement="id-b070ecaed969424e9f303ab87bdc58c0">
+          <bounds x="264" y="384" width="349" height="169"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7890ad36c95c4eed92a08aabc1a0330e" source="id-82a12a91309244eda0984e8ebc783934" target="id-86bae4116e0b4ab9b32141b0eec440ec" archimateRelationship="id-e0c6d543fcfa48b3a89b12ac762e5539"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-2e6458f6781e4be9bf53ef08173b873e" source="id-82a12a91309244eda0984e8ebc783934" target="id-19a24660acc34f3681c6a81b7a6a84a3" archimateRelationship="id-2f99d5b3212b4f8d950b00d1e8e8c647"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-cd6f45e00c814d78a4e7ec7966c1c1cb" source="id-82a12a91309244eda0984e8ebc783934" target="id-aa6389f21da7475884d7a2f44c641d8e" archimateRelationship="id-4ec56efe44144c7b8ae92c52e8c88da5"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-16e0c0f716744b01afc6f42d72b34adb" source="id-82a12a91309244eda0984e8ebc783934" target="id-b38b9f8550d14e2ea6f60c66cdc75bf1" archimateRelationship="id-7ccdaffdbd5d43b0843e1ac1b36aa749"/>
+          <child xsi:type="archimate:DiagramObject" id="id-86bae4116e0b4ab9b32141b0eec440ec" targetConnections="id-7890ad36c95c4eed92a08aabc1a0330e" archimateElement="id-b0efb3fe45fe44ab8c5ed23ffe42c483">
+            <bounds x="24" y="96" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-19a24660acc34f3681c6a81b7a6a84a3" targetConnections="id-2e6458f6781e4be9bf53ef08173b873e" archimateElement="id-87148b00736c4825bc338dc04be81669">
+            <bounds x="204" y="96" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-aa6389f21da7475884d7a2f44c641d8e" targetConnections="id-cd6f45e00c814d78a4e7ec7966c1c1cb" archimateElement="id-8f1c85c777334a5d8ea8836b45ddf592">
+            <bounds x="204" y="30" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-b38b9f8550d14e2ea6f60c66cdc75bf1" targetConnections="id-16e0c0f716744b01afc6f42d72b34adb" archimateElement="id-bdfc7e9d346c4aecb7713f9eccc6732f">
+            <bounds x="24" y="30" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-f10bbcd022c94aaa9c1b0eacfa862edd" archimateElement="id-177604842df44fdd88d1fb2e8cc7e280">
+          <bounds x="456" y="168" width="157" height="187"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e7905065d7714efcb18098a9ebb9a49c" source="id-f10bbcd022c94aaa9c1b0eacfa862edd" target="id-f8d117471d3447db87f0735d55f7232c" archimateRelationship="id-2247072cd1244535aa0be4a82038b8a0"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d35ba8a444854325b8ff9ef17804c6df" source="id-f10bbcd022c94aaa9c1b0eacfa862edd" target="id-5b2b95b5d0eb4895a8d9fb36fbd9bff0" archimateRelationship="id-397794075ce247918b8cb87c1517c724"/>
+          <child xsi:type="archimate:DiagramObject" id="id-f8d117471d3447db87f0735d55f7232c" targetConnections="id-e7905065d7714efcb18098a9ebb9a49c" archimateElement="id-a5159c9a4f0446bbb72f4a982718369b">
+            <bounds x="12" y="120" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-5b2b95b5d0eb4895a8d9fb36fbd9bff0" targetConnections="id-d35ba8a444854325b8ff9ef17804c6df" archimateElement="id-e2bd7cccba194743b7d277f4f297983a">
+            <bounds x="12" y="48" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-8ca7e30469194cb49b62cb15bd6c6289" archimateElement="id-a813a9b077f64e179527736ba1169d61">
+          <bounds x="96" y="480" width="132" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-a7ecb62e7d194209affc3a4e627fb565" archimateElement="id-c1fc4d8ab16e4035aa905d3da02435a3">
+          <bounds x="96" y="396" width="132" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-a7fd582194624741b0877d797839804c" archimateElement="id-62589d9971a74935aef20fa5e9ab6eb1">
+          <bounds x="96" y="288" width="132" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-31d7e2e76ac24f539daab22536f2af8c" archimateElement="id-177604842df44fdd88d1fb2e8cc7e280">
+          <bounds x="264" y="168" width="157" height="187"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-817fa39eb94c4f2aa561d0973ad46149" source="id-31d7e2e76ac24f539daab22536f2af8c" target="id-835c08ee07764185bd38cc98868306ad" archimateRelationship="id-397794075ce247918b8cb87c1517c724"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b3fddaf4a27841d2b0958ffd4427daf1" source="id-31d7e2e76ac24f539daab22536f2af8c" target="id-87662d3ab79749f081ddf96c684eef7f" archimateRelationship="id-2247072cd1244535aa0be4a82038b8a0"/>
+          <child xsi:type="archimate:DiagramObject" id="id-835c08ee07764185bd38cc98868306ad" targetConnections="id-817fa39eb94c4f2aa561d0973ad46149" archimateElement="id-e2bd7cccba194743b7d277f4f297983a">
+            <bounds x="24" y="48" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-87662d3ab79749f081ddf96c684eef7f" targetConnections="id-b3fddaf4a27841d2b0958ffd4427daf1" archimateElement="id-a5159c9a4f0446bbb72f4a982718369b">
+            <bounds x="24" y="120" width="120" height="55"/>
+          </child>
+        </child>
+      </element>
     </folder>
     <folder name="English" id="id-c4f1ff06c96840caae4db8adbbe56f71">
       <folder name="Metamodel" id="id-4c4cb4fc9b0246d2b63bcac5d6cc28ce">
         <property key="Language=en" value="not empty"/>
         <element xsi:type="archimate:ArchimateDiagramModel" name="nLDT - Metamodel (en)" id="id-a08c59e3541043cba2f2f63e81f08c2f">
           <child xsi:type="archimate:DiagramObject" id="id-e03942930e634492b5a0301ff2662910" textAlignment="1" archimateElement="id-973eb31993c34586ad4b568f191bfcc4">
-            <bounds x="-360" y="12" width="1261" height="745"/>
+            <bounds x="-360" y="12" width="1261" height="793"/>
+            <child xsi:type="archimate:DiagramObject" id="id-ea101cc70e054a5aaaaa1398b632eb5e" archimateElement="id-5bb1efca3bdc498b85b1a5f4024b8943">
+              <bounds x="792" y="732" width="192" height="55"/>
+              <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}&#xD;&#xA;"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-49d1d883b86445f49329ab324705ffa6" textPosition="0" source="id-ea101cc70e054a5aaaaa1398b632eb5e" target="id-743cc5a225424b5fb1950c670a462a37" archimateRelationship="id-953c2716989b43a68f870e94bca76f50">
+                <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+                <bendpoint startX="-396" startY="-3" endX="-12" endY="165"/>
+              </sourceConnection>
+            </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-d1e101a7100948eab7050a475028f19c" textAlignment="1" archimateElement="id-ee179498acd14ba290ecf914e5c0411f">
             <bounds x="-336" y="48" width="265" height="445"/>
@@ -3752,7 +3888,22 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
                   <bendpoint startX="108" startY="45" endX="108" endY="45"/>
                   <bendpoint startX="108" startY="9" endX="108" endY="9"/>
                 </sourceConnection>
+                <sourceConnection xsi:type="archimate:Connection" id="id-7b50f9ca32cb4c0baa554803ac8c0044" textPosition="0" source="id-cf801ae74d324b0796e644eda19116cf" target="id-abf01905915d4a30b61891d42d2fdcce" archimateRelationship="id-187e6cec7d6b4b9db95558a865593446">
+                  <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+                  <bendpoint startX="175" startY="-15" endX="-101" endY="-135"/>
+                  <bendpoint startX="175" startY="117" endX="-101" endY="-3"/>
+                </sourceConnection>
               </child>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-6003b5709c5c47bc911884cee4c4c5a7" targetConnections="id-af90b6338c6d4ab790ea3daf5d2db3e9 id-41ce9855179d4dfe8479dea63157a5a1" archimateElement="id-9fc45c9d6c834eb895dc162d87769aa5">
+              <bounds x="756" y="48" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-abf01905915d4a30b61891d42d2fdcce" targetConnections="id-7b50f9ca32cb4c0baa554803ac8c0044" archimateElement="id-3085d193602043b080327c2e2eea7206">
+              <bounds x="720" y="168" width="168" height="55"/>
+              <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-af90b6338c6d4ab790ea3daf5d2db3e9" source="id-abf01905915d4a30b61891d42d2fdcce" target="id-6003b5709c5c47bc911884cee4c4c5a7" archimateRelationship="id-d64836d3295e433d82b172ad5cec8e90">
+                <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+              </sourceConnection>
             </child>
             <property key="Name (en)" value="Application perspective"/>
           </child>
@@ -3779,6 +3930,11 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
               </sourceConnection>
               <sourceConnection xsi:type="archimate:Connection" id="id-04a0e39f0a66404493eea280eec172cd" textPosition="0" source="id-cc7964b810404d8cb46818a2e3fc1124" target="id-0fe704b4fe204453bf80e801ef81e59b" archimateRelationship="id-4a7d431a9e4e404fadfa26b7b3013519">
                 <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+              </sourceConnection>
+              <sourceConnection xsi:type="archimate:Connection" id="id-41ce9855179d4dfe8479dea63157a5a1" source="id-cc7964b810404d8cb46818a2e3fc1124" target="id-6003b5709c5c47bc911884cee4c4c5a7" archimateRelationship="id-cd5cb415016e4e719af74ad14ede073e">
+                <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+                <bendpoint startX="31" startY="81" endX="-305" endY="-99"/>
+                <bendpoint startX="331" startY="81" endX="-5" endY="-99"/>
               </sourceConnection>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-d8a8479a9f8640cf8618818e16cffd99" targetConnections="id-fcc7b73814994f639e442441f52b9e49" archimateElement="id-c5bb2d94447e44ff981f5bef33ca5f53">
@@ -3817,7 +3973,7 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
               <bendpoint startX="-276" startY="9" endX="30" endY="45"/>
             </sourceConnection>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="id-743cc5a225424b5fb1950c670a462a37" targetConnections="id-f758725a4d684962bb61841ee912ca44 id-a1bd7401673d477b95a70b32642ac0ab id-24063d3026fc4681876ecfaf2835e6dd" archimateElement="id-5952a2e441104f218155d3dd0e6711cc">
+          <child xsi:type="archimate:DiagramObject" id="id-743cc5a225424b5fb1950c670a462a37" targetConnections="id-f758725a4d684962bb61841ee912ca44 id-a1bd7401673d477b95a70b32642ac0ab id-24063d3026fc4681876ecfaf2835e6dd id-49d1d883b86445f49329ab324705ffa6" archimateElement="id-5952a2e441104f218155d3dd0e6711cc">
             <bounds x="60" y="576" width="169" height="55"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-7926ed344af84ec8b5c55af78dc4f0f8" textPosition="0" source="id-743cc5a225424b5fb1950c670a462a37" target="id-db2313b440a1481f8c640823a218cfab" archimateRelationship="id-bbe22f52e980413da3328ff1ca09b81a">
@@ -4789,12 +4945,12 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
               <bendpoint startX="-312" startY="3" endX="12" endY="57"/>
             </sourceConnection>
             <sourceConnection xsi:type="archimate:Connection" id="id-1911d726e7164b1c9c150b6eea85f393" source="id-d962efd17adf48f2977f55c2ac331f11" target="id-297f03eeed0249c695d30ccf3f11de83" archimateRelationship="id-55c90ddaffd145629a2b08d5f7691dce"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-680b89e3b1a7464d9eec2e496128619e" source="id-d962efd17adf48f2977f55c2ac331f11" target="id-5e358e9d30184765a639303bf2caa61c" archimateRelationship="id-b335e4b401b4410ca2815b2ad1709fc0">
+              <bendpoint startX="-36" startY="58" endX="716" endY="-28"/>
+            </sourceConnection>
             <sourceConnection xsi:type="archimate:Connection" id="id-b03ed31dbebe45a1bbcaf1b5a6627edc" source="id-d962efd17adf48f2977f55c2ac331f11" target="id-8b69bfe79d224a2ea28037372d3c6f1d" archimateRelationship="id-e936b18115a84920b24ba7647d4b6f41">
               <bendpoint startX="108" startY="21" endX="228" endY="-867"/>
               <bendpoint startX="108" startY="885" endX="228" endY="-3"/>
-            </sourceConnection>
-            <sourceConnection xsi:type="archimate:Connection" id="id-680b89e3b1a7464d9eec2e496128619e" source="id-d962efd17adf48f2977f55c2ac331f11" target="id-5e358e9d30184765a639303bf2caa61c" archimateRelationship="id-b335e4b401b4410ca2815b2ad1709fc0">
-              <bendpoint startX="-36" startY="58" endX="716" endY="-28"/>
             </sourceConnection>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-1b84f6921b0a4418aa14dc8ca1d8b4de" targetConnections="id-accc74fd25e74c0caa73fb5505f04ad0 id-b8d1ca631e7444caac6e44752f53c1bf id-e86eb305ee374620827ae407c0297dab" archimateElement="id-b0efb3fe45fe44ab8c5ed23ffe42c483">
@@ -4983,21 +5139,26 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <sourceConnection xsi:type="archimate:Connection" id="id-cc29026abfea41f4908caf5857699c24" source="id-f3e98479ced440e59c2e79ee309486e8" target="id-fffcfe61055b4074b71100408102e2dc" archimateRelationship="id-8053cac36b6d406296468f44f190f1d2"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-f38f4e29c7bd4693814e4413f81d410d" source="id-f3e98479ced440e59c2e79ee309486e8" target="id-b715b96d7c6b4426a6bc83ed78e4df49" archimateRelationship="id-db1c87d47e3d4b38a39bd29323a39faa"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-e35575c7860445b58b92a7b2ba2f50b4" source="id-f3e98479ced440e59c2e79ee309486e8" target="id-c007e768e3e84de19e22f683c1849102" archimateRelationship="id-faa7355f754b49c1a44d91ce06ff8cbe"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8dc88435439c42ca9abdc3df589ab3c6" source="id-f3e98479ced440e59c2e79ee309486e8" target="id-41a432edf7c343e294cbe7e3cd34eec3" archimateRelationship="id-daf818248e874e6284e95a3a856ccaa4"/>
           <child xsi:type="archimate:DiagramObject" id="id-c007e768e3e84de19e22f683c1849102" targetConnections="id-e35575c7860445b58b92a7b2ba2f50b4" archimateElement="id-d3426e10d98c45309d93a426ea395f24">
-            <bounds x="60" y="240" width="169" height="73"/>
+            <bounds x="60" y="228" width="169" height="61"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-f1f3fcef8ba0423c9c0e3c2465de668a" targetConnections="id-e52e6f3c43284038a6bf8ab41ace8366" archimateElement="id-42b6cd0620c5430d93a7aef0eae32a05">
-            <bounds x="60" y="144" width="169" height="73"/>
+            <bounds x="60" y="132" width="169" height="61"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-fffcfe61055b4074b71100408102e2dc" targetConnections="id-cc29026abfea41f4908caf5857699c24" archimateElement="id-561f54af37fd427890fe6434c67b0564">
-            <bounds x="60" y="336" width="169" height="73"/>
+            <bounds x="60" y="324" width="169" height="61"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-b715b96d7c6b4426a6bc83ed78e4df49" targetConnections="id-f38f4e29c7bd4693814e4413f81d410d" archimateElement="id-bc644c7dc7404c19b4de1b65939bc847">
-            <bounds x="60" y="36" width="169" height="73"/>
+            <bounds x="60" y="36" width="169" height="61"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}&#xD;&#xA;"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-41a432edf7c343e294cbe7e3cd34eec3" targetConnections="id-8dc88435439c42ca9abdc3df589ab3c6" archimateElement="id-cc83a47650bf4d029e1a24a22b8eb91f">
+            <bounds x="60" y="408" width="169" height="55"/>
+            <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-5e68e5b27f5a4fd59efdd3cf968198a4" textAlignment="1" archimateElement="id-4e31b5a87c8347fab23e305c1c0ea9fc">
@@ -5027,6 +5188,7 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <sourceConnection xsi:type="archimate:Connection" id="id-212e7f356de44373bf44a975658d2ced" source="id-b8e732db9aaf45df9178b8fc8afec555" target="id-c87d28acacc442e78d6f9f512febe0f1" archimateRelationship="id-7400850537904088831dd4f1767b4448"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-de55dd9fbbda49d9a3ab21c08d82cf5e" source="id-b8e732db9aaf45df9178b8fc8afec555" target="id-9036f98737234b38b2f452b09eb22998" archimateRelationship="id-199e5c4ebcc94958bbc4a0f67558e238"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-6f27107522b34d849e722959c7a1947c" source="id-b8e732db9aaf45df9178b8fc8afec555" target="id-4d0de094c6bf4d068b70632806bd39ba" archimateRelationship="id-2e1ca4f19ac6444bb4a8c8a2d719049b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5e0239468c0a41de9eca8bf36e5b61e6" source="id-b8e732db9aaf45df9178b8fc8afec555" target="id-3d50a2b6b0c64f1f9bc80baa85bebede" archimateRelationship="id-d5dd4a5ea9c34c449c3e51d2e2eefe06"/>
           <child xsi:type="archimate:DiagramObject" id="id-c87d28acacc442e78d6f9f512febe0f1" targetConnections="id-212e7f356de44373bf44a975658d2ced" archimateElement="id-196b1abf65504170891e14cca3bad7fa">
             <bounds x="72" y="108" width="120" height="55"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
@@ -5047,18 +5209,27 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
             <bounds x="72" y="252" width="120" height="55"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
           </child>
+          <child xsi:type="archimate:DiagramObject" id="id-3d50a2b6b0c64f1f9bc80baa85bebede" targetConnections="id-5e0239468c0a41de9eca8bf36e5b61e6" archimateElement="id-99f5fc4371004026b9294a42b38c0628">
+            <bounds x="216" y="252" width="120" height="55"/>
+            <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+          </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-5b4d0feeb60d42d2aa60ea7aac193646" textAlignment="1" archimateElement="id-3f0b7290958949778df676de5365cb1c">
           <bounds x="1310" y="331" width="217" height="481"/>
           <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-8f8683594b884567be46aec055ca24dc" source="id-5b4d0feeb60d42d2aa60ea7aac193646" target="id-e0a39c838c2042c4b7825a0a009122e0" archimateRelationship="id-3c4155c9fb3b4af987507c5dcff5ae54"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-cee041fe70d74487945b4d51ff1cbf33" source="id-5b4d0feeb60d42d2aa60ea7aac193646" target="id-129000d48d3345d183dcaf3f9e9675a0" archimateRelationship="id-671bc52b091e45fe89c57a3d8b31c4ce"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8b83fb4a59314690ad85d02b8ac53630" source="id-5b4d0feeb60d42d2aa60ea7aac193646" target="id-c6630afedde44547886462d3860e9792" archimateRelationship="id-e35f5821153a47909c5fe0fd8ffff56a"/>
           <child xsi:type="archimate:DiagramObject" id="id-e0a39c838c2042c4b7825a0a009122e0" targetConnections="id-8f8683594b884567be46aec055ca24dc" archimateElement="id-6e48efe4068644fd8a0ebf49c75342be">
             <bounds x="48" y="96" width="120" height="55"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-129000d48d3345d183dcaf3f9e9675a0" targetConnections="id-cee041fe70d74487945b4d51ff1cbf33" archimateElement="id-572d0843850f4667af98d52c355fc516">
             <bounds x="48" y="180" width="120" height="55"/>
+            <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-c6630afedde44547886462d3860e9792" targetConnections="id-8b83fb4a59314690ad85d02b8ac53630" archimateElement="id-f657c48e28e24ab192aa3729a368a314">
+            <bounds x="60" y="396" width="120" height="55"/>
             <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
           </child>
         </child>
@@ -5079,6 +5250,11 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
         <child xsi:type="archimate:DiagramObject" id="id-b86a81b3f4234c26936d42dd61749726" textAlignment="1" archimateElement="id-ed6f82d963f84313bda9d3ca5616c7c7">
           <bounds x="566" y="715" width="205" height="97"/>
           <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e2c83c5ed01f42bbb31f6f0d557f3dba" source="id-b86a81b3f4234c26936d42dd61749726" target="id-d402e754159946308748219905de53dc" archimateRelationship="id-a51f5d9126184f0fa768bb965ebe73c2"/>
+          <child xsi:type="archimate:DiagramObject" id="id-d402e754159946308748219905de53dc" targetConnections="id-e2c83c5ed01f42bbb31f6f0d557f3dba" archimateElement="id-3ddbe30b78fa4bc5b17e471be098e502">
+            <bounds x="48" y="24" width="120" height="55"/>
+            <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+          </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-cfd4982ea7f343038ba63c81990ca608" archimateElement="id-d8cfe08acc9848e6a43450e795a9a2de" type="1">
           <bounds x="120" y="132" width="408" height="121"/>
@@ -5403,6 +5579,72 @@ In de views in de map Capability-realisatie worden er diensten, functies, produc
           <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
         </child>
       </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Ecosystem (en)" id="id-7c499e5071984b23937376deeac6e288">
+        <child xsi:type="archimate:DiagramObject" id="id-cc484c585e234a6bb429e47a049e7d7a" archimateElement="id-b070ecaed969424e9f303ab87bdc58c0">
+          <bounds x="274" y="394" width="349" height="169"/>
+          <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-219cd9cb31884f93844a60e3844d2f4b" source="id-cc484c585e234a6bb429e47a049e7d7a" target="id-64ddb8e95aec4e3097ed0fb4938f86a0" archimateRelationship="id-2f99d5b3212b4f8d950b00d1e8e8c647"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3ae476743d7949ad9637b7bcecb6ae26" source="id-cc484c585e234a6bb429e47a049e7d7a" target="id-7683b29dcd094d56a4198c3a72a719de" archimateRelationship="id-7ccdaffdbd5d43b0843e1ac1b36aa749"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5960f1cb7ce840edb94fccc9a6a5b410" source="id-cc484c585e234a6bb429e47a049e7d7a" target="id-4a4102bd464c4e1da02cb958157e7cea" archimateRelationship="id-4ec56efe44144c7b8ae92c52e8c88da5"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-f813ec09f6664d29a5b029501bc63fd8" source="id-cc484c585e234a6bb429e47a049e7d7a" target="id-104e7ef897b64c26b8accb2e58572f57" archimateRelationship="id-e0c6d543fcfa48b3a89b12ac762e5539"/>
+          <child xsi:type="archimate:DiagramObject" id="id-104e7ef897b64c26b8accb2e58572f57" targetConnections="id-f813ec09f6664d29a5b029501bc63fd8" archimateElement="id-b0efb3fe45fe44ab8c5ed23ffe42c483">
+            <bounds x="24" y="96" width="120" height="55"/>
+            <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-64ddb8e95aec4e3097ed0fb4938f86a0" targetConnections="id-219cd9cb31884f93844a60e3844d2f4b" archimateElement="id-87148b00736c4825bc338dc04be81669">
+            <bounds x="204" y="96" width="120" height="55"/>
+            <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-4a4102bd464c4e1da02cb958157e7cea" targetConnections="id-5960f1cb7ce840edb94fccc9a6a5b410" archimateElement="id-8f1c85c777334a5d8ea8836b45ddf592">
+            <bounds x="204" y="30" width="120" height="55"/>
+            <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-7683b29dcd094d56a4198c3a72a719de" targetConnections="id-3ae476743d7949ad9637b7bcecb6ae26" archimateElement="id-bdfc7e9d346c4aecb7713f9eccc6732f">
+            <bounds x="24" y="30" width="120" height="55"/>
+            <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-0ebf2d9f6b6346eba52bafb6ef6cd41b" archimateElement="id-177604842df44fdd88d1fb2e8cc7e280">
+          <bounds x="466" y="178" width="157" height="187"/>
+          <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3de401de0e3d4e6989b6e6c704997c93" source="id-0ebf2d9f6b6346eba52bafb6ef6cd41b" target="id-a719cac4153a47d98e69743f09a956a2" archimateRelationship="id-2247072cd1244535aa0be4a82038b8a0"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-9acc3805c11c479c9d17621358858c6a" source="id-0ebf2d9f6b6346eba52bafb6ef6cd41b" target="id-c38805cd6cdc46a2a61b4aa9785baab9" archimateRelationship="id-397794075ce247918b8cb87c1517c724"/>
+          <child xsi:type="archimate:DiagramObject" id="id-a719cac4153a47d98e69743f09a956a2" targetConnections="id-3de401de0e3d4e6989b6e6c704997c93" archimateElement="id-a5159c9a4f0446bbb72f4a982718369b">
+            <bounds x="12" y="120" width="120" height="55"/>
+            <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-c38805cd6cdc46a2a61b4aa9785baab9" targetConnections="id-9acc3805c11c479c9d17621358858c6a" archimateElement="id-e2bd7cccba194743b7d277f4f297983a">
+            <bounds x="12" y="48" width="120" height="55"/>
+            <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-6d396655c9764c3695e9f8bb49118bbb" archimateElement="id-a813a9b077f64e179527736ba1169d61">
+          <bounds x="106" y="490" width="132" height="55"/>
+          <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-2ae98dd137b2438e8af6b3a9a6f6e9a2" archimateElement="id-c1fc4d8ab16e4035aa905d3da02435a3">
+          <bounds x="106" y="406" width="132" height="55"/>
+          <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-86fff50f5ba84934a236bd7a3e56bcbf" archimateElement="id-62589d9971a74935aef20fa5e9ab6eb1">
+          <bounds x="106" y="298" width="132" height="55"/>
+          <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-9dedadb7d8cf4903a4a1383adfd9340b" archimateElement="id-177604842df44fdd88d1fb2e8cc7e280">
+          <bounds x="274" y="178" width="157" height="187"/>
+          <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b92a7fe969e64d5894d0bb76d487ad76" source="id-9dedadb7d8cf4903a4a1383adfd9340b" target="id-d2a39c37ac864900b8e77594924f98ab" archimateRelationship="id-2247072cd1244535aa0be4a82038b8a0"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-00ef98d7b5ec40d89b2fd96a189ca4a8" source="id-9dedadb7d8cf4903a4a1383adfd9340b" target="id-c8f847b444f343edb59dcd8a73b7f196" archimateRelationship="id-397794075ce247918b8cb87c1517c724"/>
+          <child xsi:type="archimate:DiagramObject" id="id-c8f847b444f343edb59dcd8a73b7f196" targetConnections="id-00ef98d7b5ec40d89b2fd96a189ca4a8" archimateElement="id-e2bd7cccba194743b7d277f4f297983a">
+            <bounds x="24" y="48" width="120" height="55"/>
+            <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d2a39c37ac864900b8e77594924f98ab" targetConnections="id-b92a7fe969e64d5894d0bb76d487ad76" archimateElement="id-a5159c9a4f0446bbb72f4a982718369b">
+            <bounds x="24" y="120" width="120" height="55"/>
+            <feature name="labelExpression" value="${if:$vfolder{property:Language=en}:${property:Name (en)}:${name}}"/>
+          </child>
+        </child>
+      </element>
     </folder>
   </folder>
   <purpose>This is the archimate model of the NLDT architecture. (Network of Local Digital Twins)&#xD;
@@ -5416,5 +5658,6 @@ This model is provided in Dutch and English. See the respective folders under Vi
 16-7-2025: translation to english&#xD;
 16-1-2026: Alignment with eGovERA in English version&#xD;
 10-2-2026: Alignment with eGovERA in Dutch version&#xD;
-12-3-2026: v0.8.2 - new capabilities</purpose>
+12-3-2026: v0.8.2 - new capabilities&#xD;
+14-4-2026: v0.8.3 - relation CDE - LDT</purpose>
 </archimate:model>

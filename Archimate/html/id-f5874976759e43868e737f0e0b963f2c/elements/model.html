@@ -57,7 +57,8 @@ This model is provided in Dutch and English. See the respective folders under Vi
 16-7-2025: translation to english
 16-1-2026: Alignment with eGovERA in English version
 10-2-2026: Alignment with eGovERA in Dutch version
-12-3-2026: v0.8.2 - new capabilities</div>
+12-3-2026: v0.8.2 - new capabilities
+14-4-2026: v0.8.3 - relation CDE - LDT</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
@@ -233,8 +234,6 @@ This model is provided in Dutch and English. See the respective folders under Vi
 										dataElements.push({id:"id-5d3b536953ae4464974ef74f9795b430", type:"ValueStream", specialization:decodeURL(""), name:decodeURL("Terugkoppeling"), documentation:decodeURL("%22Dit+betreft+het+proces+van+evaluatie+en+monitoring+van+de+effecten+en+resultaten+van+het%0D%0Auitgevoerde+beleid.+Op+basis+van+verkregen+inzichten+en+feedback+van+belanghebbenden+worden%0D%0Aaanpassingen+en+verbeteringen+doorgevoerd+in+het+beleid+en+de+uitvoeringspraktijk+om+de%0D%0Adoelmatigheid+en+doeltreffendheid+te+versterken.+Periodiek+wordt+het+beleid+ge%C3%ABvalueerd+aan+de%0D%0Ahand+van+de+indicatoren+en+andere+relevante+informatie.+Op+basis+van+deze+evaluaties+kan+het%0D%0Abeleid+worden+bijgesteld+om+de+effectiviteit+te+vergroten+of+om+nieuwe+uitdagingen+aan+te+pakken.%22")});
 													dataProperties.push({conceptid:"id-5d3b536953ae4464974ef74f9795b430", propkey:decodeURL("Name+%28en%29"), propvalue:decodeURL("Feedback")});
 
-									dataFoldersContent.push({folderid:"id-acb3ede3d1d14b9abac7173479c53079", contentid:"id-92bad93c60d948cd8f9e1822eba0c37e", contenttype:"Capability"});
-										dataElements.push({id:"id-92bad93c60d948cd8f9e1822eba0c37e", type:"Capability", specialization:decodeURL(""), name:decodeURL("Capability"), documentation:decodeURL("")});
 									dataFoldersContent.push({folderid:"id-acb3ede3d1d14b9abac7173479c53079", contentid:"id-cc83a47650bf4d029e1a24a22b8eb91f", contenttype:"Capability"});
 										dataElements.push({id:"id-cc83a47650bf4d029e1a24a22b8eb91f", type:"Capability", specialization:decodeURL(""), name:decodeURL("Beschrijven"), documentation:decodeURL("Nederlands%3A+%0D%0A%0D%0A%3E+Het+vastleggen+van+betekenis%2C+herkomst%2C+actualiteit+en+gebruik+van+data+en+modellen%2C+zodat+ze+correct+begrepen+en+toegepast+kunnen+worden.%0D%0A%0D%0ADe+functie+beschrijven++zorgt+ervoor+dat+data+en+rekenmodellen+in+de+digitale+tweeling+duidelijk+en+begrijpelijk+zijn.+Door+data+te+voorzien+van+beschrijvingen+%28metadata%29+wordt+vastgelegd+wat+de+data+betekenen%2C+waar+ze+vandaan+komen%2C+hoe+actueel+ze+zijn+en+hoe+ze+gebruikt+mogen+worden.+Dit+maakt+het+makkelijker+om+data+te+vinden%2C+correct+te+interpreteren+en+betrouwbaar+toe+te+passen%2C+zowel+voor+mensen+als+voor+systemen.+Dit+helpt+ook+het+correct+gebruiken+en+voorkomt+misinterpretatie.%0D%0A%0D%0AEnglish%3A+%0D%0A%0D%0A%3E+Describing+the+meaning%2C+origin%2C+timeliness%2C+and+use+of+data+and+models+so+they+can+be+correctly+understood+and+applied.%0D%0A%0D%0AThe+describe+function+ensures+that+data+and+computational+models+in+the+digital+twin+are+clear+and+understandable.+By+providing+data+with+descriptions+%28metadata%29%2C+it+is+recorded+what+the+data+means%2C+where+it+comes+from%2C+how+current+it+is%2C+and+how+it+may+be+used.+This+makes+it+easier+to+find%2C+correctly+interpret%2C+and+reliably+apply+data%2C+for+both+people+and+systems.+This+also+helps+ensure+correct+usage+and+prevents+misinterpretation.")});
 													dataProperties.push({conceptid:"id-cc83a47650bf4d029e1a24a22b8eb91f", propkey:decodeURL("Name+%28en%29"), propvalue:decodeURL("Describe")});
@@ -403,6 +402,18 @@ This model is provided in Dutch and English. See the respective folders under Vi
 													dataProperties.push({conceptid:"id-d84f59ccb0f7463db59aab9bbeba2893", propkey:decodeURL("eira%3Aviewpoint"), propvalue:decodeURL("EIRA+Ontology+viewpoint")});
 													dataProperties.push({conceptid:"id-d84f59ccb0f7463db59aab9bbeba2893", propkey:decodeURL("dct%3Aidentifier"), propvalue:decodeURL("http%3A%2F%2Fdata.europa.eu%2Fdr8%2FInteroperabilitySpecificationContract")});
 													dataProperties.push({conceptid:"id-d84f59ccb0f7463db59aab9bbeba2893", propkey:decodeURL("eira%3AeifLayer"), propvalue:decodeURL("N%2FA")});
+
+									dataFoldersContent.push({folderid:"id-f0d7c99784524151993a8ce387a52301", contentid:"id-a813a9b077f64e179527736ba1169d61", contenttype:"BusinessService"});
+										dataElements.push({id:"id-a813a9b077f64e179527736ba1169d61", type:"BusinessService", specialization:decodeURL(""), name:decodeURL("Data+inwinnen"), documentation:decodeURL("")});
+													dataProperties.push({conceptid:"id-a813a9b077f64e179527736ba1169d61", propkey:decodeURL("Name+%28en%29"), propvalue:decodeURL("Data+sourcing")});
+
+									dataFoldersContent.push({folderid:"id-f0d7c99784524151993a8ce387a52301", contentid:"id-c1fc4d8ab16e4035aa905d3da02435a3", contenttype:"BusinessService"});
+										dataElements.push({id:"id-c1fc4d8ab16e4035aa905d3da02435a3", type:"BusinessService", specialization:decodeURL(""), name:decodeURL("Data+delen"), documentation:decodeURL("")});
+													dataProperties.push({conceptid:"id-c1fc4d8ab16e4035aa905d3da02435a3", propkey:decodeURL("Name+%28en%29"), propvalue:decodeURL("Data+sharing")});
+
+									dataFoldersContent.push({folderid:"id-f0d7c99784524151993a8ce387a52301", contentid:"id-62589d9971a74935aef20fa5e9ab6eb1", contenttype:"BusinessService"});
+										dataElements.push({id:"id-62589d9971a74935aef20fa5e9ab6eb1", type:"BusinessService", specialization:decodeURL(""), name:decodeURL("Data+analyseren+%26+visualiseren"), documentation:decodeURL("")});
+													dataProperties.push({conceptid:"id-62589d9971a74935aef20fa5e9ab6eb1", propkey:decodeURL("Name+%28en%29"), propvalue:decodeURL("Data+Analysis+%26+Visualisation")});
 
 
 								dataFoldersContent.push({folderid:"id-f5874976759e43868e737f0e0b963f2c", contentid:"id-d2bf081fe5f74ab5a769e461408c3d90", contenttype:"Folder"});
@@ -837,6 +848,12 @@ This model is provided in Dutch and English. See the respective folders under Vi
 													dataProperties.push({conceptid:"id-30bad2d9fa2b4358ab7b5084d7a9c027", propkey:decodeURL("dct%3Aidentifier"), propvalue:decodeURL("http%3A%2F%2Fdata.europa.eu%2Fdr8%2FMachineToMachineInterfaceApplicationInterface")});
 													dataProperties.push({conceptid:"id-30bad2d9fa2b4358ab7b5084d7a9c027", propkey:decodeURL("eira%3AeifLayer"), propvalue:decodeURL("TechnicalApplication")});
 
+									dataFoldersContent.push({folderid:"id-d2bf081fe5f74ab5a769e461408c3d90", contentid:"id-9fc45c9d6c834eb895dc162d87769aa5", contenttype:"DataObject"});
+										dataElements.push({id:"id-9fc45c9d6c834eb895dc162d87769aa5", type:"DataObject", specialization:decodeURL(""), name:decodeURL("%3CData+Object%3E"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-d2bf081fe5f74ab5a769e461408c3d90", contentid:"id-3085d193602043b080327c2e2eea7206", contenttype:"ApplicationFunction"});
+										dataElements.push({id:"id-3085d193602043b080327c2e2eea7206", type:"ApplicationFunction", specialization:decodeURL(""), name:decodeURL("%3CApplicatie+Functie%3E"), documentation:decodeURL("")});
+													dataProperties.push({conceptid:"id-3085d193602043b080327c2e2eea7206", propkey:decodeURL("Name+%28en%29"), propvalue:decodeURL("%3CApplication+Function%3E")});
+
 
 								dataFoldersContent.push({folderid:"id-f5874976759e43868e737f0e0b963f2c", contentid:"id-4157e8358b9a4c89981afd5affc09410", contenttype:"Folder"});
 								dataFolders.push({id:"id-4157e8358b9a4c89981afd5affc09410", type:"Folder", name:decodeURL("Technology+%26+Physical"), documentation:decodeURL("")});
@@ -863,6 +880,18 @@ This model is provided in Dutch and English. See the respective folders under Vi
 													dataProperties.push({conceptid:"id-0620fa1493b74cd594840e7ecf10a0f4", propkey:decodeURL("eira%3Aviewpoint"), propvalue:decodeURL("EIRA+Ontology+viewpoint")});
 													dataProperties.push({conceptid:"id-0620fa1493b74cd594840e7ecf10a0f4", propkey:decodeURL("dct%3Aidentifier"), propvalue:decodeURL("http%3A%2F%2Fdata.europa.eu%2Fdr8%2FSolutionBuildingBlockArtifact")});
 													dataProperties.push({conceptid:"id-0620fa1493b74cd594840e7ecf10a0f4", propkey:decodeURL("eira%3AeifLayer"), propvalue:decodeURL("N%2FA")});
+
+									dataFoldersContent.push({folderid:"id-4157e8358b9a4c89981afd5affc09410", contentid:"id-5bb1efca3bdc498b85b1a5f4024b8943", contenttype:"Node"});
+										dataElements.push({id:"id-5bb1efca3bdc498b85b1a5f4024b8943", type:"Node", specialization:decodeURL(""), name:decodeURL("%3CTechnologie+component%3E"), documentation:decodeURL("")});
+													dataProperties.push({conceptid:"id-5bb1efca3bdc498b85b1a5f4024b8943", propkey:decodeURL("Name+%28en%29"), propvalue:decodeURL("%3CTechnology+component%3E")});
+
+									dataFoldersContent.push({folderid:"id-4157e8358b9a4c89981afd5affc09410", contentid:"id-b070ecaed969424e9f303ab87bdc58c0", contenttype:"Node"});
+										dataElements.push({id:"id-b070ecaed969424e9f303ab87bdc58c0", type:"Node", specialization:decodeURL(""), name:decodeURL("Data+omgeving"), documentation:decodeURL("")});
+													dataProperties.push({conceptid:"id-b070ecaed969424e9f303ab87bdc58c0", propkey:decodeURL("Name+%28en%29"), propvalue:decodeURL("Common+Data+Environment")});
+
+									dataFoldersContent.push({folderid:"id-4157e8358b9a4c89981afd5affc09410", contentid:"id-177604842df44fdd88d1fb2e8cc7e280", contenttype:"Node"});
+										dataElements.push({id:"id-177604842df44fdd88d1fb2e8cc7e280", type:"Node", specialization:decodeURL(""), name:decodeURL("LDT"), documentation:decodeURL("")});
+													dataProperties.push({conceptid:"id-177604842df44fdd88d1fb2e8cc7e280", propkey:decodeURL("Name+%28en%29"), propvalue:decodeURL("LDT")});
 
 
 								dataFoldersContent.push({folderid:"id-f5874976759e43868e737f0e0b963f2c", contentid:"id-1ac5fcddfb8e444387e02e06e5d114a6", contenttype:"Folder"});
@@ -1789,6 +1818,34 @@ This model is provided in Dutch and English. See the respective folders under Vi
 										dataRelationships.push({id:"id-a51f5d9126184f0fa768bb965ebe73c2", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-ed6f82d963f84313bda9d3ca5616c7c7", targetid:"id-3ddbe30b78fa4bc5b17e471be098e502"});
 									dataFoldersContent.push({folderid:"id-3b44ef95b8cf4868950be37772d13294", contentid:"id-e35f5821153a47909c5fe0fd8ffff56a", contenttype:"AggregationRelationship"});
 										dataRelationships.push({id:"id-e35f5821153a47909c5fe0fd8ffff56a", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-3f0b7290958949778df676de5365cb1c", targetid:"id-f657c48e28e24ab192aa3729a368a314"});
+									dataFoldersContent.push({folderid:"id-3b44ef95b8cf4868950be37772d13294", contentid:"id-d64836d3295e433d82b172ad5cec8e90", contenttype:"AccessRelationship"});
+										dataRelationships.push({id:"id-d64836d3295e433d82b172ad5cec8e90", type:"AccessRelationship", specialization:decodeURL(""), name:decodeURL("leest+%2F+schrijft"), documentation:decodeURL(""), sourceid:"id-3085d193602043b080327c2e2eea7206", targetid:"id-9fc45c9d6c834eb895dc162d87769aa5"});
+													dataProperties.push({conceptid:"id-d64836d3295e433d82b172ad5cec8e90", propkey:decodeURL("Name+%28en%29"), propvalue:decodeURL("read+%2F+write")});
+
+									dataFoldersContent.push({folderid:"id-3b44ef95b8cf4868950be37772d13294", contentid:"id-187e6cec7d6b4b9db95558a865593446", contenttype:"AssignmentRelationship"});
+										dataRelationships.push({id:"id-187e6cec7d6b4b9db95558a865593446", type:"AssignmentRelationship", specialization:decodeURL(""), name:decodeURL("toegekend+aan"), documentation:decodeURL(""), sourceid:"id-7c58a9e10bde4f0c8682ca5c8d1f7ab6", targetid:"id-3085d193602043b080327c2e2eea7206"});
+													dataProperties.push({conceptid:"id-187e6cec7d6b4b9db95558a865593446", propkey:decodeURL("Name+%28en%29"), propvalue:decodeURL("assigned+to")});
+
+									dataFoldersContent.push({folderid:"id-3b44ef95b8cf4868950be37772d13294", contentid:"id-953c2716989b43a68f870e94bca76f50", contenttype:"RealizationRelationship"});
+										dataRelationships.push({id:"id-953c2716989b43a68f870e94bca76f50", type:"RealizationRelationship", specialization:decodeURL(""), name:decodeURL("realiseert"), documentation:decodeURL(""), sourceid:"id-5bb1efca3bdc498b85b1a5f4024b8943", targetid:"id-5952a2e441104f218155d3dd0e6711cc"});
+													dataProperties.push({conceptid:"id-953c2716989b43a68f870e94bca76f50", propkey:decodeURL("Name+%28en%29"), propvalue:decodeURL("realizes")});
+
+									dataFoldersContent.push({folderid:"id-3b44ef95b8cf4868950be37772d13294", contentid:"id-e0c6d543fcfa48b3a89b12ac762e5539", contenttype:"RealizationRelationship"});
+										dataRelationships.push({id:"id-e0c6d543fcfa48b3a89b12ac762e5539", type:"RealizationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-b070ecaed969424e9f303ab87bdc58c0", targetid:"id-b0efb3fe45fe44ab8c5ed23ffe42c483"});
+									dataFoldersContent.push({folderid:"id-3b44ef95b8cf4868950be37772d13294", contentid:"id-2f99d5b3212b4f8d950b00d1e8e8c647", contenttype:"RealizationRelationship"});
+										dataRelationships.push({id:"id-2f99d5b3212b4f8d950b00d1e8e8c647", type:"RealizationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-b070ecaed969424e9f303ab87bdc58c0", targetid:"id-87148b00736c4825bc338dc04be81669"});
+									dataFoldersContent.push({folderid:"id-3b44ef95b8cf4868950be37772d13294", contentid:"id-397794075ce247918b8cb87c1517c724", contenttype:"RealizationRelationship"});
+										dataRelationships.push({id:"id-397794075ce247918b8cb87c1517c724", type:"RealizationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-177604842df44fdd88d1fb2e8cc7e280", targetid:"id-e2bd7cccba194743b7d277f4f297983a"});
+									dataFoldersContent.push({folderid:"id-3b44ef95b8cf4868950be37772d13294", contentid:"id-2247072cd1244535aa0be4a82038b8a0", contenttype:"RealizationRelationship"});
+										dataRelationships.push({id:"id-2247072cd1244535aa0be4a82038b8a0", type:"RealizationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-177604842df44fdd88d1fb2e8cc7e280", targetid:"id-a5159c9a4f0446bbb72f4a982718369b"});
+									dataFoldersContent.push({folderid:"id-3b44ef95b8cf4868950be37772d13294", contentid:"id-4ec56efe44144c7b8ae92c52e8c88da5", contenttype:"RealizationRelationship"});
+										dataRelationships.push({id:"id-4ec56efe44144c7b8ae92c52e8c88da5", type:"RealizationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-b070ecaed969424e9f303ab87bdc58c0", targetid:"id-8f1c85c777334a5d8ea8836b45ddf592"});
+									dataFoldersContent.push({folderid:"id-3b44ef95b8cf4868950be37772d13294", contentid:"id-7ccdaffdbd5d43b0843e1ac1b36aa749", contenttype:"RealizationRelationship"});
+										dataRelationships.push({id:"id-7ccdaffdbd5d43b0843e1ac1b36aa749", type:"RealizationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-b070ecaed969424e9f303ab87bdc58c0", targetid:"id-bdfc7e9d346c4aecb7713f9eccc6732f"});
+									dataFoldersContent.push({folderid:"id-3b44ef95b8cf4868950be37772d13294", contentid:"id-cd5cb415016e4e719af74ad14ede073e", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-cd5cb415016e4e719af74ad14ede073e", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL("aggregeert"), documentation:decodeURL(""), sourceid:"id-7f0a337ac3a9446caefb7d37eb10dcf7", targetid:"id-9fc45c9d6c834eb895dc162d87769aa5"});
+													dataProperties.push({conceptid:"id-cd5cb415016e4e719af74ad14ede073e", propkey:decodeURL("Name+%28en%29"), propvalue:decodeURL("aggregates")});
+
 
 								dataFoldersContent.push({folderid:"id-f5874976759e43868e737f0e0b963f2c", contentid:"id-621ace97431a484c846b778dbd8bdfca", contenttype:"Folder"});
 								dataFolders.push({id:"id-621ace97431a484c846b778dbd8bdfca", type:"Folder", name:decodeURL("Views"), documentation:decodeURL("")});
@@ -2039,6 +2096,8 @@ This model is provided in Dutch and English. See the respective folders under Vi
 																
 																dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-1d1f4b424379482c8179c6274694feba", contenttype:"ApplicationInterface"});
 																dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-5952a2e441104f218155d3dd0e6711cc", contenttype:"ApplicationService"});
+																dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-9fc45c9d6c834eb895dc162d87769aa5", contenttype:"DataObject"});
+																dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-3085d193602043b080327c2e2eea7206", contenttype:"ApplicationFunction"});
 														
 														dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-ee179498acd14ba290ecf914e5c0411f", contenttype:"Grouping"});
 																dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-17720c32315c40c49893db294253385f", contenttype:"Requirement"});
@@ -2054,16 +2113,20 @@ This model is provided in Dutch and English. See the respective folders under Vi
 														dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-8c026db103b8433eb893c4e9fb35a4f5", contenttype:"Capability"});
 														dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-4cc65785f0d04ce5a325c7093b532bcc", contenttype:"BusinessService"});
 														dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-7f0a337ac3a9446caefb7d37eb10dcf7", contenttype:"Product"});
+														dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-5bb1efca3bdc498b85b1a5f4024b8943", contenttype:"Node"});
 
 																								dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-95fc16ffa9d4424fb42386e6df7db019", contenttype:"RealizationRelationship"});
 																								dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-1d52fc6bde2d4e829b1254adf38236d3", contenttype:"CompositionRelationship"});
 																								dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-e5d7b0b6bd644d03861b808bca573cb3", contenttype:"FlowRelationship"});
+																								dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-187e6cec7d6b4b9db95558a865593446", contenttype:"AssignmentRelationship"});
 
 																
 																						dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-5bc59876d1684787a7fcb434eb63aa2f", contenttype:"AssignmentRelationship"});
 
 																						dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-bbe22f52e980413da3328ff1ca09b81a", contenttype:"RealizationRelationship"});
 																						dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-afe589ff89f74d40a9a84e39e73f74c9", contenttype:"RealizationRelationship"});
+
+																						dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-d64836d3295e433d82b172ad5cec8e90", contenttype:"AccessRelationship"});
 
 														
 																				dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-3f200092f2ef4d30ad46295d37674d4a", contenttype:"AggregationRelationship"});
@@ -2092,6 +2155,9 @@ This model is provided in Dutch and English. See the respective folders under Vi
 																				dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-bd0ec7ae675a4944bf23df58ee311a3a", contenttype:"AggregationRelationship"});
 																				dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-4a7d431a9e4e404fadfa26b7b3013519", contenttype:"AggregationRelationship"});
 																				dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-7531f1126c96476988ee43327802db76", contenttype:"AggregationRelationship"});
+																				dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-cd5cb415016e4e719af74ad14ede073e", contenttype:"AggregationRelationship"});
+
+																				dataViewsContent.push({viewid:"id-68f0ee0b9d824121b8a04dc58af3d3ab", contentid:"id-953c2716989b43a68f870e94bca76f50", contenttype:"RealizationRelationship"});
 
 
 											dataFoldersContent.push({folderid:"id-a4d9a9e85a24438c9b9bb91a71932b26", contentid:"id-d8445c0038f147869cc6c8acde9ffffa", contenttype:"ArchimateDiagramModel"});
@@ -2349,8 +2415,8 @@ This model is provided in Dutch and English. See the respective folders under Vi
 
 																					dataViewsContent.push({viewid:"id-ef7589aee10c40ca99acdc65111ccf62", contentid:"id-db863e14fb2a48ef91d0fd1fdc1ccbc1", contenttype:"RealizationRelationship"});
 																					dataViewsContent.push({viewid:"id-ef7589aee10c40ca99acdc65111ccf62", contentid:"id-55c90ddaffd145629a2b08d5f7691dce", contenttype:"FlowRelationship"});
-																					dataViewsContent.push({viewid:"id-ef7589aee10c40ca99acdc65111ccf62", contentid:"id-e936b18115a84920b24ba7647d4b6f41", contenttype:"FlowRelationship"});
 																					dataViewsContent.push({viewid:"id-ef7589aee10c40ca99acdc65111ccf62", contentid:"id-b335e4b401b4410ca2815b2ad1709fc0", contenttype:"AssociationRelationship"});
+																					dataViewsContent.push({viewid:"id-ef7589aee10c40ca99acdc65111ccf62", contentid:"id-e936b18115a84920b24ba7647d4b6f41", contenttype:"FlowRelationship"});
 
 																					dataViewsContent.push({viewid:"id-ef7589aee10c40ca99acdc65111ccf62", contentid:"id-dab9f3c6fb70422f96d413971058d0ef", contenttype:"FlowRelationship"});
 
@@ -2527,6 +2593,7 @@ This model is provided in Dutch and English. See the respective folders under Vi
 															dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-42b6cd0620c5430d93a7aef0eae32a05", contenttype:"Capability"});
 															dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-561f54af37fd427890fe6434c67b0564", contenttype:"Capability"});
 															dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-bc644c7dc7404c19b4de1b65939bc847", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-cc83a47650bf4d029e1a24a22b8eb91f", contenttype:"Capability"});
 													
 													dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-4e31b5a87c8347fab23e305c1c0ea9fc", contenttype:"Grouping"});
 															dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-30cc4c814a2e4974b779098d4aa8a7c1", contenttype:"Capability"});
@@ -2539,16 +2606,20 @@ This model is provided in Dutch and English. See the respective folders under Vi
 															dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-13069bd9ac984bed8b9e663b404834b8", contenttype:"Capability"});
 															dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-704bc5a1a6eb449bb077e2a3fcec0d0b", contenttype:"Capability"});
 															dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-e1624ccfa04c4f1090978181f1b065d0", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-99f5fc4371004026b9294a42b38c0628", contenttype:"Capability"});
 													
 													dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-3f0b7290958949778df676de5365cb1c", contenttype:"Grouping"});
 															dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-6e48efe4068644fd8a0ebf49c75342be", contenttype:"Capability"});
 															dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-572d0843850f4667af98d52c355fc516", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-f657c48e28e24ab192aa3729a368a314", contenttype:"Capability"});
 													
 													dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-63cb0815e1d94412bb18f9fc321f5be6", contenttype:"Grouping"});
 															dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-1fe89252ef5a482399069f4570b27e2e", contenttype:"Capability"});
 															dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-68bac60a011545b882d82df43c5f393e", contenttype:"Capability"});
 													
 													dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-ed6f82d963f84313bda9d3ca5616c7c7", contenttype:"Grouping"});
+															dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-3ddbe30b78fa4bc5b17e471be098e502", contenttype:"Capability"});
+													
 													dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-d8cfe08acc9848e6a43450e795a9a2de", contenttype:"ValueStream"});
 													dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-df1f947fa2474d2f8bf61091da50c7c1", contenttype:"ValueStream"});
 													dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-263b5e43bcb74f93a25871651d475404", contenttype:"ValueStream"});
@@ -2558,6 +2629,7 @@ This model is provided in Dutch and English. See the respective folders under Vi
 																			dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-8053cac36b6d406296468f44f190f1d2", contenttype:"AggregationRelationship"});
 																			dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-db1c87d47e3d4b38a39bd29323a39faa", contenttype:"AggregationRelationship"});
 																			dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-faa7355f754b49c1a44d91ce06ff8cbe", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-daf818248e874e6284e95a3a856ccaa4", contenttype:"AggregationRelationship"});
 
 													
 																			dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-9dcff483b97e444d85a1f0490f2a3ca2", contenttype:"AggregationRelationship"});
@@ -2570,14 +2642,19 @@ This model is provided in Dutch and English. See the respective folders under Vi
 																			dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-7400850537904088831dd4f1767b4448", contenttype:"AggregationRelationship"});
 																			dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-199e5c4ebcc94958bbc4a0f67558e238", contenttype:"AggregationRelationship"});
 																			dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-2e1ca4f19ac6444bb4a8c8a2d719049b", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-d5dd4a5ea9c34c449c3e51d2e2eefe06", contenttype:"AggregationRelationship"});
 
 													
 																			dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-3c4155c9fb3b4af987507c5dcff5ae54", contenttype:"AggregationRelationship"});
 																			dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-671bc52b091e45fe89c57a3d8b31c4ce", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-e35f5821153a47909c5fe0fd8ffff56a", contenttype:"AggregationRelationship"});
 
 													
 																			dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-81bd60b2ff2d4337bbdf1889220d6bc2", contenttype:"AggregationRelationship"});
 																			dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-46c33d4dc57843b194fd729754d61304", contenttype:"AggregationRelationship"});
+
+													
+																			dataViewsContent.push({viewid:"id-be75a934212d41fcb17ec97483072ddb", contentid:"id-a51f5d9126184f0fa768bb965ebe73c2", contenttype:"AggregationRelationship"});
 
 													
 
@@ -2618,6 +2695,41 @@ This model is provided in Dutch and English. See the respective folders under Vi
 
 													
 
+										dataFoldersContent.push({folderid:"id-8b753552ee7d455b89e0b101d6fc8688", contentid:"id-6926c633fed044c7a978426f8a2477c2", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-6926c633fed044c7a978426f8a2477c2", type:"ArchimateDiagramModel", name:decodeURL("Ecosysteem"), documentation:decodeURL("")});
+													dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-b070ecaed969424e9f303ab87bdc58c0", contenttype:"Node"});
+															dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-b0efb3fe45fe44ab8c5ed23ffe42c483", contenttype:"ApplicationService"});
+															dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-87148b00736c4825bc338dc04be81669", contenttype:"ApplicationService"});
+															dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-8f1c85c777334a5d8ea8836b45ddf592", contenttype:"ApplicationService"});
+															dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-bdfc7e9d346c4aecb7713f9eccc6732f", contenttype:"ApplicationService"});
+													
+													dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-177604842df44fdd88d1fb2e8cc7e280", contenttype:"Node"});
+															dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-a5159c9a4f0446bbb72f4a982718369b", contenttype:"ApplicationService"});
+															dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-e2bd7cccba194743b7d277f4f297983a", contenttype:"ApplicationService"});
+													
+													dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-a813a9b077f64e179527736ba1169d61", contenttype:"BusinessService"});
+													dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-c1fc4d8ab16e4035aa905d3da02435a3", contenttype:"BusinessService"});
+													dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-62589d9971a74935aef20fa5e9ab6eb1", contenttype:"BusinessService"});
+													dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-177604842df44fdd88d1fb2e8cc7e280", contenttype:"Node"});
+															dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-e2bd7cccba194743b7d277f4f297983a", contenttype:"ApplicationService"});
+															dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-a5159c9a4f0446bbb72f4a982718369b", contenttype:"ApplicationService"});
+													
+
+																			dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-e0c6d543fcfa48b3a89b12ac762e5539", contenttype:"RealizationRelationship"});
+																			dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-2f99d5b3212b4f8d950b00d1e8e8c647", contenttype:"RealizationRelationship"});
+																			dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-4ec56efe44144c7b8ae92c52e8c88da5", contenttype:"RealizationRelationship"});
+																			dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-7ccdaffdbd5d43b0843e1ac1b36aa749", contenttype:"RealizationRelationship"});
+
+													
+																			dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-2247072cd1244535aa0be4a82038b8a0", contenttype:"RealizationRelationship"});
+																			dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-397794075ce247918b8cb87c1517c724", contenttype:"RealizationRelationship"});
+
+													
+																			dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-397794075ce247918b8cb87c1517c724", contenttype:"RealizationRelationship"});
+																			dataViewsContent.push({viewid:"id-6926c633fed044c7a978426f8a2477c2", contentid:"id-2247072cd1244535aa0be4a82038b8a0", contenttype:"RealizationRelationship"});
+
+													
+
 
 									dataFoldersContent.push({folderid:"id-621ace97431a484c846b778dbd8bdfca", contentid:"id-c4f1ff06c96840caae4db8adbbe56f71", contenttype:"Folder"});
 									dataFolders.push({id:"id-c4f1ff06c96840caae4db8adbbe56f71", type:"Folder", name:decodeURL("English"), documentation:decodeURL("")});
@@ -2628,6 +2740,8 @@ This model is provided in Dutch and English. See the respective folders under Vi
 															dataProperties.push({conceptid:"id-a08c59e3541043cba2f2f63e81f08c2f", propkey:decodeURL("Name+%28en%29"), propvalue:decodeURL("serves")});
 
 														dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-973eb31993c34586ad4b568f191bfcc4", contenttype:"Grouping"});
+																dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-5bb1efca3bdc498b85b1a5f4024b8943", contenttype:"Node"});
+														
 														dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-ee179498acd14ba290ecf914e5c0411f", contenttype:"Grouping"});
 																dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-17720c32315c40c49893db294253385f", contenttype:"Requirement"});
 																dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-9dba36bbe0834b2cad3fd90bfc0637ae", contenttype:"Principle"});
@@ -2638,6 +2752,8 @@ This model is provided in Dutch and English. See the respective folders under Vi
 																dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-63f28320bc544f0692efb91de2db1b4a", contenttype:"Grouping"});
 																		dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-7c58a9e10bde4f0c8682ca5c8d1f7ab6", contenttype:"ApplicationComponent"});
 																
+																dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-9fc45c9d6c834eb895dc162d87769aa5", contenttype:"DataObject"});
+																dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-3085d193602043b080327c2e2eea7206", contenttype:"ApplicationFunction"});
 														
 																dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-38d4d2de40a342af83935b072e5fa41b", contenttype:"Grouping"});
 																dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-4cc65785f0d04ce5a325c7093b532bcc", contenttype:"BusinessService"});
@@ -2649,6 +2765,9 @@ This model is provided in Dutch and English. See the respective folders under Vi
 														dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-1d1f4b424379482c8179c6274694feba", contenttype:"ApplicationInterface"});
 														dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-5952a2e441104f218155d3dd0e6711cc", contenttype:"ApplicationService"});
 
+																						dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-953c2716989b43a68f870e94bca76f50", contenttype:"RealizationRelationship"});
+
+														
 																				dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-dc98353c408c48ec86a40fd6b72337f6", contenttype:"AggregationRelationship"});
 																				dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-162c2ebe119e4cec8c9a60e51284fa39", contenttype:"AggregationRelationship"});
 																				dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-3f200092f2ef4d30ad46295d37674d4a", contenttype:"AggregationRelationship"});
@@ -2668,13 +2787,17 @@ This model is provided in Dutch and English. See the respective folders under Vi
 																								dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-95fc16ffa9d4424fb42386e6df7db019", contenttype:"RealizationRelationship"});
 																								dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-1d52fc6bde2d4e829b1254adf38236d3", contenttype:"CompositionRelationship"});
 																								dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-e5d7b0b6bd644d03861b808bca573cb3", contenttype:"FlowRelationship"});
+																								dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-187e6cec7d6b4b9db95558a865593446", contenttype:"AssignmentRelationship"});
 
 																
+																						dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-d64836d3295e433d82b172ad5cec8e90", contenttype:"AccessRelationship"});
+
 														
 																						dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-e7bcd48adbc74c7cadb36beebc228236", contenttype:"RealizationRelationship"});
 
 																						dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-bd0ec7ae675a4944bf23df58ee311a3a", contenttype:"AggregationRelationship"});
 																						dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-4a7d431a9e4e404fadfa26b7b3013519", contenttype:"AggregationRelationship"});
+																						dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-cd5cb415016e4e719af74ad14ede073e", contenttype:"AggregationRelationship"});
 
 														
 																				dataViewsContent.push({viewid:"id-a08c59e3541043cba2f2f63e81f08c2f", contentid:"id-0c4311f5c66b449988a96e6d10e99804", contenttype:"AssociationRelationship"});
@@ -3198,8 +3321,8 @@ This model is provided in Dutch and English. See the respective folders under Vi
 
 																					dataViewsContent.push({viewid:"id-44e908c3bef14235991ef2ae911a6a46", contentid:"id-db863e14fb2a48ef91d0fd1fdc1ccbc1", contenttype:"RealizationRelationship"});
 																					dataViewsContent.push({viewid:"id-44e908c3bef14235991ef2ae911a6a46", contentid:"id-55c90ddaffd145629a2b08d5f7691dce", contenttype:"FlowRelationship"});
-																					dataViewsContent.push({viewid:"id-44e908c3bef14235991ef2ae911a6a46", contentid:"id-e936b18115a84920b24ba7647d4b6f41", contenttype:"FlowRelationship"});
 																					dataViewsContent.push({viewid:"id-44e908c3bef14235991ef2ae911a6a46", contentid:"id-b335e4b401b4410ca2815b2ad1709fc0", contenttype:"AssociationRelationship"});
+																					dataViewsContent.push({viewid:"id-44e908c3bef14235991ef2ae911a6a46", contentid:"id-e936b18115a84920b24ba7647d4b6f41", contenttype:"FlowRelationship"});
 
 																					dataViewsContent.push({viewid:"id-44e908c3bef14235991ef2ae911a6a46", contentid:"id-dab9f3c6fb70422f96d413971058d0ef", contenttype:"FlowRelationship"});
 
@@ -3276,6 +3399,7 @@ This model is provided in Dutch and English. See the respective folders under Vi
 															dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-42b6cd0620c5430d93a7aef0eae32a05", contenttype:"Capability"});
 															dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-561f54af37fd427890fe6434c67b0564", contenttype:"Capability"});
 															dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-bc644c7dc7404c19b4de1b65939bc847", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-cc83a47650bf4d029e1a24a22b8eb91f", contenttype:"Capability"});
 													
 													dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-4e31b5a87c8347fab23e305c1c0ea9fc", contenttype:"Grouping"});
 															dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-30cc4c814a2e4974b779098d4aa8a7c1", contenttype:"Capability"});
@@ -3288,16 +3412,20 @@ This model is provided in Dutch and English. See the respective folders under Vi
 															dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-13069bd9ac984bed8b9e663b404834b8", contenttype:"Capability"});
 															dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-704bc5a1a6eb449bb077e2a3fcec0d0b", contenttype:"Capability"});
 															dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-e1624ccfa04c4f1090978181f1b065d0", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-99f5fc4371004026b9294a42b38c0628", contenttype:"Capability"});
 													
 													dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-3f0b7290958949778df676de5365cb1c", contenttype:"Grouping"});
 															dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-6e48efe4068644fd8a0ebf49c75342be", contenttype:"Capability"});
 															dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-572d0843850f4667af98d52c355fc516", contenttype:"Capability"});
+															dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-f657c48e28e24ab192aa3729a368a314", contenttype:"Capability"});
 													
 													dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-63cb0815e1d94412bb18f9fc321f5be6", contenttype:"Grouping"});
 															dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-1fe89252ef5a482399069f4570b27e2e", contenttype:"Capability"});
 															dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-68bac60a011545b882d82df43c5f393e", contenttype:"Capability"});
 													
 													dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-ed6f82d963f84313bda9d3ca5616c7c7", contenttype:"Grouping"});
+															dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-3ddbe30b78fa4bc5b17e471be098e502", contenttype:"Capability"});
+													
 													dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-d8cfe08acc9848e6a43450e795a9a2de", contenttype:"ValueStream"});
 													dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-df1f947fa2474d2f8bf61091da50c7c1", contenttype:"ValueStream"});
 													dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-263b5e43bcb74f93a25871651d475404", contenttype:"ValueStream"});
@@ -3307,6 +3435,7 @@ This model is provided in Dutch and English. See the respective folders under Vi
 																			dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-8053cac36b6d406296468f44f190f1d2", contenttype:"AggregationRelationship"});
 																			dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-db1c87d47e3d4b38a39bd29323a39faa", contenttype:"AggregationRelationship"});
 																			dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-faa7355f754b49c1a44d91ce06ff8cbe", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-daf818248e874e6284e95a3a856ccaa4", contenttype:"AggregationRelationship"});
 
 													
 																			dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-9dcff483b97e444d85a1f0490f2a3ca2", contenttype:"AggregationRelationship"});
@@ -3319,14 +3448,19 @@ This model is provided in Dutch and English. See the respective folders under Vi
 																			dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-7400850537904088831dd4f1767b4448", contenttype:"AggregationRelationship"});
 																			dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-199e5c4ebcc94958bbc4a0f67558e238", contenttype:"AggregationRelationship"});
 																			dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-2e1ca4f19ac6444bb4a8c8a2d719049b", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-d5dd4a5ea9c34c449c3e51d2e2eefe06", contenttype:"AggregationRelationship"});
 
 													
 																			dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-3c4155c9fb3b4af987507c5dcff5ae54", contenttype:"AggregationRelationship"});
 																			dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-671bc52b091e45fe89c57a3d8b31c4ce", contenttype:"AggregationRelationship"});
+																			dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-e35f5821153a47909c5fe0fd8ffff56a", contenttype:"AggregationRelationship"});
 
 													
 																			dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-81bd60b2ff2d4337bbdf1889220d6bc2", contenttype:"AggregationRelationship"});
 																			dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-46c33d4dc57843b194fd729754d61304", contenttype:"AggregationRelationship"});
+
+													
+																			dataViewsContent.push({viewid:"id-d5ec9ea04e1c452ca6ede2373583649f", contentid:"id-a51f5d9126184f0fa768bb965ebe73c2", contenttype:"AggregationRelationship"});
 
 													
 
@@ -3447,6 +3581,41 @@ This model is provided in Dutch and English. See the respective folders under Vi
 																			dataViewsContent.push({viewid:"id-7aa862bcf1404ebfa5cc8a14f2024233", contentid:"id-e8edb4a779f740d29c4fb8ca7cf5661e", contenttype:"AggregationRelationship"});
 																			dataViewsContent.push({viewid:"id-7aa862bcf1404ebfa5cc8a14f2024233", contentid:"id-3fa29858bb6a4025a5bbee53593ec106", contenttype:"AggregationRelationship"});
 
+
+										dataFoldersContent.push({folderid:"id-c4f1ff06c96840caae4db8adbbe56f71", contentid:"id-7c499e5071984b23937376deeac6e288", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-7c499e5071984b23937376deeac6e288", type:"ArchimateDiagramModel", name:decodeURL("Ecosystem+%28en%29"), documentation:decodeURL("")});
+													dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-b070ecaed969424e9f303ab87bdc58c0", contenttype:"Node"});
+															dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-b0efb3fe45fe44ab8c5ed23ffe42c483", contenttype:"ApplicationService"});
+															dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-87148b00736c4825bc338dc04be81669", contenttype:"ApplicationService"});
+															dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-8f1c85c777334a5d8ea8836b45ddf592", contenttype:"ApplicationService"});
+															dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-bdfc7e9d346c4aecb7713f9eccc6732f", contenttype:"ApplicationService"});
+													
+													dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-177604842df44fdd88d1fb2e8cc7e280", contenttype:"Node"});
+															dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-a5159c9a4f0446bbb72f4a982718369b", contenttype:"ApplicationService"});
+															dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-e2bd7cccba194743b7d277f4f297983a", contenttype:"ApplicationService"});
+													
+													dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-a813a9b077f64e179527736ba1169d61", contenttype:"BusinessService"});
+													dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-c1fc4d8ab16e4035aa905d3da02435a3", contenttype:"BusinessService"});
+													dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-62589d9971a74935aef20fa5e9ab6eb1", contenttype:"BusinessService"});
+													dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-177604842df44fdd88d1fb2e8cc7e280", contenttype:"Node"});
+															dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-e2bd7cccba194743b7d277f4f297983a", contenttype:"ApplicationService"});
+															dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-a5159c9a4f0446bbb72f4a982718369b", contenttype:"ApplicationService"});
+													
+
+																			dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-2f99d5b3212b4f8d950b00d1e8e8c647", contenttype:"RealizationRelationship"});
+																			dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-7ccdaffdbd5d43b0843e1ac1b36aa749", contenttype:"RealizationRelationship"});
+																			dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-4ec56efe44144c7b8ae92c52e8c88da5", contenttype:"RealizationRelationship"});
+																			dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-e0c6d543fcfa48b3a89b12ac762e5539", contenttype:"RealizationRelationship"});
+
+													
+																			dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-2247072cd1244535aa0be4a82038b8a0", contenttype:"RealizationRelationship"});
+																			dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-397794075ce247918b8cb87c1517c724", contenttype:"RealizationRelationship"});
+
+													
+																			dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-2247072cd1244535aa0be4a82038b8a0", contenttype:"RealizationRelationship"});
+																			dataViewsContent.push({viewid:"id-7c499e5071984b23937376deeac6e288", contentid:"id-397794075ce247918b8cb87c1517c724", contenttype:"RealizationRelationship"});
+
+													
 
 
 
