@@ -102,5 +102,6 @@ var documentConfig =
     href: "https://interoperable-europe.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/solution/egovera-business-agnostic-0/release/610",
     date: "07-11-2024"
   }
-}
+},
+inlineCSS: "@media print { img { width: 100% !important; height: auto !important; } }",
 }
