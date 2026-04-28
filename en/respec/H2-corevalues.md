@@ -3,7 +3,7 @@
 EU's Digital Decade 2030 defines a set of digital rights and principles.
 These core values define a number of preconditions for the network of Digital Twins to adhere to.
 
-<img src="./respec/media/digital_decade_core_values.png" alt="Digital Decade 2030 Core Values" width="900">
+<img src="./respec/media/digital_decade_core_values.png" alt="Digital Decade 2030 Core Values" width="800">
 
 Figure 1: Core values from Digital Decade 2030
 

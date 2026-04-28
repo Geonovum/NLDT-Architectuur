@@ -2,7 +2,7 @@
 
 The basic pattern of the nLDT reference architecture consists of 4 building blocks: 
 
-<img src="./respec/media/architectuur_driehoek-en.png" alt="Basic Building Blocks of the nLDT Architecture" width="900">
+<img src="./respec/media/architectuur_driehoek-en.png" alt="Basic Building Blocks of the nLDT Architecture" width="800">
 Basic Building Blocks of the nLDT Architecture
 
 The building blocks can also be considered to be groupings of Application Functions. This classification helps to emphasize that a Digital Twin is constructed from separate, collaborating components from an application or system perspective. For example, the services of a computational model must be able to be consumed by various visualisation solutions. 
@@ -17,13 +17,13 @@ The developments of Digital Twins and Dataspaces are closely linked. On the one 
 
 This leads to patterns that support both specific dataspace standards and generic standards.
 
-<img src="./respec/media/cde-ldt-en.png" alt="ldt as a building block on top of a common data environment" width="700">
+<img src="./respec/media/cde-ldt-en.png" alt="ldt as a building block on top of a common data environment" width="800">
 
 ## Foundation
 
 The foundation consists of the necessary basic infrastructure and catalog functionality.
 
-<img src="./respec/media/buildingblock_foundation.png" alt="Building Block Foundation" width="900">
+<img src="./respec/media/buildingblock_foundation.png" alt="Building Block Foundation" width="800">
 
 ### Data infrastructure components based on Dataspace protocols
 
@@ -50,7 +50,7 @@ See the International DataSpace Association (IDSA) documentation for more inform
 
 The Data building block contains those matters that need to be organized around data and data services in an interoperable system.
 
-<img src="./respec/media/buildingblock_data.png" alt="Building Block Data" width="900">
+<img src="./respec/media/buildingblock_data.png" alt="Building Block Data" width="800">
 
 #### eGovERA Alignment
 
@@ -61,7 +61,7 @@ The Data building block contains those matters that need to be organized around 
 
 The Computational Models building block contains the specific matters that are necessary for making Computational Models (or Algorithms) available in a federated, distributed system.
 
-<img src="./respec/media/buildingblock_processing.png" alt="Building Block Computation Models" width="900">
+<img src="./respec/media/buildingblock_processing.png" alt="Building Block Computation Models" width="800">
 
 #### eGovERA Alignment
 
@@ -74,7 +74,7 @@ The Computational Models building block contains the specific matters that are n
 
 The Visualisation building block contains the various components to provide a Visualisation. These can be 2D or 3D viewers, but also Dashboards or other visualisation applications.
 
-<img src="./respec/media/buildingblock_visualisation.png" alt="Building Block Visualisation" width="900">
+<img src="./respec/media/buildingblock_visualisation.png" alt="Building Block Visualisation" width="800">
 
 #### eGovERA Alignment
 
@@ -95,7 +95,7 @@ Validation of these modules is made possible by clear assessment criteria in the
 - Management aspects of applications, such as lifecycle management and maintenance;
 - User experience and feedback.
 
-<img src="./respec/media/appstore-en.png" alt="appstore" width="900">
+<img src="./respec/media/appstore-en.png" alt="appstore" width="800">
 
 #### eGovERA Alignment
 

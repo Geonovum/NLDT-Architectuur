@@ -22,7 +22,7 @@ In this chapter, the value streams and capabilities are broadly described that c
 
 ## Metamodel
 
-<img src="./respec/media/NLDT-en_archimate_metamodel.png" alt="archimate metamodel" width="900">
+<img src="./respec/media/NLDT-en_archimate_metamodel.png" alt="archimate metamodel" width="800">
 
 Archimate metamodel for the nLDT architecture. [online viewer](https://geonovum.github.io/NLDT-Architectuur/Archimate/html/index.html?view=id-a08c59e3541043cba2f2f63e81f08c2f)
 
@@ -30,7 +30,7 @@ The above image visualises the Archimate metamodel for the nLDT architecture. Th
 
 ## nLDT - eGovERA Alignment
 
-<img src="./respec/media/nLDT-eGovERA-Alignment.png" alt="nLDT - eGovERA Alignment" width="900">
+<img src="./respec/media/nLDT-eGovERA-Alignment.png" alt="nLDT - eGovERA Alignment" width="800">
 
 High level overview of nLDT - eGovERA Alignment
 
@@ -53,7 +53,7 @@ In the report 'Policy processes and building blocks for Digital Twins' [[BBDT]],
 
 There are internationally diverse frameworks that describe capabilities or components of digital twins. Based on the ['Capabilities periodic table' of the Digital Twin Consortium](https://www.digitaltwinconsortium.org/initiatives/capabilities-periodic-table), a simplified set of Capabilities has been defined that serves as the basis for the nLDT [[BBDT]].
 
-<img src="./respec/media/capabilities-en.png" alt="DT Capabilities op basis van Digital Twin Consortium Periodic Table" width="900">
+<img src="./respec/media/capabilities-en.png" alt="DT Capabilities op basis van Digital Twin Consortium Periodic Table" width="800">
 
 <aside class="note">
     The image still needs to be updated with the 4 new capabilities.
@@ -200,7 +200,7 @@ The Observability function ensures that the digital twin as a whole system conti
 ---
 
 
-<img src="./respec/media/DT_Capabilities-en.png" alt="DT Capabilities" width="900">
+<img src="./respec/media/DT_Capabilities-en.png" alt="DT Capabilities" width="800">
 
 <aside class="note">
     The image still needs to be updated with the 4 new capabilities.
