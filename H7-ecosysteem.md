@@ -40,4 +40,4 @@ De exacte afspraken over interoperabiliteit tussen de diverse initiatieven zijn 
 
 ## LDT CitiVERSE EDIC
 
-Deze referentiearchitectuur is ontstaan vanuit een Nederlandse context. We zien dat Europese ontwikkelingen zoals [[DUET]] en [[LDT]] dezelfde patronen beschrijven. Daarmee zijn er ook kansen om deze architectuur ook in te brengen in de Europese ontwikkelingen. Hiervoor is een Engelse vertaling gemaakt van dit [document](https://geonovum.github.io/nldt-architectuur/en).
+Deze referentiearchitectuur is ontstaan vanuit een Nederlandse context. We zien dat Europese ontwikkelingen zoals [[DUET]] en [[LDT]] dezelfde patronen beschrijven. Daarmee zijn er ook kansen om deze architectuur ook in te brengen in de Europese ontwikkelingen. Hiervoor is een Engelse vertaling gemaakt van dit [document](https://geonovum.github.io/NLDT-Architectuur/en).

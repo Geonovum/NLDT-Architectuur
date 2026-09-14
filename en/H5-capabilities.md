@@ -206,4 +206,4 @@ The Observability function ensures that the digital twin as a whole system conti
     The image still needs to be updated with the 4 new capabilities.
 </aside>
 
-The online Archimate view of the Capabilities can be found [here](https://geonovum.github.io/nldt-architectuur/Archimate/html/index.html?view=id-decf311e5f5b4e169cf844aa5c909d0d).
+The online Archimate view of the Capabilities can be found [here](https://geonovum.github.io/NLDT-Architectuur/Archimate/html/index.html?view=id-decf311e5f5b4e169cf844aa5c909d0d).

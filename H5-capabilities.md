@@ -238,4 +238,4 @@ Bewaken of ‘observability’ maakt het mogelijk om te zien of datastromen goed
     Het plaatje moet nog geactualiseerd worden. De 4 nieuwe capabilities missen nog.
 </aside>
 
-De online ArchiMate view van de capabilities kan [hier](https://geonovum.github.io/nldt-architectuur/Archimate/html/index.html?view=id-eb1073502d06497cbfe4ed9ce6c3e98b) gevonden worden.
+De online ArchiMate view van de capabilities kan [hier](https://geonovum.github.io/NLDT-Architectuur/Archimate/html/index.html?view=id-eb1073502d06497cbfe4ed9ce6c3e98b) gevonden worden.
