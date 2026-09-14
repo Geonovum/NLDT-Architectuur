@@ -55,9 +55,6 @@ There are internationally diverse frameworks that describe capabilities or compo
 
 <img src="./media/capabilities-en.png" alt="DT Capabilities op basis van Digital Twin Consortium Periodic Table" width="800">
 
-<aside class="note">
-    The image still needs to be updated with the 4 new capabilities.
-</aside>
 
 [Digital Twin Capabilities Periodic Table](https://www.digitaltwinconsortium.org/initiatives/capabilities-periodic-table)
 
@@ -199,11 +196,5 @@ The Observability function ensures that the digital twin as a whole system conti
 
 ---
 
-
-<img src="./media/DT_Capabilities-en.png" alt="DT Capabilities" width="800">
-
-<aside class="note">
-    The image still needs to be updated with the 4 new capabilities.
-</aside>
 
 The online Archimate view of the Capabilities can be found [here](https://geonovum.github.io/NLDT-Architectuur/Archimate/html/index.html?view=id-decf311e5f5b4e169cf844aa5c909d0d).

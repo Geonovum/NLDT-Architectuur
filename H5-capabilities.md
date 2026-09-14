@@ -59,10 +59,6 @@ Op basis van de ['Capabilities periodic table' van het Digital Twin Consortium](
 
 <img src="./media/capabilities.png" alt="DT Capabilities op basis van Digital Twin Consortium Periodic Table" width="900">
 
-<aside class="note">
-    Het plaatje moet nog geactualiseerd worden. De 4 nieuwe capabilities missen nog.
-</aside>
-
 [Digital Twin Capabilities Periodic Table](https://www.digitaltwinconsortium.org/initiatives/capabilities-periodic-table)
 
 
@@ -230,12 +226,5 @@ De functie bewaken zorgt ervoor dat het digitale tweeling als geheel systeem goe
 Bewaken of ‘observability’ maakt het mogelijk om te zien of datastromen goed verlopen, bijvoorbeeld tussen meten, rekenen en visualiseren. Wanneer onderdelen niet goed werken, data ontbreken of resultaten onverwacht zijn, kan dit tijdig worden gesignaleerd. Dit helpt om verstoringen te voorkomen en de betrouwbaarheid van de digitale tweeling te bewaken.
 
 ---
-
-
-<img src="./media/DT_Capabilities.png" alt="DT Capabilities" width="900">
-
-<aside class="note">
-    Het plaatje moet nog geactualiseerd worden. De 4 nieuwe capabilities missen nog.
-</aside>
 
 De online ArchiMate view van de capabilities kan [hier](https://geonovum.github.io/NLDT-Architectuur/Archimate/html/index.html?view=id-eb1073502d06497cbfe4ed9ce6c3e98b) gevonden worden.
