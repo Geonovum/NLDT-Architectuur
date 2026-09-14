@@ -52,7 +52,7 @@ Dit bevordert efficiëntie en reduceert kosten door te bouwen op bestaande archi
 
 __Implicatie bij:__
 - [Aansluiten op omliggende kaders](#aansluiten-op-omliggende-kaders)
-- [Domein georienteerd, gedecentraliseerd stelsel](#domein-georiënteerd-gedecentraliseerd-stelsel)
+- [Domein georienteerd, gedecentraliseerd stelsel](#domein-georienteerd-gedecentraliseerd-stelsel)
 - [Open standaarden](#open-standaarden)
 
 ## specifieke domein context beschrijven
@@ -65,7 +65,7 @@ Dit voorkomt misverstanden en ambiguïteit in een domein georiënteerd, gedecent
 
 __Implicatie bij:__
 - [Data als product](#data-als-product)
-- [Domein georienteerd, gedecentraliseerd stelsel](#domein-georiënteerd-gedecentraliseerd-stelsel)
+- [Domein georienteerd, gedecentraliseerd stelsel](#domein-georienteerd-gedecentraliseerd-stelsel)
 
 ## zorg voor vindbaarheid
 
@@ -76,7 +76,7 @@ __Rationale:__
 Dit stimuleert hergebruik en maximaliseert de waarde van het gedecentraliseerde stelsel door het potentieel voor data-integratie te vergroten (capability: integreren). Het is een directe implicatie van een domein georiënteerd, gedecentraliseerd stelsel waarin data en modellen over verschillende organisaties verspreid kunnen zijn en wordt gefaciliteerd door de zelfservice data-infrastructuur componenten. Vindbaarheid is essentieel voor de ontwikkeling van een ecosysteem van digitale tweelingen.
 
 __Implicatie bij:__
-- [Domein georienteerd, gedecentraliseerd stelsel](#domein-georiënteerd-gedecentraliseerd-stelsel)
+- [Domein georienteerd, gedecentraliseerd stelsel](#domein-georienteerd-gedecentraliseerd-stelsel)
 
 
 ## keuzes maken in automatisering
@@ -101,5 +101,5 @@ Dit is essentieel om interoperabiliteit te garanderen (architectuurprincipe: ope
 
 __Implicatie bij:__
 - [self descriptions](#self-descriptions)
-- [Gebaseerd op service orientatie](#gebaseerd-op-service-oriëntatie)
+- [Gebaseerd op service orientatie](#gebaseerd-op-service-orientatie)
 - [Het stelsel is betrouwbaar](#het-stelsel-is-betrouwbaar)
