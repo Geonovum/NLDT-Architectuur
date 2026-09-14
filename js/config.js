@@ -44,7 +44,7 @@ let respecConfig = {
   publishDate: "2026-02-09",
   
   //-- publishVersion is verplicht. Hij mag wel leeg zijn [], maar niet de lege string zijn "".
-  publishVersion: [],
+  publishVersion: [0.8.3],
  
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beide aan/uit! 
   //previousPublishDate: "2014-05-01",
