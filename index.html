@@ -1,29 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html><html lang="nl">
+<!DOCTYPE html>
+<html lang="nl">
    <head>
-      <meta content="text/html; charset=UTF-8" http-equiv="content-type"></meta>
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
-      <script class="remove notoc" src="https://cdn.jsdelivr.net/gh/digitalbazaar/respec-mermaid@1.0.1/dist/main.js"></script>
-      <script src="https://tools.geostandaarden.nl/respec/config/geonovum-config.js" class="remove"></script>
-      <!-- <script src="./respec/organisatie-config.js" class="remove notoc"></script> -->
-      <script src="./respec/js/document_config.js" class="remove notoc"></script>
-      <script class="remove notoc">respecConfig = {...organisationConfig, ...documentConfig}</script>
-      <script class="remove notoc" src="https://gitdocumentatie.logius.nl/publicatie/respec/builds/respec-nlgov.js"></script>
-      <link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/publication/domain/geen/Geonovum.ico"></link>
-      <link rel="stylesheet" type="text/css" href="https://tools.geostandaarden.nl/publication/organisation/geonovum/base.css "></link>
-      <title>NLDT</title>
-   </head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://cdn.jsdelivr.net/gh/digitalbazaar/respec-mermaid@1.3.0/dist/main.js" class="remove"></script>
+  <script src="https://tools.geostandaarden.nl/respec/config/geonovum-config.js" class="remove"></script>
+  <script src="js/config.js" class="remove"></script>
+  <script class="remove">
+    const mergedLocalBiblio = {
+      ...organisationConfig.localBiblio,
+      ...respecConfig.localBiblio
+    };
+    respecConfig = {
+      ...organisationConfig,
+      ...respecConfig,
+      localBiblio: mergedLocalBiblio
+    };
+  </script>
+
+  <!-- TODO: Vul in config.js de titel in -->
+  <script class="remove">document.title = respecConfig.title</script>
+
+  <!-- Hier wordt het favicon gezet -->
+  <link rel="shortcut icon" type="image/x-icon" href="https://docs.geostandaarden.nl/media/Geonovum.ico" />
+
+  <script src="https://gitdocumentatie.logius.nl/publicatie/respec/builds/respec-nlgov.js" class="remove" async></script>
+
+  <!-- De volgende regel zorgt ervoor dat plaatjes uit Imvertor niet geschaald
+       worden, zodat de imagemap die op deze plaatjes zit werkt. -->
+  <style>div.imageinfo img {max-width: none;}</style>
+</head>
    <body>
-      <section id='abstract' data-include-format="markdown" data-include="respec/abstract.md"></section>
+      <section id='abstract' data-include-format="markdown" data-include="abstract.md"></section>
       <section id='sotd'></section>
-      <section id='H1' data-include-format="markdown" data-include="respec/H1-inleiding.md" ></section>
-      <section id='H2' data-include-format="markdown" data-include="respec/H2-kernwaarden.md" ></section>
-      <section id='H3' data-include-format="markdown" data-include="respec/H3-architectuurprincipes.md" ></section>
-      <section id='H4' data-include-format="markdown" data-include="respec/H4-implicaties.md" ></section>
-      <section id='H5' data-include-format="markdown" data-include="respec/H5-capabilities.md" ></section>
-      <section id='H6' data-include-format="markdown" data-include="respec/H6-bouwblokken.md" ></section>
-      <section id='H7' data-include-format="markdown" data-include="respec/H7-ecosysteem.md" ></section>
+      <section id='H1' data-include-format="markdown" data-include="H1-inleiding.md" ></section>
+      <section id='H2' data-include-format="markdown" data-include="H2-kernwaarden.md" ></section>
+      <section id='H3' data-include-format="markdown" data-include="H3-architectuurprincipes.md" ></section>
+      <section id='H4' data-include-format="markdown" data-include="H4-implicaties.md" ></section>
+      <section id='H5' data-include-format="markdown" data-include="H5-capabilities.md" ></section>
+      <section id='H6' data-include-format="markdown" data-include="H6-bouwblokken.md" ></section>
+      <section id='H7' data-include-format="markdown" data-include="H7-ecosysteem.md" ></section>
       <section id="tof" class="appendix"></section>
-      <section id='versiemanagement' class="appendix" data-include-format="markdown" data-include="respec/versiemanagement.md" ></section>
+      <section id='versiemanagement' class="appendix" data-include-format="markdown" data-include="versiemanagement.md" ></section>
       <!-- <section id="index" class="appendix"></section> -->
    </body>
 </html>

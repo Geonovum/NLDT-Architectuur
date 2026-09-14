@@ -1,0 +1,13 @@
+//
+// https://github.com/Geonovum/NL-ReSpec-template/blob/main/.markdownlint.json
+//
+// Dit bestand is de default configuratie voor
+// markdownlint voort ReSpec binnen Geonovum
+//
+
+{
+    "default": true,
+    "MD003": { "style": "atx" },
+    "MD007": { "indent": 2, "start_indented" : false },
+    "no-hard-tabs": false
+}

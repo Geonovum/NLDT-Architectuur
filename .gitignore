@@ -2,3 +2,5 @@
 .DS_Store
 Archimate/archi/NLDT.archimate.bak
 .vscode/settings.json
+*_log
+.idea
