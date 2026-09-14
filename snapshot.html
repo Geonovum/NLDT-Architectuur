@@ -1,0 +1,2577 @@
+<!DOCTYPE html><html lang="nl"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<meta name="generator" content="ReSpec 37.2.0">
+<style>
+.issue-label{text-transform:initial}
+.warning>p:first-child{margin-top:0}
+.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
+span.warning{padding:.1em .5em .15em}
+.issue.closed span.issue-number{text-decoration:line-through}
+.issue.closed span.issue-number::after{content:" (Closed)";font-size:smaller}
+.warning{border-color:#f11;border-color:var(--warning-border,#f11);border-width:.2em;border-style:solid;background:#fbe9e9;background:var(--warning-bg,#fbe9e9);color:#000;color:var(--text,#000)}
+.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
+li.task-list-item{list-style:none}
+input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
+.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
+</style>
+<style>
+dfn{cursor:pointer}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
+.dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
+.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;border-bottom-color:var(--indextable-hover-bg,#fff);top:0}
+.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1;border-bottom-color:var(--indextable-hover-bg,#a2a9b1)}
+.dfn-panel *{margin:0}
+.dfn-panel b{display:block;color:#000;color:var(--text,#000);margin-top:.25em}
+.dfn-panel ul a[href]{color:#333;color:var(--text,#333)}
+.dfn-panel>div{display:flex}
+.dfn-panel a.self-link{font-weight:700;margin-right:auto}
+.dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
+.dfn-panel .marker.dfn-exported{background:#d1edfd;box-shadow:0 0 0 .125em #1ca5f940}
+.dfn-panel .marker.idl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+.dfn-panel .marker.cddl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+.dfn-panel a:not(:hover){text-decoration:none!important;border-bottom:none!important}
+.dfn-panel a[href]:hover{border-bottom-width:1px}
+.dfn-panel ul{padding:0}
+.dfn-panel li{margin-left:1em}
+.dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
+</style>
+  
+  
+  
+  
+  
+  
+
+  
+  
+<title>NLDT Architectuur</title>
+
+  
+  
+<link rel="shortcut icon" type="image/x-icon" href="https://docs.geostandaarden.nl/media/Geonovum.ico">
+
+  
+
+  
+  
+<style>
+div.imageinfo img {max-width: none;}
+</style>
+
+<style id="respec-mainstyle">
+@keyframes pop{
+0%{transform:scale(1,1)}
+25%{transform:scale(1.25,1.25);opacity:.75}
+100%{transform:scale(1,1)}
+}
+a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
+a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
+a.bibref{text-decoration:none}
+.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}
+.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}
+@supports not (text-decoration:red wavy underline){
+.respec-offending-element:not(pre){display:inline-block}
+.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
+}
+#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
+@media (prefers-color-scheme:dark){
+#references :target{background:color-mix(in srgb, #eaf3ff 15%, transparent)}
+}
+body:has(input[name=color-scheme][value=dark]:checked) #references :target{background:color-mix(in srgb, #eaf3ff 15%, transparent)}
+cite .bibref{font-style:italic}
+a[href].orcid{padding-left:4px;padding-right:4px}
+a[href].orcid>svg{margin-bottom:-2px}
+ol.tof,ul.tof{list-style:none outside none}
+.caption{margin-top:.5em;font-style:italic}
+#issue-summary>ul{column-count:2}
+#issue-summary li{list-style:none}
+details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
+details.respec-tests-details>*{padding-right:2em}
+details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}
+details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}
+details.respec-tests-details>ul{width:100%;margin-top:-.3em}
+details.respec-tests-details>li{padding-left:1em}
+.self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
+aside.example .marker>a.self-link{color:inherit}
+.header-wrapper{display:flex;align-items:baseline}
+:is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2):has(+a.self-link){position:relative;left:-.5em}
+:is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-.7em;font-size:1rem;opacity:.5}
+:is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
+:is(h2,h3)+a.self-link{top:-.2em}
+:is(h4,h5,h6)+a.self-link::before{color:#000}
+@media (max-width:767px){
+dd{margin-left:0}
+}
+@media print{
+.removeOnSave{display:none}
+}
+body:has(input[name=color-scheme][value=light]:checked),head:not(:has(meta[name=color-scheme][content~=dark]))+body{color-scheme:light}
+body:has(input[name=color-scheme][value=dark]:checked){color-scheme:dark}
+</style>
+<style id="respec-nlgov">
+img.license{float:left;padding-right:5px;background:0 0}
+</style>
+<meta name="color-scheme" content="light">
+<style>
+
+  .sidelabel {
+    position: fixed;
+    -webkit-transform-origin: top right;
+    right: 100%;
+    top: 0;
+    -webkit-transform: rotate(-90deg);
+    padding: 4px 50px 4px 10px;
+    color: white;
+    white-space: nowrap;
+    z-index: 1;
+    background-color: #045D9F;
+  }
+</style>
+<script type="text/javascript">
+   /* Any custom mermaid.js scripts will go here. */
+  </script>
+<style>
+
+  /* Any custom mermaid.js scripts will go here. */
+  
+</style>
+<script id="initialUserConfig" type="application/json">{
+  "nl_organisationName": "Geonovum",
+  "nl_organisationStylesURL": "https://tools.geostandaarden.nl/respec/style/",
+  "nl_organisationPublishURL": "https://docs.geostandaarden.nl/",
+  "logos": [
+    {
+      "src": "https://docs.geostandaarden.nl/media/Geonovum.svg",
+      "alt": "Geonovum",
+      "id": "Geonovum",
+      "height": 67,
+      "width": 132,
+      "url": "https://www.geonovum.nl/geo-standaarden"
+    }
+  ],
+  "postProcess": [
+    null,
+    null,
+    null
+  ],
+  "latestVersion": [
+    "nl_organisationPublishURL",
+    "pubDomain",
+    "/",
+    "shortName",
+    "/"
+  ],
+  "thisVersion": [
+    "nl_organisationPublishURL",
+    "pubDomain",
+    "/",
+    "specStatus",
+    "-",
+    "specType",
+    "-",
+    "shortName",
+    "-",
+    "publishDate"
+  ],
+  "prevVersion": [
+    "nl_organisationPublishURL",
+    "pubDomain",
+    "/",
+    "previousMaturity",
+    "-",
+    "specType",
+    "-",
+    "shortName",
+    "-",
+    "previousPublishDate"
+  ],
+  "useLogo": true,
+  "useLabel": true,
+  "license": "cc-by",
+  "addSectionLinks": true,
+  "localizationStrings": {
+    "en": {
+      "wv": "Editor's draft",
+      "cv": "Candidate recommendation",
+      "vv": "Proposed recommendation",
+      "def": "Recommendation",
+      "ld": "Living document",
+      "basis": "Document",
+      "no": "Norm",
+      "st": "Standard",
+      "im": "Information model",
+      "pr": "Practical guideline",
+      "hr": "Guide",
+      "wa": "Work process agreement",
+      "al": "General",
+      "bd": "Governance documentation",
+      "bp": "Best practice"
+    },
+    "nl": {
+      "wv": "Werkversie",
+      "cv": "Consultatieversie",
+      "vv": "Versie ter vaststelling",
+      "def": "Vastgestelde versie",
+      "ld": "Levend document",
+      "basis": "Document",
+      "no": "Norm",
+      "st": "Standaard",
+      "im": "Informatiemodel",
+      "pr": "Praktijkrichtlijn",
+      "hr": "Handreiking",
+      "wa": "Werkafspraak",
+      "al": "Algemeen",
+      "bd": "Beheerdocumentatie",
+      "bp": "Best practice"
+    }
+  },
+  "sotdText": {
+    "nl": {
+      "sotd": "Status van dit document",
+      "def": "Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
+      "wv": "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.",
+      "cv": "Dit is een consultatieversie.",
+      "vv": "Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
+      "basis": "Dit is een document zonder officiële status.",
+      "ld": "Dit is een levend document dat regelmatig gewijzigd wordt."
+    },
+    "en": {
+      "sotd": "Status of this document",
+      "def": "This is the definitive version of this document. Edits resulting from consultations have been applied.",
+      "wv": "This is a working draft that can be changed, removed or replaced by other documents at any time. It is not a stable document.",
+      "cv": "This is a stable draft, published for public comment.",
+      "vv": "This is the final draft of this document. Edits resulting from consultations have been applied.",
+      "basis": "This document has no official standing.",
+      "ld": "This is a living document, which is updated regularly."
+    }
+  },
+  "labelColor": {
+    "def": "#045D9F",
+    "wv": "#FF0000",
+    "cv": "#045D9F",
+    "vv": "#045D9F",
+    "basis": "#80CC28",
+    "ld": "#80CC28"
+  },
+  "licenses": {
+    "cc0": {
+      "name": "Creative Commons 0 Public Domain Dedication",
+      "short": "CC0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "image": "https://docs.geostandaarden.nl/media/CC-Licentie.svg"
+    },
+    "cc-by": {
+      "name": "Creative Commons Attribution 4.0 International Public License",
+      "short": "CC-BY",
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "image": "https://docs.geostandaarden.nl/media/cc-by.svg"
+    },
+    "cc-by-nd": {
+      "name": "Creative Commons Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal",
+      "short": "CC-BY-ND",
+      "url": "https://creativecommons.org/licenses/by-nd/4.0/legalcode.nl",
+      "image": "https://docs.geostandaarden.nl/media/cc-by-nd.svg"
+    }
+  },
+  "localBiblio": {
+    "SemVer": {
+      "href": "https://semver.org",
+      "title": "Semantic Versioning 2.0.0",
+      "authors": [
+        "T. Preston-Werner"
+      ],
+      "date": "June 2013"
+    },
+    "MIM12": {
+      "id": "MIM12",
+      "title": "MIM - Metamodel Informatie Modellering (Versie 1.2)",
+      "href": "https://docs.geostandaarden.nl/mim/def-st-mim-20240613/",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "date": "2024-06-13"
+    },
+    "3DTILES": {
+      "title": "3D Tiles Specification 1.0",
+      "href": "http://docs.opengeospatial.org/cs/18-053r2/18-053r2.html",
+      "status": "Approved for public release",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Patrick Cozzi",
+        "Sean Lilley",
+        "Gabby Getz"
+      ],
+      "date": "2019-01-31",
+      "id": "3DTILES"
+    },
+    "adr-mod-geo": {
+      "title": "API Design rules Module: Geospatial",
+      "href": "https://docs.geostandaarden.nl/api/API-Strategie-mod-geo/",
+      "status": "Consultatieversie",
+      "publisher": "Geonovum",
+      "editors": [
+        "Linda van den Brink"
+      ],
+      "authors": [
+        "Pieter Bresters",
+        "Linda van den Brink",
+        "Paul van Genuchten",
+        "George Mathijssen",
+        "Mark Strijker"
+      ],
+      "date": "2022-09-30",
+      "id": "adr-mod-geo"
+    },
+    "CIS10": {
+      "title": "ISO 19123-2:2018 Geographic information — Schema for coverage geometry and functions — Part 2: Coverage implementation schema",
+      "href": "https://www.iso.org/standard/70948.html",
+      "status": "Published",
+      "publisher": "ISD",
+      "date": "2018-10-01",
+      "id": "CIS10"
+    },
+    "CityGML2": {
+      "title": "OGC City Geography Markup Language (CityGML) Encoding Standard",
+      "href": "https://portal.ogc.org/files/?artifact_id=47842",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Gerhard Gröger",
+        "Thomas H. Kolbe",
+        "Claus Nagel",
+        "Karl-Heinz Häfele"
+      ],
+      "date": "2012-04-04",
+      "id": "CityGML2"
+    },
+    "CityGML3": {
+      "title": "OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard v3.0",
+      "href": "https://docs.ogc.org/is/20-010/20-010.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Thomas H. Kolbe",
+        "Tatjana Kutzner",
+        "Carl Stephen Smyth",
+        "Claus Nagel",
+        "Carsten Roensdorf",
+        "Charles Heazel"
+      ],
+      "date": "2021-09-13",
+      "id": "CityGML3"
+    },
+    "CityJSON": {
+      "title": "CityJSON Community Standard 1.0",
+      "href": "https://docs.ogc.org/cs/20-072r2/20-072r2.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Hugo Ledoux"
+      ],
+      "date": "2021-08-13",
+      "id": "CityJSON"
+    },
+    "COVJSON": {
+      "title": "OGC CoverageJSON Community Standard 1.0-draft_0.2.2",
+      "href": "https://portal.ogc.org/files/102051",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Chris Little",
+        "Jon Blower",
+        "Maik Riechert"
+      ],
+      "id": "COVJSON"
+    },
+    "CSW2APISO": {
+      "title": "OpenGIS Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile",
+      "href": "http://portal.opengeospatial.org/files/?artifact_id=21460",
+      "status": [
+        "Adopted specification"
+      ],
+      "publisher": "Open Geospatial Consortium",
+      "id": "CSW2APISO"
+    },
+    "CSWISOAP": {
+      "title": "OGC 07-045r2: OGC Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile: Corrigendum, version 1.0.2",
+      "href": "https://portal.ogc.org/files/80534",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Uwe Voges",
+        "Kristian Senkler"
+      ],
+      "date": "2020-11-19",
+      "id": "CSWISOAP"
+    },
+    "DCAT-AP-2.1.1": {
+      "title": "DCAT Application Profile for data portals in Europe 2.1.1",
+      "href": "https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/releases",
+      "publisher": "European Commission",
+      "date": "2022-06-24",
+      "id": "DCAT-AP-2.1.1"
+    },
+    "epsg": {
+      "title": "EPSG Geodetic Parameter Dataset",
+      "href": "https://epsg.org/home.html",
+      "status": "Published",
+      "publisher": "Geodesy Subcommittee of the IOGP Geomatics Committee",
+      "id": "epsg"
+    },
+    "FE20": {
+      "title": "OGC 09-026r2: OGC Filter Encoding 2.0 Encoding Standard - With Corrigendum, Version 2.0.3",
+      "href": "http://docs.opengeospatial.org/is/09-026r2/09-026r2.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "Panagiotis (Peter) A. Vretanos",
+      "date": "2014-08-18",
+      "id": "FE20"
+    },
+    "GeoPackage": {
+      "title": "OGC GeoPackage Encoding Standard - with Corrigendum, v1.3.1",
+      "href": "https://www.geopackage.org/spec131/",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Jeff Yutzler"
+      ],
+      "date": "2021-11-16",
+      "id": "GeoPackage"
+    },
+    "GEOSPARQL11": {
+      "title": "OGC GeoSPARQL - A Geographic Query Language for RDF Data",
+      "href": "https://opengeospatial.github.io/ogc-geosparql/geosparql11/spec.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Nicholas J. Car",
+        "Timo Homburg",
+        "Matthew Perry",
+        "John Herring",
+        "Frans Knibbe",
+        "Simon J.D. Cox",
+        "Joseph Abhayaratna",
+        "Mathias Bonduel"
+      ],
+      "date": "2022",
+      "id": "GEOSPARQL11"
+    },
+    "GeoTIFF": {
+      "title": "OGC GeoTIFF standard v1.1",
+      "href": "http://docs.opengeospatial.org/is/19-008r4/19-008r4.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Emmanuel Devys",
+        "Ted Habermann",
+        "Chuck Heazel",
+        "Roger Lott",
+        "Even Rouault"
+      ],
+      "date": "2019-09-14",
+      "id": "GeoTIFF"
+    },
+    "GIMEG": {
+      "href": "https://docs.geostandaarden.nl/nen3610/gimeg",
+      "publisher": "Geonovum",
+      "status": "Vastgesteld",
+      "authors": [
+        "Linda van den Brink",
+        "Paul Janssen",
+        "Wilko Quak"
+      ],
+      "title": "Geometrie in model en GML",
+      "date": "2021-03-26",
+      "id": "GIMEG"
+    },
+    "GML31": {
+      "title": "OpenGIS® Geography Markup Language (GML) Implementation Specification, v3.1.1",
+      "href": "https://portal.ogc.org/files/?artifact_id=4700",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Simon Cox",
+        "Paul Daisey",
+        "Ron Lake",
+        "Clemens Portele",
+        "Arliss Whiteside"
+      ],
+      "date": "2004-02-07",
+      "id": "GML31"
+    },
+    "GML33": {
+      "title": "OGC® Geography Markup Language (GML) — Extended schemas and encoding rules, v3.3",
+      "href": "https://portal.ogc.org/files/?artifact_id=46568",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Clemens Portele"
+      ],
+      "date": "2012-02-07",
+      "id": "GML33"
+    },
+    "GMLJPEG2000": {
+      "title": "OGC® GML in JPEG 2000 (GMLJP2) Encoding Standard Part 1: Core v.2.1",
+      "href": "http://docs.opengeospatial.org/is/08-085r8/08-085r8.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Lucio Colaiacomo",
+        "Joan Masó",
+        "Emmanuel Devys",
+        "Eric Hirschorn"
+      ],
+      "date": "2018-08-27",
+      "id": "GMLJPEG2000"
+    },
+    "GMLSF": {
+      "title": "Geography Markup Language (GML) simple features profile (with Corrigendum) (2.0)",
+      "href": "https://portal.ogc.org/files/?artifact_id=42729",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Linda van den Brink",
+        "Clemens Portele",
+        "Panagiotis (Peter) A. Vretanos"
+      ],
+      "date": "2012-04-05",
+      "id": "GMLSF"
+    },
+    "HDF5": {
+      "title": "OGC Hierarchical Data Format Version 5 (HDF5®) Core Standard",
+      "href": "http://docs.opengeospatial.org/is/18-043r3/18-043r3.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Aleksandar Jelenak",
+        "Ted Habermann",
+        "Gerd Heber"
+      ],
+      "date": "2019-03-27",
+      "id": "HDF5"
+    },
+    "HDFEOS": {
+      "title": "HDF-EOS5 Data Model, File Format and Library (v1.1)",
+      "href": "https://www.earthdata.nasa.gov/sites/default/files/imported/ESDS-RFC-008-v1.1.pdf",
+      "status": "Recommended",
+      "publisher": "NASA",
+      "editors": [
+        "Larry Klein",
+        "Abe Taaheri"
+      ],
+      "date": "2016-05-01",
+      "id": "HDFEOS"
+    },
+    "HRCRS": {
+      "title": "Handreiking Gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie",
+      "href": "https://docs.geostandaarden.nl/crs/crs/",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "editors": [
+        "Friso Penninga",
+        "Lennard Huisman"
+      ],
+      "date": "2022-03-14",
+      "id": "HRCRS"
+    },
+    "HRLFG": {
+      "title": "Geometrie in uitwisselingsformaten",
+      "href": "https://docs.geostandaarden.nl/g4w/geox/#inleiding",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "editors": [
+        "Linda van den Brink",
+        "Gabriella Wiersma"
+      ],
+      "date": "2022-02-04",
+      "id": "HRLFG"
+    },
+    "HRTOEG": {
+      "title": "Handreiking digitaal toegankelijk locatiedata",
+      "href": "https://docs.geostandaarden.nl/visu/toeg/",
+      "status": "Vastgesteld",
+      "publisher": "Geonovum",
+      "editors": [
+        "Edward Mac Gillavry",
+        "Sjors Slaats",
+        "Theo OVerduin",
+        "Thijs Brentjens",
+        "Victor Zuydweg"
+      ],
+      "date": "2021-08-02",
+      "id": "HRTOEG"
+    },
+    "HRWC": {
+      "title": "Handreiking webcartografie",
+      "href": "https://www.geonovum.nl/uploads/standards/downloads/handreiking%20webcartografie%201.0.1_0.pdf",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "date": "2010-11-18",
+      "id": "HRWC"
+    },
+    "I3S": {
+      "title": "OGC Indexed 3d Scene Layer (I3S) and Scene Layer Package (*.slpk) Format Community Standard Version 1.2",
+      "href": "http://docs.opengeospatial.org/cs/17-014r8/17-014r8.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Carl Reed",
+        "Tamrat Belayneh"
+      ],
+      "date": "2021-05-11",
+      "id": "I3S"
+    },
+    "IMMetingen": {
+      "title": "Informatiemodel Metingen",
+      "href": "https://www.sikb.nl/datastandaarden/richtlijnen/sikb0101",
+      "status": "Vastgesteld",
+      "publisher": "SIKB en IHW",
+      "id": "IMMetingen"
+    },
+    "INSGPGeopackage": {
+      "title": "GeoPackage encoding of INSPIRE datasets. INSPIRE good practise",
+      "href": "https://inspire.ec.europa.eu/good-practice/geopackage-encoding-inspire-datasets",
+      "status": "Candidate",
+      "publisher": "INSPIRE",
+      "id": "INSGPGeopackage"
+    },
+    "INSGPOAPIF": {
+      "title": "OGC API - Features as an INSPIRE download service",
+      "href": "https://inspire.ec.europa.eu/good-practice/ogc-api-%E2%80%93-features-inspire-download-service",
+      "status": "Endorsed Good Practice",
+      "publisher": "IOC TF",
+      "id": "INSGPOAPIF"
+    },
+    "INSGPSTA": {
+      "title": "OGC SensorThings API as an INSPIRE download service",
+      "href": "https://inspire.ec.europa.eu/good-practice/ogc-sensorthings-api-inspire-download-service",
+      "status": "Endorsed good practice",
+      "publisher": "INSPIRE Maintenance and Implementation Group (MIG)",
+      "id": "INSGPSTA"
+    },
+    "inspire-19115-19119": {
+      "title": "INSPIRE Metadata Implementing Rules: Technical Guidelines based on EN ISO 19115 and EN ISO 19119",
+      "href": "http://inspire.ec.europa.eu/documents/Metadata/INSPIRE_MD_IR_and_ISO_v1_2_20100616.pdf",
+      "authors": [
+        "Drafting Team Metadata and European Commission Joint Research Centre"
+      ],
+      "publisher": "European Commission Joint Research Centre",
+      "date": "2007-10-26",
+      "id": "inspire-19115-19119"
+    },
+    "inspire-cirmd": {
+      "title": "Corrigendum to INSPIRE Metadata Regulation",
+      "href": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32008R1205R(02)&from=EN",
+      "authors": [
+        "Drafting Team Metadata and European Commission Joint Research Centre"
+      ],
+      "publisher": "European Commission Joint Research Centre",
+      "date": "2010-01-15",
+      "id": "inspire-cirmd"
+    },
+    "inspire-crs": {
+      "title": "INSPIRE Data Specification on Coordinate Reference Systems - Technical Guidelines",
+      "href": "https://inspire.ec.europa.eu/id/document/tg/rs",
+      "status": "Published",
+      "publisher": "INSPIRE Thematic Working Group Coordinate Reference Systems & Geographical Grid Systems",
+      "date": "2014-04-16",
+      "id": "inspire-crs"
+    },
+    "inspire-gcm": {
+      "title": "Generic Conceptual Model of the INSPIRE data specifications",
+      "href": "https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model",
+      "status": "Published",
+      "publisher": "INSPIRE Drafting Team Data Specifications",
+      "date": "2014-04-07",
+      "id": "inspire-gcm"
+    },
+    "inspire-gen": {
+      "title": "Guidelines for the encoding of spatial data",
+      "href": "https://inspire.ec.europa.eu/documents/guidelines-encoding-spatial-data",
+      "status": "Published",
+      "publisher": "INSPIRE Drafting Team Data Specifications",
+      "date": "2014-04-08",
+      "id": "inspire-gen"
+    },
+    "inspire-ggs": {
+      "title": "Guidelines INSPIRE Data Specification on Geographical Grid Systems - Technical Guidelines",
+      "href": "https://inspire.ec.europa.eu/id/document/tg/gg",
+      "status": "Published",
+      "publisher": "INSPIRE Thematic Working Group Coordinate Reference Systems & Geographical Grid Systems",
+      "date": "2014-04-16",
+      "id": "inspire-ggs"
+    },
+    "inspire-irmd": {
+      "title": "Implementing Rules for Metadata",
+      "href": "http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008R1205",
+      "authors": [
+        "Drafting Team Metadata and European Commission Joint Research Centre"
+      ],
+      "publisher": "European Commission Joint Research Centre",
+      "date": "2008-12-03",
+      "id": "inspire-irmd"
+    },
+    "inspire-mds": {
+      "title": "Methodology for the development of data specifications: baseline version (D 2.6, Version 3.0)",
+      "href": "https://inspire.ec.europa.eu/documents/methodology-development-data-specifications-baseline-version-d-26-version-30",
+      "status": "Published",
+      "publisher": "INSPIRE Drafting Team Data Specifications",
+      "date": "2008-04-06",
+      "id": "inspire-mds"
+    },
+    "inspire-TG-metadata": {
+      "title": "Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007",
+      "href": "https://github.com/INSPIRE-MIF/technical-guidelines/blob/2022.2/metadata/metadata-iso19139/metadata-iso19139.adoc",
+      "status": [
+        "Tehnical Guidance"
+      ],
+      "authors": [
+        "Temporary MIWP 2021-2024 sub-group 2.3.1"
+      ],
+      "publisher": "INSPIRE Maintenance and Implementation Group (MIG)",
+      "date": "2022-08-01",
+      "id": "inspire-TG-metadata"
+    },
+    "INSTGDiS": {
+      "title": "Technical Guidance for the implementation of Inspire Discovery Service, version 3.1",
+      "href": "https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-discovery-services-0",
+      "status": "Approved",
+      "publisher": "IOC TF",
+      "date": "2011-11-07",
+      "id": "INSTGDiS"
+    },
+    "INSTGDS": {
+      "title": "Technical Guidance for the implementation of Inspire Download Services",
+      "href": "https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services",
+      "status": "Approved",
+      "publisher": "IOC TF",
+      "date": "2013-08-09",
+      "id": "INSTGDS"
+    },
+    "INSTGDSSOS": {
+      "title": "Technical Guidance for implementing download services using the OGC Sensor Observation Service and ISO 19143 Filter Encoding, version 1.0",
+      "href": "https://inspire.ec.europa.eu/id/document/tg/download-sos",
+      "status": "Approved",
+      "publisher": "INSPIRE Maintenance and Implementation Group (MIG)",
+      "date": "2016-12-16",
+      "id": "INSTGDSSOS"
+    },
+    "INSTGDSWCS": {
+      "title": "Technical Guidance for the implementation of Inspire Download Services using Web Coverage Services (WCS), version 1.0",
+      "href": "https://inspire.ec.europa.eu/id/document/tg/download-wcs",
+      "status": "Approved",
+      "publisher": "INSPIRE Maintenance and Implementation Group (MIG)",
+      "date": "2016-12-16",
+      "id": "INSTGDSWCS"
+    },
+    "INSTGVS": {
+      "title": "Technical Guidance for the implementation of Inspire View Service",
+      "href": "https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1",
+      "status": "Definitief",
+      "publisher": "IOC TF",
+      "date": "2022-08-01",
+      "id": "INSTGVS"
+    },
+    "ISO15836": {
+      "title": "ISO 15836: 2004, Information and documentation - The Dublin Core metadata element set",
+      "href": "https://www.iso.org/standard/37629.htm",
+      "publisher": "International Organization for Standardization",
+      "date": "2004",
+      "id": "ISO15836"
+    },
+    "ISO19101": {
+      "title": "ISO 19101-1:2014 Geographic information — Reference model — Part 1: Fundamentals",
+      "href": "https://www.iso.org/standard/59164.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2014-11-01",
+      "id": "ISO19101"
+    },
+    "ISO19103": {
+      "title": "ISO 19103:2015 Geographic information — Conceptual schema language",
+      "href": "https://www.iso.org/standard/56734.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2015-12-01",
+      "id": "ISO19103"
+    },
+    "ISO19107": {
+      "title": "ISO 19107:2019 Geographic information — Spatial schema",
+      "href": "https://www.iso.org/standard/66175.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2019-12-01",
+      "id": "ISO19107"
+    },
+    "ISO19108": {
+      "title": "ISO 19108:2002 Geographic information — Temporal schema",
+      "href": "https://www.iso.org/standard/26013.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2012-12-08",
+      "id": "ISO19108"
+    },
+    "ISO19109": {
+      "title": "ISO 19109:2015 Geographic information — Rules for application schema",
+      "href": "https://www.iso.org/standard/59193.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2015-12-01",
+      "id": "ISO19109"
+    },
+    "ISO19110": {
+      "title": "ISO 19110:2016 Geographic information — Methodology for feature cataloguing",
+      "href": "https://www.iso.org/standard/57303.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2016-12-01",
+      "id": "ISO19110"
+    },
+    "ISO19111": {
+      "title": "ISO 19111:2019 Geographic information — Referencing by coordinates",
+      "href": "https://www.iso.org/standard/74039.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2019-01-01",
+      "id": "ISO19111"
+    },
+    "ISO19115-2003": {
+      "title": "ISO 19115:2003  Geographic information -- Metadata",
+      "href": "https://www.iso.org/standard/26020.html",
+      "status": [
+        "Adopted specification"
+      ],
+      "publisher": "International Organization for Standardization",
+      "date": "2003-05-01",
+      "id": "ISO19115-2003"
+    },
+    "ISO19115-2006": {
+      "title": "ISO 19115:2003/Cor 1:2006 Geographic information — Metadata — Technical Corrigendum 1",
+      "href": "https://www.iso.org/standard/26020.html",
+      "status": [
+        "Adopted specification"
+      ],
+      "publisher": "International Organization for Standardization",
+      "date": "2006-06-01",
+      "id": "ISO19115-2006"
+    },
+    "ISO19115-2009": {
+      "title": "ISO 19115-2:2009 Geographic information — Metadata — Part 2: Extensions for imagery and gridded data",
+      "href": "https://www.iso.org/standard/39229.html",
+      "publisher": "International Organization for Standardization",
+      "date": "2009-02-01",
+      "id": "ISO19115-2009"
+    },
+    "ISO19115-2014": {
+      "title": "ISO 19115-1:2014 Geographic information — Metadata — Part 1: Fundamentals",
+      "href": "https://www.iso.org/standard/53798.html",
+      "publisher": "International Organization for Standardization",
+      "date": "2014-04-01",
+      "id": "ISO19115-2014"
+    },
+    "ISO19117": {
+      "title": "ISO 19117:2012 Geographic Information - Portrayal",
+      "href": "https://www.iso.org/standard/46226.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2012-12-01",
+      "id": "ISO19117"
+    },
+    "ISO19118": {
+      "title": "ISO 19118:2011 Geographic information — Encoding",
+      "href": "https://www.iso.org/standard/44212.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2011-10-01",
+      "id": "ISO19118"
+    },
+    "ISO19119": {
+      "title": "Geographic information - Services",
+      "href": "https://www.iso.org/standard/39890.html",
+      "publisher": "International Organization for Standardization",
+      "date": "2005-02-01",
+      "id": "ISO19119"
+    },
+    "ISO19119-2005": {
+      "title": "ISO 19119:2005 Geographic information — Services",
+      "href": "https://www.iso.org/standard/39890.html",
+      "publisher": "International Organization for Standardization",
+      "date": "2005-02-01",
+      "id": "ISO19119-2005"
+    },
+    "ISO19119-2008": {
+      "title": "ISO 19119:2005/Amd 1:2008 Geographic information — Services — Amendment 1: Extensions of the service metadata model",
+      "href": "https://www.iso.org/standard/44268.html",
+      "publisher": "International Organization for Standardization",
+      "date": "2008-05-01",
+      "id": "ISO19119-2008"
+    },
+    "ISO19126-2009": {
+      "title": "ISO 19126:2009 Geographic information - Feature concept dictionaries and registers",
+      "href": "https://www.iso.org/standard/44875.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2009-11-01",
+      "id": "ISO19126-2009"
+    },
+    "ISO19131": {
+      "title": "ISO 19131:2022 Geographic information — Data product specifications",
+      "href": "https://www.iso.org/standard/85092.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2022-11-01",
+      "id": "ISO19131"
+    },
+    "ISO19136": {
+      "title": "ISO 19136-1:2020 Geographic information — Geography Markup Language (GML) — Part 1: Fundamentals",
+      "href": "https://www.iso.org/standard/75676.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2020-01-01",
+      "id": "ISO19136"
+    },
+    "ISO19139": {
+      "title": "ISO/TS 19139:2007 Geographic information - Metadata - XML schema implementation",
+      "href": "https://www.iso.org/standard/32557.html",
+      "status": [
+        "Adopted specification"
+      ],
+      "publisher": "International Organization for Standardization",
+      "date": "2007-04-01",
+      "id": "ISO19139"
+    },
+    "ISO6709": {
+      "title": "ISO 6709:2022 Standard representation of geographic point location by coordinates",
+      "href": "https://www.iso.org/standard/75147.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2022-09-01",
+      "id": "ISO6709"
+    },
+    "ISOJPEG2000": {
+      "title": "ISO/IEC 15444-1:2019 Information technology — JPEG 2000 image coding system — Part 1: Core coding system",
+      "href": "https://www.iso.org/standard/78321.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2019-10-01",
+      "id": "ISOJPEG2000"
+    },
+    "ISOts19127": {
+      "title": "ISO/TS 19127 Geographic Information - Geodetic codes and parameters",
+      "href": "https://www.iso.org/standard/41784.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2005-06-01",
+      "id": "ISOts19127"
+    },
+    "JSON-FG": {
+      "title": "OGC Features and Geometries JSON - Part 1: Core",
+      "href": "https://docs.ogc.org/DRAFTS/21-045.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Clemens Portele",
+        "Panagiotis (Peter) A. Vretanos"
+      ],
+      "id": "JSON-FG"
+    },
+    "MBS": {
+      "title": "Mapbox GL JS Style Specification",
+      "href": "https://docs.mapbox.com/mapbox-gl-js/style-spec/",
+      "status": "Unofficial",
+      "publisher": "Mapbox",
+      "id": "MBS"
+    },
+    "MIM": {
+      "title": "MIM - Metamodel Informatie Modellering",
+      "href": "https://docs.geostandaarden.nl/mim/mim/",
+      "status": "Vastgesteld",
+      "publisher": "Geonovum",
+      "editors": [
+        "Dick Krijtenburg",
+        "Paul Janssen",
+        "Lennart van Bergen"
+      ],
+      "authors": [
+        "Lennart van Bergen",
+        "Thies Mesdag",
+        "Marco Brattinga",
+        "Paul Janssen",
+        "Pano Maria",
+        "Johan Boer"
+      ],
+      "date": "2022-02-17",
+      "id": "MIM"
+    },
+    "NEN3610": {
+      "title": "NEN 3610:2022 nl - BBasismodel geo-informatie - Termen, definities, relaties en algemene regels voor de uitwisseling van informatie over aan de aarde gerelateerde ruimtelijke objecten",
+      "href": "https://www.nen.nl/nen-3610-2022-nl-296137",
+      "status": "Definitief",
+      "publisher": "NEN",
+      "date": "2022-05-31",
+      "id": "NEN3610"
+    },
+    "NETCDF": {
+      "title": "OGC Network Common Data Form (NetCDF) Core Encoding Standard version 1.0",
+      "href": "https://portal.ogc.org/files/?artifact_id=43732",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Ben Domenico"
+      ],
+      "date": "2011-04-05",
+      "id": "NETCDF"
+    },
+    "NLAPIS": {
+      "title": "API Strategie Algemeen (Nederlandse API Strategie I)",
+      "href": "https://docs.geostandaarden.nl/api/API-Strategie/",
+      "status": "Vastgesteld",
+      "publisher": "Geonovum",
+      "date": "2022-03-09",
+      "id": "NLAPIS"
+    },
+    "NLDP": {
+      "title": "NEN 3610 - Linked Data",
+      "href": "https://docs.geostandaarden.nl/nen3610/nldp/",
+      "status": "Vastgesteld",
+      "publisher": "Geonovum",
+      "editors": [
+        "Paul Janssen"
+      ],
+      "authors": [
+        "Linda van den Brink",
+        "Marco Brattinga",
+        "Marinus Vonhof",
+        "Niels Hoffmann",
+        "Pano Maria",
+        "Hans Schevers",
+        "Ronald van Lanen",
+        "Joep van Genuchten"
+      ],
+      "date": "2020-03-23",
+      "id": "NLDP"
+    },
+    "NLISO19115": {
+      "title": "Nederlands metadata profiel op ISO 19115 voor geografie versie 2.1.0",
+      "href": "https://docs.geostandaarden.nl/md/mdprofiel-iso19115/",
+      "status": "Vastgestelde versie",
+      "publisher": "Geonovum",
+      "date": "2020-06-30",
+      "id": "NLISO19115"
+    },
+    "NLISO19119": {
+      "title": "Nederlands metadata profiel op ISO 19119 voor services versie 2.1.0",
+      "href": "https://docs.geostandaarden.nl/md/mdprofiel-iso19119/",
+      "status": "Vastgestelde versie",
+      "publisher": "Geonovum",
+      "date": "2020-06-30",
+      "id": "NLISO19119"
+    },
+    "NL-SBB-20241010": {
+      "title": "NNL-SBB - Standaard voor het beschrijven van begrippen",
+      "href": "https://docs.geostandaarden.nl/nl-sbb/def-st-nl-sbb-20241010/",
+      "status": "Vastgestelde versie",
+      "publisher": "Geonovum",
+      "date": "2024-10-10",
+      "id": "NL-SBB-20241010"
+    },
+    "NLWFS": {
+      "title": "Nederlands profiel op ISO 19142 Geographic information — Web Feature Service, Versie 1.1",
+      "href": "https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "date": "2015-04-24",
+      "id": "NLWFS"
+    },
+    "NLWMS": {
+      "title": "Nederlands profiel op ISO 19128 Geographic information — Web Map Server Interface",
+      "href": "https://www.geonovum.nl/uploads/documents/nederlands_profiel_op_iso_19128_wms_1.3_-_versie_1.0.pdf",
+      "status": "Vastgesteld",
+      "publisher": "Geonovum",
+      "date": "2015-04-24",
+      "id": "NLWMS"
+    },
+    "OaMt1": {
+      "title": "OGC Timeseries Profile of Observations and Measurements v1.0",
+      "href": "http://docs.opengeospatial.org/is/15-043r3/15-043r3.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "James Tomkins",
+        "Dominic Lowe"
+      ],
+      "id": "OaMt1"
+    },
+    "OaMx2": {
+      "title": "Observations and Measurements - XML Implementation v2.0",
+      "href": "https://portal.ogc.org/files/?artifact_id=41510",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Simon Cox"
+      ],
+      "id": "OaMx2"
+    },
+    "OAPIC": {
+      "title": "OGC 19-087: OGC API - Coverages - Part 1: Core, version 0.0.6",
+      "href": "http://docs.ogc.org/DRAFTS/19-087.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Charles Heazel",
+        "Jerome St-Louis"
+      ],
+      "id": "OAPIC"
+    },
+    "OAPIEDR": {
+      "title": "OGC 19-086r5: OGC API - Environmental Data Retrieval Standard, Version 1.0.1",
+      "href": "https://docs.ogc.org/is/19-086r5/19-086r5.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Mark Burgoyne",
+        "David Blodgett",
+        "Charles Heazel",
+        "Chris Little"
+      ],
+      "date": "2022-08-05",
+      "id": "OAPIEDR"
+    },
+    "OAPIF1": {
+      "title": "OGC 17-069r4: OGC API - Features - Part 1: Core corrigendum, Version 1.0.1",
+      "href": "https://docs.opengeospatial.org/is/17-069r4/17-069r4.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Panagiotis (Peter) A. Vretanos",
+        "Clemens Portele",
+        "Charles Heazel"
+      ],
+      "date": "2022-05-11",
+      "id": "OAPIF1"
+    },
+    "OAPIF2": {
+      "title": "OGC 18-058: OGC API - Features - Part 2: Coordinate Reference Systems by Reference, Version 1.0",
+      "href": "https://docs.opengeospatial.org/is/18-058r1/18-058r1.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Panagiotis (Peter) A. Vretanos",
+        "Clemens Portele"
+      ],
+      "date": "2020-11-02",
+      "id": "OAPIF2"
+    },
+    "OAPIF3": {
+      "title": "OGC 19-079r1: OGC API - Features - Part 3: Filtering, Version 1.0.0-rc1",
+      "href": "http://docs.ogc.org/DRAFTS/19-079r1.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Panagiotis (Peter) A. Vretanos",
+        "Clemens Portele"
+      ],
+      "id": "OAPIF3"
+    },
+    "OAPIF4": {
+      "title": "OGC 20-002: OGC API - Features - Part 4: Create, Replace, Update and Delete, Version 1.0.0 snapshot (editor's draft",
+      "href": "http://docs.ogc.org/DRAFTS/20-002.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Panagiotis (Peter) A. Vretanos",
+        "Clemens Portele"
+      ],
+      "id": "OAPIF4"
+    },
+    "OAPIMAPS": {
+      "title": "OGC 20-058: OGC API - Maps - Part 1: Core, Version 0.1.0",
+      "href": "http://docs.ogc.org/DRAFTS/20-058.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "Joan Masó",
+      "date": "2022-06-06",
+      "id": "OAPIMAPS"
+    },
+    "OAPIRECORDS1": {
+      "title": "OGC 20-224: OGC API - Records - Part 1: Core",
+      "href": "http://docs.ogc.org/DRAFTS/20-004.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Panagiotis (Peter) A. Vretanos",
+        "Tom Kralidis",
+        "Charles Heazel"
+      ],
+      "date": "2020-01-13",
+      "id": "OAPIRECORDS1"
+    },
+    "OAPISTYLES": {
+      "title": "OGC 20-009: OGC API Styles",
+      "href": "http://docs.opengeospatial.org/DRAFTS/20-009.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "C. Portele",
+      "id": "OAPISTYLES"
+    },
+    "OAPITILES1": {
+      "title": "OGC 20-057: OGC API - Tiles - Part 1: Core",
+      "href": "https://docs.ogc.org/is/20-057/20-057.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Joan Masó",
+        "Jérôme St-Louis"
+      ],
+      "date": "26-08-2022",
+      "id": "OAPITILES1"
+    },
+    "OMS3": {
+      "title": "OGC Abstract Specification Topic 20: Observations, measurements and samples v3.0.0",
+      "href": "https://docs.ogc.org/as/20-082r4/20-082r4.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Katharina Schleidt",
+        "Ilkka Rinne"
+      ],
+      "date": "2023-05-26",
+      "id": "OMS3"
+    },
+    "OREFCO": {
+      "title": "OGC Abstract Specification Topic 2: Referencing by coordinates",
+      "href": "http://docs.opengeospatial.org/as/18-005r4/18-005r4.html",
+      "status": "OGC® Publicly Available Standard",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Roger Lott"
+      ],
+      "date": "2019-02-08",
+      "id": "OREFCO"
+    },
+    "SE11": {
+      "title": "OGC 05-077r4: OpenGIS Symbology Encoding Implementation Specification, version 1.1",
+      "href": "https://portal.ogc.org/files/?artifact_id=16700",
+      "status": "Final version",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "date": "2006-07-21",
+      "id": "SE11"
+    },
+    "SensorML": {
+      "title": "OGC SensorML: Model and XML Encoding Standard v2.1",
+      "href": "http://docs.ogc.org/is/12-000r2/12-000r2.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Mike Botts",
+        "Alexandre Robin",
+        "Eric Hirschorn"
+      ],
+      "date": "2020-08-10",
+      "id": "SensorML"
+    },
+    "SLD11": {
+      "title": "OGC 05-078r4: Styled Layer Descriptor profile of the Web Map Service Implementation Specification, Version 1.1",
+      "href": "http://portal.opengeospatial.org/files/?artifact_id=22364",
+      "status": "Final version",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "date": "2007-06-29",
+      "id": "SLD11"
+    },
+    "STAS": {
+      "title": "OGC 18-088: OGC SensorThings API Part 1 - Sensing, Version 1.1",
+      "href": "https://docs.ogc.org/is/18-088/18-088.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Steve Liang",
+        "Tania Khalafbeigi",
+        "Hylke van der Schaaf"
+      ],
+      "date": "2021-08-04",
+      "id": "STAS"
+    },
+    "STAT": {
+      "title": "OGC 17-079r1: OGC SensorThings API Part 1 - Tasking Core, Version 1.0",
+      "href": "http://docs.opengeospatial.org/is/17-079r1/17-079r1.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Steve Liang",
+        "Tania Khalafbeigi"
+      ],
+      "date": "2019-01-08",
+      "id": "STAT"
+    },
+    "WCS21": {
+      "title": "OGC 17-089r1: OGC Web Coverage Service (WCS) 2.1 Interface Standard - Core",
+      "href": "http://docs.opengeospatial.org/is/17-089r1/17-089r1.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "date": "2018-08-16",
+      "id": "WCS21"
+    },
+    "WFS11": {
+      "title": "Web Feature Service Implementation Specification with Corrigendum, Version 1.1.3",
+      "href": "http://docs.opengeospatial.org/is/04-094r1/04-094r1.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "Panagiotis A. Vretanos",
+      "date": "2016-10-26",
+      "id": "WFS11"
+    },
+    "WMC11": {
+      "title": "OpenGIS 05-005: Web Map Context Documents Implementation Specification, version 1.1",
+      "href": "https://portal.ogc.org/files/?artifact_id=8618",
+      "status": "Adopted specification",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "J. Sonnet",
+      "date": "2005-01-19",
+      "id": "WMC11"
+    },
+    "WMCC11": {
+      "title": "OpenGIS 08-050: Corrigendum for OpenGIS Implementation Standard Web Map Context Documents - Corrigendum 1",
+      "href": "https://portal.ogc.org/files/?artifact_id=27286",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "T. Kralidis",
+      "date": "2008-03-14",
+      "id": "WMCC11"
+    },
+    "BBDT": {
+      "title": "Beleidsprocessen en bouwblokken voor Digitale Tweelingen",
+      "href": "https://www.geonovum.nl/uploads/documents/Eindrapport%20Advies%20Beleid%20en%20Digital%20Twins%20-%20provincie%20Utrecht%20v1.3d.pdf",
+      "publisher": "Geonovum",
+      "id": "bbdt"
+    },
+    "NDTFL": {
+      "title": "Referentie Architectuur Stelsel Digitale Tweeling Fysieke Leefomgeving",
+      "href": "https://www.geonovum.nl/uploads/documents/20220211%20Referentiearchitectuur%20Stelsel%20DTFL%20versie%200.9.pdf",
+      "publisher": "Geonovum",
+      "status": "V0.9",
+      "date": "11 februari 2022",
+      "id": "ndtfl"
+    },
+    "DMI_ecosysteem_volwassenheidsniveaus": {
+      "title": "De type volwassenheidsniveaus zijn gebaseerd op een analyse over zes bronnen, te weten Geospatial World (2023), Digital Twin Consortium (2024a), Digital Urban Brabant (2023), International Data Group (2019), Stichting Toekomstbeeld der Techniek (2022) en TNO.",
+      "id": "dmi_ecosysteem_volwassenheidsniveaus"
+    },
+    "VRO_2024": {
+      "title": "Aanbieding meerjarenvisie Zicht op Nederland: samen datagedreven werken aan de fysieke leefomgeving",
+      "href": "https://www.rijksoverheid.nl/documenten/rapporten/2024/02/12/meerjarenvisie-zicht-op-nederland",
+      "date": "12-02-2024",
+      "id": "vro_2024"
+    },
+    "Gebora": {
+      "title": "Wat is gebora",
+      "href": "https://www.digigo.nu/wat-is-gebora/",
+      "date": "30-04-2025",
+      "id": "gebora"
+    },
+    "FDS": {
+      "title": "Scope van FDS",
+      "href": "https://federatief.datastelsel.nl/kennisbank/scope-van-fds/",
+      "date": "30-04-2025",
+      "id": "fds"
+    },
+    "LDT": {
+      "title": "Public report on the LDT toolbox detailed specifications requirements – D05.02",
+      "href": "https://data.europa.eu/doi/10.2759/384198",
+      "publisher": "European Commission",
+      "id": "ldt"
+    },
+    "DUET": {
+      "title": "L. Raes et al., DUET: A Framework for Building Interoperable and Trusted Digital Twins of Smart Cities",
+      "href": "https://ieeexplore.ieee.org/document/9362182",
+      "publisher": "IEEE Internet Computing, vol. 26, no. 3, pp. 43-50, 1 May-June 2022",
+      "id": "duet"
+    },
+    "eGovERA": {
+      "title": "eGovERA Business Agnostic Reference Architecture 6.1.0",
+      "href": "https://interoperable-europe.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/solution/egovera-business-agnostic-0/release/610",
+      "date": "07-11-2024",
+      "id": "egovera"
+    }
+  },
+  "title": "NLDT Architectuur",
+  "specStatus": "vv",
+  "specType": "HR",
+  "pubDomain": "nldt",
+  "shortName": "nldt-ra",
+  "publishDate": "2026-02-09",
+  "publishVersion": [],
+  "editors": [
+    {
+      "name": "Bart De Lathouwer",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl/"
+    },
+    {
+      "name": "Niels Hoffmann",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl/"
+    },
+    {
+      "name": "Michel Grothe",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl/"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Bart De Lathouwer",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl/"
+    },
+    {
+      "name": "Niels Hoffmann",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl/"
+    },
+    {
+      "name": "Michel Grothe",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl/"
+    }
+  ],
+  "github": "https://github.com/geonovum/NLDT-Architectuur"
+}</script>
+<link rel="stylesheet" href="https://tools.geostandaarden.nl/respec/style/base.css"></head>
+   <body class="h-entry informative"><div class="head">
+    <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://docs.geostandaarden.nl/media/Geonovum.svg" width="132">
+  </a> <h1 id="title" class="title">NLDT Architectuur</h1>
+    
+    <h2>
+      Geonovum Handreiking<br>
+      Versie ter vaststelling
+      <time class="dt-published" datetime="2026-02-09">09 februari 2026</time>
+    </h2>
+    <dl>
+      <dt>Deze versie:</dt><dd class="status">
+              <a class="u-url status" href="https://docs.geostandaarden.nl/nldt/vv-hr-nldt-ra-20260209">https://docs.geostandaarden.nl/nldt/vv-hr-nldt-ra-20260209</a>
+            </dd>
+      <dt>Laatst gepubliceerde versie:</dt><dd>
+              <a href="https://docs.geostandaarden.nl/nldt/nldt-ra/">https://docs.geostandaarden.nl/nldt/nldt-ra/</a>
+            </dd>
+      <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/NLDT-Architectuur/">https://geonovum.github.io/NLDT-Architectuur/</a></dd>
+      
+      
+      
+      
+      
+      <dt>Redacteurs:</dt>
+      <dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Bart De Lathouwer</span> (<a class="p-org org h-org" href="https://www.geonovum.nl/">Geonovum</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Niels Hoffmann</span> (<a class="p-org org h-org" href="https://www.geonovum.nl/">Geonovum</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Michel Grothe</span> (<a class="p-org org h-org" href="https://www.geonovum.nl/">Geonovum</a>)
+  </dd>
+      
+      <dt>Auteurs:</dt><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Bart De Lathouwer</span> (<a class="p-org org h-org" href="https://www.geonovum.nl/">Geonovum</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Niels Hoffmann</span> (<a class="p-org org h-org" href="https://www.geonovum.nl/">Geonovum</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Michel Grothe</span> (<a class="p-org org h-org" href="https://www.geonovum.nl/">Geonovum</a>)
+  </dd>
+      <dt>Doe mee:</dt><dd>
+    <a href="https://github.com/geonovum/NLDT-Architectuur/">GitHub geonovum/NLDT-Architectuur</a>
+  </dd><dd>
+    <a href="https://github.com/geonovum/NLDT-Architectuur/issues/">Alle issues</a>
+  </dd><dd>
+    <a href="https://github.com/geonovum/NLDT-Architectuur/issues/new/choose">Dien een melding in</a>
+  </dd><dd>
+    <a href="https://github.com/geonovum/NLDT-Architectuur/commits/">Revisiehistorie</a>
+  </dd><dd>
+    <a href="https://github.com/geonovum/NLDT-Architectuur/pulls/">Pull requests</a>
+  </dd>
+    </dl>
+    
+    
+    
+    <p class="copyright">
+            Dit document valt onder de volgende licentie: 
+            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" class="subfoot"><img class="license" src="https://docs.geostandaarden.nl/media/cc-by.svg" alt="Logo Creative Commons Attribution 4.0 International Public License"><br> Creative Commons Attribution 4.0 International Public License</a>
+          </p>
+    <hr title="Separator for header">
+  </div>
+      <section id="abstract" class="introductory"><h2>Samenvatting</h2><h1>Samenvatting</h1>
+<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span></div><aside class="">
+    Dit architectuurdocument vindt zijn oorsprong in de 'Referentie Architectuur Stelsel Digitale Tweeling Fysieke Leefomgeving v0.9' uit 2022. [<cite><a class="bibref" data-link-type="biblio" href="#bib-ndtfl" title="Referentie Architectuur Stelsel Digitale Tweeling Fysieke Leefomgeving">NDTFL</a></cite>] Zonder de bijdrage van de volgende mensen zou dit document niet tot stand zijn gekomen: Guido Bayens, Jan Bruijn, Eric van Capelleveen, Jan van Gelder, Michel Grothe, Bart de Lathouwer, Walter Lohman, Marcel Reuvers, Frans de Waal, Ton Zijlstra
+</aside></div></section>
+      <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#H1"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">1.1 </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#doelgroep"><bdi class="secno">1.2 </bdi>Doelgroep</a></li><li class="tocline"><a class="tocxref" href="#opbouw-van-deze-architectuur"><bdi class="secno">1.3 </bdi>Opbouw van deze Architectuur</a></li></ol></li><li class="tocline"><a class="tocxref" href="#H2"><bdi class="secno">2. </bdi>Kernwaarden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#doel"><bdi class="secno">2.1 </bdi>Doel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#doelgericht-op-algemeen-welzijn"><bdi class="secno">2.1.1 </bdi>Doelgericht op algemeen welzijn</a></li></ol></li><li class="tocline"><a class="tocxref" href="#vertrouwen"><bdi class="secno">2.2 </bdi>Vertrouwen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#actief-open-en-transparant"><bdi class="secno">2.2.1 </bdi>Actief open en transparant</a></li><li class="tocline"><a class="tocxref" href="#eerlijk-kwalitatief-en-inclusief"><bdi class="secno">2.2.2 </bdi>Eerlijk, kwalitatief en inclusief</a></li><li class="tocline"><a class="tocxref" href="#robuust-en-veilig"><bdi class="secno">2.2.3 </bdi>Robuust en veilig</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mensen"><bdi class="secno">2.3 </bdi>Mensen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#onder-controle-en-toezicht-van-mensen"><bdi class="secno">2.3.1 </bdi>Onder controle en toezicht van mensen</a></li><li class="tocline"><a class="tocxref" href="#belanghebbenden-intensief-betrokken"><bdi class="secno">2.3.2 </bdi>Belanghebbenden intensief betrokken</a></li></ol></li><li class="tocline"><a class="tocxref" href="#effectief"><bdi class="secno">2.4 </bdi>Effectief</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#effectief-bestuurd"><bdi class="secno">2.4.1 </bdi>Effectief bestuurd</a></li><li class="tocline"><a class="tocxref" href="#federatief"><bdi class="secno">2.4.2 </bdi>Federatief</a></li><li class="tocline"><a class="tocxref" href="#met-open-standaarden"><bdi class="secno">2.4.3 </bdi>Met open standaarden</a></li><li class="tocline"><a class="tocxref" href="#adaptief"><bdi class="secno">2.4.4 </bdi>Adaptief</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#H3"><bdi class="secno">3. </bdi>Architectuurprincipes</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#aansluiten-op-omliggende-kaders"><bdi class="secno">3.1 </bdi>Aansluiten op omliggende kaders</a></li><li class="tocline"><a class="tocxref" href="#domein-georienteerd-gedecentraliseerd-stelsel"><bdi class="secno">3.2 </bdi>Domein georiënteerd, gedecentraliseerd stelsel</a></li><li class="tocline"><a class="tocxref" href="#data-als-product"><bdi class="secno">3.3 </bdi>Data als product</a></li><li class="tocline"><a class="tocxref" href="#zelfservice-data-infrastructuur"><bdi class="secno">3.4 </bdi>Zelfservice data-infrastructuur</a></li><li class="tocline"><a class="tocxref" href="#gefedereerde-en-geautomatiseerde-governance"><bdi class="secno">3.5 </bdi>Gefedereerde en geautomatiseerde governance</a></li><li class="tocline"><a class="tocxref" href="#gebaseerd-op-service-orientatie"><bdi class="secno">3.6 </bdi>Gebaseerd op service oriëntatie</a></li><li class="tocline"><a class="tocxref" href="#open-standaarden"><bdi class="secno">3.7 </bdi>Open standaarden</a></li><li class="tocline"><a class="tocxref" href="#data-soevereiniteit-is-geborgd"><bdi class="secno">3.8 </bdi>Data soevereiniteit is geborgd</a></li><li class="tocline"><a class="tocxref" href="#kwaliteit-van-data-is-gekend"><bdi class="secno">3.9 </bdi>Kwaliteit van data is gekend</a></li><li class="tocline"><a class="tocxref" href="#het-stelsel-is-betrouwbaar"><bdi class="secno">3.10 </bdi>Het stelsel is betrouwbaar</a></li></ol></li><li class="tocline"><a class="tocxref" href="#H4"><bdi class="secno">4. </bdi>Implicaties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#self-descriptions"><bdi class="secno">4.1 </bdi>Self descriptions</a></li><li class="tocline"><a class="tocxref" href="#lineage"><bdi class="secno">4.2 </bdi>Lineage</a></li><li class="tocline"><a class="tocxref" href="#kwaliteitsraamwerk"><bdi class="secno">4.3 </bdi>Kwaliteitsraamwerk</a></li><li class="tocline"><a class="tocxref" href="#hergebruik"><bdi class="secno">4.4 </bdi>Hergebruik</a></li><li class="tocline"><a class="tocxref" href="#specifieke-domein-context-beschrijven"><bdi class="secno">4.5 </bdi>specifieke domein context beschrijven</a></li><li class="tocline"><a class="tocxref" href="#zorg-voor-vindbaarheid"><bdi class="secno">4.6 </bdi>zorg voor vindbaarheid</a></li><li class="tocline"><a class="tocxref" href="#keuzes-maken-in-automatisering"><bdi class="secno">4.7 </bdi>keuzes maken in automatisering</a></li><li class="tocline"><a class="tocxref" href="#api-designrules"><bdi class="secno">4.8 </bdi>API Designrules</a></li></ol></li><li class="tocline"><a class="tocxref" href="#H5"><bdi class="secno">5. </bdi>Waardestromen en Capabilities</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metamodel"><bdi class="secno">5.1 </bdi>Metamodel</a></li><li class="tocline"><a class="tocxref" href="#nldt-egovera-mapping"><bdi class="secno">5.2 </bdi>nLDT - eGovERA mapping</a></li><li class="tocline"><a class="tocxref" href="#waardestromen"><bdi class="secno">5.3 </bdi>Waardestromen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#use-case-naar-indicatoren"><bdi class="secno">5.3.1 </bdi>Use case naar Indicatoren</a></li><li class="tocline"><a class="tocxref" href="#resultaten-inzichten-omzetten-naar-praktijk"><bdi class="secno">5.3.2 </bdi>Resultaten/inzichten omzetten naar praktijk</a></li></ol></li><li class="tocline"><a class="tocxref" href="#capabilities"><bdi class="secno">5.4 </bdi>Capabilities</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#data"><bdi class="secno">5.4.1 </bdi>Data</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ontsluiten"><bdi class="secno">5.4.1.1 </bdi>Ontsluiten</a></li><li class="tocline"><a class="tocxref" href="#bewerken"><bdi class="secno">5.4.1.2 </bdi>Bewerken</a></li><li class="tocline"><a class="tocxref" href="#zoeken-vinden"><bdi class="secno">5.4.1.3 </bdi>Zoeken/Vinden</a></li><li class="tocline"><a class="tocxref" href="#tijdreizen"><bdi class="secno">5.4.1.4 </bdi>Tijdreizen</a></li><li class="tocline"><a class="tocxref" href="#beschrijven"><bdi class="secno">5.4.1.5 </bdi>Beschrijven</a></li></ol></li><li class="tocline"><a class="tocxref" href="#integratie"><bdi class="secno">5.4.2 </bdi>Integratie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#reproduceren"><bdi class="secno">5.4.2.1 </bdi>Reproduceren</a></li><li class="tocline"><a class="tocxref" href="#meten-aansturen"><bdi class="secno">5.4.2.2 </bdi>Meten/Aansturen</a></li><li class="tocline"><a class="tocxref" href="#integreren"><bdi class="secno">5.4.2.3 </bdi>Integreren</a></li></ol></li><li class="tocline"><a class="tocxref" href="#analyse"><bdi class="secno">5.4.3 </bdi>Analyse</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#analyseren"><bdi class="secno">5.4.3.1 </bdi>Analyseren</a></li><li class="tocline"><a class="tocxref" href="#voorspellen"><bdi class="secno">5.4.3.2 </bdi>Voorspellen</a></li><li class="tocline"><a class="tocxref" href="#orkestratie"><bdi class="secno">5.4.3.3 </bdi>Orkestratie</a></li><li class="tocline"><a class="tocxref" href="#simuleren"><bdi class="secno">5.4.3.4 </bdi>Simuleren</a></li><li class="tocline"><a class="tocxref" href="#rekenen"><bdi class="secno">5.4.3.5 </bdi>Rekenen</a></li><li class="tocline"><a class="tocxref" href="#besluiten"><bdi class="secno">5.4.3.6 </bdi>Besluiten</a></li></ol></li><li class="tocline"><a class="tocxref" href="#visualisatie"><bdi class="secno">5.4.4 </bdi>Visualisatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#visualiseren"><bdi class="secno">5.4.4.1 </bdi>Visualiseren</a></li><li class="tocline"><a class="tocxref" href="#beleven"><bdi class="secno">5.4.4.2 </bdi>Beleven</a></li><li class="tocline"><a class="tocxref" href="#verklaren"><bdi class="secno">5.4.4.3 </bdi>Verklaren</a></li></ol></li><li class="tocline"><a class="tocxref" href="#betrouwbaarheid"><bdi class="secno">5.4.5 </bdi>Betrouwbaarheid</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#vertrouwen-0"><bdi class="secno">5.4.5.1 </bdi>Vertrouwen</a></li><li class="tocline"><a class="tocxref" href="#identificeren"><bdi class="secno">5.4.5.2 </bdi>Identificeren</a></li></ol></li><li class="tocline"><a class="tocxref" href="#beheer"><bdi class="secno">5.4.6 </bdi>Beheer</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bewaken"><bdi class="secno">5.4.6.1 </bdi>Bewaken</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#H6"><bdi class="secno">6. </bdi>Bouwblokken</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ldt-bouwblokken-en-dataspaces"><bdi class="secno">6.1 </bdi>LDT Bouwblokken en Dataspaces</a></li><li class="tocline"><a class="tocxref" href="#fundament"><bdi class="secno">6.2 </bdi>Fundament</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#zelfservice-data-infrastructuur-componenten-op-basis-van-dataspace-protocollen"><bdi class="secno">6.2.1 </bdi>Zelfservice data-infrastructuur componenten op basis van Dataspace protocollen</a></li><li class="tocline"><a class="tocxref" href="#egovera-mapping"><bdi class="secno">6.2.2 </bdi>eGovERA mapping</a></li></ol></li><li class="tocline"><a class="tocxref" href="#data-0"><bdi class="secno">6.3 </bdi>Data</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#egovera-mapping-0"><bdi class="secno">6.3.1 </bdi>eGovERA mapping</a></li></ol></li><li class="tocline"><a class="tocxref" href="#rekenmodellen"><bdi class="secno">6.4 </bdi>Rekenmodellen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#egovera-mapping-1"><bdi class="secno">6.4.1 </bdi>eGovERA mapping</a></li></ol></li><li class="tocline"><a class="tocxref" href="#visualisatie-0"><bdi class="secno">6.5 </bdi>Visualisatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#egovera-mapping-2"><bdi class="secno">6.5.1 </bdi>eGovERA mapping</a></li></ol></li><li class="tocline"><a class="tocxref" href="#appstore"><bdi class="secno">6.6 </bdi>Appstore</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#egovera-mapping-3"><bdi class="secno">6.6.1 </bdi>eGovERA mapping</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#H7"><bdi class="secno">7. </bdi>NLDT in relatie tot andere initiatieven</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#zicht-op-nederland-zon-doelarchitectuur-dataspace-fysieke-leefomgeving"><bdi class="secno">7.1 </bdi>Zicht op Nederland (ZoN) Doelarchitectuur Dataspace Fysieke Leefomgeving</a></li><li class="tocline"><a class="tocxref" href="#gebora"><bdi class="secno">7.2 </bdi>Gebora</a></li><li class="tocline"><a class="tocxref" href="#fds"><bdi class="secno">7.3 </bdi>FDS</a></li><li class="tocline"><a class="tocxref" href="#eu-dataspaces"><bdi class="secno">7.4 </bdi>EU Dataspaces</a></li><li class="tocline"><a class="tocxref" href="#ldt-citiverse-edic"><bdi class="secno">7.5 </bdi>LDT CitiVERSE EDIC</a></li></ol></li><li class="tocline"><a class="tocxref" href="#versiemanagement"><bdi class="secno">A. </bdi>Versiemanagement</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">B.1 </bdi>Informatieve referenties</a></li></ol></li></ol></nav>
+      <section id="H1"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#H1" aria-label="Permalink for Section 1."></a></div>
+<p>Deze referentie architectuur bevat afspraken en principes voor een stelsel van digitale tweelingen voor de fysieke leefomgeving. Deze referentie architectuur is bedoeld voor iedereen die een rol speelt bij het tot stand brengen van een digital twin of digitale tweeling voor de fysieke leefomgeving. De afspraken, uitgangspunten , principes en standaarden die in dit document worden gepresenteerd, dragen bij aan het tot stand brengen van een stelsel dat bestaat uit vele toepassingen van het idee van digitale tweelingen.</p>
+<p>Dit document bevat een "open" architectuur. Dat wil zeggen: de architectuur kan door iedereen, overheid en bedrijfsleven, toegepast worden. Toepassing van de afspraken, principes en standaarden uit dit document draagt bij aan het tot stand brengen van een "ecosysteem", dat bestaat uit veel te verbinden databronnen en rekenmodellen. Hierdoor wordt het mogelijk om data en modellen uit uiteenlopende sectoren en kennisgebieden met elkaar te verbinden en daarmee twee- of driedimensionale beelden samen te stellen van de fysieke leefomgeving, beleidsvorming te ondersteunen met beslismodellen en simulaties of real time besturingsmogelijkheden voor operationele processen mogelijk te maken.</p>
+<p>Het onderwerp Digitale Tweelingen staat volop in de belangstelling, op allerlei vlakken volgen de ontwikkelingen elkaar snel op. Tegen deze achtergrond is deze referentie architectuur opgesteld; zoekend naar zo breed mogelijk gedragen uitgangspunten, principes en standaarden voor het ontwikkelen van digital twins. Zoekend naar een samenhangend pakket van principes en standaarden en daarmee soms ook bepaalde principes en standaarden uitsluitend. De keuzes die in dit document gemaakt worden, kunnen dan ook discussie uitlokken. Dat past bij de fase waarin deze ontwikkeling zich bevindt. Na deze versie zullen dan ook nieuwe versies volgen, die ons weer een stap dichterbij een compleet stelsel voor digital twinning van de fysieke leefomgeving zullen brengen.</p>
+<section id="toepassingsgebied"><div class="header-wrapper"><h3 id="x1-1-toepassingsgebied"><bdi class="secno">1.1 </bdi>Toepassingsgebied</h3><a class="self-link" href="#toepassingsgebied" aria-label="Permalink for Section 1.1"></a></div>
+<p>Deze referentie architectuur beperkt zich tot de fysieke leefomgeving. Daarbij wordt onder meer gedacht aan de gebouwde omgeving, ruimtelijke ordening, verkeersstromen, luchtsamenstelling, geluid, temperatuur, openbaar vervoer, watersystemen en infrastructuren voor energie, data, water, riolering en datacommunicatie.</p>
+<p>Binnen dit domein kan digital twinning bijdragen aan het in kaart brengen van de actuele situatie, zoals de plaats en afmetingen van gebouwen, bruggen, tunnels en dergelijke. Of het bijeen brengen van gegevens op basis van metingen van verkeersstromen, fijnstof, geluid of temperatuur. Het kan gaan over statische of dynamische gegevens. Inzet van een digital twin kan onderzoekers en beleidsmakers ondersteunen bij het maken van afwegingen in het ontwerp van aspecten van de fysieke leefomgeving, zoals het ontwerp van nieuwe woonwijken, infrastructuur of het doorrekenen van effecten van maatregelen in het kader van de energietransitie. Digital twinning kan ook een krachtig hulpmiddel zijn bij het dagelijks sturen van processen, zoals verkeersstromen of het opvangen van negatieve gevolgen van voor ons land exeptionele regenval.</p>
+<p>Binnen de genoemde domeinen zijn vaak al uitgebreide databestanden en meetgegevens voorhanden. Om gegevens inzichtelijk te maken zijn modellen ontwikkeld. Modellen zijn ook noodzakelijk om "what if" analyses te kunnen doen of simulaties uit te kunnen voeren waarmee betrouwbare voorspellingen kunnen worden gedaan. Er is al veel en er liggen vaak verchillende disciplines en uitgangspunten aan ten grondslag. Digital twinning is te zien als een volgende stap in deze ontwikkeling. Het gaat om het bij elkaar brengen van data en resultaten van modellen om op die wijze een multidimensionaal model van (een deel van) de werkelijkheid samen te stellen. Een voorbeeld: Wat is het effect op de verkeersdoorstroming van een tijdelijke wegafsluiting en wat betekent dit voor de milieubelasting (CO2-uitstoot, geluid) van de alternatieve routes waarvan het verkeer gebruik zal gaan maken en welke aanpassingen in het verkeersbegeleidingssysteem zullen hierbij nodig zijn om een verkeersinfarct te voorkomen? De gecombineerde inzet van rekenmodellen biedt inzicht in dergelijke complexe vraagstukken.</p>
+<p>Deze referentie architectuur bevat daarom afspraken, principes en standaarden die relevant zijn voor digital twinning binnen het genoemde gebied. </p>
+<p>In dit document volgen we de definitie zoals vermeld in de Kamerbrief van het Ministerie van Volkshuisvesting en Ruimtelijk Ordening:</p>
+<p><em>Een digitale tweeling van de fysieke leefomgeving is een digitale representatie van de stedelijke en landelijke omgeving op basis van data, modellen en visualisaties. Deze kunnen worden gebruikt om verschillende aspecten van de fysieke leefomgeving te simuleren en analyseren.</em> [<cite><a class="bibref" data-link-type="biblio" href="#bib-vro_2024" title="Aanbieding meerjarenvisie Zicht op Nederland: samen datagedreven werken aan de fysieke leefomgeving">VRO_2024</a></cite>]</p>
+</section><section id="doelgroep"><div class="header-wrapper"><h3 id="x1-2-doelgroep"><bdi class="secno">1.2 </bdi>Doelgroep</h3><a class="self-link" href="#doelgroep" aria-label="Permalink for Section 1.2"></a></div>
+<p>Dit document is gericht op iedereen die betrokken is bij het ontwikkelen van vormen van digital twinning binnen het fysieke domein. Dit betreft uiteraard bedrijfs-, informatie-, data- en infrastructuur-architecten, maar ook model- en dataspecialisten, ontwikkelaars, user interface- en beveiligingsexperts en beheerders. Voor personen die iets verder van de techniek afstaan is het hoofdstuk over de kernwaarde in ieder geval van belang en mogelijk delen van de andere hoofdstukken ook. De opbouw van het document gaat van algemeen naar steeds specifieker.</p>
+</section><section id="opbouw-van-deze-architectuur"><div class="header-wrapper"><h3 id="x1-3-opbouw-van-deze-architectuur"><bdi class="secno">1.3 </bdi>Opbouw van deze Architectuur</h3><a class="self-link" href="#opbouw-van-deze-architectuur" aria-label="Permalink for Section 1.3"></a></div>
+<p>De architectuur beschrijft een aantal kernwaarden waar een Digitale Tweeling voor de fysieke leefomgeving aan zou moeten voldoen in hoofdstuk 2.</p>
+<p>Hoofdstuk 3 behandelt de Architectuurprincipes van de NLDT.</p>
+<p>Hoofdstuk 4 behandelt de implicaties die volgen uit de architectuurprincipes.</p>
+<p>Hoofdstuk 5 introduceert waardestromen en werkt een aantal Capabilities uit die vanuit een functioneel oogpunt beschrijven waar een Digitale Tweeling invulling aan moet geven. Deze Capabilities komen voort uit een eerdere publicatie <em>Beleidsprocessen en bouwblokken voor Digitale Tweelingen</em> [<cite><a class="bibref" data-link-type="biblio" href="#bib-bbdt" title="Beleidsprocessen en bouwblokken voor Digitale Tweelingen">BBDT</a></cite>]</p>
+<p>In hoofdstuk 6 worden deze Capabilities vervolgens verder in meer technische bouwblokken uitgewerkt, waarbij vooral naar standaarden en richtlijnen gekeken wordt. De referentie architectuur zal geen specifieke (software) oplossingen voorschrijven, maar zich richten op patronen die interoperabiliteit mogelijk maken.</p>
+<p>Hoofdstuk 7 schetst vervolgens nog hoe deze architectuur zich verhoudt tot ontwikkelingen in het bredere speelveld.</p>
+</section></section>
+      <section id="H2"><div class="header-wrapper"><h2 id="x2-kernwaarden"><bdi class="secno">2. </bdi>Kernwaarden</h2><a class="self-link" href="#H2" aria-label="Permalink for Section 2."></a></div>
+<p>De kernwaarden stellen een aantal randvoorwaarden aan het stelsel van Digitale Tweelingen. 
+Het gebruik van de term kernwaarde is geinspireerd op de NORA waar een kernwaarde als volgt wordt gepositioneerd: </p>
+<div class="note" role="note" id="issue-container-generatedID-0"><div role="heading" class="note-title marker" id="h-note-0" aria-level="3"><span>Noot</span></div><aside class="">
+"Kernwaarden vormen een verbindende functie tussen beleid en het in samenhang en ontwerpen en leveren van overheidsdiensten. 
+Kernwaarden helpen om uit te leggen vanuit welke maatschappelijke waarden de overheid haar diensten aanbiedt aan burgers en bedrijven. 
+Het contact tussen samenwerkende overheidsorganisaties en de samenleving staat hierbij centraal. ..."<p><a href="https://www.noraonline.nl/wiki/Kernwaarde_van_Dienstverlening_(Begrip)">Definitie Kernwaarde NORA</a></p>
+</aside></div><p><img src="./media/kernwaarden.png" alt="kernwaarden"></p>
+<p>Afbeelding 1: kernwaarden</p>
+<p>De insteek van de kernwaarden en doelen in deze architectuur is gericht op het inzetten van Digitale Tweelingen in de Fysieke leefomgeving. We onderschrijven de kernwaarden en kwaliteitsdoelen van de NORA, maar richten ons hier specifiek op kernwaarden en doelen vanuit het NLDT perspectief. </p>
+<p>De kernwaarden sluiten ook aan op de digitale rechten en principes zoals die beschreven staan in <a href="https://digital-strategy.ec.europa.eu/en/policies/digital-principles">'EU's Digital Decade 2030'</a> </p>
+<section id="doel"><div class="header-wrapper"><h3 id="x2-1-doel"><bdi class="secno">2.1 </bdi>Doel</h3><a class="self-link" href="#doel" aria-label="Permalink for Section 2.1"></a></div>
+<section id="doelgericht-op-algemeen-welzijn"><div class="header-wrapper"><h4 id="x2-1-1-doelgericht-op-algemeen-welzijn"><bdi class="secno">2.1.1 </bdi>Doelgericht op algemeen welzijn</h4><a class="self-link" href="#doelgericht-op-algemeen-welzijn" aria-label="Permalink for Section 2.1.1"></a></div>
+<p>Digitale tweelingen en het digitale tweeling stelsel dienen objecten, processen en systemen in de fysieke
+leefomgeving te verbeteren. Digitale tweelingen zijn nooit het doel, het zijn middelen om het doel mee te
+bereiken. Verantwoorde digitale tweelingen dienen het algemeen welzijn en creëren waarde voor de
+Nederlandse maatschappij. Zij werken vanuit een helder, enkelvoudig en bovenal gerechtvaardigd doel.</p>
+<p><strong>Verklaring:</strong> Een rechtvaardig doel is de noodzakelijke eerste stap om alle andere principes goed na te
+leven. Het doel bepaalt wie betrokken moet zijn bij de ontwikkeling van de digitale tweeling; welke
+data minimaal noodzakelijk zijn; hoe inclusief, volledig en accuraat de data moeten zijn, etc. Digitale
+tweelingen kunnen inzichten geven aan bedrijven, overheden, onderwijs en onderzoek, maatschappelijke
+organisaties en burgers voor betere planning, ontwikkeling en gebruik van de fysieke leefomgeving, en
+tevens het beheer en onderhoud van bestaande objecten, processen en systemen verbeteren.</p>
+<p><strong>Toelichting:</strong> Het opstellen van een rechtvaardig doel vereist voornamelijk begrip. Begrijp en doorleef de
+herkomst, de context, de dynamiek en het perspectief van het doel, de vraag, het probleem. Samen met
+eindgebruikers en andere primaire belanghebbenden. Verken of de digital twin de beste weg is om het doel
+te bereiken. Zijn er nog andere manieren, alternatieve oplossingsrichtingen (onderzocht) waarlangs de vraag
+beantwoord kan worden? Welke behoefte dient de digitale tweeling en het digitale tweeling stelsel en voldoet
+de digitale tweeling daaraan?
+Digitale tweelingen en het stelsel van digitale tweelingen moeten worden gestructureerd en gedeeld om
+samenwerking en innovatie in de economie en maatschappij te bevorderen, in overeenstemming met het
+beginsel van het algemeen welzijn. Daarbij staan de behoeften en wensen van de gebruikers van digitale
+tweelingen centraal. Algemeen welzijn betekent niet dat digitale tweelingen alleen gefinancierd worden met
+publieke middelen vanuit de overheid, maar ook investeringen vraagt van het bedrijfsleven voor
+economische ‘waarde creatie’. Digitale tweelingen en het stelsel van digitale tweelingen stimuleren
+samenwerking en innovatie in de hele economie en maatschappij ten behoeve van het algemeen welzijn.</p>
+</section></section><section id="vertrouwen"><div class="header-wrapper"><h3 id="x2-2-vertrouwen"><bdi class="secno">2.2 </bdi>Vertrouwen</h3><a class="self-link" href="#vertrouwen" aria-label="Permalink for Section 2.2"></a></div>
+<section id="actief-open-en-transparant"><div class="header-wrapper"><h4 id="x2-2-1-actief-open-en-transparant"><bdi class="secno">2.2.1 </bdi>Actief open en transparant</h4><a class="self-link" href="#actief-open-en-transparant" aria-label="Permalink for Section 2.2.1"></a></div>
+<p>Digitale tweelingen en een stelsel van digitale tweelingen moeten zo open mogelijk beschikbaar zijn. Dat wil
+zeggen dat ze open of gedeelde data bevatten, die toegankelijk zijn via open standaarden om ervoor te
+zorgen dat ze de meeste waarde creëren voor de hele maatschappij. Transparantie is bedoeld om inzicht,
+duiding en uitleg te geven. Inzicht in de context en uitvoering van de digitale tweeling en het stelsel, uitleg
+over de gemaakte keuzes in het proces, duiding over de data, de modellen, visualisatie(tools) en tijdens
+besluitvorming.</p>
+<p>We schrijven: “zo open mogelijk” omdat het van belang kan zijn dat deelnemers aan het stelsel ook
+informatie delen die niet geschikt is voor een brede, open, verspreiding. Denk hierbij aan privacy- en
+veiligheidsbeperkingen. Het stelsel dient ook een vertrouwelijke, afgeschermde informatiedeling mogelijk te
+maken.</p>
+<p><strong>Verklaring:</strong> Een stelsel van digitale tweelingen zal profiteren van netwerkeffecten: hoe meer mensen of
+organisaties het stelsel gebruiken, eraan bijdragen en het onderhouden, hoe waardevoller en bruikbaarder
+het wordt.</p>
+<p><strong>Toelichting:</strong> Openheid is een belangrijk element om digitale tweelingen en een ecosysteem van digitale
+tweelingen voor Nederland te realiseren en de waarde voor economie en maatschappij te maximaliseren.
+Een open, op samenwerking gerichte aanpak zal nodig zijn om te zorgen dat het ecosysteem actueel en
+relevant blijft voor een breed scala aan gebruikers, waardoor de kans op silo’s en inefficiëntie wordt
+verkleind. Openheid vereist ook dat digitale tweelingen vindbaar en toegankelijk zijn, zodat gebruikersrelevante data, 
+rekenmodellen en visualisatietools kunnen vinden en gebruiken. Openheid gaat over het toegankelijk, 
+herbruikbaar en uitwisselbaar maken van data, modellen, visualisatietools en technologieën.
+Het gaat niet alleen om de technische toegankelijkheid, maar ook de toegankelijkheid voor de
+belanghebbenden: de gebruikers, burgers en andere primaire belanghebbenden. Leg uit en geef toegang
+tot de informatie, die belanghebbenden nodig hebben om mee te doen en bij te dragen. Een digitale tweeling
+stelsel moet het juiste evenwicht weerspiegelen tussen openheid en (op rollen gebaseerde)
+toegangsbeperkingen, dat gebaseerd is op afgesproken beheers mechanismen.</p>
+</section><section id="eerlijk-kwalitatief-en-inclusief"><div class="header-wrapper"><h4 id="x2-2-2-eerlijk-kwalitatief-en-inclusief"><bdi class="secno">2.2.2 </bdi>Eerlijk, kwalitatief en inclusief</h4><a class="self-link" href="#eerlijk-kwalitatief-en-inclusief" aria-label="Permalink for Section 2.2.2"></a></div>
+<p>De betrouwbaarheid van digitale tweelingen of een stelsel van digitale tweelingen is afhankelijk van de
+kwaliteit en inclusiviteit van de data, modellen en technologie. De primaire belanghebbenden moeten deze
+betrouwbaarheid kunnen beoordelen op aspecten als de relevantie, tijdigheid, nauwkeurigheid, samenhang
+en consistentie, interpreteerbaarheid en toegankelijkheid van de digitale tweelingen, in relatie tot het
+beoogde gebruik. Kwaliteitsnormen en kwaliteitsniveaus voor data en modellen moeten worden gedefinieerd
+en afgesproken om data en modellen te kunnen gebruiken in digitale tweelingen. Het is belangrijk dat de
+digital twin en het stelsel niet alleen de technologie, maar ook de onderliggende data en de betrokkenen
+voldoende inclusief en integer zijn.  Vooringenomenheid (bias), aannames, het bewust of onbewust
+bevoordelen of benadelen, onbedoelde discriminatie en profileren van individuen, groepen mensen en
+locaties is een steeds aanwezig risico bij het gebruik van digitale tweelingen. De maatschappelijke en
+economische waarde door digitale tweelingen moet aan alle belanghebbenden toekomen</p>
+<p><strong>Verklaring:</strong> Het verstrekken van de juiste, relevante metadata ondersteunt het verantwoorde gebruik
+van data en rekenmodellen in digitale tweelingen, waardoor effectieve data-integratie mogelijk wordt om
+waarde te creëren. Providers van data en rekenmodellen aan een digitale tweeling stelsel dienen de
+kwaliteit van data en rekenmodellen te beoordelen op basis van de functionaliteit, levensduur en
+beveiliging, die nodig zijn om het doel te bereiken waarvoor de data en rekenmodellen worden (of zullen
+worden) gebruikt.
+Een digital twin kan nooit een exacte kopie zijn van de werkelijkheid. Juist om die reden is het belangrijk om
+aan te geven waar de grenzen liggen en in welke aspecten juist wel een realistisch beeld wordt geschetst. Een
+beeld dat losstaat van vooringenomenheid. Daarbij is het belangrijk om mee te nemen dat zelfs personen
+die niet in de digital twin worden gerepresenteerd, geraakt kunnen worden door aannames van
+de digital twin of zijn gebruiker.  </p>
+<p><strong>Toelichting:</strong> Het stelsel van digitale tweelingen moet minimum kwaliteitsnormen voor data en
+rekenmodellen hanteren. Dit is vooral belangrijk voor gevallen waarin de juiste kwaliteitsnorm moeilijk te
+bepalen zijn. Kwaliteitsniveaus moeten transparant, gedefinieerd, meetbaar en beheerd worden binnen het
+stelsel van digitale tweelingen. Bij de verzameling, analyse, interpretatie, visualisatie en geautomatiseerde
+besluiten van en met data moet gelet en beoordeeld worden op vooringenomenheid om eventuele
+onbedoelde effecten te voorkomen, waaronder het ontstaan van onbedoelde discriminatie. Deze
+vooringenomenheid geldt niet alleen voor de betrokkenen, die de digital twin ontwikkelen en gebruiken, maar
+ook voor de technologie zelf. Technologie is nooit neutraal. Er zijn periodieke controles op
+vooringenomenheid (bias) in digitale tweelingen nodig om ervoor te zorgen dat de digitale tweelingen eerlijk
+en niet-discriminerend zijn.</p>
+</section><section id="robuust-en-veilig"><div class="header-wrapper"><h4 id="x2-2-3-robuust-en-veilig"><bdi class="secno">2.2.3 </bdi>Robuust en veilig</h4><a class="self-link" href="#robuust-en-veilig" aria-label="Permalink for Section 2.2.3"></a></div>
+<p>Een digitale tweeling en het stelsel van digitale tweelingen dient robuust en veilig te zijn. Dat betekent, dat
+data en rekenmodellen en de technische infrastructuur waarop digitale tweelingen draaien een hoge beschikbaarheid 
+hebben en goed beveiligd zijn (met evt. toegangsbeperkingen) tegen ongewenst gebruik.
+Een digitale tweeling mag daarbij alleen de gevoelige informatie (oftewel persoonlijke data) vrijgeven indien voor
+die informatie uitdrukkelijk toestemming is verkregen van de betrokkenen en het vrijgeven ook wettelijk is
+toegestaan. Een digitale tweeling moet getoetst door onafhankelijke partijen, om blijvend de veiligheid en
+gegevensbescherming te kunnen waarborgen.</p>
+<p><strong>Verklaring:</strong> Data beveiliging en cyber security zijn essentieel om de integriteit van digitale tweelingen en
+het stelsel van digitale tweelingen te waarborgen. Een robuuste en veilige benadering zal vertrouwen geven
+aan de diverse gebruikers in de integriteit en het gebruik van digitale tweelingen en het stelsel. Dit principe
+dient in balans te zijn met de andere principes als openheid en transparantie.
+Daarnaast wordt ook een digital twin wettelijk verplicht de privacy van individuen te respecteren. Digitale
+tweelingen zijn een goede manier om het ruimtelijk gedrag van een synthetische bevolking in de fysieke
+leefomgeving te bestuderen zonder daarbij inbreuk te maken op de privacy van individuen. Daarbij
+dienen de ontwikkelaars en gebruikers van de digital twin wel te reflecteren op wat ‘persoonlijke data’ zijn.
+De combinatie van verschillende ongevoelige datasets kan er namelijk toe leiden dat gevoelige informatie
+over personen wordt onthuld. </p>
+<p><strong>Toelichting:</strong> Beveiliging in digitale tweelingen kan op meerdere manieren technisch ingevuld worden en is
+een balanceer act tussen gebruiksgemak en geboden zekerheden. Maatregelen zijn mogelijk in de
+infrastructuur van de data uitwisseling, de gebruikte systemen, procesafspraken rondom digitale
+tweelingen en in de gebruikte data en rekenmodellen. Met behulp van het kader van de Baseline voor
+Informatiebeveiliging Rijksdienst kan hier concreet invulling aan gegeven worden. De BIR geeft handvaten
+die er voor zorg dragen dat data niet-gemanipuleerd (door kwaadwillenden of fouten) van de provider
+en bron naar de gebruiker komen. Dat ze alleen komen bij degene die er recht op heeft maar vooral ook dat
+die eindgebruiker kan vaststellen dat de data, rekenmodellen en visualisatietools robuust
+beschikbaar, betrouwbaar en beveiligd zijn. Pas certificering toe indien mogelijk.
+Daarnaast dienen betrokkenen bij het ontwikkelen en gebruiken van digital twins expliciet en heel bewust
+toestemming te geven voor het (tijdelijk) verzamelen, koppelen, gebruiken en delen van hun data. Daarbij is
+ook van belang dat heel duidelijk wordt gemaakt voor welk specifiek doel zij hun gegevens beschikbaar
+stellen. Waarom en hoe juist deze data en de toepassing ervan de voorliggende vraag beantwoorden. Verken
+daarbij ook ‘no go areas’ voor de digital twin, ter bescherming van kwetsbare locaties en gemeenschappen. </p>
+</section></section><section id="mensen"><div class="header-wrapper"><h3 id="x2-3-mensen"><bdi class="secno">2.3 </bdi>Mensen</h3><a class="self-link" href="#mensen" aria-label="Permalink for Section 2.3"></a></div>
+<section id="onder-controle-en-toezicht-van-mensen"><div class="header-wrapper"><h4 id="x2-3-1-onder-controle-en-toezicht-van-mensen"><bdi class="secno">2.3.1 </bdi>Onder controle en toezicht van mensen</h4><a class="self-link" href="#onder-controle-en-toezicht-van-mensen" aria-label="Permalink for Section 2.3.1"></a></div>
+<p>Een onafhankelijke vertrouwde derde partij moet als toezichthouder de naleving van ethische en andere
+relevante afspraken controleren, opdat er verantwoord wordt omgegaan met de digital twin, het stelsel van
+digitale tweelingen en de onderliggende data. De digitale tweelingen en het stelsel moeten onder controle en
+toezicht zijn van mensen. Toezicht en controle moet plaatsvinden gedurende het ontwikkeltraject en de gebruiksfase 
+van de digitale tweeling.</p>
+<p><strong>Verklaring:</strong> De verantwoordelijkheid voor ethiek moet niet bij één persoon, stafafdeling of commissie
+liggen. Dat haalt namelijk de verantwoordelijkheid bij anderen weg en uit de interne processen. Het is
+daarentegen wel wenselijk dat een onafhankelijke partij toezicht houdt op verschillende onderdelen van de
+digitale tweeling en het stelsel. Bijvoorbeeld bij de beoordeling van leveranciers en hun dataproducten.
+De ethische codes zijn daarbij een handvat, maar dienen wel iedere keer opnieuw en gedurende het hele
+proces met het team te worden doorleefd. </p>
+<p><strong>Toelichting:</strong> Controle en toezicht moet komen vanuit de mensen: het team. Spreek elkaar aan op de morele
+verantwoordelijkheid en naleving van de ethische waarden en afspraken. Vraag uitleg van externe
+partijen over hoe zij aan de ethische afspraken gaan voldoen. Een organisatie kan ook verantwoording
+afleggen over het gebruik van data en naleving van ethische standaarden in het jaarverslag.</p>
+</section><section id="belanghebbenden-intensief-betrokken"><div class="header-wrapper"><h4 id="x2-3-2-belanghebbenden-intensief-betrokken"><bdi class="secno">2.3.2 </bdi>Belanghebbenden intensief betrokken</h4><a class="self-link" href="#belanghebbenden-intensief-betrokken" aria-label="Permalink for Section 2.3.2"></a></div>
+<p>Voor maatschappelijke opgaven is solidaire betrokkenheid van primaire belanghebbenden
+randvoorwaardelijk om te komen tot open, eerlijke en inclusieve beeld-, oordeels-, en besluitvorming. En
+randvoorwaardelijk om te komen tot een open, eerlijk en inclusief stelsel van digitale tweelingen. Ook voor
+commerciële toepassingen die geen maatschappelijke opgave dienen is de betrokkenheid van primaire
+belanghebbenden essentieel. Een duurzame vertrouwensrelatie bevordert de kwaliteit, de vraag naar- en de
+adoptie van (data- en informatie) producten. Veruit de belangrijkste betrokkenen zijn de mensen, die hun
+persoonlijke data delen én ieder ander die beïnvloed wordt door toepassing van de data en de digital twin.
+Het is belangrijk om burgers en andere primaire belanghebbenden al in de ontwerpfase van de digital twin te
+betrekken. En ook invloed, zeggenschap te geven als ‘mede-eigenaar’. Laat de bijdragen van primaire
+belanghebbenden zwaar wegen.</p>
+<p><strong>Verklaring:</strong> De aard en omvang van de betrokkenheid van primaire belanghebbenden verschillen per
+opgave, per vraagstuk, per opdracht, per product, per situatie. Dit wordt onder meer beïnvloed door: de
+impact op mensen; de duur (eenmalig, tijdelijk of structureel); de risico's (privacy, veiligheid, gelijkheid);
+de geografische scope (internationaal, landelijk, regionaal, (hyper)lokaal); het domein (publiek, privaat);
+het specifieke doel van het datagebruik; de fase van ontwikkeling en realisatie. Dit en dat bepaalt ook de
+(werk)vorm waarlangs primaire belanghebbenden betrokken worden. Dat is maatwerk. Vaak wordt de
+omgeving pas betrokken bij een project in de testfase: zodra de digital twin al klaar staat voor
+gebruik. Feedback wordt dan aangemoedigd en meegenomen, maar dit beperkt de
+belangrijkste belanghebbenden tot een reactie op wat er al staat. Dat is geen intensieve, solidaire
+betrokkenheid. De kwaliteit van de ethiek hangt af van de kwaliteit van het gesprek met de juiste mensen,
+van het stellen en verdiepen van de goede vragen op het juiste moment. </p>
+<p><strong>Toelichting:</strong> Stel de vraag: Wie zijn de primaire belanghebbenden? Wie is de omgeving? Wie zijn de
+betrokkenen? Er zijn verschillende soorten partijen die op verschillende manieren betrokken kunnen
+worden. Werk samen met en leer van (maatschappelijke) partijen die hetzelfde doel nastreven. De overheid
+is bij maatschappelijke opgaven een belangrijke belanghebbende en vehikel waarlangs burgers bereikt en
+betrokken kunnen worden.</p>
+</section></section><section id="effectief"><div class="header-wrapper"><h3 id="x2-4-effectief"><bdi class="secno">2.4 </bdi>Effectief</h3><a class="self-link" href="#effectief" aria-label="Permalink for Section 2.4"></a></div>
+<section id="effectief-bestuurd"><div class="header-wrapper"><h4 id="x2-4-1-effectief-bestuurd"><bdi class="secno">2.4.1 </bdi>Effectief bestuurd</h4><a class="self-link" href="#effectief-bestuurd" aria-label="Permalink for Section 2.4.1"></a></div>
+<p>Alle onderdelen van een digital twin en het stelsel van digitale tweelingen hebben een duidelijk en transparant eigendom, 
+een heldere besturing, belegde verantwoordelijkheden en evt. vastgelegde regelgeving om het creëren, onderhouden en 
+verantwoord gebruik van relevante data, rekenmodellen en visualisatie(tools) te ondersteunen.</p>
+<p><strong>Verklaring:</strong> Duidelijk eigenaarschap en belegde verantwoordelijkheden maken effectief gegevensbeheer en 
+probleemoplossing mogelijk voor een enkele digitale tweeling en binnen het stelsel als geheel. 
+De overheid zou regelgeving kunnen gebruiken om het gewenste gedrag in een ecosysteem te stimuleren wanneer 
+dit niet mogelijk is door middel van de samenwerking tussen bedrijfsleven, overheid, onderwijs en onderzoek, 
+maatschappelijke organisaties en burgers.</p>
+<p><strong>Toelichting:</strong> Eigendom van data is een centraal element van dit principe en biedt verantwoordelijkheid 
+voor het samenstellen van geschikte kwaliteitsdata voor integratie in digital twins en het ecosysteem van digital twins. 
+Data eigenaren en providers moeten samenwerken met belanghebbenden om hoogwaardige datasets te identificeren voor digital twins. 
+Data eigenaren en providers moeten ook beschikken over de juiste vaardigheden en competenties, die nodig zijn om digital twins 
+mogelijk te maken. Digital twins kunnen worden bestuurd door het bedrijfsleven, de overheid, onderwijs en onderzoek, 
+maatschappelijke organisaties en/of burgers. Besturing moet ook voorzien in mechanismen voor het algehele beheer van 
+het ecosysteem van digital twins, waarbij eerlijke waarde en consistente naleving van standaarden worden gegarandeerd.</p>
+</section><section id="federatief"><div class="header-wrapper"><h4 id="x2-4-2-federatief"><bdi class="secno">2.4.2 </bdi>Federatief</h4><a class="self-link" href="#federatief" aria-label="Permalink for Section 2.4.2"></a></div>
+<p>Eigenaren van (onderdelen van) digital twins moeten een gefedereerd model ondersteunen waar data, modellen, tools en gerelateerde, 
+ondersteunende diensten op een flexibele en responsieve manier kunnen worden verbonden en gedeeld.</p>
+<p><strong>Verklaring:</strong> Met een federatief model zullen het bedrijfsleven en alle niveaus van de overheid (nationaal, regionaal en lokaal) 
+het gezag behouden voor hun respectieve verantwoordelijkheden, hun functies en bijbehorende data, die deel uitmaken van de 
+nationale digital twin infrastructuur.</p>
+<p><strong>Toelichting:</strong> Het federatieve model vereist en stimuleert het bedrijfsleven en de overheid om de onderdelen van de digital 
+twin op consistente, interoperabele, platformonafhankelijke en platformonafhankelijke manieren te ontwikkelen en te beheren. 
+Met het federatieve model wordt schaalvergroting gestimuleerd en kunnen gebruikers in de gehele economie en maatschappij gebruik 
+maken van digital twins binnen en tussen toepassingsgebieden, sectoren en rechtsgebieden. Governance is een essentieel onderdeel 
+van dit principe. Het voorgestelde gefedereerde model vereist een niveau van consistent bestuur over verschillende sectoren heen, 
+maar ook tussen het bedrijfsleven en de overheid. Governance van het federatieve model moet met name ervoor zorgen, dat digital 
+twins voor de fysieke leefomgeving kunnen werken met verschillende soorten data(bronnen) binnen en tussen:</p>
+<ul>
+<li>verschillende infrastructuur- en toepassingssectoren (bijv. mobiliteit, landbouw, energie, klimaat);</li>
+<li>zowel de gebouwde als de natuurlijke omgeving;</li>
+<li>verschillende ruimtelijke en temporele schalen;</li>
+<li>verschillende modelleringsbenaderingen.</li>
+</ul>
+</section><section id="met-open-standaarden"><div class="header-wrapper"><h4 id="x2-4-3-met-open-standaarden"><bdi class="secno">2.4.3 </bdi>Met open standaarden</h4><a class="self-link" href="#met-open-standaarden" aria-label="Permalink for Section 2.4.3"></a></div>
+<p>We adopteren overeengekomen open standaarden voor data en digital twins, met cross-platform en platform-onafhankelijke 
+architectuur modellen om overall interoperabiliteit, compatibiliteit en functionaliteit te bieden</p>
+<p><strong>Verklaring:</strong> Open standaarden voor data en digital twins waarborgen vertrouwen door open en uniforme semantiek en uitwisseling, 
+voorkomen vendor lock-in, zijn kosten reducerend en zorgen ervoor dat digital twins en het digital twin ecosysteem optimale waarde leveren.</p>
+<p><strong>Toelichting:</strong> Gebruik van open standaarden zorgt ervoor dat digital twins en het digital twin ecosysteem leverancier-onafhankelijk zijn. 
+Het gebruik van open standaarden, zoals semantische data modellen en Application Programming Interfaces (APIs), waarborgt brede 
+toegankelijkheid en uniform gebruik van data en digital twins in economie en maatschappij. Dit principe sluit nauw aan bij de 
+gemeenschappelijke benadering van de Nederlandse overheid voor het toepassen van open standaarden, die nodig zijn een digital twin ecosysteem 
+te realiseren. Voor deze (semi-)publieke organisaties is het gebruik van open standaarden de norm. Het College Standaardisatie wijst open 
+standaarden aan waarvoor een 'comply-or-explain'-regime geldt, de Lijst Open Standaarden voor Pas Toe of Leg Uit.</p>
+</section><section id="adaptief"><div class="header-wrapper"><h4 id="x2-4-4-adaptief"><bdi class="secno">2.4.4 </bdi>Adaptief</h4><a class="self-link" href="#adaptief" aria-label="Permalink for Section 2.4.4"></a></div>
+<p>Digital twins voor de fysieke leefomgeving moeten zich continue kunnen aanpassen en ontwikkelen naarmate de fysieke leefomgeving verandert 
+en de wereld om ons heen evolueert als gevolg van veranderingen in de samenleving, de technologie, functionele vereisten, het informatiebeheer, 
+de data science, cyberveiligheid.</p>
+<p><strong>Verklaring:</strong> Continue aanpassing van digital twins zorgt ervoor, dat digital twins bruikbaar blijven en evolueren om te voldoen 
+aan de veranderende behoeften van eindgebruikers en op data-gebaseerde planning en besluitvorming mogelijk blijft voor zowel bedrijfsleven, 
+overheid, onderwijs- en kennisinstellingen, maatschappelijke organisaties en burgers.</p>
+<p><strong>Toelichting:</strong> Digital twins zullen zich blijven aanpassen en evolueren. Technische oplossingen voor digital twins, 
+met name platforms en software, zijn onpartijdig om de voortdurende aanpassing en evolutie van digital twins en het nationaal 
+ecosysteem van digital twins op de lange termijn mogelijk te maken.</p>
+</section></section></section>
+      <section id="H3"><div class="header-wrapper"><h2 id="x3-architectuurprincipes"><bdi class="secno">3. </bdi>Architectuurprincipes</h2><a class="self-link" href="#H3" aria-label="Permalink for Section 3."></a></div>
+<section id="aansluiten-op-omliggende-kaders"><div class="header-wrapper"><h3 id="x3-1-aansluiten-op-omliggende-kaders"><bdi class="secno">3.1 </bdi>Aansluiten op omliggende kaders</h3><a class="self-link" href="#aansluiten-op-omliggende-kaders" aria-label="Permalink for Section 3.1"></a></div>
+<p><strong>Beschrijving:</strong>
+De architectuur van het digitale tweeling stelsel is mede gebaseerd op architecturale kaders van de overheid 
+en de facto kaders zoals gangbaar binnen bedrijven en organisaties.</p>
+<p><strong>Rationale:</strong>
+Het stelsel van Digitale tweelingen bestaat niet in isolatie. Het moet zich verhouden tot de omgeving en de ontwikkelingen
+die daar plaatsvinden. Te denken valt hierbij aan de Dataspace ontwikkelingen en de Europese Data- en AI Act.</p>
+<p><strong>Implicaties:</strong></p>
+<ul>
+<li><a href="#hergebruik">Hergebruik</a></li>
+</ul>
+</section><section id="domein-georienteerd-gedecentraliseerd-stelsel"><div class="header-wrapper"><h3 id="x3-2-domein-georienteerd-gedecentraliseerd-stelsel"><bdi class="secno">3.2 </bdi>Domein georiënteerd, gedecentraliseerd stelsel</h3><a class="self-link" href="#domein-georienteerd-gedecentraliseerd-stelsel" aria-label="Permalink for Section 3.2"></a></div>
+<p><strong>Beschrijving:</strong>
+Uitgangspunt is dat organisaties die deelnemen aan het stelsel zelf zorgen voor het aanleggen van databestanden, 
+dataverwerking en het ter beschikking stellen van data aan derden. Eigenaarschap en verantwoordelijkheid ligt daarmee bij de bron.
+Concrete invulling kan eventueel via een service provider gerealiseerd worden.</p>
+<p><strong>Rationale:</strong>
+Bij een federatief stelsel is het beleggen van eigenaarschap en verantwoordelijkheid op de plaats waar die hoort onontbeerlijk. 
+Alleen als dit in het hele stelsel op een acceptabel niveau geregeld is kan het stelsel als geheel succesvol zijn.</p>
+<p><strong>Implicaties:</strong></p>
+<ul>
+<li><a href="#hergebruik">Hergebruik</a></li>
+<li><a href="#specifieke-domein-context-beschrijven">specifieke domein context beschrijven</a></li>
+<li><a href="#zorg-voor-vindbaarheid">zorg voor vindbaarheid</a></li>
+</ul>
+</section><section id="data-als-product"><div class="header-wrapper"><h3 id="x3-3-data-als-product"><bdi class="secno">3.3 </bdi>Data als product</h3><a class="self-link" href="#data-als-product" aria-label="Permalink for Section 3.3"></a></div>
+<p><strong>Beschrijving:</strong>
+Organisaties ontwikkelen op basis van data waarover zij beschikken uitwisselbare dataproducten, die tegen
+bepaalde condities (aansluitvoorwaarden) aan andere deelnemers van het stelsel ter beschikking worden
+gesteld. Deze dataproducten kunnen de vorm aannemen van operationele data, analytische data, modellen
+of een combinatie ervan. Een dataproduct wordt ontwikkeld zodat het vindbaar, begrijpelijk, betrouwbaar,
+interoperabel, toegankelijk, beveiligd, adresseerbaar is en publieke waarde heeft. Dit zijn de voorwaarden
+voor deelname aan het stelsel. Het dataproduct informeert afnemers ook over onder meer de relevante
+context, bruikbaarheid, kwaliteitsaspecten, houdbaarheid en herkomst van de geleverde data. Al deze
+informatie is bij het dataproduct zelf aanwezig.</p>
+<p><strong>Rationale:</strong>
+Productdenken schept de voorwaarden voor het uitwisselen van diensten in het stelsel. Het biedt een raamwerk
+om op een uniforme wijze te redeneren over niet enkel datasets, maar ook modellen en analytische- of andere diensten.
+Dit schept de randvoorwaarden om binnen een stelsel samen te kunnen werken en afspraken met elkaar te kunnen maken.</p>
+<p><strong>Implicaties:</strong></p>
+<ul>
+<li><a href="#specifieke-domein-context-beschrijven">specifieke domein context beschrijven</a></li>
+<li><a href="#self-descriptions">self descriptions</a></li>
+<li><a href="#lineage">lineage</a></li>
+<li><a href="#kwaliteitsraamwerk">kwaliteitsraamwerk</a></li>
+</ul>
+</section><section id="zelfservice-data-infrastructuur"><div class="header-wrapper"><h3 id="x3-4-zelfservice-data-infrastructuur"><bdi class="secno">3.4 </bdi>Zelfservice data-infrastructuur</h3><a class="self-link" href="#zelfservice-data-infrastructuur" aria-label="Permalink for Section 3.4"></a></div>
+<p><strong>Beschrijving:</strong>
+Het stelsel berust op federatieve componenten, waaronder publieke en private datanetwerken,
+op cloudtechnologie gebaseerde datacenters, indexen voor het vindbaar maken van
+dataproducten en voorzieningen voor identiteits- en toegangscontrole. Via federatieve indexen
+kunnen vragende partijen geautomatiseerd door hen gewenste dataproducten vinden.
+Het stelsel is zodanig ingericht dat partijen die aan de aansluitvoorwaarden voldoen met hun eigen 
+componenten deel kunnen nemen.</p>
+<p><strong>Rationale:</strong>
+Een federatief stelsel moet de voorwaarden scheppen voor een gelijk speelveld. Er is geen afhankelijkheid van slechts 
+één infrastructuur leverancier, maar partijen moeten mee kunnen doen op basis van open standaarden en aansluitvoorwaarden.</p>
+<p><strong>Implicaties:</strong></p>
+<ul>
+<li><a href="#self-descriptions">self descriptions</a></li>
+<li><a href="#api-designrules">API Designrules</a></li>
+</ul>
+</section><section id="gefedereerde-en-geautomatiseerde-governance"><div class="header-wrapper"><h3 id="x3-5-gefedereerde-en-geautomatiseerde-governance"><bdi class="secno">3.5 </bdi>Gefedereerde en geautomatiseerde governance</h3><a class="self-link" href="#gefedereerde-en-geautomatiseerde-governance" aria-label="Permalink for Section 3.5"></a></div>
+<p><strong>Beschrijving:</strong>
+Het stelsel is gebaseerd op een gefedereerde / gedistribueerde aanpak waar geautomatiseerde governance ingebouwd is.
+Dit wil zeggen dat auditing, logging, authenticatie en authorisatie op geautomatiseerde systemen berust. 
+(En dus niet op een handmatig audit proces dan wel handmatige certificering).
+Hiermee kan schaalbaarheid en betrouwbaarheid van het stelsel gerealiseerd worden.</p>
+<p><strong>Rationale:</strong>
+Het huidige digitale ecosysteem is zodanig groot, complex en met elkaar verweven dat handmatige controle niet toereikend is.
+Het implementeren van gefedereerde en geautomatiseerde governance vraagt een digitale mindset die nog niet vanzelfsprekend is.</p>
+<p><strong>Implicaties:</strong></p>
+<ul>
+<li><a href="#keuzes-maken-in-automatisering">keuzes maken in automatisering</a></li>
+</ul>
+</section><section id="gebaseerd-op-service-orientatie"><div class="header-wrapper"><h3 id="x3-6-gebaseerd-op-service-orientatie"><bdi class="secno">3.6 </bdi>Gebaseerd op service oriëntatie</h3><a class="self-link" href="#gebaseerd-op-service-orientatie" aria-label="Permalink for Section 3.6"></a></div>
+<p><strong>Beschrijving:</strong>
+De architectuur van het digital twin stelsel is gebaseerd op service oriëntatie.</p>
+<p>Deelnemers aan het stelsel wisselen data en modellen uit via het beginsel van de service orientatie. 
+Dat wil zeggen: Een samenspel van (gestandaardiseerde) vragen en antwoorden via een verbindende infrastructuur. 
+In praktische zin wordt dit ingevuld met services of API’s.</p>
+<p><strong>Rationale:</strong>
+Het ontkoppelen van de verschillende componenten in het stelsel lukt alleen als het stelsel gerealiseerd wordt met
+goed beschreven open en interoperabele interfaces. Door goede gedefinieerde koppelvlakken ontstaat een ecosysteem waar
+verschillende partijen interoperabel met elkaar kunnen samenwerken.</p>
+<p><strong>Implicaties:</strong></p>
+<ul>
+<li><a href="#api-designrules">API Designrules</a></li>
+</ul>
+</section><section id="open-standaarden"><div class="header-wrapper"><h3 id="x3-7-open-standaarden"><bdi class="secno">3.7 </bdi>Open standaarden</h3><a class="self-link" href="#open-standaarden" aria-label="Permalink for Section 3.7"></a></div>
+<p><strong>Beschrijving:</strong>
+De architectuur van het digital twin stelsel is maximaal gebaseerd op de toepassing van open standaarden.</p>
+<p>Het stelsel staat open voor deelname vanuit overheid en private sector. Federatieve componenten van het stelsel worden via 
+open standaarden vormgegeven. Daarnaast geldt een sterke aanbeveling voor deelnemende partijen om voor dataproducten eveneens 
+gebruik te maken van open standaarden, teneinde de interoperabiliteit van het stelsel te maximaliseren. </p>
+<p><strong>Rationale:</strong>
+Open standaarden maken een gelijk speelveld voor de verschillende deelnemende partijen mogelijk. </p>
+<p><strong>Implicaties:</strong></p>
+<ul>
+<li><a href="#hergebruik">Hergebruik</a></li>
+</ul>
+</section><section id="data-soevereiniteit-is-geborgd"><div class="header-wrapper"><h3 id="x3-8-data-soevereiniteit-is-geborgd"><bdi class="secno">3.8 </bdi>Data soevereiniteit is geborgd</h3><a class="self-link" href="#data-soevereiniteit-is-geborgd" aria-label="Permalink for Section 3.8"></a></div>
+<p><strong>Beschrijving:</strong>
+De data-eigenaar bepaalt de gebruiksvoorwaarden van de door hem ter beschikking gestelde data in de gehele keten.
+Datasoevereiniteit behandelt hoe gegevens worden uitgewisseld en gedeeld tussen organisaties. Een
+gegevenseigenaar bepaalt de gebruiksvoorwaarden van zijn gegevens. Met andere woorden: de dataeigenaar 
+bepaalt wat de data-afnemer wel en niet mag doen met de geleverde data.</p>
+<p><strong>Rationale:</strong>
+Om waardevolle oplossingen te realiseren zal niet altijd alleen maar open data gebruikt kunnen worden. Het stelsel 
+moet 'data delen onder voorwaarden' ondersteunen zodat het mogelijk wordt om een rijk pallet aan oplossingen aan te kunnen bieden.</p>
+<p><strong>Implicaties:</strong></p>
+<ul>
+<li><a href="#self-descriptions">self descriptions</a></li>
+</ul>
+</section><section id="kwaliteit-van-data-is-gekend"><div class="header-wrapper"><h3 id="x3-9-kwaliteit-van-data-is-gekend"><bdi class="secno">3.9 </bdi>Kwaliteit van data is gekend</h3><a class="self-link" href="#kwaliteit-van-data-is-gekend" aria-label="Permalink for Section 3.9"></a></div>
+<p><strong>Beschrijving:</strong>
+Over de door deelnemers aan het stelsel aangeboden data (incl. in de vorm van modellen) kan te allen tijde verantwoording worden 
+afgelegd over de herkomst, betekenis en kwaliteit van data.  </p>
+<p><strong>Rationale:</strong>
+Een stelsel op basis van deze architectuurprincipes leidt tot ketens van combineerbare data.
+Daarom is het essentieel dat afnemers van dataproducten nauwkeurige, op veldniveau, informatie krijgen 
+over zaken als de herkomst van data (data lineage of data provenance), tijdstip van verwerving van data,
+betrouwbaarheid van data, geldigheid van data, vertrouwelijkheid van data, gebruikscondities van data en
+semantische duiding van data.</p>
+<p><strong>Implicaties:</strong></p>
+<ul>
+<li><a href="#self-descriptions">self descriptions</a></li>
+<li><a href="#lineage">lineage</a></li>
+<li><a href="#kwaliteitsraamwerk">kwaliteitsraamwerk</a></li>
+</ul>
+</section><section id="het-stelsel-is-betrouwbaar"><div class="header-wrapper"><h3 id="x3-10-het-stelsel-is-betrouwbaar"><bdi class="secno">3.10 </bdi>Het stelsel is betrouwbaar</h3><a class="self-link" href="#het-stelsel-is-betrouwbaar" aria-label="Permalink for Section 3.10"></a></div>
+<p><strong>Beschrijving:</strong>
+Het stelsel is gericht op het optimaal en vertrouwd kunnen delen van data. Hiervoor is een raamwerk nodig dat vertrouwen creëert en waarborgt.</p>
+<p><strong>Rationale:</strong>
+In het stelsel zijn de rollen van de deelnemers bekend om te zorgen dat 'data delen onder voorwaarden' plaats kan vinden.</p>
+<p><strong>Implicaties:</strong></p>
+<ul>
+<li><a href="#api-designrules">API Designrules</a></li>
+<li><a href="#keuzes-maken-in-automatisering">keuzes maken in automatisering</a></li>
+<li><a href="#self-descriptions">self descriptions</a></li>
+<li><a href="#lineage">lineage</a></li>
+<li><a href="#kwaliteitsraamwerk">kwaliteitsraamwerk</a></li>
+</ul>
+</section></section>
+      <section id="H4"><div class="header-wrapper"><h2 id="x4-implicaties"><bdi class="secno">4. </bdi>Implicaties</h2><a class="self-link" href="#H4" aria-label="Permalink for Section 4."></a></div>
+<section id="self-descriptions"><div class="header-wrapper"><h3 id="x4-1-self-descriptions"><bdi class="secno">4.1 </bdi>Self descriptions</h3><a class="self-link" href="#self-descriptions" aria-label="Permalink for Section 4.1"></a></div>
+<p><strong>Beschrijving:</strong>
+Een dataproduct binnen het stelsel van digitale tweelingen moet zichzelf kunnen beschrijven. Dit betekent dat alle relevante informatie over het dataproduct direct beschikbaar is, inclusief de context, bruikbaarheid, kwaliteitsaspecten, houdbaarheid, herkomst (lineage) en semantische duiding van de geleverde data. </p>
+<p><strong>Rationale:</strong>
+Zelfbeschrijvingen zijn cruciaal voor het realiseren van het architectuurprincipe 'Data als product'. Door dataproducten van duidelijke metadata te voorzien, wordt hergebruik gefaciliteerd en de vindbaarheid binnen de zelfservice data-infrastructuur verbeterd. Dit draagt bij aan een open en transparant stelsel (kernwaarde) waarin gebruikers de betrouwbaarheid van data kunnen beoordelen (kernwaarde: eerlijk, kwalitatief en inclusief). De expliciete vermelding van gebruiksvoorwaarden borgt data soevereiniteit. Bovendien versterkt het inzicht in de eigenschappen van data het vertrouwen in het gehele stelsel (kernwaarde).</p>
+<p><strong>Implicatie bij:</strong></p>
+<ul>
+<li><a href="#data-als-product">Data als product</a></li>
+<li><a href="#data-soevereiniteit-is-geborgd">Datasoevereiniteit is geborgd</a></li>
+<li><a href="#het-stelsel-is-betrouwbaar">Het stelsel is betrouwbaar</a></li>
+<li><a href="#kwaliteit-van-data-is-gekend">Kwaliteit van data is gekend</a></li>
+<li><a href="#zelfservice-data-infrastructuur">Zelfservice data-infrastructuur</a></li>
+</ul>
+</section><section id="lineage"><div class="header-wrapper"><h3 id="x4-2-lineage"><bdi class="secno">4.2 </bdi>Lineage</h3><a class="self-link" href="#lineage" aria-label="Permalink for Section 4.2"></a></div>
+<p><strong>Beschrijving:</strong>
+De herkomst en de reis van data binnen het stelsel van digitale tweelingen moet traceerbaar zijn. Dit betekent dat de data lineage of data provenance van een dataproduct bekend moet zijn, inclusief het tijdstip van verwerving en eventuele bewerkingen die de data heeft ondergaan. </p>
+<p><strong>Rationale:</strong>
+ Inzicht in de data lineage is essentieel om de verantwoording over de kwaliteit van data te kunnen afleggen (architectuurprincipe: kwaliteit van data is gekend) en het vertrouwen in de betrouwbaarheid van het stelsel te waarborgen (architectuurprincipe: het stelsel is betrouwbaar). Door de herkomst te kennen, kunnen gebruikers de context van de data beter begrijpen en de geschiktheid voor hun specifieke toepassing beoordelen. Dit ondersteunt de kernwaarde van eerlijk, kwalitatief en inclusief door transparantie te bieden over de totstandkoming van data.</p>
+<p><strong>Implicatie bij:</strong></p>
+<ul>
+<li><a href="#data-als-product">Data als product</a></li>
+<li><a href="#het-stelsel-is-betrouwbaar">Het stelsel is betrouwbaar</a></li>
+<li><a href="#kwaliteit-van-data-is-gekend">Kwaliteit van data is gekend</a></li>
+</ul>
+</section><section id="kwaliteitsraamwerk"><div class="header-wrapper"><h3 id="x4-3-kwaliteitsraamwerk"><bdi class="secno">4.3 </bdi>Kwaliteitsraamwerk</h3><a class="self-link" href="#kwaliteitsraamwerk" aria-label="Permalink for Section 4.3"></a></div>
+<p><strong>Beschrijving:</strong>
+Er dient een kwaliteitsraamwerk aanwezig te zijn binnen het stelsel van digitale tweelingen dat normen en niveaus voor de kwaliteit van data en modellen definieert en beheert. Dit raamwerk is noodzakelijk om betrouwbare dataproducten te kunnen uitwisselen en om ervoor te zorgen dat gebruikers de kwaliteit van de data kunnen beoordelen op aspecten als relevantie, tijdigheid, nauwkeurigheid, samenhang, consistentie, interpreteerbaarheid en toegankelijkheid. </p>
+<p><strong>Rationale:</strong>
+Dit raamwerk is noodzakelijk om betrouwbare dataproducten uit te wisselen (architectuurprincipe: het stelsel is betrouwbaar) en om ervoor te zorgen dat gebruikers de kwaliteit van de data kunnen beoordelen op aspecten als relevantie, tijdigheid, nauwkeurigheid, samenhang, consistentie, interpreteerbaarheid en toegankelijkheid (architectuurprincipe: kwaliteit van data is gekend). Het draagt bij aan de kernwaarde van eerlijk, kwalitatief en inclusief door duidelijke criteria te bieden voor de beoordeling van data en modellen, wat essentieel is voor verantwoord gebruik van digitale tweelingen (kernwaarde: onder controle en toezicht van mensen).</p>
+<p><strong>Implicatie bij:</strong></p>
+<ul>
+<li><a href="#data-als-product">Data als product</a></li>
+<li><a href="#het-stelsel-is-betrouwbaar">Het stelsel is betrouwbaar</a></li>
+<li><a href="#kwaliteit-van-data-is-gekend">Kwaliteit van data is gekend</a></li>
+</ul>
+</section><section id="hergebruik"><div class="header-wrapper"><h3 id="x4-4-hergebruik"><bdi class="secno">4.4 </bdi>Hergebruik</h3><a class="self-link" href="#hergebruik" aria-label="Permalink for Section 4.4"></a></div>
+<p><strong>Beschrijving:</strong>
+Binnen de architectuur van het digitale tweeling stelsel dient hergebruik van (stelsel)functies en definities te worden gemaximaliseerd. Dit betekent dat er gedacht moet worden vanuit wat er al is in plaats van direct nieuwe oplossingen te ontwikkelen. </p>
+<p><strong>Rationale:</strong>
+Dit bevordert efficiëntie en reduceert kosten door te bouwen op bestaande architecturale kaders (architectuurprincipe: aansluiten op omliggende kaders), open standaarden (architectuurprincipe: open standaarden) en bewezen concepten. Het waarborgt interoperabiliteit en is een direct gevolg van het domein georiënteerd en gedecentraliseerd zijn van het stelsel, waardoor componenten vaker ingezet kunnen worden binnen verschillende domeinen.</p>
+<p><strong>Implicatie bij:</strong></p>
+<ul>
+<li><a href="#aansluiten-op-omliggende-kaders">Aansluiten op omliggende kaders</a></li>
+<li><a href="#domein-georienteerd-gedecentraliseerd-stelsel">Domein georienteerd, gedecentraliseerd stelsel</a></li>
+<li><a href="#open-standaarden">Open standaarden</a></li>
+</ul>
+</section><section id="specifieke-domein-context-beschrijven"><div class="header-wrapper"><h3 id="x4-5-specifieke-domein-context-beschrijven"><bdi class="secno">4.5 </bdi>specifieke domein context beschrijven</h3><a class="self-link" href="#specifieke-domein-context-beschrijven" aria-label="Permalink for Section 4.5"></a></div>
+<p><strong>Beschrijving:</strong>
+Bij de ontwikkeling en het aanbieden van dataproducten is het cruciaal om de specifieke context van het domein expliciet te beschrijven. Dit helpt om misverstanden en ambiguïteit te voorkomen, bijvoorbeeld door duidelijk het verschil aan te geven tussen een steiger (vaarweg) en een steiger (bouw).</p>
+<p><strong>Rationale:</strong>
+Dit voorkomt misverstanden en ambiguïteit in een domein georiënteerd, gedecentraliseerd stelsel waarin verschillende vakgebieden samenwerken. Het is van belang bij het architectuurprincipe van data als product om de begrijpelijkheid van dataproducten te waarborgen, zodat afnemers de data correct kunnen interpreteren en gebruiken in hun specifieke context. Dit draagt bij aan de effectiviteit van het stelsel (kernwaarde: effectief bestuurd).</p>
+<p><strong>Implicatie bij:</strong></p>
+<ul>
+<li><a href="#data-als-product">Data als product</a></li>
+<li><a href="#domein-georienteerd-gedecentraliseerd-stelsel">Domein georienteerd, gedecentraliseerd stelsel</a></li>
+</ul>
+</section><section id="zorg-voor-vindbaarheid"><div class="header-wrapper"><h3 id="x4-6-zorg-voor-vindbaarheid"><bdi class="secno">4.6 </bdi>zorg voor vindbaarheid</h3><a class="self-link" href="#zorg-voor-vindbaarheid" aria-label="Permalink for Section 4.6"></a></div>
+<p><strong>Beschrijving:</strong>
+Om hergebruik te stimuleren en de waarde van het stelsel te maximaliseren, is het essentieel dat dataproducten gemakkelijk gevonden kunnen worden door andere deelnemers. Alleen wanneer producten vindbaar zijn via bijvoorbeeld federatieve catalogi of indexen kunnen partijen ervoor kiezen om bestaande oplossingen te hergebruiken in plaats van zelf iets nieuws te ontwikkelen. </p>
+<p><strong>Rationale:</strong>
+Dit stimuleert hergebruik en maximaliseert de waarde van het gedecentraliseerde stelsel door het potentieel voor data-integratie te vergroten (capability: integreren). Het is een directe implicatie van een domein georiënteerd, gedecentraliseerd stelsel waarin data en modellen over verschillende organisaties verspreid kunnen zijn en wordt gefaciliteerd door de zelfservice data-infrastructuur componenten. Vindbaarheid is essentieel voor de ontwikkeling van een ecosysteem van digitale tweelingen.</p>
+<p><strong>Implicatie bij:</strong></p>
+<ul>
+<li><a href="#domein-georienteerd-gedecentraliseerd-stelsel">Domein georienteerd, gedecentraliseerd stelsel</a></li>
+</ul>
+</section><section id="keuzes-maken-in-automatisering"><div class="header-wrapper"><h3 id="x4-7-keuzes-maken-in-automatisering"><bdi class="secno">4.7 </bdi>keuzes maken in automatisering</h3><a class="self-link" href="#keuzes-maken-in-automatisering" aria-label="Permalink for Section 4.7"></a></div>
+<p><strong>Beschrijving:</strong>
+De ontwikkeling en het beheer van het digitale tweeling stelsel vereist bewuste keuzes op het gebied van automatisering. Dit omvat overwegingen over wel of geen inzet van AI, maar ook het voldoende op de hoogte zijn van de gebruikte technologie stack, zoals bijvoorbeeld de 'Infrastructure as Code' benadering. </p>
+<p><strong>Rationale:</strong>
+Dit is cruciaal voor het realiseren van gefederdeerde en geautomatiseerde governance wat de schaalbaarheid en betrouwbaarheid van het stelsel ten goede komt (architectuurprincipe: het stelsel is betrouwbaar). Automatisering van auditing, logging, authenticatie en autorisatie is noodzakelijk gezien de omvang en complexiteit van het beoogde digitale ecosysteem. Het draagt bij aan een robuust en veilig stelsel (kernwaarde).</p>
+<p><strong>Implicatie bij:</strong></p>
+<ul>
+<li><a href="#gefedereerde-en-geautomatiseerde-governance">Gefedereerde en geautomatiseerde governance</a></li>
+<li><a href="#het-stelsel-is-betrouwbaar">Het stelsel is betrouwbaar</a></li>
+</ul>
+</section><section id="api-designrules"><div class="header-wrapper"><h3 id="x4-8-api-designrules"><bdi class="secno">4.8 </bdi>API Designrules</h3><a class="self-link" href="#api-designrules" aria-label="Permalink for Section 4.8"></a></div>
+<p><strong>Beschrijving:</strong>
+De architectuur van het digital twin stelsel is gebaseerd op service oriëntatie, waarbij data en modellen worden uitgewisseld via gestandaardiseerde vragen en antwoorden (API's). Om een optimale integratie en samenwerking binnen het stelsel te waarborgen, is het noodzakelijk om de API Designrules te volgen.  Het Kennisplatform API's brengt deze API Designrules uit.</p>
+<p><strong>Rationale:</strong>
+Dit is essentieel om interoperabiliteit te garanderen (architectuurprincipe: open standaarden) en een betrouwbaar stelsel te creëren (architectuurprincipe: het stelsel is betrouwbaar) in een service georiënteerde architectuur (architectuurprincipe: gebaseerd op service oriëntatie). Het faciliteert een flexibele en responsieve manier van verbinden en delen van data, modellen en tools (kernwaarde: federatief) en ondersteunt de uitwisseling van dataproducten binnen de zelfservice data-infrastructuur.</p>
+<p><strong>Implicatie bij:</strong></p>
+<ul>
+<li><a href="#self-descriptions">self descriptions</a></li>
+<li><a href="#gebaseerd-op-service-orientatie">Gebaseerd op service orientatie</a></li>
+<li><a href="#het-stelsel-is-betrouwbaar">Het stelsel is betrouwbaar</a></li>
+</ul>
+</section></section>
+      <section id="H5"><div class="header-wrapper"><h2 id="x5-waardestromen-en-capabilities"><bdi class="secno">5. </bdi>Waardestromen en Capabilities</h2><a class="self-link" href="#H5" aria-label="Permalink for Section 5."></a></div>
+<p>Zoals in de inleiding al beschreven staat volgen we deze definitie van een digitale tweeling:</p>
+<p><em>Een digitale tweeling van de fysieke leefomgeving is een digitale representatie van de stedelijke en landelijke omgeving op basis van data, modellen en visualisaties. Deze kunnen worden gebruikt om verschillende aspecten van de fysieke leefomgeving te simuleren en analyseren.</em> [<cite><a class="bibref" data-link-type="biblio" href="#bib-vro_2024" title="Aanbieding meerjarenvisie Zicht op Nederland: samen datagedreven werken aan de fysieke leefomgeving">VRO_2024</a></cite>]</p>
+<p>De toepassing van een Digitale Tweeling in de fysieke leefomgeving kan zeer uitlopend zijn. Om enig houvast te geven in de verschillende soorten toepassingen hanteren we de volgende type niveaus van automatisering:</p>
+<table>
+<thead>
+<tr>
+<th>Niveau</th>
+<th>Toelichting</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Beschrijvend</td>
+<td>Verspreidde, statische data in systemen zonder integratie, communicatie of automatisering.</td>
+</tr>
+<tr>
+<td>Diagnostisch</td>
+<td>Operationele data en sensordata. Dashboard met operationele inzichten.</td>
+</tr>
+<tr>
+<td>Voorspellend</td>
+<td>Contextuele data, machine learning, gedeeltelijke automatisering, verbonden data en systemen.</td>
+</tr>
+<tr>
+<td>Voorschrijvend</td>
+<td>Real-time data uit geïntegreerde systemen, situational awareness, aanbevelingen.</td>
+</tr>
+<tr>
+<td>Autonoom</td>
+<td>Continue intelligentie voor besluitvorming, adaptieve en generatieve AI, zelfverzorgend.</td>
+</tr>
+</tbody></table>
+<p> [<cite><a class="bibref" data-link-type="biblio" href="#bib-dmi_ecosysteem_volwassenheidsniveaus" title="De type volwassenheidsniveaus zijn gebaseerd op een analyse over zes bronnen, te weten Geospatial World (2023), Digital Twin Consortium (2024a), Digital Urban Brabant (2023), International Data Group (2019), Stichting Toekomstbeeld der Techniek (2022) en TNO.">DMI_ecosysteem_volwassenheidsniveaus</a></cite>]</p>
+<p>Behalve deze automatiseringsniveaus onderkennen we ook de beleidscyclus, waarbij in de verschillende fases een verschillende soort toepassing ingezet kan worden.
+In dit hoofdstuk worden op hoofdlijnen de waardestromen en capabilities beschreven die in verschillende combinaties ingezet kunnen worden, afhankelijk van niveau van automatisering en fase in de beleidscyclus. De keuze welke capabilities ingezet kunnen worden voor een specifieke toepassing is geen onderdeel van deze referentiearchitectuur.</p>
+<section id="metamodel"><div class="header-wrapper"><h3 id="x5-1-metamodel"><bdi class="secno">5.1 </bdi>Metamodel</h3><a class="self-link" href="#metamodel" aria-label="Permalink for Section 5.1"></a></div>
+<img src="./media/NLDT_archimate_metamodel.png" alt="ArchiMate metamodel" width="900"><p>ArchiMate metamodel voor de NLDT architectuur. <a href="https://geonovum.github.io/NLDT-Architectuur/Archimate/html/index.html?view=id-68f0ee0b9d824121b8a04dc58af3d3ab">online viewer</a></p>
+<p>Bovenstaande afbeelding visualiseert het ArchiMate metamodel voor de NLDT architectuur. Deze is opgebouwd uit motivational elements van ArchiMate om de Kaders en richtlijnen uit te drukken. Verder is deze opgebouwd uit <a href="https://nora-begrippen.wikixl.nl/index.php/Id-24a3c495-0b7c-737a-187e-f2da6a318eb5">capabilities</a> en <a href="https://nora-begrippen.wikixl.nl/index.php/Id-2462fbbe-503b-0805-a587-fa013f9814d7">waardestromen</a> om de dienstverlening te beschrijven. De capabilities worden vervolgens in patronen uitgewerkt op basis van elementen uit de bedrijfs- en applicatielaag van ArchiMate. Hoofdstuk 5 behandelt de waardestromen en capabilities, Hoofdstuk 6 behandelt de patronen van bedrijfs- en applicatieobjecten. </p>
+</section><section id="nldt-egovera-mapping"><div class="header-wrapper"><h3 id="x5-2-nldt-egovera-mapping"><bdi class="secno">5.2 </bdi>nLDT - eGovERA mapping</h3><a class="self-link" href="#nldt-egovera-mapping" aria-label="Permalink for Section 5.2"></a></div>
+<img src="./media/nLDT-eGovERA-mapping.png" alt="nLDT - eGovERA mapping" width="900"><p>Overzicht aansluiting van de nLDT architectuur op eGovERA</p>
+<p>De verschillende onderdelen van de nLDT-referentiearchitectuur kunnen worden gemapt op de eGovERA-bouwstenen. Een globale mapping staat in de bovenstaande weergave. Een meer gedetailleerde mapping is te vinden in het ArchiMate-model.</p>
+<ul>
+<li>De motivatie en richtlijnen van de nLDT zijn afgestemd op de Shared Legal Content (Gedeelde Juridische Content).</li>
+<li>De organisatorische invalshoek is afgestemd op de Shared Organisational Content (Gedeelde Organisatorische Content).</li>
+<li>De nLDT-bouwblokken bevatten elementen die de Shared Knowledge Content (Gedeelde Kenniscontent) realiseren, terwijl alle bouwblokken aansluiten bij de Shared Application Content (Gedeelde Applicatiecontent).</li>
+</ul>
+<p>Deze mapping is gedaan op version 6.1.0 van de 'eGovERA Business Agnostic Reference Architecture' [<cite><a class="bibref" data-link-type="biblio" href="#bib-egovera" title="eGovERA Business Agnostic Reference Architecture 6.1.0">eGovERA</a></cite>]</p>
+</section><section id="waardestromen"><div class="header-wrapper"><h3 id="x5-3-waardestromen"><bdi class="secno">5.3 </bdi>Waardestromen</h3><a class="self-link" href="#waardestromen" aria-label="Permalink for Section 5.3"></a></div>
+<p>Het inzetten van een Digitale Tweeling als instrument dient een bepaald doel. Dit kan een scenario analyse zijn, de onderbouwing van gevoerd beleid of de operationele aansturing van een systeem. Er zijn talloze mogelijkheden. In alle gevallen dient er een vertaling gemaakt te worden van het beoogde doel naar een modelmatige weergave in de Digitale Tweeling. Deze vertaling is weer te geven in een waardestroom die een bepaald doel realiseert en daarbij een aantal capabilities nodig heeft. </p>
+<section id="use-case-naar-indicatoren"><div class="header-wrapper"><h4 id="x5-3-1-use-case-naar-indicatoren"><bdi class="secno">5.3.1 </bdi>Use case naar Indicatoren</h4><a class="self-link" href="#use-case-naar-indicatoren" aria-label="Permalink for Section 5.3.1"></a></div>
+<p>In het rapport 'Beleidsprocessen en bouwblokken voor Digitale Tweelingen' [<cite><a class="bibref" data-link-type="biblio" href="#bib-bbdt" title="Beleidsprocessen en bouwblokken voor Digitale Tweelingen">BBDT</a></cite>] wordt beschreven hoe Digitale Tweelingen de beleidswereld en de techniekwereld met elkaar verbinden. Indicatoren vormen daarbij de linking pin van beleid naar de Digitale Tweeling om data en model gedreven werken mogelijk te maken binnen het beleidsproces. De <a href="https://www.geonovum.nl/themas/digital-twins/innovatieleercyclus">Innovatieleercyclus</a> kan gebruikt worden om deze werelden met elkaar te verbinden. In architectuurtermen kun je dit aanduiden met Waardestromen.</p>
+</section><section id="resultaten-inzichten-omzetten-naar-praktijk"><div class="header-wrapper"><h4 id="x5-3-2-resultaten-inzichten-omzetten-naar-praktijk"><bdi class="secno">5.3.2 </bdi>Resultaten/inzichten omzetten naar praktijk</h4><a class="self-link" href="#resultaten-inzichten-omzetten-naar-praktijk" aria-label="Permalink for Section 5.3.2"></a></div>
+<p>Hoe de resultaten of inzichten uit DT's omgezet kunnen worden naar de praktijk is vooralsnog buiten scope van deze architectuur. Dit hangt onder andere af van het maturiteitsniveau van de DT (beschrijven, analyserend, voorspellend).</p>
+</section></section><section id="capabilities"><div class="header-wrapper"><h3 id="x5-4-capabilities"><bdi class="secno">5.4 </bdi>Capabilities</h3><a class="self-link" href="#capabilities" aria-label="Permalink for Section 5.4"></a></div>
+<p>Er bestaan internationaal diverse raamwerken die capabilities of onderdelen van digitale tweelingen beschrijven.
+Op basis van de <a href="https://www.digitaltwinconsortium.org/initiatives/capabilities-periodic-table">'Capabilities periodic table' van het Digital Twin Consortium</a> is er een versimpelde set van Capabilities gedefinieerd die als basis voor de NLDT gehanteerd worden. [<cite><a class="bibref" data-link-type="biblio" href="#bib-bbdt" title="Beleidsprocessen en bouwblokken voor Digitale Tweelingen">BBDT</a></cite>]</p>
+<img src="./media/capabilities.png" alt="DT Capabilities op basis van Digital Twin Consortium Periodic Table" width="900"><div class="note" role="note" id="issue-container-generatedID-1"><div role="heading" class="note-title marker" id="h-note-1" aria-level="4"><span>Noot</span></div><aside class="">
+    Het plaatje moet nog geactualiseerd worden. De 4 nieuwe capabilities missen nog.
+</aside></div><p><a href="https://www.digitaltwinconsortium.org/initiatives/capabilities-periodic-table">Digital Twin Capabilities Periodic Table</a></p>
+<section id="data"><div class="header-wrapper"><h4 id="x5-4-1-data"><bdi class="secno">5.4.1 </bdi>Data</h4><a class="self-link" href="#data" aria-label="Permalink for Section 5.4.1"></a></div>
+<section id="ontsluiten"><div class="header-wrapper"><h5 id="x5-4-1-1-ontsluiten"><bdi class="secno">5.4.1.1 </bdi>Ontsluiten</h5><a class="self-link" href="#ontsluiten" aria-label="Permalink for Section 5.4.1.1"></a></div>
+<blockquote>
+<p>Het gecontroleerd beschikbaar stellen van data en rekenmodellen voor andere systemen en toepassingen via gestandaardiseerde koppelingen.</p>
+</blockquote>
+<p>De functie ontsluiten   zorgt ervoor dat data en rekenmodellen in de digitale tweeling beschikbaar zijn voor gebruik door andere systemen, toepassingen en gebruikers. Dit gebeurt via duidelijke en gestandaardiseerde digitale koppelingen, de API’s. Hierdoor kunnen data en modelresultaten veilig en gecontroleerd worden opgevraagd en hergebruikt.
+Door data en rekenmodellen te ontsluiten, hoeven informatie en berekeningen niet telkens opnieuw te worden gemaakt. In plaats daarvan worden ze bij de bron beheerd en actueel gehouden, terwijl verschillende toepassingen er gebruik van kunnen maken. Dit bevordert samenwerking, consistentie en efficiënt gebruik van informatie.</p>
+</section><section id="bewerken"><div class="header-wrapper"><h5 id="x5-4-1-2-bewerken"><bdi class="secno">5.4.1.2 </bdi>Bewerken</h5><a class="self-link" href="#bewerken" aria-label="Permalink for Section 5.4.1.2"></a></div>
+<blockquote>
+<p>Het actief aanpassen, toevoegen of verwijderen van objecten, eigenschappen en ontwerpen binnen de digitale tweeling.</p>
+</blockquote>
+<p>De functie bewerken maakt het mogelijk om actief veranderingen aan te brengen aan de data in de digitale tweeling. Gebruikers kunnen niet alleen data bewerken, maar ook objecten en nieuwe elementen aanpassen of toevoegen. Dit kan bijvoorbeeld gaan om het verplaatsen van objecten, het wijzigen van eigenschappen of het aanpassen van instellingen binnen de digitale omgeving. Daarnaast kunnen ontwerpen, zoals 2D- of 3D-modellen en (parametrische) ontwerpen, in de digitale tweeling worden ingepast. Zo kan worden verkend hoe nieuwe plannen of ingrepen passen binnen een bestaande situatie. Alle bewerkingen worden vastgelegd, zodat zichtbaar blijft wat is aangepast, wanneer dat is gebeurd en door wie. Bewerken ondersteunt daarmee het verkennen, uitwerken en het berekenen van effecten van ontwerpen in een digitale tweeling, voordat veranderingen in de echte wereld worden doorgevoerd. </p>
+</section><section id="zoeken-vinden"><div class="header-wrapper"><h5 id="x5-4-1-3-zoeken-vinden"><bdi class="secno">5.4.1.3 </bdi>Zoeken/Vinden</h5><a class="self-link" href="#zoeken-vinden" aria-label="Permalink for Section 5.4.1.3"></a></div>
+<blockquote>
+<p>Het gericht kunnen ontdekken, filteren en opvragen van relevante data, rekenmodellen en visualisaties binnen de digitale tweeling.</p>
+</blockquote>
+<p>De functie zoeken/vinden zorgt ervoor dat gebruikers snel en eenvoudig de juiste data, rekenmodellen en visualisaties binnen de digitale tweeling kunnen vinden. Omdat een digitale tweeling vaak bestaat uit veel verschillende datasets, rekenmodellen en visualisaties, is het belangrijk dat de digitale tweeling goed doorzoekbaar is.</p>
+</section><section id="tijdreizen"><div class="header-wrapper"><h5 id="x5-4-1-4-tijdreizen"><bdi class="secno">5.4.1.4 </bdi>Tijdreizen</h5><a class="self-link" href="#tijdreizen" aria-label="Permalink for Section 5.4.1.4"></a></div>
+<blockquote>
+<p>Tijdreizen maakt het mogelijk om situaties uit het verleden en vastgelegde toekomstige scenario’s terug te kijken, vooruit te bekijken en met elkaar te vergelijken. </p>
+</blockquote>
+<p>De functie tijdreizen in een digitale tweeling maakt het mogelijk om een situatie te bekijken zoals die op een bepaald moment in de tijd was, is of wordt weergegeven. Dit betekent dat je kunt teruggaan naar het verleden om te zien hoe een situatie er toen uitzag, welke data beschikbaar waren en welke keuzes zijn gemaakt.
+Tijdreizen helpt gebruikers om situaties in hun context te begrijpen, verschillen tussen momenten in de tijd te zien en inzicht te krijgen in hoe een situatie zich ontwikkelt. Het ondersteunt historische analyses, zonder daarbij zelf nieuwe voorspellingen te doen. Tijdreizen geeft bestaande of vastgelegde toestanden in de tijd weer, terwijl simuleren nieuwe varianten doorrekent op basis van gekozen aannames en voorspellen gericht is op toekomstige situaties.</p>
+</section><section id="beschrijven"><div class="header-wrapper"><h5 id="x5-4-1-5-beschrijven"><bdi class="secno">5.4.1.5 </bdi>Beschrijven</h5><a class="self-link" href="#beschrijven" aria-label="Permalink for Section 5.4.1.5"></a></div>
+<blockquote>
+<p>Het vastleggen van betekenis, herkomst, actualiteit en gebruik van data en modellen, zodat ze correct begrepen en toegepast kunnen worden.</p>
+</blockquote>
+<p>De functie beschrijven  zorgt ervoor dat data en rekenmodellen in de digitale tweeling duidelijk en begrijpelijk zijn. Door data te voorzien van beschrijvingen (metadata) wordt vastgelegd wat de data betekenen, waar ze vandaan komen, hoe actueel ze zijn en hoe ze gebruikt mogen worden. Dit maakt het makkelijker om data te vinden, correct te interpreteren en betrouwbaar toe te passen, zowel voor mensen als voor systemen. Dit helpt ook het correct gebruiken en voorkomt misinterpretatie.</p>
+</section></section><section id="integratie"><div class="header-wrapper"><h4 id="x5-4-2-integratie"><bdi class="secno">5.4.2 </bdi>Integratie</h4><a class="self-link" href="#integratie" aria-label="Permalink for Section 5.4.2"></a></div>
+<section id="reproduceren"><div class="header-wrapper"><h5 id="x5-4-2-1-reproduceren"><bdi class="secno">5.4.2.1 </bdi>Reproduceren</h5><a class="self-link" href="#reproduceren" aria-label="Permalink for Section 5.4.2.1"></a></div>
+<blockquote>
+<p>Het exact opnieuw kunnen oproepen van eerdere toestanden van de digitale tweeling, inclusief data, resultaten en de bijbehorende modelinstellingen.</p>
+</blockquote>
+<p>De functie reproduceren maakt het mogelijk om een eerdere situatie in de digitale tweeling opnieuw op te roepen, precies zoals die op een bepaald moment was. Dit betekent dat niet alleen de data zelf, maar ook de bijbehorende indicatoren, en instellingen voor rekenmodellen en context beschikbaar blijven voor later gebruik.
+Reproduceren maakt het mogelijk om een specifieke toestand van de digitale tweeling exact opnieuw op te roepen, inclusief de bijbehorende data, instellingen, rekenregels en modelconfiguraties zoals die op dat moment golden. 
+Reproduceren is essentieel wanneer moet kunnen worden aangetoond waarom een bepaalde uitkomst of beslissing tot stand is gekomen en onder welke omstandigheden dat gebeurde. 
+Door situaties reproduceerbaar te maken, wordt de digitale tweeling betrouwbaar en uitlegbaar: analyses en beslissingen kunnen worden nagegaan, besproken en, indien nodig, opnieuw uitgevoerd op basis van dezelfde uitgangspunten.</p>
+<p>Tijdreizen ondersteunt inzicht, analyse en context, maar legt zelf geen nieuwe toestanden vast en garandeert geen volledige herhaalbaarheid van een specifieke besluitcontext. Reproduceren is essentieel wanneer moet kunnen worden aangetoond waarom een bepaalde uitkomst of beslissing tot stand is gekomen en onder welke omstandigheden dat gebeurde.</p>
+</section><section id="meten-aansturen"><div class="header-wrapper"><h5 id="x5-4-2-2-meten-aansturen"><bdi class="secno">5.4.2.2 </bdi>Meten/Aansturen</h5><a class="self-link" href="#meten-aansturen" aria-label="Permalink for Section 5.4.2.2"></a></div>
+<blockquote>
+<p>Het verbinden van de digitale tweeling met de echte wereld door het ontvangen van metingen en het (optioneel) aansturen van systemen of objecten.</p>
+</blockquote>
+<p>De functie meten en aansturen maakt het mogelijk om informatie uit de echte wereld te gebruiken in de digitale tweeling én om vanuit de digitale tweeling acties uit te voeren in de werkelijkheid. Gegevens zoals temperatuur, beweging of status worden gemeten en op vaste of realtime momenten doorgegeven aan de digitale tweeling, zodat deze een actueel beeld van de situatie kan tonen. De gemeten meetdata worden opgeslagen, waardoor veranderingen in de tijd zichtbaar blijven en eerdere toestanden kunnen worden teruggehaald. Dit maakt het mogelijk om ontwikkelingen te volgen en de werking van systemen te begrijpen.
+Naast meten kan een digitale tweeling ook worden gebruikt om onderdelen in de echte wereld aan te sturen. Via digitale signalen kunnen instellingen of statussen worden aangepast, bijvoorbeeld door een apparaat in of uit te schakelen zoals een brug of sluis. Zowel metingen als aansturingsacties worden vastgelegd, zodat altijd zichtbaar is wat er is gemeten en welke acties zijn uitgevoerd. </p>
+</section><section id="integreren"><div class="header-wrapper"><h5 id="x5-4-2-3-integreren"><bdi class="secno">5.4.2.3 </bdi>Integreren</h5><a class="self-link" href="#integreren" aria-label="Permalink for Section 5.4.2.3"></a></div>
+<blockquote>
+<p>Het samenbrengen van data uit verschillende bronnen, systemen en domeinen tot één samenhangend en herkenbaar beeld van de werkelijkheid.</p>
+</blockquote>
+<p>De functie integreren zorgt ervoor dat data uit verschillende bronnen samenkomt  in één samenhangend geheel binnen de digitale tweeling. Data uit uiteenlopende systemen, domeinen en perspectieven worden met elkaar verbonden en op elkaar afgestemd, zodat ze samen één duidelijk en herkenbaar beeld vormen van een gebied, project of situatie.
+Om data te kunnen integreren is altijd een koppelpunt nodig. Dit koppelpunt zorgt ervoor dat data over hetzelfde object, gebied of onderwerp aan elkaar kunnen worden verbonden. Zo kan een locatie als koppelpunt dienen, maar ook een gedeelde administratieve sleutel, zoals een gemeentecode, of een geometrisch of geografisch referentiepunt. Door gebruik te maken van zulke koppelingen kan data uit verschillende bronnen worden geïntegreerd en samengebracht. 
+Door deze data te combineren ontstaat een compleet en actueel overzicht, waarin verbanden zichtbaar worden die in losse data niet te zien zijn. Dit gezamenlijke beeld vormt de basis voor verdere analyse, afweging en besluitvorming, en maakt het mogelijk om vanuit verschillende invalshoeken naar dezelfde werkelijkheid te kijken. </p>
+</section></section><section id="analyse"><div class="header-wrapper"><h4 id="x5-4-3-analyse"><bdi class="secno">5.4.3 </bdi>Analyse</h4><a class="self-link" href="#analyse" aria-label="Permalink for Section 5.4.3"></a></div>
+<section id="analyseren"><div class="header-wrapper"><h5 id="x5-4-3-1-analyseren"><bdi class="secno">5.4.3.1 </bdi>Analyseren</h5><a class="self-link" href="#analyseren" aria-label="Permalink for Section 5.4.3.1"></a></div>
+<blockquote>
+<p>Het duiden en interpreteren van data en resultaten door patronen, trends en afwijkingen te herkennen en te verklaren.</p>
+</blockquote>
+<p>De functie analyseren helpt om betekenis te geven aan de gegevens en resultaten die in de digitale tweeling beschikbaar zijn. Waar rekenen cijfers en indicatoren oplevert, richt analyseren zich op het begrijpen van wat deze uitkomsten betekenen voor een situatie, een proces of een ontwikkeling in de tijd.<br>Door informatie te combineren en te bekijken vanuit verschillende invalshoeken, kunnen  patronen, trends en opvallende veranderingen worden  ontdekt. Analyseren maakt het mogelijk om te beoordelen of een situatie zich ontwikkelt zoals verwacht en waar mogelijke aandachtspunten of knelpunten ontstaan.
+De resultaten van analyses kunnen op verschillende manieren worden gepresenteerd, bijvoorbeeld in grafieken, kaarten, dashboards of tekstuele samenvattingen. Zo ondersteunt analyseren het verkrijgen van inzicht en vormt het een belangrijke basis voor verdere afweging en besluitvorming binnen de digitale tweeling. </p>
+</section><section id="voorspellen"><div class="header-wrapper"><h5 id="x5-4-3-2-voorspellen"><bdi class="secno">5.4.3.2 </bdi>Voorspellen</h5><a class="self-link" href="#voorspellen" aria-label="Permalink for Section 5.4.3.2"></a></div>
+<blockquote>
+<p>Het inschatten van waarschijnlijke toekomstige ontwikkelingen op basis van historische en actuele data en rekenmodellen.</p>
+</blockquote>
+<p>De functie voorspellen maakt het mogelijk om een onderbouwde uitspraak te doen over hoe een situatie zich waarschijnlijk zal ontwikkelen in de toekomst. Een digitale tweeling gebruikt hiervoor actuele en historische gegevens in combinatie met modellen en rekenregels om mogelijke toekomstige toestanden te berekenen.
+Voorspellen verschilt van simuleren doordat het gericht is op het inschatten van waarschijnlijke uitkomsten, in plaats van het verkennen van vrije wat-als-varianten. Het verschilt ook van tijdreizen, dat bestaande of vastgelegde scenario’s in de tijd weergeeft , terwijl voorspellen juist nieuwe toekomstige waarden berekent.
+De resultaten van voorspellingen kunnen worden getoond in dezelfde omgeving als het huidige en eerdere beeld van de werkelijkheid, zodat gebruikers ontwikkelingen in de tijd kunnen volgen en beter voorbereid zijn op mogelijke veranderingen .</p>
+</section><section id="orkestratie"><div class="header-wrapper"><h5 id="x5-4-3-3-orkestratie"><bdi class="secno">5.4.3.3 </bdi>Orkestratie</h5><a class="self-link" href="#orkestratie" aria-label="Permalink for Section 5.4.3.3"></a></div>
+<blockquote>
+<p>Het coördineren van de samenhang en volgorde waarin functies (zoals meten, rekenen, analyseren en visualiseren) worden uitgevoerd.</p>
+</blockquote>
+<p>De functie orkestreren zorgt ervoor dat de verschillende bouwstenen van de digitale tweeling op het juiste moment en in de juiste volgorde samenwerken. Orkestreren bepaalt welke functie wanneer wordt gebruikt en hoe de uitkomsten van de ene functie worden doorgegeven aan de volgende. Bijvoorbeeld: eerst worden data opgehaald, daarna berekeningen uitgevoerd, vervolgens analyses gemaakt en tenslotte resultaten getoond of vastgelegd. Deze stappen kunnen automatisch achter elkaar plaatsvinden, tegelijk worden uitgevoerd of alleen worden gestart wanneer aan bepaalde voorwaarden is voldaan.
+Orkestreren voert zelf geen berekeningen, voorspellingen of simulaties uit, maar regelt het proces eromheen. Het zorgt ervoor dat tijdreizen, simuleren en voorspellen gecontroleerd en samenhangend kunnen worden ingezet binnen één digitale tweeling.  </p>
+</section><section id="simuleren"><div class="header-wrapper"><h5 id="x5-4-3-4-simuleren"><bdi class="secno">5.4.3.4 </bdi>Simuleren</h5><a class="self-link" href="#simuleren" aria-label="Permalink for Section 5.4.3.4"></a></div>
+<blockquote>
+<p>Simuleren verkent mogelijke wat-gebeurt-er-als situaties door parameters te wijzigen en de effecten daarvan door te rekenen. </p>
+</blockquote>
+<p>De functie simuleren maakt het mogelijk om in de digitale tweeling te onderzoeken wat er kan gebeuren als bepaalde keuzes of omstandigheden veranderen. Gebruikers kunnen een beginsituatie kiezen en één of meerdere parameters aanpassen, waarna het model laat zien welke effecten dit kan hebben op het systeem, proces of gebied.
+Simuleren verschilt van voorspellen doordat het niet gaat om wat het meest waarschijnlijk is, maar om het verkennen van verschillende wat-als-situaties. Het verschilt ook van tijdreizen, dat bestaande of vastgelegde toestanden in de tijd weergeeft, terwijl simuleren nieuwe varianten doorrekent op basis van gekozen aannames.<br>Door verschillende simulaties te vergelijken, kunnen kansen, risico’s en mogelijke oplossingen inzichtelijk worden gemaakt. Simuleren ondersteunt daarmee het verkennen van opties en het voorbereiden van afwegingen, zonder dat er al een definitieve uitspraak over de toekomst wordt gedaan</p>
+</section><section id="rekenen"><div class="header-wrapper"><h5 id="x5-4-3-5-rekenen"><bdi class="secno">5.4.3.5 </bdi>Rekenen</h5><a class="self-link" href="#rekenen" aria-label="Permalink for Section 5.4.3.5"></a></div>
+<blockquote>
+<p>Het toepassen van rekenregels en modellen op data om resultaten te genereren die inzicht geven in processen, effecten en samenhangen.</p>
+</blockquote>
+<p>De functie rekenen maakt het mogelijk om data in de digitale tweeling te verwerken met behulp van rekenmodellen. Met behulp van data geven rekenmodellen inzicht in de effecten van processen en verschijnselen, zoals hittestress, wateroverlast en geluidsbelasting. Door berekeningen uit te voeren worden effecten zichtbaar en kunnen verbanden en patronen in de data worden ontdekt. Rekenmodellen zetten (ruwe) data om in indicatoren, die inzicht geven in de toestand of het gedrag van een systeem. Deze indicatoren vormen een belangrijke basis voor verdere analyse en beleidsmatige afwegingen binnen de digitale tweeling. 
+Omdat veel processen elkaar beïnvloeden en tegelijk plaatsvinden, is rekenen een essentieel onderdeel van het nabootsen van de werkelijkheid. De gebruikte rekenmodellen zijn vastgelegd en transparant beschreven, zodat duidelijk is welke aannames worden gebruikt en hoe de berekeningen tot stand komen.</p>
+</section><section id="besluiten"><div class="header-wrapper"><h5 id="x5-4-3-6-besluiten"><bdi class="secno">5.4.3.6 </bdi>Besluiten</h5><a class="self-link" href="#besluiten" aria-label="Permalink for Section 5.4.3.6"></a></div>
+<blockquote>
+<p>Besluiten omvat het zorgvuldig afwegen van effecten en belangen en het vervolgens vastleggen van een keuze op basis van de inzichten die de digitale tweeling biedt.</p>
+</blockquote>
+<p>De functie besluiten omvat het zorgvuldig afwegen van verschillende belangen, doelen en effecten en het vervolgens vastleggen    van een keuze op basis van inzichten uit de digitale tweeling. Door gevolgen van opties zichtbaar te maken, wordt duidelijk wat de impact is op bijvoorbeeld leefbaarheid, kosten, veiligheid of duurzaamheid, en ontstaat ruimte voor een goed onderbouwd gesprek over wat belangrijk is.
+Het besluit bestaat uit het kiezen van een richting of optie, inclusief het moment waarop en de context waarin die keuze is genomen. Door besluiten te koppelen aan de onderliggende data en inzichten blijft inzichtelijk waarom een besluit is genomen en kan dit later worden uitgelegd, herzien of verantwoord.</p>
+</section></section><section id="visualisatie"><div class="header-wrapper"><h4 id="x5-4-4-visualisatie"><bdi class="secno">5.4.4 </bdi>Visualisatie</h4><a class="self-link" href="#visualisatie" aria-label="Permalink for Section 5.4.4"></a></div>
+<section id="visualiseren"><div class="header-wrapper"><h5 id="x5-4-4-1-visualiseren"><bdi class="secno">5.4.4.1 </bdi>Visualiseren</h5><a class="self-link" href="#visualiseren" aria-label="Permalink for Section 5.4.4.1"></a></div>
+<blockquote>
+<p>Het inzichtelijk maken van data en resultaten via kaarten, grafieken, dashboards of 2D/3D-beelden, zodat informatie snel begrepen wordt.</p>
+</blockquote>
+<p>De functie visualiseren helpt gebruikers om gegevens in de digitale tweeling sneller te interpreteren  , herkennen en begrijpen door ze zichtbaar te maken in overzichtelijke beelden. In plaats van te zoeken in lijsten of tabellen, kunnen gebruikers data ontdekken door te kijken naar kaarten, grafieken of andere visuele weergaven.
+Visualisaties maken het mogelijk om grote hoeveelheden gegevens te ordenen en te filteren, bijvoorbeeld door in te zoomen op een gebied, een periode te kiezen of specifieke thema’s aan of uit te zetten. Zo wordt direct duidelijk waar bepaalde informatie zich bevindt en welke gegevens bij elkaar horen.
+Door data visueel te presenteren in 2D, 3D of interactieve omgevingen met een Level-of-Detail die voldoet aan de vereisten, ondersteunt de functie visualiseren helpt het gebruikers om relevante informatie snel te kunnen interpreteren en in de juiste context te plaatsen. Eén prentje zegt meer dan 1000 woorden. De beelden kunnen statisch of dynamisch zijn, heel realistisch (qua kleuren en effecten) of net niet (valse kleuren). Ook kan het gebruik van AR/VR/xR meer inzicht en interactie bieden met de werkelijkheid, zonder dat we die kunnen aanschouwen. </p>
+</section><section id="beleven"><div class="header-wrapper"><h5 id="x5-4-4-2-beleven"><bdi class="secno">5.4.4.2 </bdi>Beleven</h5><a class="self-link" href="#beleven" aria-label="Permalink for Section 5.4.4.2"></a></div>
+<blockquote>
+<p>Beleven biedt gebruikers een interactieve en intuïtieve ervaring waarmee zij de digitale tweeling actief kunnen verkennen en begrijpen. </p>
+</blockquote>
+<p>De functie beleven gaat over hoe gebruikers de digitale tweeling ervaren en ermee omgaan. Het belevingsaspect maakt het mogelijk om niet alleen informatie te bekijken, maar om actief te verkennen, te experimenteren en te leren binnen een digitale omgeving. Gebruikers kunnen zich verplaatsen in een situatie en ervaren hoe een systeem, gebied of proces functioneert.
+Beleven gaat verder dan visualisatie. Waar visualisatie informatie zichtbaar maakt, draait beleven om interactie, betrokkenheid en gebruiksgemak. Dit kan op verschillende manieren worden vormgegeven. Zo kan met XR (Extended Reality) een omgeving volledig virtueel worden beleefd, bijvoorbeeld door rond te lopen in een toekomstige wijk. Met AR (Augmented Reality) kunnen digitale elementen worden toegevoegd aan de echte wereld, zoals het projecteren van een nieuw gebouw of een geluidszone in de bestaande omgeving.
+Ook gamificatie kan bijdragen aan de beleving, bijvoorbeeld door gebruikers opdrachten te laten uitvoeren, scenario’s te verkennen of feedback te krijgen in de vorm van scores, voortgang of beloningen. Dit maakt het gebruik van de digitale tweeling laagdrempelig en stimuleert actieve deelname.</p>
+</section><section id="verklaren"><div class="header-wrapper"><h5 id="x5-4-4-3-verklaren"><bdi class="secno">5.4.4.3 </bdi>Verklaren</h5><a class="self-link" href="#verklaren" aria-label="Permalink for Section 5.4.4.3"></a></div>
+<blockquote>
+<p>Verklaren geeft inzicht in de betekenis van resultaten uit de digitale tweeling, door uitkomsten, patronen en aannames begrijpelijk en in hun context toe te lichten. </p>
+</blockquote>
+<p>De functie verklaren ondersteunt gebruikers bij het begrijpen van wat uitkomsten betekenen, waarom bepaalde patronen of effecten zichtbaar zijn en welke aannames daarbij een rol spelen. Interpreteren is met name van belang omdat de gebruikersgroep van een digitale tweeling divers is en niet iedere gebruiker rekenresultaten of analyses zelfstandig kan duiden. Technisch raakt deze functie aan ‘explainability’ van rekenmodellen, het gebruik van metadata en semantiek, en aan AI-modellen met ondersteunde samenvattingen en uitleg aanpassen aan de rol, kennis en context van de gebruikers.</p>
+</section></section><section id="betrouwbaarheid"><div class="header-wrapper"><h4 id="x5-4-5-betrouwbaarheid"><bdi class="secno">5.4.5 </bdi>Betrouwbaarheid</h4><a class="self-link" href="#betrouwbaarheid" aria-label="Permalink for Section 5.4.5"></a></div>
+<section id="vertrouwen-0"><div class="header-wrapper"><h5 id="x5-4-5-1-vertrouwen"><bdi class="secno">5.4.5.1 </bdi>Vertrouwen</h5><a class="self-link" href="#vertrouwen-0" aria-label="Permalink for Section 5.4.5.1"></a></div>
+<blockquote>
+<p>Vertrouwen zorgt ervoor dat data in de digitale tweeling veilig, betrouwbaar en volgens duidelijke afspraken kan worden gedeeld. </p>
+</blockquote>
+<p>De functie vertrouwen zorgt ervoor dat data binnen de digitale tweeling op een veilige, betrouwbare en verantwoorde manier kunnen worden gedeeld. Gebruikers moeten erop kunnen vertrouwen dat de informatie klopt, zorgvuldig wordt beheerd en alleen toegankelijk is voor wie daar recht op heeft.
+Dit vertrouwen ontstaat doordat duidelijke afspraken zijn gemaakt over de kwaliteit, herkomst en het gebruik van data. Door gebruikers te identificeren en toegangsrechten toe te passen, kan worden bepaald wie welke gegevens mag inzien of gebruiken. Zo wordt voorkomen dat gevoelige informatie onbedoeld wordt gedeeld.
+Daarnaast draagt transparantie bij aan vertrouwen. Het is inzichtelijk hoe data worden verwerkt, waar ze vandaan komen en hoe ze worden beveiligd. Door te voldoen aan geldende regels en standaarden, en door zorgvuldig om te gaan met privacy en beveiliging, ontstaat een digitale tweeling waarin data veilig kan worden gedeeld en gebruikt.
+Validatie op basis van juridische-, ethische- of technische kaders geeft ook invulling aan vertrouwen.</p>
+</section><section id="identificeren"><div class="header-wrapper"><h5 id="x5-4-5-2-identificeren"><bdi class="secno">5.4.5.2 </bdi>Identificeren</h5><a class="self-link" href="#identificeren" aria-label="Permalink for Section 5.4.5.2"></a></div>
+<blockquote>
+<p>Identificeren stelt vast wie de gebruiker is, zodat toegang, rechten en verantwoordelijkheden veilig kunnen worden geregeld. </p>
+</blockquote>
+<p>De functie identificeren zorgt ervoor dat gebruikers van een digitale tweeling zich kenbaar maken voordat zij bepaalde functies kunnen gebruiken. Door vast te stellen wie iemand is, kan worden bepaald welke data en rekenmodellen en functies voor die gebruiker beschikbaar zijn. Dit helpt om de digitale tweeling veilig en verantwoord te gebruiken.
+In sommige gevallen is een beperkte, anonieme verkenning mogelijk. Voor het uitvoeren van uitgebreidere handelingen, zoals analyseren, bewerken of aansturen, is identificatie noodzakelijk. Dit maakt het mogelijk om gebruikersrechten toe te kennen en activiteiten te herleiden naar een gebruiker of rol.
+Identificeren draagt bij aan vertrouwen in de digitale tweeling. Door gebruikersactiviteiten zorgvuldig vast te leggen en te beschermen volgens geldende privacy- en veiligheidsregels, ontstaat een betrouwbare en transparante omgeving waarin mensen veilig met de digitale tweeling kunnen werken. </p>
+</section></section><section id="beheer"><div class="header-wrapper"><h4 id="x5-4-6-beheer"><bdi class="secno">5.4.6 </bdi>Beheer</h4><a class="self-link" href="#beheer" aria-label="Permalink for Section 5.4.6"></a></div>
+<section id="bewaken"><div class="header-wrapper"><h5 id="x5-4-6-1-bewaken"><bdi class="secno">5.4.6.1 </bdi>Bewaken</h5><a class="self-link" href="#bewaken" aria-label="Permalink for Section 5.4.6.1"></a></div>
+<blockquote>
+<p>Bewaken geeft inzicht in of de digitale tweeling als systeem goed werkt, door te volgen of data, rekenmodellen en visualisaties correct en tijdig samenwerken. </p>
+</blockquote>
+<p>De functie bewaken zorgt ervoor dat het digitale tweeling als geheel systeem goed blijft functioneren. Het geeft inzicht in of data, rekenmodellen en visualisaties correct en tijdig met elkaar samenwerken. Zo wordt zichtbaar of de digitale tweeling doet wat ervan wordt verwacht.
+Bewaken of ‘observability’ maakt het mogelijk om te zien of datastromen goed verlopen, bijvoorbeeld tussen meten, rekenen en visualiseren. Wanneer onderdelen niet goed werken, data ontbreken of resultaten onverwacht zijn, kan dit tijdig worden gesignaleerd. Dit helpt om verstoringen te voorkomen en de betrouwbaarheid van de digitale tweeling te bewaken.</p>
+<hr>
+<img src="./media/DT_Capabilities.png" alt="DT Capabilities" width="900"><div class="note" role="note" id="issue-container-generatedID-2"><div role="heading" class="note-title marker" id="h-note-2" aria-level="6"><span>Noot</span></div><aside class="">
+    Het plaatje moet nog geactualiseerd worden. De 4 nieuwe capabilities missen nog.
+</aside></div><p>De online ArchiMate view van de capabilities kan <a href="https://geonovum.github.io/nldt-architectuur/Archimate/html/index.html?view=id-eb1073502d06497cbfe4ed9ce6c3e98b">hier</a> gevonden worden.</p>
+</section></section></section></section>
+      <section id="H6"><div class="header-wrapper"><h2 id="x6-bouwblokken"><bdi class="secno">6. </bdi>Bouwblokken</h2><a class="self-link" href="#H6" aria-label="Permalink for Section 6."></a></div>
+<p>Het basispatroon van de NLDT referentiearchitectuur bestaat uit 4 bouwblokken:</p>
+<img src="./media/architectuur_driehoek.png" alt="Basis bouwblokken NLDT Architectuur" width="900">
+Basis bouwblokken NLDT Architectuur<p>De bouwblokken zou je ook als groepering van Applicatiefuncties kunnen beschouwen. Deze indeling helpt om te onderstrepen dat ook vanuit een applicatie- of systeemperspectief een Digitale Tweeling opgebouwd is uit losse, samenwerkende componenten. De diensten van een rekenmodel moeten bijvoorbeeld afgenomen kunnen worden door verschillende visualisatie oplossingen. </p>
+<p>Het moet mogelijk zijn om datadiensten met informatie van verschillende vraagstukken bij elkaar te brengen. Het anti-patroon wat nog te vaak voorkomt is dat er voor verschillende vraagstukken (opgaven als woningbouw of mobiliteit) losse niet interoperabele systemen ingezet worden waardoor de integrale analyse niet mogelijk is. Bijvoorbeeld een webviewer van leverancier A voor het ene onderzoek en een digitaal platform van leverancier B voor de andere opgave, waarbij deze systemen allebei hun eigen standaarden gebruiken. Door functies te scheiden en interoperabel te maken moet de integrale benadering wel mogelijk worden.</p>
+<p>Deze opdeling in functies betekent expliciet niet dat bijvoorbeeld Data en Rekenmodellen noodzakelijk fysiek gescheiden zijn. Logisch gezien beschouwen we het echter wel als losse componenten die op een interoperabele wijze met elkaar kunnen communiceren.</p>
+<section id="ldt-bouwblokken-en-dataspaces"><div class="header-wrapper"><h3 id="x6-1-ldt-bouwblokken-en-dataspaces"><bdi class="secno">6.1 </bdi>LDT Bouwblokken en Dataspaces</h3><a class="self-link" href="#ldt-bouwblokken-en-dataspaces" aria-label="Permalink for Section 6.1"></a></div>
+<p>De ontwikkelingen van Digitale Tweelingen en Dataspaces zijn nauw met elkaar verbonden.
+Aan de ene kant zijn Digitale Tweelingen afnemers van diensten van Dataspaces, aan de andere kant moet een Digitale Tweeling ook andere databronnen en functionaliteiten kunnen aanspreken.</p>
+<p>Dit leidt tot patronen die zowel specifieke dataspace standaarden ondersteunen, als generieke standaarden.</p>
+<img src="./media/cde-ldt.png" alt="ldt als bouwsteen op een dataomgeving" width="700"></section><section id="fundament"><div class="header-wrapper"><h3 id="x6-2-fundament"><bdi class="secno">6.2 </bdi>Fundament</h3><a class="self-link" href="#fundament" aria-label="Permalink for Section 6.2"></a></div>
+<p>Het fundament bestaat uit de benodigde basis infrastructuur en catalogus functionaliteit.</p>
+<img src="./media/bouwblok_fundament.png" alt="Bouwblok fundament" width="900"><section id="zelfservice-data-infrastructuur-componenten-op-basis-van-dataspace-protocollen"><div class="header-wrapper"><h4 id="x6-2-1-zelfservice-data-infrastructuur-componenten-op-basis-van-dataspace-protocollen"><bdi class="secno">6.2.1 </bdi>Zelfservice data-infrastructuur componenten op basis van Dataspace protocollen</h4><a class="self-link" href="#zelfservice-data-infrastructuur-componenten-op-basis-van-dataspace-protocollen" aria-label="Permalink for Section 6.2.1"></a></div>
+<p>De genoemde componenten zorgen voor een ordentelijke afhandeling van het uitwisselen van
+dataproducten, met garanties voor identificatie van deelnemende organisaties en een hoge mate van
+vindbaarheid van dataproducten. Deze componenten kunnen worden gehuisvest in een rekencentrum van
+een publieke of private serviceprovider, met uitstekende netwerkverbindingen, die onder beheer van
+publieke of private organisaties staan.
+Op federatief niveau zijn enkele voorzieningen of componenten nodig die de uitwisseling van dataproducten
+faciliteren. Aanvankelijk zal het gaan over de volgende componenten:</p>
+<ul>
+<li>Een federatieve catalogus of index voor het kunnen vinden van dataproducten</li>
+<li>Een identificatie, authenticatie en autorisatievoorziening</li>
+<li>Een voorziening voor het systematisch registreren en vinden van zaken als datadefinities
+(semantiek), datamodellen en binnen het stelsel toegepaste ontologieën.</li>
+<li>Een voorziening waardoor verschillende gegevensmodellen onderling gelinked kunnen worden.</li>
+</ul>
+</section><section id="egovera-mapping"><div class="header-wrapper"><h4 id="x6-2-2-egovera-mapping"><bdi class="secno">6.2.2 </bdi>eGovERA mapping</h4><a class="self-link" href="#egovera-mapping" aria-label="Permalink for Section 6.2.2"></a></div>
+<ul>
+<li>Knowledge Discovery</li>
+<li>API Discovery and Catalogue</li>
+<li>Metadata Management</li>
+<li>Authentication</li>
+<li>Audit</li>
+<li>Observability</li>
+<li>Monitoring</li>
+</ul>
+</section></section><section id="data-0"><div class="header-wrapper"><h3 id="x6-3-data"><bdi class="secno">6.3 </bdi>Data</h3><a class="self-link" href="#data-0" aria-label="Permalink for Section 6.3"></a></div>
+<p>Het Data bouwblok bevat die zaken die rondom data en datadiensten georganiseerd moet worden in een interoperable systeem.</p>
+<img src="./media/bouwblok_data.png" alt="Bouwblok data" width="900"><section id="egovera-mapping-0"><div class="header-wrapper"><h4 id="x6-3-1-egovera-mapping"><bdi class="secno">6.3.1 </bdi>eGovERA mapping</h4><a class="self-link" href="#egovera-mapping-0" aria-label="Permalink for Section 6.3.1"></a></div>
+<ul>
+<li>Dataspace Connector</li>
+<li>Data Management (and a number of related ABB's)</li>
+</ul>
+</section></section><section id="rekenmodellen"><div class="header-wrapper"><h3 id="x6-4-rekenmodellen"><bdi class="secno">6.4 </bdi>Rekenmodellen</h3><a class="self-link" href="#rekenmodellen" aria-label="Permalink for Section 6.4"></a></div>
+<p>Het Rekenmodellen bouwblok bevat de specifieke zaken die nodig zijn voor het beschikbaar maken van Rekenmodellen (of Algoritmen) in een federatief, gedistribueerd systeem. </p>
+<img src="./media/bouwblok_rekenmodules.png" alt="Bouwblok rekenmodellen" width="900"><section id="egovera-mapping-1"><div class="header-wrapper"><h4 id="x6-4-1-egovera-mapping"><bdi class="secno">6.4.1 </bdi>eGovERA mapping</h4><a class="self-link" href="#egovera-mapping-1" aria-label="Permalink for Section 6.4.1"></a></div>
+<ul>
+<li>Data Analytics</li>
+<li>Orchestration</li>
+<li>Artificial Intelligence</li>
+</ul>
+</section></section><section id="visualisatie-0"><div class="header-wrapper"><h3 id="x6-5-visualisatie"><bdi class="secno">6.5 </bdi>Visualisatie</h3><a class="self-link" href="#visualisatie-0" aria-label="Permalink for Section 6.5"></a></div>
+<p>Het visualisatie bouwblok bevat de verschillende componenten om een Visualisatie te kunnen verzorgen. Dit kunnen 2D of 3D viewers zijn, maar ook Dasboards of andere visualisatie toepassingen. </p>
+<img src="./media/bouwblok_visualisatie.png" alt="Bouwblok visualisatie" width="900"><section id="egovera-mapping-2"><div class="header-wrapper"><h4 id="x6-5-1-egovera-mapping"><bdi class="secno">6.5.1 </bdi>eGovERA mapping</h4><a class="self-link" href="#egovera-mapping-2" aria-label="Permalink for Section 6.5.1"></a></div>
+<ul>
+<li>Business Intelligence</li>
+<li>Human Interface</li>
+</ul>
+</section></section><section id="appstore"><div class="header-wrapper"><h3 id="x6-6-appstore"><bdi class="secno">6.6 </bdi>Appstore</h3><a class="self-link" href="#appstore" aria-label="Permalink for Section 6.6"></a></div>
+<p>De diensten uit de verschillende bouwblokken kunnen onder bepaalde voorwaarden gedeeld en gepubliceerd worden in een Appstore.</p>
+<p>Om de kwaliteit en betrouwbaarheid te waarborgen, ondergaan modules die vindbaar zijn in de Appstore een objectieve toetsing volgens Europese richtlijnen,
+aangevuld met meer ntaionale richtlijnen indien nodig.
+Validatie van modules wordt mogelijk door duidelijke toetsingscriteria op het gebied van:</p>
+<ul>
+<li>Technische compatibiliteit en betrouwbaarheid;</li>
+<li>Transparantie en uitlegbaarheid van algoritmen en logica;</li>
+<li>Juridische en ethische conformiteit;</li>
+<li>Reproduceerbaarheid en herleidbaarheid van resultaten;</li>
+<li>Beheeraspecten van toepassingen zoals lifecycle management en onderhoud;</li>
+<li>Gebruikservaring en feedback.</li>
+</ul>
+<img src="./media/appstore.png" alt="appstore" width="900"><section id="egovera-mapping-3"><div class="header-wrapper"><h4 id="x6-6-1-egovera-mapping"><bdi class="secno">6.6.1 </bdi>eGovERA mapping</h4><a class="self-link" href="#egovera-mapping-3" aria-label="Permalink for Section 6.6.1"></a></div>
+<p>De realisatie van een specifieke set nLDT-applicatieservices kan resulteren in een 'recept' dat beschikbaar is in een Appstore. Dit recept kan worden beschouwd als zijnde afgestemd op een eGovERA Solution Building Block, waarbij het voldoet aan specifieke interoperabiliteitsspecificaties die herbruikbaarheid en conformiteit met de Appstore-criteria waarborgen.</p>
+<hr>
+</section></section></section>
+      <section id="H7"><div class="header-wrapper"><h2 id="x7-nldt-in-relatie-tot-andere-initiatieven"><bdi class="secno">7. </bdi>NLDT in relatie tot andere initiatieven</h2><a class="self-link" href="#H7" aria-label="Permalink for Section 7."></a></div>
+<p>De referentiearchitectuur NLDT beschrijft uitgangspunten en patronen voor het netwerk van Lokale Digitale Tweelingen.
+Er zijn veel initiatieven op regionale, nationale en europese schaal die iets soortgelijks proberen te doen.</p>
+<p>We zien deze referentiearchitectuur niet als de enige waarheid, maar proberen wel een begrijpelijke structuur en ordening te bieden die convergentie in intiatieven kan stimuleren.</p>
+<section id="zicht-op-nederland-zon-doelarchitectuur-dataspace-fysieke-leefomgeving"><div class="header-wrapper"><h3 id="x7-1-zicht-op-nederland-zon-doelarchitectuur-dataspace-fysieke-leefomgeving"><bdi class="secno">7.1 </bdi>Zicht op Nederland (ZoN) Doelarchitectuur Dataspace Fysieke Leefomgeving</h3><a class="self-link" href="#zicht-op-nederland-zon-doelarchitectuur-dataspace-fysieke-leefomgeving" aria-label="Permalink for Section 7.1"></a></div>
+<p>De <a href="https://geonovum.github.io/ZON-DA/">doelarchitectuur voor ZoN Dataspace Fysieke Leefomgeving</a> is in wording. De doelarchitectuur ZoN Datafundament beschrijft een Dataspace voor de Fysieke Leefomgeving. De NLDT referentiearchitectuur kan vooral als afnemer (en in mindere mate aanbieder) gezien worden van producten en diensten die in de Doelarchitectuur van ZoN Datafundament beschreven worden. </p>
+<p>Daarmee is er een groot raakvlak tussen deze architecturen wat gedurende de ontwikkeling zorgvuldig op elkaar afgestemd wordt. </p>
+</section><section id="gebora"><div class="header-wrapper"><h3 id="x7-2-gebora"><bdi class="secno">7.2 </bdi>Gebora</h3><a class="self-link" href="#gebora" aria-label="Permalink for Section 7.2"></a></div>
+<p>GEBORA staat voor GEBouwde Omgeving Referentie Architectuur. De GEBORA biedt een samenhangend overzicht van hoe mensen, processen en technologie in de Gebouwde Omgeving digitaal samenwerken. Dit wordt gebaseerd op best practices en standaarden uit die sector. [<cite><a class="bibref" data-link-type="biblio" href="#bib-gebora" title="Wat is gebora">Gebora</a></cite>]</p>
+<p>Gebouwde omgeving en Fysieke Leefomgeving hebben veel raakvlakken met elkaar, maar op scope, processen en betrokken organisatieonderdelen is er vaak ook een onderscheid. </p>
+<ul>
+<li>GEBORA beschrijft met name de levenscyclus van een bouwwerk en de ketenprocessen en de rollen van bedrijven en organisaties daarin. </li>
+<li>De NLDT beschrijft over het algemeen vanuit een bredere scope maatschappelijke opgaven en richt zich op gebiedsontwikkeling. Voorspellende rekenmodellen maken het mogelijk om de gevolgen van ingrepen te voorspellen. Daarmee bieden ze inzichten die bijdragen aan de besluitvorming.</li>
+</ul>
+<p>Onder andere op het gebied van het inpassen van BIM modellen in de omgeving bestaat er een duidelijk raakvlak. Dit wordt vanuit DigiGO geaddresseerd via <a href="https://www.digigo.nu/bim-modellen-infrastructuur-en-geo-data-digitaal-op-elkaar-aansluiten/"> Beleidsmaatregel 7: BIM-modellen infrastructuur en geo-data digitaal op elkaar aansluiten</a></p>
+</section><section id="fds"><div class="header-wrapper"><h3 id="x7-3-fds"><bdi class="secno">7.3 </bdi>FDS</h3><a class="self-link" href="#fds" aria-label="Permalink for Section 7.3"></a></div>
+<p>Het Federatief Datastelsel (FDS) richt zich op publieke gegevens uitwisseling op nationaal niveau, ingebed in Europese kaders.</p>
+<p>FDS ontwikkelt zich tot een afsprakenstelsel dat het datapotentieel van verschillende sector-, domein- of thematisch georiënteerde datastelsels in overeenstemming met publieke waarden voor publieke doelen beschikbaar maakt.
+[<cite><a class="bibref" data-link-type="biblio" href="#bib-fds" title="Scope van FDS">FDS</a></cite>]</p>
+<p>Daarmee voorziet het FDS in een basis stelsel waar zowel ZoN Datafundament als de NLDT op voortbouwen.</p>
+</section><section id="eu-dataspaces"><div class="header-wrapper"><h3 id="x7-4-eu-dataspaces"><bdi class="secno">7.4 </bdi>EU Dataspaces</h3><a class="self-link" href="#eu-dataspaces" aria-label="Permalink for Section 7.4"></a></div>
+<p>Er zijn verschillende EU Dataspaces in ontwikkeling, zoals de Green Deal Dataspace, de Mobility Dataspace en de Health Dataspace.</p>
+<p>De exacte afspraken over interoperabiliteit tussen de diverse initiatieven zijn op het moment van schrijven van dit document nog onduidelijk. Desondanks zijn wij van mening dat de architectuurprincipes, capabilities en patronen die in de referentiearchitectuur worden beschreven, in lijn zijn met de verschillende dataspace initiatieven. Oplossingen die volgens de nLDT-architectuur worden ontwikkeld, zullen aansluiten bij de patronen die binnen deze dataspaces ontstaan.</p>
+</section><section id="ldt-citiverse-edic"><div class="header-wrapper"><h3 id="x7-5-ldt-citiverse-edic"><bdi class="secno">7.5 </bdi>LDT CitiVERSE EDIC</h3><a class="self-link" href="#ldt-citiverse-edic" aria-label="Permalink for Section 7.5"></a></div>
+<p>Deze referentiearchitectuur is ontstaan vanuit een Nederlandse context. We zien dat Europese ontwikkelingen zoals [<cite><a class="bibref" data-link-type="biblio" href="#bib-duet" title="L. Raes et al., DUET: A Framework for Building Interoperable and Trusted Digital Twins of Smart Cities">DUET</a></cite>] en [<cite><a class="bibref" data-link-type="biblio" href="#bib-ldt" title="Public report on the LDT toolbox detailed specifications requirements – D05.02">LDT</a></cite>] dezelfde patronen beschrijven. Daarmee zijn er ook kansen om deze architectuur ook in te brengen in de Europese ontwikkelingen. Hiervoor is een Engelse vertaling gemaakt van dit <a href="https://geonovum.github.io/nldt-architectuur/en">document</a>.</p>
+</section></section>
+      <section id="tof" class="appendix"></section>
+      <section id="versiemanagement" class="appendix"><div class="header-wrapper"><h2 id="a-versiemanagement"><bdi class="secno">A. </bdi>Versiemanagement</h2><a class="self-link" href="#versiemanagement" aria-label="Permalink for Appendix A."></a></div>
+<p><strong>draft</strong></p>
+<ul>
+<li>herstructurering van het oorspronkelijke PDF document naar de online respec versie</li>
+</ul>
+<p><strong>0.7</strong></p>
+<ul>
+<li>Toevoegen hoofdstuk 6, Building blocks</li>
+</ul>
+<p><strong>0.8.0</strong></p>
+<ul>
+<li>Toevoegen Appstore beschrijving en relatie naar het aparte Appstore document</li>
+</ul>
+<p><strong>0.8.1</strong></p>
+<ul>
+<li>Toevoegen mapping op eGovERA</li>
+</ul>
+<p><strong>0.8.2</strong></p>
+<ul>
+<li>4 nieuwe capabilities geintroduceerd en alle capability beschrijvingen geactualiseerd</li>
+</ul>
+<p><strong>0.8.3</strong></p>
+<ul>
+<li>toevoeging van de relatie dataomgeving - LDT</li>
+</ul>
+</section>
+      
+   
+<section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="informatieve-referenties">
+    <div class="header-wrapper"><h3 id="b-1-informatieve-referenties"><bdi class="secno">B.1 </bdi>Informatieve referenties</h3><a class="self-link" href="#informatieve-referenties" aria-label="Permalink for Appendix B.1"></a></div>
+    <dl class="bibliography"><dt id="bib-bbdt">[BBDT]</dt><dd>
+      <a href="https://www.geonovum.nl/uploads/documents/Eindrapport%20Advies%20Beleid%20en%20Digital%20Twins%20-%20provincie%20Utrecht%20v1.3d.pdf"><cite>Beleidsprocessen en bouwblokken voor Digitale Tweelingen</cite></a>.  Geonovum. URL: <a href="https://www.geonovum.nl/uploads/documents/Eindrapport%20Advies%20Beleid%20en%20Digital%20Twins%20-%20provincie%20Utrecht%20v1.3d.pdf">https://www.geonovum.nl/uploads/documents/Eindrapport%20Advies%20Beleid%20en%20Digital%20Twins%20-%20provincie%20Utrecht%20v1.3d.pdf</a>
+    </dd><dt id="bib-dmi_ecosysteem_volwassenheidsniveaus">[DMI_ecosysteem_volwassenheidsniveaus]</dt><dd>
+      <cite>De type volwassenheidsniveaus zijn gebaseerd op een analyse over zes bronnen, te weten Geospatial World (2023), Digital Twin Consortium (2024a), Digital Urban Brabant (2023), International Data Group (2019), Stichting Toekomstbeeld der Techniek (2022) en TNO.</cite>. 
+    </dd><dt id="bib-duet">[DUET]</dt><dd>
+      <a href="https://ieeexplore.ieee.org/document/9362182"><cite>L. Raes et al., DUET: A Framework for Building Interoperable and Trusted Digital Twins of Smart Cities</cite></a>.  IEEE Internet Computing, vol. 26, no. 3, pp. 43-50, 1 May-June 2022. URL: <a href="https://ieeexplore.ieee.org/document/9362182">https://ieeexplore.ieee.org/document/9362182</a>
+    </dd><dt id="bib-egovera">[eGovERA]</dt><dd>
+      <a href="https://interoperable-europe.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/solution/egovera-business-agnostic-0/release/610"><cite>eGovERA Business Agnostic Reference Architecture 6.1.0</cite></a>. 07-11-2024. URL: <a href="https://interoperable-europe.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/solution/egovera-business-agnostic-0/release/610">https://interoperable-europe.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/solution/egovera-business-agnostic-0/release/610</a>
+    </dd><dt id="bib-fds">[FDS]</dt><dd>
+      <a href="https://federatief.datastelsel.nl/kennisbank/scope-van-fds/"><cite>Scope van FDS</cite></a>. 30-04-2025. URL: <a href="https://federatief.datastelsel.nl/kennisbank/scope-van-fds/">https://federatief.datastelsel.nl/kennisbank/scope-van-fds/</a>
+    </dd><dt id="bib-gebora">[Gebora]</dt><dd>
+      <a href="https://www.digigo.nu/wat-is-gebora/"><cite>Wat is gebora</cite></a>. 30-04-2025. URL: <a href="https://www.digigo.nu/wat-is-gebora/">https://www.digigo.nu/wat-is-gebora/</a>
+    </dd><dt id="bib-ldt">[LDT]</dt><dd>
+      <a href="https://data.europa.eu/doi/10.2759/384198"><cite>Public report on the LDT toolbox detailed specifications requirements – D05.02</cite></a>.  European Commission. URL: <a href="https://data.europa.eu/doi/10.2759/384198">https://data.europa.eu/doi/10.2759/384198</a>
+    </dd><dt id="bib-ndtfl">[NDTFL]</dt><dd>
+      <a href="https://www.geonovum.nl/uploads/documents/20220211%20Referentiearchitectuur%20Stelsel%20DTFL%20versie%200.9.pdf"><cite>Referentie Architectuur Stelsel Digitale Tweeling Fysieke Leefomgeving</cite></a>.  Geonovum. 11 februari 2022. V0.9. URL: <a href="https://www.geonovum.nl/uploads/documents/20220211%20Referentiearchitectuur%20Stelsel%20DTFL%20versie%200.9.pdf">https://www.geonovum.nl/uploads/documents/20220211%20Referentiearchitectuur%20Stelsel%20DTFL%20versie%200.9.pdf</a>
+    </dd><dt id="bib-vro_2024">[VRO_2024]</dt><dd>
+      <a href="https://www.rijksoverheid.nl/documenten/rapporten/2024/02/12/meerjarenvisie-zicht-op-nederland"><cite>Aanbieding meerjarenvisie Zicht op Nederland: samen datagedreven werken aan de fysieke leefomgeving</cite></a>. 12-02-2024. URL: <a href="https://www.rijksoverheid.nl/documenten/rapporten/2024/02/12/meerjarenvisie-zicht-op-nederland">https://www.rijksoverheid.nl/documenten/rapporten/2024/02/12/meerjarenvisie-zicht-op-nederland</a>
+    </dd></dl>
+  </section></section><p role="navigation" id="back-to-top">
+    <a href="#title"><abbr title="Terug naar boven">↑</abbr></a>
+  </p><script id="respec-dfn-panel">(() => {
+// @ts-check
+if (document.respec) {
+  document.respec.ready.then(setupPanel);
+} else {
+  setupPanel();
+}
+
+function setupPanel() {
+  const listener = panelListener();
+  document.body.addEventListener("keydown", listener);
+  document.body.addEventListener("click", listener);
+}
+
+function panelListener() {
+  /** @type {HTMLElement | null} */
+  let panel = null;
+  /**
+   * @param {KeyboardEvent|MouseEvent} event
+   */
+  return event => {
+    const { target, type } = event;
+
+    if (!(target instanceof HTMLElement)) return;
+
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (
+      type === "keydown" &&
+      /** @type {KeyboardEvent} */ (event).key !== "Enter"
+    )
+      return;
+
+    const action = deriveAction(event);
+
+    switch (action) {
+      case "show": {
+        hidePanel(panel);
+        /** @type {HTMLElement | null} */
+        const dfn = target.closest("dfn, .index-term");
+        if (!dfn?.id) break;
+        panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
+        if (!panel) break;
+        const coords = deriveCoordinates(
+          /** @type {MouseEvent|KeyboardEvent} */ (event)
+        );
+        displayPanel(dfn, panel, coords);
+        break;
+      }
+      case "dock": {
+        if (panel) {
+          panel.style.left = "";
+          panel.style.top = "";
+          panel.classList.add("docked");
+        }
+        break;
+      }
+      case "hide": {
+        hidePanel(panel);
+        panel = null;
+        break;
+      }
+    }
+  };
+}
+
+/**
+ * @param {MouseEvent|KeyboardEvent} event
+ */
+function deriveCoordinates(event) {
+  const target = /** @type HTMLElement */ (event.target);
+
+  // We prevent synthetic AT clicks from putting
+  // the dialog in a weird place. The AT events sometimes
+  // lack coordinates, so they have clientX/Y = 0
+  const rect = target.getBoundingClientRect();
+  if (
+    event instanceof MouseEvent &&
+    event.clientX >= rect.left &&
+    event.clientY >= rect.top
+  ) {
+    // The event probably happened inside the bounding rect...
+    return { x: event.clientX, y: event.clientY };
+  }
+
+  // Offset to the middle of the element
+  const x = rect.x + rect.width / 2;
+  // Placed at the bottom of the element
+  const y = rect.y + rect.height;
+  return { x, y };
+}
+
+/**
+ * @param {Event} event
+ */
+function deriveAction(event) {
+  const target = /** @type {HTMLElement} */ (event.target);
+  const hitALink = !!target.closest("a");
+  if (target.closest("dfn:not([data-cite]), .index-term")) {
+    return hitALink ? "none" : "show";
+  }
+  if (target.closest(".dfn-panel")) {
+    if (hitALink) {
+      return target.classList.contains("self-link") ? "hide" : "dock";
+    }
+
+    const panel = /** @type {HTMLElement} */ (target.closest(".dfn-panel"));
+    return panel.classList.contains("docked") ? "hide" : "none";
+  }
+  if (document.querySelector(".dfn-panel:not([hidden])")) {
+    return "hide";
+  }
+  return "none";
+}
+
+/**
+ * @param {HTMLElement} dfn
+ * @param {HTMLElement} panel
+ * @param {{ x: number, y: number }} clickPosition
+ */
+function displayPanel(dfn, panel, { x, y }) {
+  panel.hidden = false;
+  // distance (px) between edge of panel and the pointing triangle (caret)
+  const MARGIN = 20;
+
+  const dfnRects = dfn.getClientRects();
+  // Find the `top` offset when the `dfn` can be spread across multiple lines
+  let closestTop = 0;
+  let minDiff = Infinity;
+  for (const rect of dfnRects) {
+    const { top, bottom } = rect;
+    const diffFromClickY = Math.abs((top + bottom) / 2 - y);
+    if (diffFromClickY < minDiff) {
+      minDiff = diffFromClickY;
+      closestTop = top;
+    }
+  }
+
+  const top = window.scrollY + closestTop + dfnRects[0].height;
+  const left = x - MARGIN;
+  panel.style.left = `${left}px`;
+  panel.style.top = `${top}px`;
+
+  // Find if the panel is flowing out of the window
+  const panelRect = panel.getBoundingClientRect();
+  const SCREEN_WIDTH = Math.min(window.innerWidth, window.screen.width);
+  if (panelRect.right > SCREEN_WIDTH) {
+    const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
+    const newCaretOffset = left - newLeft;
+    panel.style.left = `${newLeft}px`;
+    /** @type {HTMLElement | null} */
+    const caret = panel.querySelector(".caret");
+    if (caret) caret.style.left = `${newCaretOffset}px`;
+  }
+
+  // As it's a dialog, we trap focus.
+  // TODO: when <dialog> becomes a implemented, we should really
+  // use that.
+  trapFocus(panel, dfn);
+}
+
+/**
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function trapFocus(panel, dfn) {
+  /** @type NodeListOf<HTMLAnchorElement> elements */
+  const anchors = panel.querySelectorAll("a[href]");
+  // No need to trap focus
+  if (!anchors.length) return;
+
+  // Move focus to first anchor element
+  const first = anchors.item(0);
+  first.focus();
+
+  const trapListener = createTrapListener(anchors, panel, dfn);
+  panel.addEventListener("keydown", trapListener);
+
+  // Hiding the panel releases the trap
+  const mo = new MutationObserver(records => {
+    const [record] = records;
+    const target = /** @type HTMLElement */ (record.target);
+    if (target.hidden) {
+      panel.removeEventListener("keydown", trapListener);
+      mo.disconnect();
+    }
+  });
+  mo.observe(panel, { attributes: true, attributeFilter: ["hidden"] });
+}
+
+/**
+ *
+ * @param {NodeListOf<HTMLAnchorElement>} anchors
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function createTrapListener(anchors, panel, dfn) {
+  const lastIndex = anchors.length - 1;
+  let currentIndex = 0;
+  /**
+   * @param {KeyboardEvent} event
+   */
+  return event => {
+    switch (event.key) {
+      // Hitting "Tab" traps us in a nice loop around elements.
+      case "Tab": {
+        event.preventDefault();
+        currentIndex += event.shiftKey ? -1 : +1;
+        if (currentIndex < 0) {
+          currentIndex = lastIndex;
+        } else if (currentIndex > lastIndex) {
+          currentIndex = 0;
+        }
+        anchors.item(currentIndex).focus();
+        break;
+      }
+
+      // Hitting "Enter" on an anchor releases the trap.
+      case "Enter":
+        hidePanel(panel);
+        break;
+
+      // Hitting "Escape" returns focus to dfn.
+      case "Escape":
+        hidePanel(panel);
+        dfn.focus();
+        return;
+    }
+  };
+}
+
+/** @param {HTMLElement | null} panel */
+function hidePanel(panel) {
+  if (!panel) return;
+  panel.hidden = true;
+  panel.classList.remove("docked");
+}
+})()</script><div class="sidelabel">Geonovum Handreiking - Versie ter vaststelling</div><script src="https://gitdocumentatie.logius.nl/publicatie/respec/fixup.js"></script></body></html>
