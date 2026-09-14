@@ -11,7 +11,7 @@ Het contact tussen samenwerkende overheidsorganisaties en de samenleving staat h
 [Definitie Kernwaarde NORA](https://www.noraonline.nl/wiki/Kernwaarde_van_Dienstverlening_(Begrip))
 </aside>
 
-![kernwaarden](./respec/media/kernwaarden.png)
+![kernwaarden](./media/kernwaarden.png)
 
 Afbeelding 1: kernwaarden
 

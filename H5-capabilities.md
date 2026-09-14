@@ -21,7 +21,7 @@ In dit hoofdstuk worden op hoofdlijnen de waardestromen en capabilities beschrev
 
 ## Metamodel
 
-<img src="./respec/media/NLDT_archimate_metamodel.png" alt="ArchiMate metamodel" width="900">
+<img src="./media/NLDT_archimate_metamodel.png" alt="ArchiMate metamodel" width="900">
 
 ArchiMate metamodel voor de NLDT architectuur. [online viewer](https://geonovum.github.io/NLDT-Architectuur/Archimate/html/index.html?view=id-68f0ee0b9d824121b8a04dc58af3d3ab)
 
@@ -29,7 +29,7 @@ Bovenstaande afbeelding visualiseert het ArchiMate metamodel voor de NLDT archit
 
 ## nLDT - eGovERA mapping
 
-<img src="./respec/media/nLDT-eGovERA-mapping.png" alt="nLDT - eGovERA mapping" width="900">
+<img src="./media/nLDT-eGovERA-mapping.png" alt="nLDT - eGovERA mapping" width="900">
 
 Overzicht aansluiting van de nLDT architectuur op eGovERA
 
@@ -57,7 +57,7 @@ Hoe de resultaten of inzichten uit DT's omgezet kunnen worden naar de praktijk i
 Er bestaan internationaal diverse raamwerken die capabilities of onderdelen van digitale tweelingen beschrijven.
 Op basis van de ['Capabilities periodic table' van het Digital Twin Consortium](https://www.digitaltwinconsortium.org/initiatives/capabilities-periodic-table) is er een versimpelde set van Capabilities gedefinieerd die als basis voor de NLDT gehanteerd worden. [[BBDT]]
 
-<img src="./respec/media/capabilities.png" alt="DT Capabilities op basis van Digital Twin Consortium Periodic Table" width="900">
+<img src="./media/capabilities.png" alt="DT Capabilities op basis van Digital Twin Consortium Periodic Table" width="900">
 
 <aside class="note">
     Het plaatje moet nog geactualiseerd worden. De 4 nieuwe capabilities missen nog.
@@ -232,7 +232,7 @@ Bewaken of ‘observability’ maakt het mogelijk om te zien of datastromen goed
 ---
 
 
-<img src="./respec/media/DT_Capabilities.png" alt="DT Capabilities" width="900">
+<img src="./media/DT_Capabilities.png" alt="DT Capabilities" width="900">
 
 <aside class="note">
     Het plaatje moet nog geactualiseerd worden. De 4 nieuwe capabilities missen nog.

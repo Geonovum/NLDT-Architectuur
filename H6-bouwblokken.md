@@ -2,7 +2,7 @@
 
 Het basispatroon van de NLDT referentiearchitectuur bestaat uit 4 bouwblokken:
 
-<img src="./respec/media/architectuur_driehoek.png" alt="Basis bouwblokken NLDT Architectuur" width="900">
+<img src="./media/architectuur_driehoek.png" alt="Basis bouwblokken NLDT Architectuur" width="900">
 Basis bouwblokken NLDT Architectuur
 
 De bouwblokken zou je ook als groepering van Applicatiefuncties kunnen beschouwen. Deze indeling helpt om te onderstrepen dat ook vanuit een applicatie- of systeemperspectief een Digitale Tweeling opgebouwd is uit losse, samenwerkende componenten. De diensten van een rekenmodel moeten bijvoorbeeld afgenomen kunnen worden door verschillende visualisatie oplossingen. 
@@ -18,13 +18,13 @@ Aan de ene kant zijn Digitale Tweelingen afnemers van diensten van Dataspaces, a
 
 Dit leidt tot patronen die zowel specifieke dataspace standaarden ondersteunen, als generieke standaarden.
 
-<img src="./respec/media/cde-ldt.png" alt="ldt als bouwsteen op een dataomgeving" width="700">
+<img src="./media/cde-ldt.png" alt="ldt als bouwsteen op een dataomgeving" width="700">
 
 ## Fundament
 
 Het fundament bestaat uit de benodigde basis infrastructuur en catalogus functionaliteit.
 
-<img src="./respec/media/bouwblok_fundament.png" alt="Bouwblok fundament" width="900">
+<img src="./media/bouwblok_fundament.png" alt="Bouwblok fundament" width="900">
 
 ###  Zelfservice data-infrastructuur componenten op basis van Dataspace protocollen
 De genoemde componenten zorgen voor een ordentelijke afhandeling van het uitwisselen van
@@ -57,7 +57,7 @@ faciliteren. Aanvankelijk zal het gaan over de volgende componenten:
 
 Het Data bouwblok bevat die zaken die rondom data en datadiensten georganiseerd moet worden in een interoperable systeem.
 
-<img src="./respec/media/bouwblok_data.png" alt="Bouwblok data" width="900">
+<img src="./media/bouwblok_data.png" alt="Bouwblok data" width="900">
 
 ### eGovERA mapping
 
@@ -68,7 +68,7 @@ Het Data bouwblok bevat die zaken die rondom data en datadiensten georganiseerd 
 
 Het Rekenmodellen bouwblok bevat de specifieke zaken die nodig zijn voor het beschikbaar maken van Rekenmodellen (of Algoritmen) in een federatief, gedistribueerd systeem. 
 
-<img src="./respec/media/bouwblok_rekenmodules.png" alt="Bouwblok rekenmodellen" width="900">
+<img src="./media/bouwblok_rekenmodules.png" alt="Bouwblok rekenmodellen" width="900">
 
 ### eGovERA mapping
 
@@ -81,7 +81,7 @@ Het Rekenmodellen bouwblok bevat de specifieke zaken die nodig zijn voor het bes
 
 Het visualisatie bouwblok bevat de verschillende componenten om een Visualisatie te kunnen verzorgen. Dit kunnen 2D of 3D viewers zijn, maar ook Dasboards of andere visualisatie toepassingen. 
 
-<img src="./respec/media/bouwblok_visualisatie.png" alt="Bouwblok visualisatie" width="900">
+<img src="./media/bouwblok_visualisatie.png" alt="Bouwblok visualisatie" width="900">
 
 ### eGovERA mapping
 
@@ -104,7 +104,7 @@ Validatie van modules wordt mogelijk door duidelijke toetsingscriteria op het ge
 - Beheeraspecten van toepassingen zoals lifecycle management en onderhoud;
 - Gebruikservaring en feedback.
 
-<img src="./respec/media/appstore.png" alt="appstore" width="900">
+<img src="./media/appstore.png" alt="appstore" width="900">
 
 ### eGovERA mapping
 
