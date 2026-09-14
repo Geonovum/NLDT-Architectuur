@@ -12,8 +12,8 @@ __Implicatie bij:__
 - [Data als product](#data-als-product)
 - [Datasoevereiniteit is geborgd](#data-soevereiniteit-is-geborgd)
 - [Het stelsel is betrouwbaar](#het-stelsel-is-betrouwbaar)
-- [Kwaliteit van data is gekend](./H3-architectuurprincipes.md#kwaliteit-van-data-is-gekend)
-- [Zelfservice data-infrastructuur](./H3-architectuurprincipes.md#zelfservice-data-infrastructuur)
+- [Kwaliteit van data is gekend](#kwaliteit-van-data-is-gekend)
+- [Zelfservice data-infrastructuur](#zelfservice-data-infrastructuur)
 
 
 ## Lineage
@@ -27,7 +27,7 @@ __Rationale:__
 __Implicatie bij:__
 - [Data als product](#data-als-product)
 - [Het stelsel is betrouwbaar](#het-stelsel-is-betrouwbaar)
-- [Kwaliteit van data is gekend](./H3-architectuurprincipes.md#kwaliteit-van-data-is-gekend)
+- [Kwaliteit van data is gekend](#kwaliteit-van-data-is-gekend)
 
 ## Kwaliteitsraamwerk
 
@@ -40,7 +40,7 @@ Dit raamwerk is noodzakelijk om betrouwbare dataproducten uit te wisselen (archi
 __Implicatie bij:__
 - [Data als product](#data-als-product)
 - [Het stelsel is betrouwbaar](#het-stelsel-is-betrouwbaar)
-- [Kwaliteit van data is gekend](./H3-architectuurprincipes.md#kwaliteit-van-data-is-gekend)
+- [Kwaliteit van data is gekend](#kwaliteit-van-data-is-gekend)
 
 ## Hergebruik
 
