@@ -1,3 +1,5 @@
+# Beheerd vanuit Geonovum/NL-ReSpec-template. Pas dit bestand niet aan in een documentrepo:
+# de build- en publicatiestappen staan centraal en worden via @v1 gebruikt.
 name: Main Workflow
 on:
   push:
@@ -13,12 +15,17 @@ concurrency:
 
 jobs:
   build:
-    uses: ./.github/workflows/build.yml
+    permissions:
+      contents: write
+    uses: Geonovum/NL-ReSpec-template/.github/workflows/build.yml@v1
 
   publish:
     if: github.event_name == 'release'
     needs: build
-    uses: ./.github/workflows/publish.yml
+    permissions:
+      contents: write
+      pull-requests: write
+    uses: Geonovum/NL-ReSpec-template/.github/workflows/publish.yml@v1
     secrets:
       GH_APP_ID: ${{ secrets.GH_APP_ID }}
       GH_APP_PRIVATE_KEY: ${{ secrets.GH_APP_PRIVATE_KEY }}
